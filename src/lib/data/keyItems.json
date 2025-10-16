@@ -1,0 +1,452 @@
+{
+	"polished": [
+		{
+			"itemNo": 1,
+			"name": "Bicycle",
+			"category": "KEY_ITEM",
+			"description": "A collapsible bike for fast movement."
+		},
+		{
+			"itemNo": 2,
+			"name": "Old Rod",
+			"category": "KEY_ITEM",
+			"description": "Use by water to fish for Pokémon."
+		},
+		{
+			"itemNo": 3,
+			"name": "Good Rod",
+			"category": "KEY_ITEM",
+			"description": "A good Rod for catching Pokémon."
+		},
+		{
+			"itemNo": 4,
+			"name": "Super Rod",
+			"category": "KEY_ITEM",
+			"description": "The best Rod for catching Pokémon."
+		},
+		{
+			"itemNo": 5,
+			"name": "Itemfinder",
+			"category": "KEY_ITEM",
+			"description": "Checks for unseen items in the area."
+		},
+		{
+			"itemNo": 6,
+			"name": "Coin Case",
+			"category": "KEY_ITEM",
+			"description": "Holds up to 50K game coins."
+		},
+		{
+			"itemNo": 7,
+			"name": "Apricorn Box",
+			"category": "KEY_ITEM",
+			"description": "Holds up to 99 of each Apricorn."
+		},
+		{
+			"itemNo": 8,
+			"name": "Wing Case",
+			"category": "KEY_ITEM",
+			"description": "Holds up to 999 of each Wing."
+		},
+		{
+			"itemNo": 9,
+			"name": "Candy Jar",
+			"category": "KEY_ITEM",
+			"description": "Holds up to 99 of each Exp.Candy."
+		},
+		{
+			"itemNo": 10,
+			"name": "Type Chart",
+			"category": "KEY_ITEM",
+			"description": "Summarizes all type advantages."
+		},
+		{
+			"itemNo": 11,
+			"name": "GBC Sounds",
+			"category": "KEY_ITEM",
+			"description": "A music player filled with songs."
+		},
+		{
+			"itemNo": 12,
+			"name": "Blue Card",
+			"category": "KEY_ITEM",
+			"description": "Card to save points."
+		},
+		{
+			"itemNo": 13,
+			"name": "SquirtBottle",
+			"category": "KEY_ITEM",
+			"description": "A bottle used for watering plants."
+		},
+		{
+			"itemNo": 14,
+			"name": "SilphScope2",
+			"category": "KEY_ITEM",
+			"description": "A scope to see invisible Pokémon."
+		},
+		{
+			"itemNo": 15,
+			"name": "Mystery Egg",
+			"category": "KEY_ITEM",
+			"description": "An Egg obtained from Mr.Pokémon."
+		},
+		{
+			"itemNo": 16,
+			"name": "SecretPotion",
+			"category": "KEY_ITEM",
+			"description": "Fully heals any Pokémon."
+		},
+		{
+			"itemNo": 17,
+			"name": "Go-Goggles",
+			"category": "KEY_ITEM",
+			"description": "Nifty goggles for sand or hail."
+		},
+		{
+			"itemNo": 18,
+			"name": "Red Scale",
+			"category": "KEY_ITEM",
+			"description": "A scale from the red Gyarados."
+		},
+		{
+			"itemNo": 19,
+			"name": "Card Key",
+			"category": "KEY_ITEM",
+			"description": "Opens shutters in the Radio Tower."
+		},
+		{ "itemNo": 20, "name": "Basement Key", "category": "KEY_ITEM", "description": "Opens doors." },
+		{
+			"itemNo": 21,
+			"name": "Lost Item",
+			"category": "KEY_ITEM",
+			"description": "The Poké Doll lost by the Copycat."
+		},
+		{
+			"itemNo": 22,
+			"name": "Machine Part",
+			"category": "KEY_ITEM",
+			"description": "A machine part for the Power Plant."
+		},
+		{
+			"itemNo": 23,
+			"name": "Rainbow Wing",
+			"category": "KEY_ITEM",
+			"description": "A mystical feather of rainbow colors."
+		},
+		{
+			"itemNo": 24,
+			"name": "Silver Wing",
+			"category": "KEY_ITEM",
+			"description": "A strange, silvercolored feather."
+		},
+		{
+			"itemNo": 25,
+			"name": "Clear Bell",
+			"category": "KEY_ITEM",
+			"description": "Makes a gentle ringing."
+		},
+		{
+			"itemNo": 26,
+			"name": "GS Ball",
+			"category": "KEY_ITEM",
+			"description": "The mysterious Ball."
+		},
+		{
+			"itemNo": 27,
+			"name": "S.S.Ticket",
+			"category": "KEY_ITEM",
+			"description": "A ticket for the S.S.Aqua."
+		},
+		{
+			"itemNo": 28,
+			"name": "Pass",
+			"category": "KEY_ITEM",
+			"description": "A ticket for the Magnet Train."
+		},
+		{
+			"itemNo": 29,
+			"name": "OrangeTicket",
+			"category": "KEY_ITEM",
+			"description": "A ticket for the Seagallop Ferry."
+		},
+		{
+			"itemNo": 30,
+			"name": "MysticTicket",
+			"category": "KEY_ITEM",
+			"description": "A ticket for the Seagallop Ferry."
+		},
+		{
+			"itemNo": 31,
+			"name": "Old Sea Map",
+			"category": "KEY_ITEM",
+			"description": "A faded sea chart of a small island."
+		},
+		{
+			"itemNo": 32,
+			"name": "Lift Key",
+			"category": "KEY_ITEM",
+			"description": "Operates the lift in a building."
+		},
+		{
+			"itemNo": 33,
+			"name": "Harsh Lure",
+			"category": "KEY_ITEM",
+			"description": "A bottle with a cruel scent."
+		},
+		{
+			"itemNo": 34,
+			"name": "Potent Lure",
+			"category": "KEY_ITEM",
+			"description": "A bottle with a strong smell."
+		},
+		{
+			"itemNo": 35,
+			"name": "Malign Lure",
+			"category": "KEY_ITEM",
+			"description": "A bottle with a malevolent odor."
+		},
+		{
+			"itemNo": 36,
+			"name": "Shiny Charm",
+			"category": "KEY_ITEM",
+			"description": "A charm for finding shiny Pokémon."
+		},
+		{
+			"itemNo": 37,
+			"name": "Oval Charm",
+			"category": "KEY_ITEM",
+			"description": "A charm for finding Eggs."
+		},
+		{
+			"itemNo": 38,
+			"name": "Catch Charm",
+			"category": "KEY_ITEM",
+			"description": "A charm for catching Pokémon."
+		}
+	],
+	"faithful": [
+		{
+			"itemNo": 1,
+			"name": "Bicycle",
+			"category": "KEY_ITEM",
+			"description": "A collapsible bike for fast movement."
+		},
+		{
+			"itemNo": 2,
+			"name": "Old Rod",
+			"category": "KEY_ITEM",
+			"description": "Use by water to fish for Pokémon."
+		},
+		{
+			"itemNo": 3,
+			"name": "Good Rod",
+			"category": "KEY_ITEM",
+			"description": "A good Rod for catching Pokémon."
+		},
+		{
+			"itemNo": 4,
+			"name": "Super Rod",
+			"category": "KEY_ITEM",
+			"description": "The best Rod for catching Pokémon."
+		},
+		{
+			"itemNo": 5,
+			"name": "Itemfinder",
+			"category": "KEY_ITEM",
+			"description": "Checks for unseen items in the area."
+		},
+		{
+			"itemNo": 6,
+			"name": "Coin Case",
+			"category": "KEY_ITEM",
+			"description": "Holds up to 50K game coins."
+		},
+		{
+			"itemNo": 7,
+			"name": "Apricorn Box",
+			"category": "KEY_ITEM",
+			"description": "Holds up to 99 of each Apricorn."
+		},
+		{
+			"itemNo": 8,
+			"name": "Wing Case",
+			"category": "KEY_ITEM",
+			"description": "Holds up to 999 of each Wing."
+		},
+		{
+			"itemNo": 9,
+			"name": "Candy Jar",
+			"category": "KEY_ITEM",
+			"description": "Holds up to 99 of each Exp.Candy."
+		},
+		{
+			"itemNo": 10,
+			"name": "Type Chart",
+			"category": "KEY_ITEM",
+			"description": "Summarizes all type advantages."
+		},
+		{
+			"itemNo": 11,
+			"name": "GBC Sounds",
+			"category": "KEY_ITEM",
+			"description": "A music player filled with songs."
+		},
+		{
+			"itemNo": 12,
+			"name": "Blue Card",
+			"category": "KEY_ITEM",
+			"description": "Card to save points."
+		},
+		{
+			"itemNo": 13,
+			"name": "SquirtBottle",
+			"category": "KEY_ITEM",
+			"description": "A bottle used for watering plants."
+		},
+		{
+			"itemNo": 14,
+			"name": "SilphScope2",
+			"category": "KEY_ITEM",
+			"description": "A scope to see invisible Pokémon."
+		},
+		{
+			"itemNo": 15,
+			"name": "Mystery Egg",
+			"category": "KEY_ITEM",
+			"description": "An Egg obtained from Mr.Pokémon."
+		},
+		{
+			"itemNo": 16,
+			"name": "SecretPotion",
+			"category": "KEY_ITEM",
+			"description": "Fully heals any Pokémon."
+		},
+		{
+			"itemNo": 17,
+			"name": "Go-Goggles",
+			"category": "KEY_ITEM",
+			"description": "Nifty goggles for sand or hail."
+		},
+		{
+			"itemNo": 18,
+			"name": "Red Scale",
+			"category": "KEY_ITEM",
+			"description": "A scale from the red Gyarados."
+		},
+		{
+			"itemNo": 19,
+			"name": "Card Key",
+			"category": "KEY_ITEM",
+			"description": "Opens shutters in the Radio Tower."
+		},
+		{ "itemNo": 20, "name": "Basement Key", "category": "KEY_ITEM", "description": "Opens doors." },
+		{
+			"itemNo": 21,
+			"name": "Lost Item",
+			"category": "KEY_ITEM",
+			"description": "The Poké Doll lost by the Copycat."
+		},
+		{
+			"itemNo": 22,
+			"name": "Machine Part",
+			"category": "KEY_ITEM",
+			"description": "A machine part for the Power Plant."
+		},
+		{
+			"itemNo": 23,
+			"name": "Rainbow Wing",
+			"category": "KEY_ITEM",
+			"description": "A mystical feather of rainbow colors."
+		},
+		{
+			"itemNo": 24,
+			"name": "Silver Wing",
+			"category": "KEY_ITEM",
+			"description": "A strange, silvercolored feather."
+		},
+		{
+			"itemNo": 25,
+			"name": "Clear Bell",
+			"category": "KEY_ITEM",
+			"description": "Makes a gentle ringing."
+		},
+		{
+			"itemNo": 26,
+			"name": "GS Ball",
+			"category": "KEY_ITEM",
+			"description": "The mysterious Ball."
+		},
+		{
+			"itemNo": 27,
+			"name": "S.S.Ticket",
+			"category": "KEY_ITEM",
+			"description": "A ticket for the S.S.Aqua."
+		},
+		{
+			"itemNo": 28,
+			"name": "Pass",
+			"category": "KEY_ITEM",
+			"description": "A ticket for the Magnet Train."
+		},
+		{
+			"itemNo": 29,
+			"name": "OrangeTicket",
+			"category": "KEY_ITEM",
+			"description": "A ticket for the Seagallop Ferry."
+		},
+		{
+			"itemNo": 30,
+			"name": "MysticTicket",
+			"category": "KEY_ITEM",
+			"description": "A ticket for the Seagallop Ferry."
+		},
+		{
+			"itemNo": 31,
+			"name": "Old Sea Map",
+			"category": "KEY_ITEM",
+			"description": "A faded sea chart of a small island."
+		},
+		{
+			"itemNo": 32,
+			"name": "Lift Key",
+			"category": "KEY_ITEM",
+			"description": "Operates the lift in a building."
+		},
+		{
+			"itemNo": 33,
+			"name": "Harsh Lure",
+			"category": "KEY_ITEM",
+			"description": "A bottle with a cruel scent."
+		},
+		{
+			"itemNo": 34,
+			"name": "Potent Lure",
+			"category": "KEY_ITEM",
+			"description": "A bottle with a strong smell."
+		},
+		{
+			"itemNo": 35,
+			"name": "Malign Lure",
+			"category": "KEY_ITEM",
+			"description": "A bottle with a malevolent odor."
+		},
+		{
+			"itemNo": 36,
+			"name": "Shiny Charm",
+			"category": "KEY_ITEM",
+			"description": "A charm for finding shiny Pokémon."
+		},
+		{
+			"itemNo": 37,
+			"name": "Oval Charm",
+			"category": "KEY_ITEM",
+			"description": "A charm for finding Eggs."
+		},
+		{
+			"itemNo": 38,
+			"name": "Catch Charm",
+			"category": "KEY_ITEM",
+			"description": "A charm for catching Pokémon."
+		}
+	]
+}

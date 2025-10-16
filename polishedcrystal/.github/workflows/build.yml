@@ -1,0 +1,165 @@
+# Continuous Integration Workflow
+name: "CI Build"
+
+on:
+  pull_request:
+    branches:
+      - master
+  workflow_call:
+
+env:
+  # PC_VERSION should match VERSION in Makefile
+  PC_VERSION: "3.2.0"
+  RGBDS_VERSION: "v0.9.4"
+
+jobs:
+  build-ubuntu:
+    name: "Build"
+    runs-on: ubuntu-latest
+    steps:
+      # SET ENVIRONMENT VARIABLES
+      - id: set-env-var
+        name: "Set environment variables"
+        run: |
+          echo "SHORT_SHA=$(echo ${GITHUB_SHA} | cut -c1-8)" >> $GITHUB_ENV
+
+      # INSTALL DEPENDENCIES
+      - id: apt-get-depends
+        name: "Install build dependencies"
+        run: |
+          sudo apt-get update
+          sudo apt-get install bison gcc git make libpng-dev -y;
+
+      # CHECKOUT RGBDS
+      - id: checkout-rgbds
+        name: "Checkout gbdev/rgbds"
+        uses: actions/checkout@v4
+        with:
+          path: rgbds
+          ref: ${{ env.RGBDS_VERSION }}
+          repository: gbdev/rgbds
+
+      # INSTALL RGBDS
+      - id: install-rgbds
+        name: "Install gbdev/rgbds"
+        working-directory: rgbds
+        run: |
+          sudo make install
+
+      # CHECKOUT REPOSITORY
+      - id: checkout-polishedcrystal
+        name: "Checkout Rangi42/polishedcrystal"
+        uses: actions/checkout@v4
+
+      # BUILD ROMS
+      - id: build-polishedcrystal
+        name: "Build polishedcrystal"
+        run: |
+          make -j$(nproc)
+          mkdir build
+          mv polishedcrystal-${{ env.PC_VERSION }}.gbc build/polishedcrystal-dev-${{ env.SHORT_SHA }}.gbc
+          mv polishedcrystal-${{ env.PC_VERSION }}.sym build/polishedcrystal-dev-${{ env.SHORT_SHA }}.sym
+          make tidy
+
+      - id: build-polishedcrystal-faithful
+        name: "Build polishedcrystal-faithful"
+        run: |
+          make -j$(nproc) faithful
+          mv polishedcrystal-faithful-${{ env.PC_VERSION }}.gbc build/polishedcrystal-faithful-dev-${{ env.SHORT_SHA }}.gbc
+          mv polishedcrystal-faithful-${{ env.PC_VERSION }}.sym build/polishedcrystal-faithful-dev-${{ env.SHORT_SHA }}.sym
+          make tidy
+
+      # BUILD VC PATCHES
+      - id: build-polishedcrystal-vc
+        name: "Build polishedcrystal vc"
+        run: |
+          make -j$(nproc) vc
+          mv polishedcrystal-${{ env.PC_VERSION }}_vc.gbc build/polishedcrystal-dev-${{ env.SHORT_SHA }}_vc.gbc
+          mv polishedcrystal-${{ env.PC_VERSION }}.patch build/polishedcrystal-dev-${{ env.SHORT_SHA }}.patch
+          mv polishedcrystal-${{ env.PC_VERSION }}_vc.sym build/polishedcrystal-dev-${{ env.SHORT_SHA }}_vc.sym
+          make tidy
+
+      - id: build-polishedcrystal-faithful-vc
+        name: "Build polishedcrystal-faithful vc"
+        run: |
+          make -j$(nproc) faithful vc
+          mv polishedcrystal-faithful-${{ env.PC_VERSION }}.gbc build/polishedcrystal-faithful-dev-${{ env.SHORT_SHA }}_vc.gbc
+          mv polishedcrystal-faithful-${{ env.PC_VERSION }}.patch build/polishedcrystal-faithful-dev-${{ env.SHORT_SHA }}.patch
+          mv polishedcrystal-faithful-${{ env.PC_VERSION }}.sym build/polishedcrystal-faithful-dev-${{ env.SHORT_SHA }}_vc.sym
+          make tidy
+
+      # BUILD DEBUG ROMS
+      - id: build-polisheddebug
+        name: "Build polisheddebug"
+        run: |
+          make -j$(nproc) debug vc
+          mv polishedcrystal-debug-${{ env.PC_VERSION }}.gbc build/polishedcrystal-debug-dev-${{ env.SHORT_SHA }}.gbc
+          mv polishedcrystal-debug-${{ env.PC_VERSION }}.sym build/polishedcrystal-debug-dev-${{ env.SHORT_SHA }}.sym
+          make tidy
+
+      - id: build-polisheddebug-faithful
+        name: "Build polisheddebug-faithful"
+        run: |
+          make -j$(nproc) faithful debug vc
+          mv polishedcrystal-faithful-debug-${{ env.PC_VERSION }}.gbc build/polishedcrystal-faithful-debug-dev-${{ env.SHORT_SHA }}.gbc
+          mv polishedcrystal-faithful-debug-${{ env.PC_VERSION }}.sym build/polishedcrystal-faithful-debug-dev-${{ env.SHORT_SHA }}.sym
+          make tidy
+
+      - id: build-polisheddebug-vc
+        name: "Build polisheddebug vc"
+        run: |
+          make -j$(nproc) debug vc
+          mv polishedcrystal-debug-${{ env.PC_VERSION }}_vc.gbc build/polishedcrystal-debug-dev-${{ env.SHORT_SHA }}_vc.gbc
+          mv polishedcrystal-debug-${{ env.PC_VERSION }}.patch build/polishedcrystal-debug-dev-${{ env.SHORT_SHA }}.patch
+          mv polishedcrystal-debug-${{ env.PC_VERSION }}_vc.sym build/polishedcrystal-debug-dev-${{ env.SHORT_SHA }}_vc.sym
+          make tidy
+
+      - id: build-polisheddebug-faithful-vc
+        name: "Build polisheddebug-faithful vc"
+        run: |
+          make -j$(nproc) faithful debug vc
+          mv polishedcrystal-faithful-debug-${{ env.PC_VERSION }}_vc.gbc build/polishedcrystal-faithful-debug-dev-${{ env.SHORT_SHA }}_vc.gbc
+          mv polishedcrystal-faithful-debug-${{ env.PC_VERSION }}.patch build/polishedcrystal-faithful-debug-dev-${{ env.SHORT_SHA }}.patch
+          mv polishedcrystal-faithful-debug-${{ env.PC_VERSION }}_vc.sym build/polishedcrystal-faithful-debug-dev-${{ env.SHORT_SHA }}_vc.sym
+          make tidy
+
+      # UPLOAD ARTIFACTS – only if the repo is owned by Rangi42 (i.e., not a fork)
+      - id: upload-polishedcrystal
+        if: ${{ github.repository_owner == 'Rangi42' }}
+        name: "Upload polishedcrystal artifacts"
+        uses: actions/upload-artifact@v4
+        with:
+          name: "polishedcrystal"
+          retention-days: 1
+          path: |
+            build/polishedcrystal-dev-${{ env.SHORT_SHA }}.*
+
+      - id: upload-polishedcrystal-faithful
+        if: ${{ github.repository_owner == 'Rangi42' }}
+        name: "Upload polishedcrystal-faithful artifacts"
+        uses: actions/upload-artifact@v4
+        with:
+          name: "polishedcrystal-faithful"
+          retention-days: 1
+          path: |
+            build/polishedcrystal-faithful-dev-${{ env.SHORT_SHA }}.*
+
+      - id: upload-polisheddebug
+        if: ${{ github.repository_owner == 'Rangi42' }}
+        name: "Upload polisheddebug artifacts"
+        uses: actions/upload-artifact@v4
+        with:
+          name: "polisheddebug"
+          retention-days: 1
+          path: |
+            build/polishedcrystal-debug-dev-${{ env.SHORT_SHA }}.*
+
+      - id: upload-polisheddebug-faithful
+        if: ${{ github.repository_owner == 'Rangi42' }}
+        name: "Upload polisheddebug-faithful artifacts"
+        uses: actions/upload-artifact@v4
+        with:
+          name: "polisheddebug-faithful"
+          retention-days: 1
+          path: |
+            build/polishedcrystal-faithful-debug-dev-${{ env.SHORT_SHA }}.*
