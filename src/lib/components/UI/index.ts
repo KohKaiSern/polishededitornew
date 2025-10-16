@@ -1,1 +1,1 @@
-export { default as RadioSelect } from './RadioSelect.svelte'
+export { default as RadioSelect } from './RadioSelect.svelte';
