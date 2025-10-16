@@ -1,8 +1,5 @@
-export const buf2hex = (buffer: ArrayBuffer): Array<string> => {
-	return Array.from(
-		[...new Uint8Array(buffer)].map((x) => x.toString(16).padStart(2, '0').toUpperCase())
-	);
-};
+import versions from './data/versions.json';
+import addresses from './data/addresses.json';
 
 export const hex2buf = (hex: string[]): ArrayBuffer => {
 	const bytes = new Uint8Array(hex.map((byte) => parseInt(byte, 16)));
@@ -14,24 +11,24 @@ export const hex2bin = (hex: string): string => {
 };
 
 const TYPE_COLORS: Record<string, string> = {
-	BUG: '#92BC2C',
-	DARK: '#595761',
-	DRAGON: '#0C69C8',
-	ELECTRIC: '#F2D94E',
-	FIRE: '#FBA54C',
-	FAIRY: '#EE90E6',
-	FIGHTING: '#D3425F',
-	FLYING: '#A1BBEC',
-	GHOST: '#5F6DBC',
-	GRASS: '#5FBD58',
-	GROUND: '#DA7C4D',
-	ICE: '#75D0C1',
-	NORMAL: '#A0A29F',
-	POISON: '#B763CF',
-	PSYCHIC: '#FA8581',
-	ROCK: '#C9BB8A',
-	STEEL: '#5695A3',
-	WATER: '#539DDF'
+	Bug: '#92BC2C',
+	Dark: '#595761',
+	Dragon: '#0C69C8',
+	Electric: '#F2D94E',
+	Fire: '#FBA54C',
+	Fairy: '#EE90E6',
+	Fighting: '#D3425F',
+	Flying: '#A1BBEC',
+	Ghost: '#5F6DBC',
+	Grass: '#5FBD58',
+	Ground: '#DA7C4D',
+	Ice: '#75D0C1',
+	Normal: '#A0A29F',
+	Poison: '#B763CF',
+	Psychic: '#FA8581',
+	Rock: '#C9BB8A',
+	Steel: '#5695A3',
+	Water: '#539DDF'
 };
 
 export const getTypeColor = (type: string): string => {
@@ -39,24 +36,37 @@ export const getTypeColor = (type: string): string => {
 };
 
 const HIDDEN_POWER_TYPES = [
-	'FIGHTING',
-	'FLYING',
-	'POISON',
-	'GROUND',
-	'ROCK',
-	'BUG',
-	'GHOST',
-	'STEEL',
-	'FIRE',
-	'WATER',
-	'GRASS',
-	'ELECTRIC',
-	'PSYCHIC',
-	'ICE',
-	'DRAGON',
-	'DARK'
+	'Fighting',
+	'Flying',
+	'Poison',
+	'Ground',
+	'Rock',
+	'Bug',
+	'Ghost',
+	'Steel',
+	'Fire',
+	'Water',
+	'Grass',
+	'Electric',
+	'Psychic',
+	'Ice',
+	'Dragon',
+	'Dark'
 ];
 
 export const getHiddenPowerType = (x: number): string => {
 	return HIDDEN_POWER_TYPES[x];
+};
+
+export const validateSave = async (file: File): Promise<string> => {
+	if (file.size < 32000 || file.size > 33000) {
+		return "This doesn't look like a save file. Make sure it's a battery save and not an emulator save state.";
+	}
+	const fileHex = Array.from(await file.bytes()).map((x) =>
+		x.toString(16).padStart(2, '0').toUpperCase()
+	);
+	if (parseInt(fileHex[addresses.sSaveVersion + 1], 16) === versions.save) {
+		return 'Save Validated!';
+	}
+	return `This save has the wrong save version. The current save version is ${versions.save}. Make sure that you're on the latest stable release, ${versions.game}.`;
 };

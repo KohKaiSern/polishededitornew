@@ -1,4 +1,5 @@
 import { writeJSON } from './utils';
+import addresses from './addresses';
 import locations from './locations';
 import abilities from './abilities';
 import items from './items';
@@ -11,6 +12,7 @@ import charmap from './charmap';
 import pokemon from './pokemon';
 
 for (const [name, obj] of Object.entries({
+	addresses,
 	locations,
 	abilities,
 	items,

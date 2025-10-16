@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { ButtonGroup, RadioButton } from 'flowbite-svelte';
-	let { value = $bindable(), options, onchange = () => {} } = $props();
+	let { value = $bindable(), options, onchange = () => {}, disabled } = $props();
 </script>
 
 <ButtonGroup>
 	{#each options as { text, id }}
 		<RadioButton
+			{disabled}
 			outline
 			value={id}
 			class="border-gray-300 dark:border-gray-800"
