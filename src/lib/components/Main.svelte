@@ -19,6 +19,7 @@
 	let PF: 'polished' | 'faithful' = $state('polished');
 	let file = $state<FileList | null>(null);
 	let toastMsg = $state('');
+	let party = $state<Mon[] | null>(null);
 	let mons = $state<Mon[][] | null>(null);
 	let bag = $state<Record<string, BagSlot> | null>(null);
 	let player = $state<Player | null>(null);
@@ -27,7 +28,7 @@
 	async function handleSave(): Promise<void> {
 		toastMsg = await validateSave(file![0]);
 		try {
-			[mons, bag, player] = await parseSave(file![0], PF);
+			[party, mons, bag, player] = await parseSave(file![0], PF);
 		} catch (Error) {
 			console.log(Error);
 			toastMsg =
