@@ -16,7 +16,7 @@
 	import { RadioSelect } from './UI';
 	import parseSave from '$lib/parsers/parseSave';
 	import { validateSave } from '$lib/utils';
-	let PF = $state('polished');
+	let PF: 'polished' | 'faithful' = $state('polished');
 	let file = $state<FileList | null>(null);
 	let toastMsg = $state('');
 	let mons = $state<Mon[][] | null>(null);
@@ -27,7 +27,7 @@
 	async function handleSave(): Promise<void> {
 		toastMsg = await validateSave(file![0]);
 		try {
-			[mons, bag, player] = parseSave(file![0]);
+			[mons, bag, player] = await parseSave(file![0], PF);
 		} catch (Error) {
 			console.log(Error);
 			toastMsg =
@@ -46,7 +46,7 @@
 </script>
 
 {#if toastMsg}
-	<div transition:blur={{ amount: 10 }} class="absolute right-5 top-5">
+	<div transition:blur={{ amount: 10 }} class="absolute top-5 right-5">
 		<Toast>
 			{toastMsg}
 		</Toast>
@@ -68,7 +68,7 @@
 			<DarkMode class="shrink-0 border border-gray-300 dark:border-gray-800" />
 		</div>
 	</div>
-	<Label class="mb-2 mt-5">Upload Save</Label>
+	<Label class="mt-5 mb-2">Upload Save</Label>
 	<div class="mb-2 flex flex-wrap gap-3 sm:flex-nowrap">
 		<Fileupload bind:files={file} onchange={handleSave} accept=".sav,.srm" />
 		<Button class="text-nowrap" onclick={downloadSave}>Download Save</Button>

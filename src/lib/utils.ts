@@ -1,6 +1,10 @@
 import versions from './data/versions.json';
 import addresses from './data/addresses.json';
 
+export const buf2hex = async (buf: File): Promise<string[]> => {
+	return [...(await buf.bytes())].map((x) => x.toString(16).padStart(2, '0').toUpperCase());
+};
+
 export const hex2buf = (hex: string[]): ArrayBuffer => {
 	const bytes = new Uint8Array(hex.map((byte) => parseInt(byte, 16)));
 	return bytes.buffer;
@@ -62,10 +66,12 @@ export const validateSave = async (file: File): Promise<string> => {
 	if (file.size < 32000 || file.size > 33000) {
 		return "This doesn't look like a save file. Make sure it's a battery save and not an emulator save state.";
 	}
-	const fileHex = Array.from(await file.bytes()).map((x) =>
-		x.toString(16).padStart(2, '0').toUpperCase()
+	const fileHex = await buf2hex(file);
+	const playerSaveVersion = parseInt(
+		fileHex[addresses.sSaveVersion] + fileHex[addresses.sSaveVersion + 1],
+		16
 	);
-	if (parseInt(fileHex[addresses.sSaveVersion + 1], 16) === versions.save) {
+	if (playerSaveVersion === versions.save) {
 		return 'Save Validated!';
 	}
 	return `This save has the wrong save version. The current save version is ${versions.save}. Make sure that you're on the latest stable release, ${versions.game}.`;
