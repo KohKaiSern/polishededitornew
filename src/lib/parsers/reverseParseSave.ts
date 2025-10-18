@@ -1,6 +1,7 @@
 import { hex2buf } from '$lib/utils';
 import type { Mon, Box, BagSlot, Player } from '../types.d.ts';
 import reverseParseBoxNames from './reverseParseBoxNames.js';
+import reverseParseBoxThemes from './reverseParseBoxThemes.js';
 
 async function reverseParseSave(
 	file: File,
@@ -15,6 +16,10 @@ async function reverseParseSave(
 	fileHex = reverseParseBoxNames(
 		fileHex,
 		boxes.map((box) => box.name)
+	);
+	fileHex = reverseParseBoxThemes(
+		fileHex,
+		boxes.map((box) => box.theme)
 	);
 
 	return hex2buf(fileHex);
