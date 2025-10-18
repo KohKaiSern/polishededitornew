@@ -1,6 +1,7 @@
 import addresses from '../data/addresses.json';
+import { hex2bin } from '$lib/utils';
 
-function parseAddresses(fileHex: string[]): number[][] {
+function parseBoxAddresses(fileHex: string[]): number[][] {
 	const indexes = parseIndexes(fileHex);
 	const flags = parseFlags(fileHex);
 	const mons = Array(20)
@@ -25,7 +26,7 @@ function parseAddresses(fileHex: string[]): number[][] {
 	}
 	return mons;
 }
-export default parseAddresses;
+export default parseBoxAddresses;
 
 function parseIndexes(fileHex: string[]): number[][] {
 	const indexes = Array(20)
@@ -45,13 +46,17 @@ function parseFlags(fileHex: string[]): string[][] {
 		.map((): string[] => Array(20).fill(''));
 	for (let box = 0; box < 20; box++) {
 		//Grab the three relevant bytes
-		let flagArr =
+		let flagString = parseInt(
 			fileHex[addresses.sBackupNewBox1 + 33 * box + 20] +
-			fileHex[addresses.sBackupNewBox1 + 33 * box + 21] +
-			fileHex[addresses.sBackupNewBox1 + 33 * box + 22];
+				fileHex[addresses.sBackupNewBox1 + 33 * box + 21] +
+				fileHex[addresses.sBackupNewBox1 + 33 * box + 22],
+			16
+		)
+			.toString(2)
+			.padStart(24, '0');
 		//Get flag bit
 		for (let i = 0; i < 20; i++) {
-			flags[box][i] = flagArr[Math.floor(i / 8) * 16 + 7 - i];
+			flags[box][i] = flagString[Math.floor(i / 8) * 16 + 7 - i];
 		}
 	}
 	return flags;

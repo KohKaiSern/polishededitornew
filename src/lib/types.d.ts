@@ -1,23 +1,44 @@
 export interface Mon {
 	species: string;
+	form: string;
 	heldItem: string;
-	moves: Array<string>;
+	moves: string[];
+	OTID: number;
 	exp: number;
-	level: number;
-	statExps: Array<number>;
-	dvs: Array<number>;
-	happiness: number;
+	evs: number[];
+	dvs: number[];
+	shininess: 'Shiny' | 'Not Shiny';
+	ability: string;
+	nature: string;
 	isEgg: boolean;
+	gender: string;
+	PPUPs: number[];
+	happiness: number;
+	pokerus: number[];
+	level: number;
+	OTGender: string;
+	caughtBall: string;
+	caughtTime: string;
+	caughtLevel: number;
+	caughtLocation: string;
+	nickname: string;
+	OTNickname: string;
 }
 
-interface Item {
+export interface Box {
+	name: string;
+	theme: string;
+	mons: Mon[];
+}
+
+export interface Item {
 	name: string;
 	qty: number;
 }
 
 export interface BagSlot {
 	count?: number;
-	contents: Array<Item>;
+	contents: Item[];
 }
 
 export interface Player {

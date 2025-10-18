@@ -1,0 +1,131 @@
+import type { Mon } from '$lib/types';
+import type { Form } from '../../extractors/types.d.ts';
+import { hex2bin, getNature, readString } from '$lib/utils';
+import pokemon from '../data/pokemon.json';
+import items from '../data/items.json';
+import moves from '../data/moves.json';
+import abilities from '../data/abilities.json';
+import locations from '../data/locations.json';
+
+function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful'): Mon {
+	//Byte #1, Byte #22: Species, Form
+	const byte22 = hex2bin(fileHex[address + 21]);
+	const dexNo = parseInt(byte22.at(2)! + hex2bin(fileHex[address]), 2);
+	const formNo = parseInt(byte22.slice(3), 2);
+	const species = pokemon[PF][dexNo];
+	const form = (pokemon[PF][dexNo].forms as Form[]).find((f) => f.formNo === formNo)!;
+
+	//Byte #2: Held Item
+	let heldItem = 'None';
+	if (!(fileHex[address + 1] === '00')) {
+		heldItem = items[PF][parseInt(fileHex[address + 1], 16) - 1].name;
+	}
+
+	//Bytes #3-#6: Moveset
+	const moveset: string[] = [];
+	for (let i = 2; i < 6; i++) {
+		if (fileHex[address + i] === '00') {
+			moveset.push('None');
+		} else {
+			moveset.push(moves[PF][parseInt(fileHex[address + i], 16) - 1].name);
+		}
+	}
+
+	//Bytes #7-#8: Original Trainer ID
+	const OTID = parseInt(fileHex[address + 6] + fileHex[address + 7], 16);
+
+	//Bytes #9-#11: Experience
+	const exp = parseInt(fileHex[address + 8] + fileHex[address + 9] + fileHex[address + 10], 16);
+
+	//Bytes #12-#17: Effort Values
+	const evs = [];
+	for (let i = 11; i < 17; i++) {
+		evs.push(parseInt(fileHex[address + i], 16));
+	}
+
+	//Bytes #18-#20: Determinant Values
+	const dvs = [];
+	for (let i = 0; i < 6; i++) {
+		dvs.push(parseInt(fileHex[address + 17 + Math.floor(i / 2)].at(i % 2)!, 16));
+	}
+
+	//Bytes #21: Shininess, Ability, Nature
+	const byte21 = hex2bin(fileHex[address + 20]);
+	const shininess = byte21.at(0)! === '0' ? 'Not Shiny' : 'Shiny';
+	const ability = abilities[PF].find(
+		(ability) => form.abilities.at(parseInt(byte21.slice(1, 3), 2) - 1)! === ability.name
+	)!.name;
+	const nature = getNature(parseInt(byte21.slice(3), 2));
+
+	//Byte #22: Gender, isEgg
+	const isEgg = byte22.at(1)! === '0' ? false : true;
+	const gender = form.hasGender ? (byte22.at(0)! === '0' ? 'Male' : 'Female') : 'Genderless';
+
+	//Byte #23: PP UPs
+	const PPUPs = [];
+	for (let i = 3; i > -1; i--) {
+		PPUPs.push(parseInt(hex2bin(fileHex[address + 22]).slice(i * 2, i * 2 + 1), 2));
+	}
+
+	//Byte #24: Happiness / Hatch Cycles
+	const happiness = parseInt(fileHex[address + 23], 16);
+
+	//Byte #25: Pokerus
+	const pokerus = [
+		parseInt(fileHex[address + 24].at(0)!, 16),
+		parseInt(fileHex[address + 24].at(1)!, 16)
+	];
+
+	//Byte #26: OT Gender, Caught Ball, Caught Time TODO
+	const byte26 = hex2bin(fileHex[address + 25]);
+	const OTGender = ['Male', 'Female'][parseInt(byte26.at(0)!, 2)];
+	const caughtTime = ['Evening', 'Morning', 'Day', 'Night'][parseInt(byte26.slice(1, 3), 2)];
+	const caughtBall = items[PF][parseInt(byte26.slice(3), 2) - 1].name;
+
+	//Byte #27: Caught Level
+	const caughtLevel = parseInt(fileHex[address + 26], 16);
+
+	//Byte #28: Caught Location
+	const caughtLocation = locations[PF][parseInt(fileHex[address + 27], 16)].name;
+
+	//Byte #29: Level
+	const level = parseInt(fileHex[address + 28], 16);
+
+	//Byte #30: Hyper Training TODO
+
+	//Bytes #31-#32: Unused
+
+	//Bytes #33-#42: Nickname
+	const nickname = readString(fileHex, address + 32, 10, true);
+
+	//Bytes #43-#49: Original Trainer Nickname
+	const OTNickname = readString(fileHex, address + 42, 7, true);
+
+	return {
+		species: species.name,
+		form: form.id,
+		heldItem,
+		moves: moveset,
+		OTID,
+		exp,
+		evs,
+		dvs,
+		shininess,
+		ability,
+		nature,
+		isEgg,
+		gender,
+		PPUPs,
+		happiness,
+		pokerus,
+		OTGender,
+		caughtBall,
+		caughtTime,
+		caughtLevel,
+		caughtLocation,
+		level,
+		nickname,
+		OTNickname
+	};
+}
+export default parseMon;

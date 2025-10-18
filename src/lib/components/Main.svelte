@@ -12,7 +12,7 @@
 		Toast
 	} from 'flowbite-svelte';
 	import { blur } from 'svelte/transition';
-	import type { Mon, BagSlot, Player } from '$lib/types';
+	import type { Mon, Box, BagSlot, Player } from '$lib/types';
 	import { RadioSelect } from './UI';
 	import parseSave from '$lib/parsers/parseSave';
 	import { validateSave } from '$lib/utils';
@@ -20,7 +20,7 @@
 	let file = $state<FileList | null>(null);
 	let toastMsg = $state('');
 	let party = $state<Mon[] | null>(null);
-	let mons = $state<Mon[][] | null>(null);
+	let boxes = $state<Box[] | null>(null);
 	let bag = $state<Record<string, BagSlot> | null>(null);
 	let player = $state<Player | null>(null);
 	let disabled = $state(false);
@@ -28,7 +28,7 @@
 	async function handleSave(): Promise<void> {
 		toastMsg = await validateSave(file![0]);
 		try {
-			[party, mons, bag, player] = await parseSave(file![0], PF);
+			[party, boxes, bag, player] = await parseSave(file![0], PF);
 		} catch (Error) {
 			console.log(Error);
 			toastMsg =
@@ -41,7 +41,8 @@
 
 	function downloadSave(): void {}
 
-	$inspect(mons);
+	$inspect(party);
+	$inspect(boxes);
 	$inspect(bag);
 	$inspect(player);
 </script>

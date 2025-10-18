@@ -5,6 +5,7 @@ import abilities from './abilities';
 import items from './items';
 import keyItems from './keyItems';
 import moves from './moves';
+import boxThemes from './boxThemes';
 import growthRateCoefficients from './growthRateCoefficients';
 import versions from './versions';
 import badges from './badges';
@@ -18,6 +19,7 @@ for (const [name, obj] of Object.entries({
 	items,
 	keyItems,
 	moves,
+	boxThemes,
 	growthRateCoefficients,
 	versions,
 	badges,

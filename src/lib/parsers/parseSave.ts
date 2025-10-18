@@ -1,14 +1,14 @@
-import type { Mon, BagSlot, Player } from '$lib/types';
+import type { Mon, Box, BagSlot, Player } from '$lib/types';
 import { buf2hex } from '$lib/utils';
-import parseMons from './parseMons';
+import parseBoxes from './parseBoxes';
 
 async function parseSave(
 	file: File,
 	PF: 'polished' | 'faithful'
-): Promise<[Mon[], Mon[][], Record<string, BagSlot>, Player]> {
+): Promise<[Mon[], Box[], Record<string, BagSlot>, Player]> {
 	const fileHex = await buf2hex(file);
-	const mons: Mon[][] = parseMons(fileHex, PF);
-	return [[], mons, {}, { name: '', money: -1, gender: '', palette: '', badges: [] }];
+	const boxes: Box[] = parseBoxes(fileHex, PF);
+	return [[], boxes, {}, { name: '', money: -1, gender: '', palette: '', badges: [] }];
 }
 
 export default parseSave;
