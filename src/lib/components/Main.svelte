@@ -44,7 +44,7 @@
 		if (!file?.[0]) return;
 		Object.assign(document.createElement('a'), {
 			href: URL.createObjectURL(
-				new Blob([await reverseParseSave(file[0], party!, boxes!, bag!, player!)])
+				new Blob([await reverseParseSave(file[0], party!, boxes!, bag!, player!, PF)])
 			),
 			download: `${file[0].name.slice(0, -4)}_EDITED${file[0].name.slice(-4)}`
 		}).click();

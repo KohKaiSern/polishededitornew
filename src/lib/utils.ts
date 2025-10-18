@@ -99,6 +99,10 @@ export const getNature = (x: number): string => {
 	return NATURES[x];
 };
 
+export const getNatureNo = (nature: string): number => {
+	return NATURES.findIndex((n) => n === nature);
+};
+
 export const validateSave = async (file: File): Promise<string> => {
 	if (file.size < 32000 || file.size > 33000) {
 		return "This doesn't look like a save file. Make sure it's a battery save and not an emulator save state.";

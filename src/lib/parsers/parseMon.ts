@@ -58,8 +58,8 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 	const nature = getNature(parseInt(byte21.slice(3), 2));
 
 	//Byte #22: Gender, isEgg
-	const isEgg = byte22.at(1)! === '0' ? false : true;
 	const gender = form.hasGender ? (byte22.at(0)! === '0' ? 'Male' : 'Female') : 'Genderless';
+	const isEgg = byte22.at(1)! === '0' ? false : true;
 
 	//Byte #23: PP UPs
 	const PPUPs = [];
@@ -71,14 +71,20 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 	const happiness = parseInt(fileHex[address + 23], 16);
 
 	//Byte #25: Pokerus
-	const pokerus = [
-		parseInt(fileHex[address + 24].at(0)!, 16),
-		parseInt(fileHex[address + 24].at(1)!, 16)
-	];
+	const pokerus: { strain: number | 'None'; daysRemaining: number | 'None' | 'Cured' } = {
+		strain: 'None',
+		daysRemaining: 'None'
+	};
+	const pokerusStr = hex2bin(fileHex[address + 24]).slice(4);
+	if (pokerusStr === '1101') {
+		pokerus.daysRemaining = 'Cured';
+	} else if (pokerusStr != '0000') {
+		pokerus.strain = pokerusStr.split('1').length - 1;
+		pokerus.daysRemaining = pokerus.strain - (4 - pokerusStr.replace(/^0+/, '').length);
+	}
 
-	//Byte #26: OT Gender, Caught Ball, Caught Time TODO
+	//Byte #26: Caught Ball, Caught Time
 	const byte26 = hex2bin(fileHex[address + 25]);
-	const OTGender = ['Male', 'Female'][parseInt(byte26.at(0)!, 2)];
 	const caughtTime = ['Evening', 'Morning', 'Day', 'Night'][parseInt(byte26.slice(1, 3), 2)];
 	const caughtBall = items[PF][parseInt(byte26.slice(3), 2) - 1].name;
 
@@ -91,7 +97,11 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 	//Byte #29: Level
 	const level = parseInt(fileHex[address + 28], 16);
 
-	//Byte #30: Hyper Training TODO
+	//Byte #30: Hyper Training
+	const hyperTraining = [];
+	for (let i = 0; i < 6; i++) {
+		hyperTraining.push(hex2bin(fileHex[address + 29]).at(i)! === '1' ? true : false);
+	}
 
 	//Bytes #31-#32: Unused
 
@@ -118,12 +128,12 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 		PPUPs,
 		happiness,
 		pokerus,
-		OTGender,
 		caughtBall,
 		caughtTime,
 		caughtLevel,
 		caughtLocation,
 		level,
+		hyperTraining,
 		nickname,
 		OTNickname
 	};

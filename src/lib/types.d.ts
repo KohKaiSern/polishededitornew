@@ -14,13 +14,16 @@ export interface Mon {
 	gender: string;
 	PPUPs: number[];
 	happiness: number;
-	pokerus: number[];
+	pokerus: {
+		strain: number | 'None';
+		daysRemaining: number | 'None' | 'Cured';
+	};
 	level: number;
-	OTGender: string;
 	caughtBall: string;
 	caughtTime: string;
 	caughtLevel: number;
 	caughtLocation: string;
+	hyperTraining: boolean[];
 	nickname: string;
 	OTNickname: string;
 }
