@@ -141,3 +141,37 @@ export const readString = (
 	}
 	return name;
 };
+
+export const writeString = (
+	fileHex: string[],
+	address: number,
+	length: number,
+	name: string,
+	hasChecksum: boolean
+) => {
+	for (let i = 0; i < name.length; i++) {
+		//Space
+		if (name[i] === ' ') {
+			fileHex[address + i] = '7F';
+			continue;
+		}
+		//Zero
+		if (name[i] === '0' && hasChecksum) {
+			fileHex[address + i] = '00';
+			continue;
+		}
+		fileHex[address + i] = Object.keys(charmap).find(
+			(c) => charmap[c as keyof typeof charmap] === name[i]
+		)!;
+		continue;
+	}
+	//Once we finish the name, we should add the terminator,
+	//followed by FFs for the rest of the bytes.
+	//...unless it's max length already.
+	if (length === name.length) return fileHex;
+	fileHex[address + name.length] = hasChecksum ? 'FB' : '53';
+	for (let i = name.length + 1; i < length; i++) {
+		fileHex[address + i] = 'FF';
+	}
+	return fileHex;
+};

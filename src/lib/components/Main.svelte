@@ -15,6 +15,7 @@
 	import type { Mon, Box, BagSlot, Player } from '$lib/types';
 	import { RadioSelect } from './UI';
 	import parseSave from '$lib/parsers/parseSave';
+	import reverseParseSave from '$lib/parsers/reverseParseSave';
 	import { validateSave } from '$lib/utils';
 	let PF: 'polished' | 'faithful' = $state('polished');
 	let file = $state<FileList | null>(null);
@@ -39,7 +40,15 @@
 		setTimeout(() => (toastMsg = ''), 3000);
 	}
 
-	function downloadSave(): void {}
+	async function downloadSave(): Promise<void> {
+		if (!file?.[0]) return;
+		Object.assign(document.createElement('a'), {
+			href: URL.createObjectURL(
+				new Blob([await reverseParseSave(file[0], party!, boxes!, bag!, player!)])
+			),
+			download: `${file[0].name.slice(0, -4)}_EDITED${file[0].name.slice(-4)}`
+		}).click();
+	}
 
 	$inspect(party);
 	$inspect(boxes);
