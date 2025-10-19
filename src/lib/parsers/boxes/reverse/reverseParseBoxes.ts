@@ -3,6 +3,8 @@ import reverseParseBoxThemes from './reverseParseBoxThemes.js';
 import reverseParseMon from './reverseParseMon.js';
 import parseBoxAddresses from '../../boxes/forward/parseBoxAddresses.js';
 import type { Box } from '$lib/types';
+import reverseParseBoxAddresses from './reverseParseBoxAddresses.js';
+import checksumMon from '$lib/parsers/checksumMon.js';
 
 function reverseParseBoxes(fileHex: string[], boxes: Box[], PF: 'polished' | 'faithful'): string[] {
 	fileHex = reverseParseBoxNames(
@@ -13,10 +15,17 @@ function reverseParseBoxes(fileHex: string[], boxes: Box[], PF: 'polished' | 'fa
 		fileHex,
 		boxes.map((box) => box.theme)
 	);
+	fileHex = reverseParseBoxAddresses(
+		fileHex,
+		boxes.map((box) => box.mons)
+	);
 	const addresses = parseBoxAddresses(fileHex);
 	for (let box = 0; box < 20; box++) {
 		for (let i = 0; i < 20; i++) {
 			fileHex = reverseParseMon(fileHex, addresses[box][i], boxes[box].mons[i], PF);
+			if (boxes[box].mons[i]) {
+				fileHex = checksumMon(fileHex, addresses[box][i]);
+			}
 		}
 	}
 	return fileHex;

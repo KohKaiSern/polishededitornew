@@ -1,4 +1,4 @@
-import { hex2buf } from '$lib/utils';
+import { buf2hex, hex2buf } from '$lib/utils';
 import type { Mon, Box, BagSlot, Player } from '../types.d.ts';
 import reverseParseBoxes from './boxes/reverse/reverseParseBoxes.js';
 
@@ -10,9 +10,7 @@ async function reverseParseSave(
 	player: Player,
 	PF: 'polished' | 'faithful'
 ): Promise<ArrayBuffer> {
-	let fileHex = Array.from(await file.bytes()).map((x) =>
-		x.toString(16).padStart(2, '0').toUpperCase()
-	);
+	let fileHex = await buf2hex(file);
 	fileHex = reverseParseBoxes(fileHex, boxes, PF);
 
 	return hex2buf(fileHex);

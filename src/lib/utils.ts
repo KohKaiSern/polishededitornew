@@ -175,7 +175,7 @@ export const writeString = (
 	if (length === name.length) return fileHex;
 	fileHex[address + name.length] = hasChecksum ? 'FB' : '53';
 	for (let i = name.length + 1; i < length; i++) {
-		fileHex[address + i] = 'FF';
+		fileHex[address + i] = hasChecksum ? 'FB' : 'FF';
 	}
 	return fileHex;
 };
