@@ -55,17 +55,17 @@ function reverseParseMon(
 		fileHex[address + 8 + i] = exp.slice(i * 2, (i + 1) * 2);
 	}
 
-	////Bytes #12-#17: Effort Values
+	//Bytes #12-#17: Effort Values
 	for (let i = 11; i < 17; i++) {
 		fileHex[address + i] = mon.evs[i - 11].toString(16).padStart(2, '0');
 	}
 
-	////Bytes #18-#20: Determinant Values
+	//Bytes #18-#20: Determinant Values
 	for (let i = 0; i < 3; i++) {
 		fileHex[address + 17 + i] = mon.dvs[i * 2].toString(16) + mon.dvs[i * 2 + 1].toString(16);
 	}
 
-	////Bytes #21: Shininess, Ability, Nature
+	//Bytes #21: Shininess, Ability, Nature
 	let byte21 = hex2bin(fileHex[address + 20]);
 	byte21 = (mon.shininess === 'Shiny' ? '1' : '0') + byte21.slice(1);
 	const abilityNo =
@@ -76,19 +76,19 @@ function reverseParseMon(
 	byte21 = byte21.slice(0, 3) + getNatureNo(mon.nature).toString(2).padStart(5, '0');
 	fileHex[address + 20] = byte21;
 
-	////Byte #22: Gender, isEgg
+	//Byte #22: Gender, isEgg
 	byte22 = (mon.gender === 'Genderless' || mon.gender === 'Male' ? '0' : '1') + byte22.slice(1);
 	byte22 = byte22.at(0)! + (mon.isEgg === true ? '1' : '0') + byte22.slice(2);
 	fileHex[address + 21] = bin2hex(byte22);
 
-	////Byte #23: PP UPs
+	//Byte #23: PP UPs
 	let byte23 = '';
 	for (let i = 3; i > -1; i--) {
 		byte23 += mon.PPUPs[i].toString(2).padStart(2, '0');
 	}
 	fileHex[address + 22] = bin2hex(byte23);
 
-	////Byte #24: Happiness / Hatch Cycles
+	//Byte #24: Happiness / Hatch Cycles
 	fileHex[address + 23] = mon.happiness.toString(16).padStart(2, '0');
 
 	////Byte #25: Pokerus
@@ -102,23 +102,34 @@ function reverseParseMon(
 		fileHex[address + 24] = bin2hex('0000' + (zeroes + ones).padStart(4, '0'));
 	}
 
-	////Byte #26: Caught Ball, Caught Time TODO
-	//const byte26 = hex2bin(fileHex[address + 25]);
-	//const OTGender = ['Male', 'Female'][parseInt(byte26.at(0)!, 2)];
-	//const caughtTime = ['Evening', 'Morning', 'Day', 'Night'][parseInt(byte26.slice(1, 3), 2)];
-	//const caughtBall = items[PF][parseInt(byte26.slice(3), 2) - 1].name;
-	//
-	////Byte #27: Caught Level
-	//const caughtLevel = parseInt(fileHex[address + 26], 16);
-	//
-	////Byte #28: Caught Location
-	//const caughtLocation = locations[PF][parseInt(fileHex[address + 27], 16)].name;
-	//
+	//Byte #26: Caught Ball, Caught Time
+	fileHex[address + 25] = bin2hex(
+		'0' +
+			['Evening', 'Morning', 'Day', 'Night']
+				.findIndex((time) => time === mon.caughtTime)
+				.toString(2)
+				.padStart(2, '0') +
+			items[PF].find((item) => item.name === mon.caughtBall)!
+				.itemNo.toString(2)
+				.padStart(5, '0')
+	);
+
+	//Byte #27: Caught Level
+	fileHex[address + 26] = mon.caughtLevel.toString(16).padStart(2, '0');
+
+	//Byte #28: Caught Location
+	fileHex[address + 27] = locations[PF].find((location) => location.name === mon.caughtLocation)!
+		.locationNo.toString(16)
+		.padStart(2, '0');
+
 	////Byte #29: Level
-	//const level = parseInt(fileHex[address + 28], 16);
-	//
-	////Byte #30: Hyper Training TODO
-	//
+	fileHex[address + 28] = mon.level.toString(16).padStart(2, '0');
+
+	////Byte #30: Hyper Training
+	fileHex[address + 29] = bin2hex(
+		mon.hyperTraining.map((stat) => (stat ? '1' : '0')).join('') + '00'
+	);
+
 	////Bytes #31-#32: Unused
 	fileHex[address + 30] = '00';
 	fileHex[address + 31] = '00';
