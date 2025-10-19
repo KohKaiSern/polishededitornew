@@ -1,11 +1,11 @@
 import type { Mon } from '$lib/types';
-import type { Form } from '../../extractors/types.d.ts';
+import type { Form } from '../../../../extractors/types.d.ts';
 import { hex2bin, getNature, readString } from '$lib/utils';
-import pokemon from '../data/pokemon.json';
-import items from '../data/items.json';
-import moves from '../data/moves.json';
-import abilities from '../data/abilities.json';
-import locations from '../data/locations.json';
+import pokemon from '../../../data/pokemon.json';
+import items from '../../../data/items.json';
+import moves from '../../../data/moves.json';
+import abilities from '../../../data/abilities.json';
+import locations from '../../../data/locations.json';
 
 function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful'): Mon {
 	//Byte #1, Byte #22: Species, Form

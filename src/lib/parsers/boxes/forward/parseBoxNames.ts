@@ -1,4 +1,4 @@
-import addresses from '../data/addresses.json';
+import addresses from '../../../data/addresses.json';
 import { readString } from '$lib/utils';
 
 function parseBoxNames(fileHex: string[]): string[] {

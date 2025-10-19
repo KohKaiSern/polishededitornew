@@ -1,11 +1,11 @@
 import type { Mon } from '$lib/types';
-import type { Form } from '../../extractors/types';
+import type { Form } from '../../../../extractors/types';
 import { hex2bin, getNatureNo, readString, bin2hex } from '$lib/utils';
-import pokemon from '../data/pokemon.json';
-import items from '../data/items.json';
-import moves from '../data/moves.json';
-import abilities from '../data/abilities.json';
-import locations from '../data/locations.json';
+import pokemon from '../../../data/pokemon.json';
+import items from '../../../data/items.json';
+import moves from '../../../data/moves.json';
+import abilities from '../../../data/abilities.json';
+import locations from '../../../data/locations.json';
 
 function reverseParseMon(
 	fileHex: string[],

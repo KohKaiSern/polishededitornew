@@ -1,5 +1,5 @@
-import addresses from '../data/addresses.json';
-import boxThemes from '../data/boxThemes.json';
+import addresses from '../../../data/addresses.json';
+import boxThemes from '../../../data/boxThemes.json';
 
 function parseBoxThemes(fileHex: string[]): string[] {
 	const themes: string[] = [];

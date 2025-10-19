@@ -1,9 +1,9 @@
 import { hex2buf } from '$lib/utils';
 import type { Mon, Box, BagSlot, Player } from '../types.d.ts';
-import reverseParseBoxNames from './reverseParseBoxNames.js';
-import reverseParseBoxThemes from './reverseParseBoxThemes.js';
-import reverseParseMon from './reverseParseMon.js';
-import parseBoxAddresses from './parseBoxAddresses.js';
+import reverseParseBoxNames from './boxes/reverse/reverseParseBoxNames.js';
+import reverseParseBoxThemes from './boxes/reverse/reverseParseBoxThemes.js';
+import reverseParseMon from './boxes/reverse/reverseParseMon.js';
+import parseBoxAddresses from './boxes/forward/parseBoxAddresses.js';
 
 async function reverseParseSave(
 	file: File,
