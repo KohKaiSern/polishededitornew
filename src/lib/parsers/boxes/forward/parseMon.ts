@@ -51,10 +51,6 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 
 	//Bytes #21: Shininess, Ability, Nature
 	const byte21 = hex2bin(fileHex[address + 20]);
-	console.log('Start');
-	console.log(species.name, form.id);
-	console.log(byte21);
-	console.log('End');
 	const shininess = byte21.at(0)! === '0' ? 'Not Shiny' : 'Shiny';
 	const ability = abilities[PF].find(
 		(ability) => form.abilities.at(parseInt(byte21.slice(1, 3), 2) - 1)! === ability.name
@@ -114,8 +110,6 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 
 	//Bytes #43-#49: Original Trainer Nickname
 	const OTNickname = readString(fileHex, address + 42, 7, true);
-
-	console.log(byte21);
 
 	return {
 		species: species.name,

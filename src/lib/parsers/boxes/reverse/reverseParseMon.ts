@@ -22,8 +22,6 @@ function reverseParseMon(
 		.dexNo.toString(2)
 		.padStart(9, '0');
 	let byte22 = hex2bin(fileHex[address + 21]);
-	console.log('Start');
-	console.log(mon.species, mon.form);
 	byte22 = byte22.slice(0, 2) + dexNo.at(0)! + byte22.slice(3);
 	fileHex[address] = bin2hex(dexNo.slice(1));
 
@@ -68,7 +66,6 @@ function reverseParseMon(
 
 	//Bytes #21: Shininess, Ability, Nature
 	let byte21 = hex2bin(fileHex[address + 20]);
-	console.log(byte21);
 	byte21 = (mon.shininess === 'Shiny' ? '1' : '0') + byte21.slice(1);
 	const abilityNo =
 		(pokemon[PF].find((pokemon) => pokemon.name === mon.species)!.forms as Form[])
@@ -77,13 +74,11 @@ function reverseParseMon(
 	byte21 = byte21.at(0)! + abilityNo.toString(2).padStart(2, '0') + byte21.slice(3);
 	byte21 = byte21.slice(0, 3) + getNatureNo(mon.nature).toString(2).padStart(5, '0');
 	fileHex[address + 20] = bin2hex(byte21);
-	console.log(byte21);
 
 	//Byte #22: Gender, isEgg
 	byte22 = (mon.gender === 'Genderless' || mon.gender === 'Male' ? '0' : '1') + byte22.slice(1);
 	byte22 = byte22.at(0)! + (mon.isEgg === true ? '1' : '0') + byte22.slice(2);
 	fileHex[address + 21] = bin2hex(byte22);
-	console.log('End');
 
 	//Byte #23: PP UPs
 	let byte23 = '';
