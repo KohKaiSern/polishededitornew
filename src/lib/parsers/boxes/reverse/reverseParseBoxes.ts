@@ -22,8 +22,8 @@ function reverseParseBoxes(fileHex: string[], boxes: Box[], PF: 'polished' | 'fa
 	const addresses = parseBoxAddresses(fileHex);
 	for (let box = 0; box < 20; box++) {
 		for (let i = 0; i < 20; i++) {
-			fileHex = reverseParseMon(fileHex, addresses[box][i], boxes[box].mons[i], PF);
 			if (boxes[box].mons[i]) {
+				fileHex = reverseParseMon(fileHex, addresses[box][i], boxes[box].mons[i], PF);
 				fileHex = checksumMon(fileHex, addresses[box][i]);
 			}
 		}

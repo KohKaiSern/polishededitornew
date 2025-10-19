@@ -9,14 +9,9 @@ import locations from '../../../data/locations.json';
 function reverseParseMon(
 	fileHex: string[],
 	address: number,
-	mon: Mon | null,
+	mon: Mon,
 	PF: 'polished' | 'faithful'
 ): string[] {
-	//Empty Slot
-	if (!mon) {
-		return fileHex.slice(0, address).concat(Array(49).fill('FF'), fileHex.slice(address + 49));
-	}
-
 	//Byte #1, Byte #22: Species, Form
 	const dexNo = pokemon[PF].find((species) => species.name === mon.species)!
 		.dexNo.toString(2)
@@ -90,7 +85,7 @@ function reverseParseMon(
 	//Byte #24: Happiness / Hatch Cycles
 	fileHex[address + 23] = mon.happiness.toString(16).padStart(2, '0');
 
-	////Byte #25: Pokerus
+	//Byte #25: Pokerus
 	if (mon.pokerus.daysRemaining === 'None') {
 		fileHex[address + 24] = '00';
 	} else if (mon.pokerus.daysRemaining === 'Cured') {
@@ -102,15 +97,19 @@ function reverseParseMon(
 	}
 
 	//Byte #26: Caught Ball, Caught Time
+	let caughtBallStr = '00000';
+	if (mon.caughtBall != 'Park Ball') {
+		caughtBallStr = items[PF].find((item) => item.name === mon.caughtBall)!
+			.itemNo.toString(2)
+			.padStart(5, '0');
+	}
 	fileHex[address + 25] = bin2hex(
 		'0' +
 			['Evening', 'Morning', 'Day', 'Night']
 				.findIndex((time) => time === mon.caughtTime)
 				.toString(2)
 				.padStart(2, '0') +
-			items[PF].find((item) => item.name === mon.caughtBall)!
-				.itemNo.toString(2)
-				.padStart(5, '0')
+			caughtBallStr
 	);
 
 	//Byte #27: Caught Level
@@ -121,22 +120,22 @@ function reverseParseMon(
 		.locationNo.toString(16)
 		.padStart(2, '0');
 
-	////Byte #29: Level
+	//Byte #29: Level
 	fileHex[address + 28] = mon.level.toString(16).padStart(2, '0');
 
-	////Byte #30: Hyper Training
+	//Byte #30: Hyper Training
 	fileHex[address + 29] = bin2hex(
 		mon.hyperTraining.map((stat) => (stat ? '1' : '0')).join('') + '00'
 	);
 
-	////Bytes #31-#32: Unused
+	//Bytes #31-#32: Unused
 	fileHex[address + 30] = '00';
 	fileHex[address + 31] = '00';
 
-	////Bytes #33-#42: Nickname
+	//Bytes #33-#42: Nickname
 	fileHex = writeString(fileHex, address + 32, 10, mon.nickname, true);
 
-	////Bytes #43-#49: Original Trainer Nickname
+	//Bytes #43-#49: Original Trainer Nickname
 	fileHex = writeString(fileHex, address + 42, 7, mon.OTNickname, true);
 
 	return fileHex;

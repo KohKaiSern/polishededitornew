@@ -86,7 +86,10 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 	//Byte #26: Caught Ball, Caught Time
 	const byte26 = hex2bin(fileHex[address + 25]);
 	const caughtTime = ['Evening', 'Morning', 'Day', 'Night'][parseInt(byte26.slice(1, 3), 2)];
-	const caughtBall = items[PF][parseInt(byte26.slice(3), 2) - 1].name;
+	let caughtBall = 'Park Ball';
+	if (byte26.slice(3) != '00000') {
+		caughtBall = items[PF][parseInt(byte26.slice(3), 2) - 1].name;
+	}
 
 	//Byte #27: Caught Level
 	const caughtLevel = parseInt(fileHex[address + 26], 16);
@@ -110,6 +113,8 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 
 	//Bytes #43-#49: Original Trainer Nickname
 	const OTNickname = readString(fileHex, address + 42, 7, true);
+
+	console.log(species.name, form.id);
 
 	return {
 		species: species.name,

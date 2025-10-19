@@ -1,5 +1,4 @@
 import addresses from '../../../data/addresses.json';
-import { hex2bin } from '$lib/utils';
 
 function parseBoxAddresses(fileHex: string[]): number[][] {
 	const indexes = parseIndexes(fileHex);
