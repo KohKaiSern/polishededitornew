@@ -28,6 +28,13 @@ export interface Mon {
 	OTNickname: string;
 }
 
+export interface PartyMon extends Omit<Mon, 'PPUPs'> {
+	currentHP: number;
+	stats: number[];
+	status: string | ['Sleep', number];
+	powerPoints: number[];
+}
+
 export interface Box {
 	name: string;
 	theme: string;

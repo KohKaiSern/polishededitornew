@@ -16,7 +16,8 @@ const SYMBOLS = [
 	'sGameData',
 	'sGameDataEnd',
 	'sBackupGameData',
-	'sBackupGameDataEnd'
+	'sBackupGameDataEnd',
+	'sPokémonData'
 ];
 
 //Converts wRAM address to sRAM

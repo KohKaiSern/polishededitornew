@@ -4,10 +4,15 @@ import locations from '$data/locations.json';
 import moves from '$data/moves.json';
 import pokemon from '$data/pokemon.json';
 import { getNature, hex2bin, readString } from '$lib/utils';
-import type { Mon } from '$lib/types';
-import type { Form } from '../../../../extractors/types.d.ts';
+import type { PartyMon } from '$lib/types';
+import type { Form } from '../../../../extractors/types';
 
-function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful'): Mon {
+function parsePartyMon(
+	fileHex: string[],
+	address: number,
+	PF: 'polished' | 'faithful'
+): Partial<PartyMon> {
+	//Section 1: Main Structure
 	//Byte #1, Byte #22: Species, Form
 	const byte22 = hex2bin(fileHex[address + 21]);
 	const dexNo = parseInt(byte22.at(2)! + hex2bin(fileHex[address]), 2);
@@ -63,21 +68,20 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 	const gender = form.hasGender ? (byte22.at(0)! === '0' ? 'Male' : 'Female') : 'Genderless';
 	const isEgg = byte22.at(1)! === '0' ? false : true;
 
-	//Byte #23: PP UPs
-	const PPUPs = [];
-	for (let i = 3; i > -1; i--) {
-		PPUPs.push(parseInt(hex2bin(fileHex[address + 22]).slice(i * 2, i * 2 + 1), 2));
+	//Byte #23-#26: Move Power Points
+	const powerPoints = [];
+	for (let i = 22; i < 26; i++) {
+		powerPoints.push(parseInt(fileHex[address + i], 16));
 	}
+	//Byte #27: Happiness / Hatch Cycles
+	const happiness = parseInt(fileHex[address + 26], 16);
 
-	//Byte #24: Happiness / Hatch Cycles
-	const happiness = parseInt(fileHex[address + 23], 16);
-
-	//Byte #25: Pokerus
+	//Byte #28: Pokerus
 	const pokerus: { strain: number | 'None'; daysRemaining: number | 'None' | 'Cured' } = {
 		strain: 'None',
 		daysRemaining: 'None'
 	};
-	const pokerusStr = hex2bin(fileHex[address + 24]).slice(4);
+	const pokerusStr = hex2bin(fileHex[address + 27]).slice(4);
 	if (pokerusStr === '1101') {
 		pokerus.daysRemaining = 'Cured';
 	} else if (pokerusStr != '0000') {
@@ -85,35 +89,53 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 		pokerus.daysRemaining = pokerus.strain - (4 - pokerusStr.replace(/^0+/, '').length);
 	}
 
-	//Byte #26: Caught Ball, Caught Time
-	const byte26 = hex2bin(fileHex[address + 25]);
+	//Byte #29: Caught Time, Caught Ball
+	const byte26 = hex2bin(fileHex[address + 28]);
 	const caughtTime = ['Evening', 'Morning', 'Day', 'Night'][parseInt(byte26.slice(1, 3), 2)];
 	let caughtBall = 'Park Ball';
 	if (byte26.slice(3) != '00000') {
 		caughtBall = items[PF][parseInt(byte26.slice(3), 2) - 1].name;
 	}
 
-	//Byte #27: Caught Level
-	const caughtLevel = parseInt(fileHex[address + 26], 16);
+	//Byte #30: Caught Level
+	const caughtLevel = parseInt(fileHex[address + 29], 16);
 
-	//Byte #28: Caught Location
-	const caughtLocation = locations[PF][parseInt(fileHex[address + 27], 16)].name;
+	//Byte #31: Caught Location
+	const caughtLocation = locations[PF][parseInt(fileHex[address + 30], 16)].name;
 
-	//Byte #29: Level
-	const level = parseInt(fileHex[address + 28], 16);
+	//Byte #32: Level
+	const level = parseInt(fileHex[address + 31], 16);
 
-	//Byte #30: Hyper Training
-	const hyperTraining = [...hex2bin(fileHex[address + 29])].map((stat) =>
-		stat === '1' ? true : false
-	);
+	//Byte #33: Status
+	const byte33 = hex2bin(fileHex[address + 32]);
+	let status: string | ['Sleep', number] = 'None';
+	if (byte33.includes('1')) {
+		const statuses = [
+			'Badly Poisoned',
+			'Paralysis',
+			'Freeze',
+			'Burn',
+			'Poison',
+			'Sleep',
+			'Sleep',
+			'Sleep'
+		];
+		status = statuses.find((s, i) => s === byte33[i])!;
+		if (status === 'Sleep') {
+			status = ['Sleep', parseInt(byte33.slice(5), 2)];
+		}
+	}
 
-	//Bytes #31-#32: Unused
+	//Byte #34: Unused
 
-	//Bytes #33-#42: Nickname
-	const nickname = readString(fileHex, address + 32, 10, true);
+	//Byte #35-#36: Current HP
+	const currentHP = parseInt(fileHex[address + 34] + fileHex[address + 35], 16);
 
-	//Bytes #43-#49: Original Trainer Nickname
-	const OTNickname = readString(fileHex, address + 42, 7, true);
+	//Byte #37-#48: Stats (Little Endian)
+	const stats = [];
+	for (let i = 0; i < 6; i++) {
+		stats.push(parseInt(fileHex[address + 36 + i * 2] + fileHex[address + 36 + (i * 2 + 1)], 16));
+	}
 
 	return {
 		species: species.name,
@@ -127,19 +149,19 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 		shininess,
 		ability,
 		nature,
-		isEgg,
 		gender,
-		PPUPs,
+		isEgg,
+		powerPoints,
 		happiness,
 		pokerus,
-		caughtBall,
 		caughtTime,
+		caughtBall,
 		caughtLevel,
 		caughtLocation,
 		level,
-		hyperTraining,
-		nickname,
-		OTNickname
+		status,
+		currentHP,
+		stats
 	};
 }
-export default parseMon;
+export default parsePartyMon;

@@ -16,12 +16,12 @@
 	import parseSave from '$lib/parsers/parseSave';
 	import reverseParseSave from '$lib/parsers/reverseParseSave';
 	import { validateSave } from '$lib/utils';
-	import type { BagSlot, Box, Mon, Player } from '$lib/types';
+	import type { BagSlot, Box, PartyMon, Player } from '$lib/types';
 
 	let PF: 'polished' | 'faithful' = $state('polished');
 	let file = $state<FileList | null>(null);
 	let toastMsg = $state('');
-	let party = $state<Mon[] | null>(null);
+	let party = $state<PartyMon[] | null>(null);
 	let boxes = $state<Box[] | null>(null);
 	let bag = $state<Record<string, BagSlot> | null>(null);
 	let player = $state<Player | null>(null);

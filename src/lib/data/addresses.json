@@ -13,5 +13,6 @@
 	"sGameData": 8200,
 	"sGameDataEnd": 11139,
 	"sBackupGameData": 4616,
-	"sBackupGameDataEnd": 7555
+	"sBackupGameDataEnd": 7555,
+	"sPokémonData": 10334
 }
