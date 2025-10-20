@@ -1,17 +1,19 @@
 import type { Mon } from '$lib/types';
 import type { Form } from '../../../../extractors/types.d.ts';
 import { hex2bin, getNature, readString } from '$lib/utils';
-import pokemon from '../../../data/pokemon.json';
-import items from '../../../data/items.json';
-import moves from '../../../data/moves.json';
-import abilities from '../../../data/abilities.json';
-import locations from '../../../data/locations.json';
+import pokemon from '$data/pokemon.json';
+import items from '$data/items.json';
+import moves from '$data/moves.json';
+import abilities from '$data/abilities.json';
+import locations from '$data/locations.json';
 
 function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful'): Mon {
 	//Byte #1, Byte #22: Species, Form
 	const byte22 = hex2bin(fileHex[address + 21]);
 	const dexNo = parseInt(byte22.at(2)! + hex2bin(fileHex[address]), 2);
-	const formNo = parseInt(byte22.slice(3), 2);
+	let formNo = parseInt(byte22.slice(3), 2);
+	//Form Number Zero TODO
+	if (formNo === 0) formNo = 1;
 	const species = pokemon[PF][dexNo];
 	const form = (pokemon[PF][dexNo].forms as Form[]).find((f) => f.formNo === formNo)!;
 

@@ -1,4 +1,4 @@
-import addresses from '../../../data/addresses.json';
+import addresses from '$data/addresses.json';
 
 function parseBoxAddresses(fileHex: string[]): number[][] {
 	const indexes = parseIndexes(fileHex);
