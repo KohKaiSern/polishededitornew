@@ -25,9 +25,9 @@
 	let boxes = $state<Box[] | null>(null);
 	let bag = $state<Record<string, BagSlot> | null>(null);
 	let player = $state<Player | null>(null);
-	let disabled = $state(false);
 
 	async function handleSave(): Promise<void> {
+		if (!file?.[0]) return;
 		toastMsg = await validateSave(file![0]);
 		try {
 			[party, boxes, bag, player] = await parseSave(file![0], PF);
@@ -37,7 +37,6 @@
 				'Failed to parse save. Please report this possible bug to Rev3lation and provide the save file.';
 			return;
 		}
-		disabled = true;
 		setTimeout(() => (toastMsg = ''), 3000);
 	}
 
@@ -70,12 +69,12 @@
 		<Heading tag="h1">Polished Editor</Heading>
 		<div class="flex items-center gap-3">
 			<RadioSelect
-				{disabled}
 				bind:value={PF}
 				options={[
 					{ text: 'Polished', id: 'polished' },
 					{ text: 'Faithful', id: 'faithful' }
 				]}
+				onchange={() => handleSave()}
 			/>
 			<DarkMode class="shrink-0 border border-gray-300 dark:border-gray-800" />
 		</div>
