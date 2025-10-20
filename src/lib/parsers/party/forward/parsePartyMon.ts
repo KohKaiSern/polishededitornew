@@ -12,7 +12,6 @@ function parsePartyMon(
 	address: number,
 	PF: 'polished' | 'faithful'
 ): Partial<PartyMon> {
-	//Section 1: Main Structure
 	//Byte #1, Byte #22: Species, Form
 	const byte22 = hex2bin(fileHex[address + 21]);
 	const dexNo = parseInt(byte22.at(2)! + hex2bin(fileHex[address]), 2);
