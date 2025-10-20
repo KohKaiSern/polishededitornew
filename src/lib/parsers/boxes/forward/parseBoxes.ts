@@ -1,8 +1,8 @@
-import parseBoxAddresses from './parseBoxAddresses';
-import parseThemes from './parseBoxThemes';
-import parseBoxNames from './parseBoxNames';
-import parseMon from './parseMon';
 import type { Box } from '$lib/types';
+import parseBoxAddresses from './parseBoxAddresses';
+import parseBoxNames from './parseBoxNames';
+import parseThemes from './parseBoxThemes';
+import parseMon from './parseMon';
 
 function parseBoxes(fileHex: string[], PF: 'polished' | 'faithful'): Box[] {
 	const names = parseBoxNames(fileHex);

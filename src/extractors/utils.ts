@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs';
 import type { Move } from './types';
+
 //This function acts as a pre-processor to all the used files.
 //Its main job is to split a file into two versions, one with
 //the Polished information and one with the Faithful information.

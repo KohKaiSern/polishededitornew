@@ -1,5 +1,5 @@
-import type { Mon, Box, BagSlot, Player } from '$lib/types';
 import { buf2hex } from '$lib/utils';
+import type { BagSlot, Box, Mon, Player } from '$lib/types';
 import parseBoxes from './boxes/forward/parseBoxes';
 
 async function parseSave(

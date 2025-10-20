@@ -1,10 +1,10 @@
+import checksumMon from '$lib/parsers/checksumMon.js';
+import type { Box } from '$lib/types';
+import parseBoxAddresses from '../../boxes/forward/parseBoxAddresses.js';
+import reverseParseBoxAddresses from './reverseParseBoxAddresses.js';
 import reverseParseBoxNames from './reverseParseBoxNames.js';
 import reverseParseBoxThemes from './reverseParseBoxThemes.js';
 import reverseParseMon from './reverseParseMon.js';
-import parseBoxAddresses from '../../boxes/forward/parseBoxAddresses.js';
-import type { Box } from '$lib/types';
-import reverseParseBoxAddresses from './reverseParseBoxAddresses.js';
-import checksumMon from '$lib/parsers/checksumMon.js';
 
 function reverseParseBoxes(fileHex: string[], boxes: Box[], PF: 'polished' | 'faithful'): string[] {
 	fileHex = reverseParseBoxNames(

@@ -1,8 +1,8 @@
 import { readdirSync } from 'fs';
-import { splitRead, reduce, capitalize, findMove } from './utils';
-import type { Species, Form } from './types';
+import type { Form, Species } from './types';
 import abilities from './abilities';
 import moves from './moves';
+import { capitalize, findMove, reduce, splitRead } from './utils';
 
 function extractNames(NAMES: string[]): Species[] {
 	const names: Species[] = [];

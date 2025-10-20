@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ButtonGroup, RadioButton } from 'flowbite-svelte';
+
 	let { value = $bindable(), options, onchange = () => {}, disabled } = $props();
 </script>
 

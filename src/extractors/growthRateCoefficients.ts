@@ -1,4 +1,4 @@
-import { splitRead, reduce } from './utils';
+import { reduce, splitRead } from './utils';
 
 function extractCoefficients(COEFFICIENTS: string[]): Record<string, number[]> {
 	const coefficients: Record<string, number[]> = {};

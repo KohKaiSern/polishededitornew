@@ -1,6 +1,6 @@
-import versions from './data/versions.json';
 import addresses from './data/addresses.json';
 import charmap from './data/charmap.json';
+import versions from './data/versions.json';
 
 export const buf2hex = async (buf: File): Promise<string[]> => {
 	return [...(await buf.bytes())].map((x) => x.toString(16).padStart(2, '0').toUpperCase());

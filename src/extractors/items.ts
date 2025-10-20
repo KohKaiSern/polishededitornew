@@ -1,5 +1,5 @@
-import { splitRead, consolidate } from './utils';
 import type { Item } from './types';
+import { consolidate, splitRead } from './utils';
 
 function extractNames(NAMES: string[]): Pick<Item, 'itemNo' | 'name'>[] {
 	const names: Omit<Item, 'description' | 'category'>[] = [];

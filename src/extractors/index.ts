@@ -1,16 +1,16 @@
-import { writeJSON } from './utils';
-import addresses from './addresses';
-import locations from './locations';
 import abilities from './abilities';
+import addresses from './addresses';
+import badges from './badges';
+import boxThemes from './boxThemes';
+import charmap from './charmap';
+import growthRateCoefficients from './growthRateCoefficients';
 import items from './items';
 import keyItems from './keyItems';
+import locations from './locations';
 import moves from './moves';
-import boxThemes from './boxThemes';
-import growthRateCoefficients from './growthRateCoefficients';
-import versions from './versions';
-import badges from './badges';
-import charmap from './charmap';
 import pokemon from './pokemon';
+import { writeJSON } from './utils';
+import versions from './versions';
 
 for (const [name, obj] of Object.entries({
 	addresses,

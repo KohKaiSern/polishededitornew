@@ -1,5 +1,5 @@
-import { splitRead, reduce, consolidate } from './utils';
 import type { Location } from './types';
+import { consolidate, reduce, splitRead } from './utils';
 
 function extractNames(NAMES: string[]): Omit<Location, 'locationNo'>[] {
 	const names: Omit<Location, 'locationNo'>[] = [];

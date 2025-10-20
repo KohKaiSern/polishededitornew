@@ -1,5 +1,5 @@
 import { buf2hex, hex2buf } from '$lib/utils';
-import type { Mon, Box, BagSlot, Player } from '../types.d.ts';
+import type { BagSlot, Box, Mon, Player } from '../types.d.ts';
 import reverseParseBoxes from './boxes/reverse/reverseParseBoxes.js';
 
 async function reverseParseSave(

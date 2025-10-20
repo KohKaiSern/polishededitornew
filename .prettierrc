@@ -3,7 +3,11 @@
 	"singleQuote": true,
 	"trailingComma": "none",
 	"printWidth": 100,
-	"plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+	"plugins": [
+		"prettier-plugin-svelte",
+		"prettier-plugin-tailwindcss",
+		"@trivago/prettier-plugin-sort-imports"
+	],
 	"overrides": [
 		{
 			"files": "*.svelte",
@@ -12,5 +16,19 @@
 			}
 		}
 	],
+	"importOrder": [
+		"flowbite-svelte",
+		"^svelte/(.*)$",
+		"UI$",
+		"fs",
+		"^\\$data/(.*)$",
+		"^\\$lib/parsers/(.*)$",
+		"^\\$lib/utils$",
+		"^\\$lib/(.*)$",
+		"/types$",
+		"^[./]"
+	],
+	"importOrderSeparation": false,
+	"importOrderSortSpecifiers": true,
 	"tailwindStylesheet": "./src/app.css"
 }

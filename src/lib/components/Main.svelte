@@ -1,22 +1,23 @@
 <script lang="ts">
 	import {
-		Heading,
-		DarkMode,
-		Label,
-		Fileupload,
-		Helper,
 		Button,
-		P,
-		List,
+		DarkMode,
+		Fileupload,
+		Heading,
+		Helper,
+		Label,
 		Li,
+		List,
+		P,
 		Toast
 	} from 'flowbite-svelte';
 	import { blur } from 'svelte/transition';
-	import type { Mon, Box, BagSlot, Player } from '$lib/types';
 	import { RadioSelect } from './UI';
 	import parseSave from '$lib/parsers/parseSave';
 	import reverseParseSave from '$lib/parsers/reverseParseSave';
 	import { validateSave } from '$lib/utils';
+	import type { BagSlot, Box, Mon, Player } from '$lib/types';
+
 	let PF: 'polished' | 'faithful' = $state('polished');
 	let file = $state<FileList | null>(null);
 	let toastMsg = $state('');

@@ -1,5 +1,5 @@
-import { splitRead, reduce, consolidate } from './utils';
 import type { Move } from './types';
+import { consolidate, reduce, splitRead } from './utils';
 
 function extractNames(NAMES: string[]): Pick<Move, 'id' | 'name' | 'moveNo'>[] {
 	const names: Pick<Move, 'id' | 'name' | 'moveNo'>[] = [];
