@@ -116,8 +116,6 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 	//Bytes #43-#49: Original Trainer Nickname
 	const OTNickname = readString(fileHex, address + 42, 7, true);
 
-	console.log(species.name, form.id);
-
 	return {
 		species: species.name,
 		form: form.id,
