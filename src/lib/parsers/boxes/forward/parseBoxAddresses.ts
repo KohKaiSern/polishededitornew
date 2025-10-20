@@ -40,12 +40,12 @@ function parseIndexes(fileHex: string[]): number[][] {
 }
 
 function parseFlags(fileHex: string[]): string[][] {
-	let flags = Array(20)
+	const flags = Array(20)
 		.fill(null)
 		.map((): string[] => Array(20).fill(''));
 	for (let box = 0; box < 20; box++) {
 		//Grab the three relevant bytes
-		let flagString = parseInt(
+		const flagString = parseInt(
 			fileHex[addresses.sBackupNewBox1 + 33 * box + 20] +
 				fileHex[addresses.sBackupNewBox1 + 33 * box + 21] +
 				fileHex[addresses.sBackupNewBox1 + 33 * box + 22],
