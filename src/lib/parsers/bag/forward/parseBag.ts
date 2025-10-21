@@ -26,20 +26,6 @@ function parseBag(fileHex: string[], PF: 'polished' | 'faithful'): Record<string
 		return { count, contents };
 	};
 
-	const parseIdOnlySlot = (address: number, capacity: number): BagSlot => {
-		const addr = address + baseAddress;
-		const contents = Array(capacity).fill(null);
-
-		for (let i = 0; i < capacity; i++) {
-			if (fileHex[addr + i] === '00') continue;
-			contents[i] = {
-				name: keyItems[PF].find((item) => item.itemNo === parseInt(fileHex[addr + i], 16))!.name,
-				qty: 1
-			};
-		}
-		return { contents };
-	};
-
 	const parseFixedItemSlot = (
 		address: number,
 		itemNames: string[],
@@ -85,7 +71,16 @@ function parseBag(fileHex: string[], PF: 'polished' | 'faithful'): Record<string
 	bag['berries'] = parseCountedSlot(addresses.wNumBerries, 31);
 
 	// Key Items
-	bag['keyItems'] = parseIdOnlySlot(addresses.wKeyItems, 39);
+	const keyItemsAddress = addresses.wKeyItems + baseAddress;
+	bag['keyItems'] = { contents: Array(39).fill(null) };
+	for (let i = 0; i < 39; i++) {
+		if (fileHex[keyItemsAddress + i] === '00') continue;
+		bag.keyItems.contents[i] = {
+			name: keyItems[PF].find((item) => item.itemNo === parseInt(fileHex[keyItemsAddress + i], 16))!
+				.name,
+			qty: 1
+		};
+	}
 
 	// Coins
 	const coinsAddress = addresses.wCoins + baseAddress;
