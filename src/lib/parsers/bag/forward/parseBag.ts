@@ -9,131 +9,119 @@ import type { BagSlot } from '$lib/types';
 
 function parseBag(fileHex: string[], PF: 'polished' | 'faithful'): Record<string, BagSlot> {
 	const bag: Record<string, BagSlot> = {};
+	const baseAddress = addresses.sBackupGameData - addresses.wGameData;
 
-	//Items
-	let address = addresses.wNumItems - addresses.wGameData + addresses.sBackupGameData;
-	bag['items'] = { count: parseInt(fileHex[address], 16), contents: Array(75).fill(null) };
-	for (let i = 0; i < bag.items.count!; i++) {
-		bag.items.contents[i] = {
-			name: items[PF].find((item) => item.itemNo === parseInt(fileHex[address + 1 + i * 2], 16))!
-				.name,
-			qty: parseInt(fileHex[address + 2 + i * 2], 16)
-		};
-	}
+	const parseCountedSlot = (address: number, capacity: number): BagSlot => {
+		const addr = address + baseAddress;
+		const count = parseInt(fileHex[addr], 16);
+		const contents = Array(capacity).fill(null);
 
-	//Medicine
-	address = addresses.wNumMedicine - addresses.wGameData + addresses.sBackupGameData;
-	bag['medicine'] = { count: parseInt(fileHex[address], 16), contents: Array(37).fill(null) };
-	for (let i = 0; i < bag.medicine.count!; i++) {
-		bag.medicine.contents[i] = {
-			name: items[PF].find((item) => item.itemNo === parseInt(fileHex[address + 1 + i * 2], 16))!
-				.name,
-			qty: parseInt(fileHex[address + 2 + i * 2], 16)
-		};
-	}
+		for (let i = 0; i < count; i++) {
+			contents[i] = {
+				name: items[PF].find((item) => item.itemNo === parseInt(fileHex[addr + 1 + i * 2], 16))!
+					.name,
+				qty: parseInt(fileHex[addr + 2 + i * 2], 16)
+			};
+		}
+		return { count, contents };
+	};
 
-	//Balls
-	address = addresses.wNumBalls - addresses.wGameData + addresses.sBackupGameData;
-	bag['balls'] = { count: parseInt(fileHex[address], 16), contents: Array(25).fill(null) };
-	for (let i = 0; i < bag.balls.count!; i++) {
-		bag.balls.contents[i] = {
-			name: items[PF].find((item) => item.itemNo === parseInt(fileHex[address + 1 + i * 2], 16))!
-				.name,
-			qty: parseInt(fileHex[address + 2 + i * 2], 16)
-		};
-	}
+	const parseIdOnlySlot = (address: number, capacity: number): BagSlot => {
+		const addr = address + baseAddress;
+		const contents = Array(capacity).fill(null);
 
-	//TMs & HMs
-	address = addresses.wTMsHMs - addresses.wGameData + addresses.sBackupGameData;
-	bag['TMsHMs'] = { contents: Array(81).fill(null) };
+		for (let i = 0; i < capacity; i++) {
+			if (fileHex[addr + i] === '00') continue;
+			contents[i] = {
+				name: keyItems[PF].find((item) => item.itemNo === parseInt(fileHex[addr + i], 16))!.name,
+				qty: 1
+			};
+		}
+		return { contents };
+	};
+
+	const parseFixedItemSlot = (
+		address: number,
+		itemNames: string[],
+		bytesPerItem: number = 1
+	): BagSlot => {
+		const addr = address + baseAddress;
+		const contents = itemNames.map((name, i) => ({
+			name,
+			qty: parseInt(
+				bytesPerItem === 2 ? fileHex[addr + i * 2] + fileHex[addr + 1 + i * 2] : fileHex[addr + i],
+				16
+			)
+		}));
+		return { contents };
+	};
+
+	// Items
+	bag['items'] = parseCountedSlot(addresses.wNumItems, 75);
+
+	// Medicine
+	bag['medicine'] = parseCountedSlot(addresses.wNumMedicine, 37);
+
+	// Balls
+	bag['balls'] = parseCountedSlot(addresses.wNumBalls, 25);
+
+	// TMs & HMs
+	const TMHMAddress = addresses.wTMsHMs + baseAddress;
 	let flagStr = '';
 	for (let i = 0; i < 11; i++) {
-		flagStr += hex2bin(fileHex[address + i])
+		flagStr += hex2bin(fileHex[TMHMAddress + i])
 			.split('')
 			.reverse()
 			.join('');
 	}
-	for (let i = 1; i < 82; i++) {
-		bag['TMsHMs'].contents[i - 1] = {
-			name: i > 75 ? `HM0${i - 75}` : `TM${i.toString().padStart(2, '0')}`,
-			qty: parseInt(flagStr[i - 1])
-		};
-	}
+	bag['TMsHMs'] = {
+		contents: Array.from({ length: 81 }, (_, i) => ({
+			name: i >= 75 ? `HM0${i - 74}` : `TM${(i + 1).toString().padStart(2, '0')}`,
+			qty: parseInt(flagStr[i])
+		}))
+	};
 
-	//Berries
-	address = addresses.wNumBerries - addresses.wGameData + addresses.sBackupGameData;
-	bag['berries'] = { count: parseInt(fileHex[address], 16), contents: Array(31).fill(null) };
-	for (let i = 0; i < bag.berries.count!; i++) {
-		bag.berries.contents[i] = {
-			name: items[PF].find((item) => item.itemNo === parseInt(fileHex[address + 1 + i * 2], 16))!
-				.name,
-			qty: parseInt(fileHex[address + 2 + i * 2], 16)
-		};
-	}
+	// Berries
+	bag['berries'] = parseCountedSlot(addresses.wNumBerries, 31);
 
-	//Key Items
-	address = addresses.wKeyItems - addresses.wGameData + addresses.sBackupGameData;
-	bag['keyItems'] = { contents: Array(39).fill(null) };
-	for (let i = 0; i < 39; i++) {
-		if (fileHex[address + i] === '00') continue;
-		bag.keyItems.contents[i] = {
-			name: keyItems[PF].find((item) => item.itemNo === parseInt(fileHex[address + i], 16))!.name,
-			qty: 1
-		};
-	}
+	// Key Items
+	bag['keyItems'] = parseIdOnlySlot(addresses.wKeyItems, 39);
 
-	//Coins
-	address = addresses.wCoins - addresses.wGameData + addresses.sBackupGameData;
+	// Coins
+	const coinsAddress = addresses.wCoins + baseAddress;
 	bag['coins'] = {
 		contents: [
 			{
 				name: 'Coins',
-				qty: parseInt(fileHex[address] + fileHex[address + 1], 16)
+				qty: parseInt(fileHex[coinsAddress] + fileHex[coinsAddress + 1], 16)
 			}
 		]
 	};
 
-	//Apricorns
-	address = addresses.wApricorns - addresses.wGameData + addresses.sBackupGameData;
-	bag['apricorns'] = { contents: Array(7).fill(null) };
-	for (let i = 0; i < 7; i++) {
-		bag.apricorns.contents[i] = {
-			name: apricorns[PF][i].name,
-			qty: parseInt(fileHex[address + i], 16)
-		};
-	}
+	// Apricorns
+	bag['apricorns'] = parseFixedItemSlot(
+		addresses.wApricorns,
+		apricorns[PF].map((a) => a.name)
+	);
 
-	//Wings
-	address = addresses.wWingAmounts - addresses.wGameData + addresses.sBackupGameData;
-	bag['wings'] = { contents: Array(6).fill(null) };
-	for (let i = 0; i < 6; i++) {
-		bag.wings.contents[i] = {
-			name: wings[PF][i],
-			qty: parseInt(fileHex[address + i * 2] + fileHex[address + 1 + i * 2], 16)
-		};
-	}
+	// Wings
+	bag['wings'] = parseFixedItemSlot(addresses.wWingAmounts, wings[PF], 2);
 
-	//XP Candy
-	address = addresses.wCandyAmounts - addresses.wGameData + addresses.sBackupGameData;
-	bag['candy'] = { contents: Array(4).fill(null) };
-	for (let i = 0; i < 4; i++) {
-		bag.candy.contents[i] = {
-			name: expCandy[PF][i],
-			qty: parseInt(fileHex[address + i], 16)
-		};
-	}
+	// XP Candy
+	bag['candy'] = parseFixedItemSlot(addresses.wCandyAmounts, expCandy[PF]);
 
-	//Blue Card
-	address = addresses.wBlueCardBalance - addresses.wGameData + addresses.sBackupGameData;
+	// Blue Card
+	const blueCardAddress = addresses.wBlueCardBalance + baseAddress;
 	bag['blueCard'] = {
 		contents: [
 			{
 				name: 'Blue Card Points',
-				qty: parseInt(fileHex[address])
+				qty: parseInt(fileHex[blueCardAddress])
 			}
 		]
 	};
 
 	return bag;
 }
+
 export default parseBag;

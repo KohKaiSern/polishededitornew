@@ -5,19 +5,19 @@ import checksumPlayer from './checksumPlayer';
 import reverseParseParty from './party/reverse/reverseParseParty';
 
 async function reverseParseSave(
-  file: File,
-  party: PartyMon[],
-  boxes: Box[],
-  bag: Record<string, BagSlot>,
-  player: Player,
-  PF: 'polished' | 'faithful'
+	file: File,
+	party: PartyMon[],
+	boxes: Box[],
+	bag: Record<string, BagSlot>,
+	player: Player,
+	PF: 'polished' | 'faithful'
 ): Promise<ArrayBuffer> {
-  let fileHex = await buf2hex(file);
+	let fileHex = await buf2hex(file);
 
-  fileHex = reverseParseParty(fileHex, party, PF);
-  fileHex = reverseParseBoxes(fileHex, boxes, PF);
-  fileHex = checksumPlayer(fileHex)
+	fileHex = reverseParseParty(fileHex, party, PF);
+	fileHex = reverseParseBoxes(fileHex, boxes, PF);
+	fileHex = checksumPlayer(fileHex);
 
-  return hex2buf(fileHex);
+	return hex2buf(fileHex);
 }
 export default reverseParseSave;
