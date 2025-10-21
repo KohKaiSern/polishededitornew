@@ -14,5 +14,17 @@
 	"sGameDataEnd": 11139,
 	"sBackupGameData": 4616,
 	"sBackupGameDataEnd": 7555,
-	"sPokémonData": 10334
+	"sPokémonData": 10334,
+	"wNumItems": 22567,
+	"wNumMedicine": 22719,
+	"wNumBalls": 22795,
+	"wNumBerries": 22847,
+	"wTMsHMs": 22517,
+	"wKeyItems": 22528,
+	"wCoins": 22508,
+	"wApricorns": 22993,
+	"wWingAmounts": 23501,
+	"wCandyAmounts": 23496,
+	"wBlueCardBalance": 23666,
+	"wGameData": 21624
 }

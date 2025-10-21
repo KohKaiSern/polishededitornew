@@ -47,3 +47,9 @@ export interface Location {
 	name: string;
 	locationNo: number;
 }
+
+export interface Apricorn {
+	id: string;
+	name: string;
+	ball: string;
+}

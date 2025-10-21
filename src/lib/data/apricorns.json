@@ -1,0 +1,20 @@
+{
+	"polished": [
+		{ "id": "redapricorn", "name": "Red Apricorn", "ball": "Level Ball" },
+		{ "id": "bluapricorn", "name": "Blu Apricorn", "ball": "Lure Ball" },
+		{ "id": "ylwapricorn", "name": "Ylw Apricorn", "ball": "Moon Ball" },
+		{ "id": "grnapricorn", "name": "Grn Apricorn", "ball": "Friend Ball" },
+		{ "id": "whtapricorn", "name": "Wht Apricorn", "ball": "Fast Ball" },
+		{ "id": "blkapricorn", "name": "Blk Apricorn", "ball": "Heavy Ball" },
+		{ "id": "pnkapricorn", "name": "Pnk Apricorn", "ball": "Love Ball" }
+	],
+	"faithful": [
+		{ "id": "redapricorn", "name": "Red Apricorn", "ball": "Level Ball" },
+		{ "id": "bluapricorn", "name": "Blu Apricorn", "ball": "Lure Ball" },
+		{ "id": "ylwapricorn", "name": "Ylw Apricorn", "ball": "Moon Ball" },
+		{ "id": "grnapricorn", "name": "Grn Apricorn", "ball": "Friend Ball" },
+		{ "id": "whtapricorn", "name": "Wht Apricorn", "ball": "Fast Ball" },
+		{ "id": "blkapricorn", "name": "Blk Apricorn", "ball": "Heavy Ball" },
+		{ "id": "pnkapricorn", "name": "Pnk Apricorn", "ball": "Love Ball" }
+	]
+}
