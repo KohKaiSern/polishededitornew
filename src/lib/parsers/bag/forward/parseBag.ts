@@ -5,16 +5,14 @@ import items from '$data/items.json';
 import keyItems from '$data/keyItems.json';
 import wings from '$data/wings.json';
 import { hex2bin } from '$lib/utils';
-import type { BagSlot } from '$lib/types';
+import type { BagSlot, Item } from '$lib/types';
 
 function parseBag(fileHex: string[], PF: 'polished' | 'faithful'): Record<string, BagSlot> {
 	const bag: Record<string, BagSlot> = {};
-	const baseAddress = addresses.sBackupGameData - addresses.wGameData;
 
-	const parseCountedSlot = (address: number, capacity: number): BagSlot => {
-		address += baseAddress;
+	const parseCountedSlot = (address: number): BagSlot => {
 		const count = parseInt(fileHex[address], 16);
-		const contents = Array(capacity).fill(null);
+		const contents: Item[] = [];
 		for (let i = 0; i < count; i++) {
 			contents[i] = {
 				name: items[PF].find((item) => item.itemNo === parseInt(fileHex[address + 1 + i * 2], 16))!
@@ -25,38 +23,31 @@ function parseBag(fileHex: string[], PF: 'polished' | 'faithful'): Record<string
 		return { count, contents };
 	};
 
-	const parseFixedItemSlot = (
-		address: number,
-		itemNames: string[],
-		bytesPerItem: number = 1
-	): BagSlot => {
-		address += baseAddress;
-		const contents = itemNames.map((name, i) => ({
-			name,
-			qty: parseInt(
-				bytesPerItem === 2
-					? fileHex[address + i * 2] + fileHex[address + 1 + i * 2]
-					: fileHex[address + i],
-				16
-			)
-		}));
+	const parseFixedItemSlot = (address: number, itemNames: string[], bytesPerItem = 1): BagSlot => {
+		const contents: Item[] = [];
+		for (let i = 0; i < itemNames.length; i++) {
+			let qty = '';
+			for (let j = 0; j < bytesPerItem; j++) {
+				qty += fileHex[address + i * 2 + j];
+			}
+			contents.push({ name: itemNames[i], qty: parseInt(qty, 16) });
+		}
 		return { contents };
 	};
 
 	//Items
-	bag['items'] = parseCountedSlot(addresses.wNumItems, 75);
+	bag['items'] = parseCountedSlot(addresses.wNumItems);
 
 	//Medicine
-	bag['medicine'] = parseCountedSlot(addresses.wNumMedicine, 37);
+	bag['medicine'] = parseCountedSlot(addresses.wNumMedicine);
 
 	//Balls
-	bag['balls'] = parseCountedSlot(addresses.wNumBalls, 25);
+	bag['balls'] = parseCountedSlot(addresses.wNumBalls);
 
 	//TMs & HMs
-	const TMHMAddress = addresses.wTMsHMs + baseAddress;
 	let flagStr = '';
 	for (let i = 0; i < 11; i++) {
-		flagStr += hex2bin(fileHex[TMHMAddress + i])
+		flagStr += hex2bin(fileHex[addresses.wTMsHMs + i])
 			.split('')
 			.reverse()
 			.join('');
@@ -69,27 +60,26 @@ function parseBag(fileHex: string[], PF: 'polished' | 'faithful'): Record<string
 	};
 
 	//Berries
-	bag['berries'] = parseCountedSlot(addresses.wNumBerries, 31);
+	bag['berries'] = parseCountedSlot(addresses.wNumBerries);
 
 	//Key Items
-	const keyItemsAddress = addresses.wKeyItems + baseAddress;
-	bag['keyItems'] = { contents: Array(39).fill(null) };
+	bag['keyItems'] = { contents: [] };
 	for (let i = 0; i < 39; i++) {
-		if (fileHex[keyItemsAddress + i] === '00') continue;
-		bag.keyItems.contents[i] = {
-			name: keyItems[PF].find((item) => item.itemNo === parseInt(fileHex[keyItemsAddress + i], 16))!
-				.name,
+		if (fileHex[addresses.wKeyItems + i] === '00') break;
+		bag.keyItems.contents.push({
+			name: keyItems[PF].find(
+				(item) => item.itemNo === parseInt(fileHex[addresses.wKeyItems + i], 16)
+			)!.name,
 			qty: 1
-		};
+		});
 	}
 
 	//Coins
-	const coinsAddress = addresses.wCoins + baseAddress;
 	bag['coins'] = {
 		contents: [
 			{
 				name: 'Coins',
-				qty: parseInt(fileHex[coinsAddress] + fileHex[coinsAddress + 1], 16)
+				qty: parseInt(fileHex[addresses.wCoins] + fileHex[addresses.wCoins + 1], 16)
 			}
 		]
 	};
@@ -107,12 +97,11 @@ function parseBag(fileHex: string[], PF: 'polished' | 'faithful'): Record<string
 	bag['candy'] = parseFixedItemSlot(addresses.wCandyAmounts, expCandy[PF]);
 
 	//Blue Card
-	const blueCardAddress = addresses.wBlueCardBalance + baseAddress;
 	bag['blueCard'] = {
 		contents: [
 			{
 				name: 'Blue Card Points',
-				qty: parseInt(fileHex[blueCardAddress])
+				qty: parseInt(fileHex[addresses.wBlueCardBalance])
 			}
 		]
 	};

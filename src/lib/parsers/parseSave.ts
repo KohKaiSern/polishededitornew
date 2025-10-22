@@ -3,6 +3,7 @@ import type { BagSlot, Box, PartyMon, Player } from '$lib/types';
 import parseBag from './bag/forward/parseBag';
 import parseBoxes from './boxes/forward/parseBoxes';
 import parseParty from './party/forward/parseParty';
+import parsePlayer from './player/forward/parsePlayer';
 
 async function parseSave(
 	file: File,
@@ -12,7 +13,8 @@ async function parseSave(
 	const party: PartyMon[] = parseParty(fileHex, PF);
 	const boxes: Box[] = parseBoxes(fileHex, PF);
 	const bag: Record<string, BagSlot> = parseBag(fileHex, PF);
-	return [party, boxes, bag, { name: '', money: -1, gender: '', palette: '', badges: [] }];
+	const player: Player = parsePlayer(fileHex, PF);
+	return [party, boxes, bag, player];
 }
 
 export default parseSave;

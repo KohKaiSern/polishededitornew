@@ -38,6 +38,14 @@ function wToSRAM(address: string): number {
 	return 8192 * parseInt(address.slice(0, 2), 16) + (parseInt(address.slice(2), 16) - 40960);
 }
 
+function makeAddress(addresses: Record<string, number>): Record<string, number> {
+	for (const [symbol, address] of Object.entries(addresses)) {
+		if (symbol.startsWith('s')) continue;
+		addresses[symbol] = address + addresses.sBackupGameData - addresses.wGameData;
+	}
+	return addresses;
+}
+
 function extractAddresses(ADDRESSES: string[]): Record<string, number> {
 	const addresses: Record<string, number> = {};
 	for (const entry of SYMBOLS) {
@@ -48,5 +56,5 @@ function extractAddresses(ADDRESSES: string[]): Record<string, number> {
 }
 
 const ADDRESSES = splitRead('../polishedcrystal.sym');
-const addresses = extractAddresses(ADDRESSES.polished);
+const addresses = makeAddress(extractAddresses(ADDRESSES.polished));
 export default addresses;
