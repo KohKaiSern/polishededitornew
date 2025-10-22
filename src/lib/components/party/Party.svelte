@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Button, Card, Drawer, Heading, P } from 'flowbite-svelte';
+	import { Button, Card, Drawer, Heading, P, Progressbar } from 'flowbite-svelte';
 	import { EditSolid } from 'flowbite-svelte-icons';
-	import { getGIFURL, getType, getTypeColour } from '$lib/utils';
+	import { getGIFURL, getHPPercent, getType, getTypeColour } from '$lib/utils';
 	import type { PartyMon } from '$lib/types';
 	import PartyMonEditor from './PartyMonEditor.svelte';
 
@@ -25,7 +25,7 @@
 					>
 						<img src={getGIFURL(mon)} alt={`GIF of the front sprite of ${mon.species}`} />
 					</div>
-					<div class="flex flex-col justify-between">
+					<div class="flex flex-col justify-between pt-1 pb-1">
 						<Heading tag="h5">{mon.nickname}</Heading>
 						<div class="flex gap-3">
 							{#each getType(mon, PF) as type}
@@ -42,6 +42,12 @@
 							{/each}
 						</div>
 					</div>
+				</div>
+				<div class="flex items-center gap-3 w-[50%]">
+					<P>HP</P><Progressbar
+						color={getHPPercent(mon) > 50 ? 'green' : getHPPercent(mon) > 20 ? 'yellow' : 'red'}
+						progress={getHPPercent(mon).toString()}
+					/>
 				</div>
 				<P>Lv. {mon.level}</P>
 				<P>Held Item: {mon.heldItem}</P>

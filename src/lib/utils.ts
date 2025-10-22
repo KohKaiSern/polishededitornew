@@ -239,3 +239,7 @@ const TYPE_COLOURS = {
 export const getTypeColour = (type: string): string => {
 	return TYPE_COLOURS[type as keyof typeof TYPE_COLOURS];
 };
+
+export const getHPPercent = (mon: PartyMon): number => {
+	return Math.floor((mon.currentHP * 100) / mon.stats[0]);
+};
