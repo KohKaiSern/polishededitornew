@@ -70,7 +70,10 @@ function parsePartyMon(
 	//Byte #23-#26: Move Power Points
 	const powerPoints = [];
 	for (let i = 22; i < 26; i++) {
-		powerPoints.push(parseInt(fileHex[address + i], 16));
+		powerPoints.push({
+			points: parseInt(hex2bin(fileHex[address + i]).slice(2), 2),
+			PPUPs: parseInt(hex2bin(fileHex[address + i]).slice(0, 2), 2)
+		});
 	}
 	//Byte #27: Happiness / Hatch Cycles
 	const happiness = parseInt(fileHex[address + 26], 16);

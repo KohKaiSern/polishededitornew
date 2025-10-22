@@ -32,7 +32,7 @@ export interface PartyMon extends Omit<Mon, 'PPUPs'> {
 	currentHP: number;
 	stats: number[];
 	status: string | ['Sleep', number];
-	powerPoints: number[];
+	powerPoints: { points: number; PPUPs: number }[];
 }
 
 export interface Box {

@@ -77,7 +77,10 @@ function reverseParsePartyMon(
 
 	//Byte #23-#26: Move Power Points
 	for (let i = 0; i < 4; i++) {
-		fileHex[address + 22 + i] = mon.powerPoints[i].toString(16).padStart(2, '0');
+		fileHex[address + 22 + i] = bin2hex(
+			mon.powerPoints[i].PPUPs.toString(2).padStart(2, '0') +
+				mon.powerPoints[i].points.toString(2).padStart(6, '0')
+		);
 	}
 
 	//Byte #27: Happiness / Hatch Cycles
