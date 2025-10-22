@@ -1,5 +1,8 @@
+import type { Form, Species } from '../extractors/types';
+import type { Mon, PartyMon } from './types';
 import addresses from './data/addresses.json';
 import charmap from './data/charmap.json';
+import pokemon from './data/pokemon.json';
 import versions from './data/versions.json';
 
 export const buf2hex = async (buf: File): Promise<string[]> => {
@@ -178,4 +181,61 @@ export const writeString = (
 		fileHex[address + i] = hasChecksum ? 'FB' : 'FF';
 	}
 	return fileHex;
+};
+
+const cammyFormat = (str: string): string => {
+	if (str === 'spiky_eared') {
+		return 'spiky';
+	}
+	return str
+		.toLowerCase()
+		.replaceAll(' ', '_')
+		.replaceAll('-', '_')
+		.replaceAll("'", '_')
+		.replaceAll('.', '_')
+		.replaceAll('♂', 'm')
+		.replaceAll('♀', 'f')
+		.replaceAll('é', 'e');
+};
+
+export const getGIFURL = (mon: PartyMon | Mon): string => {
+	// Format names to Cammy's format
+	let species = mon.isEgg ? 'egg' : cammyFormat(mon.species);
+	let form = mon.isEgg ? 'plain' : cammyFormat(mon.form);
+	const shine = mon.shininess === 'Shiny' ? 'shiny' : 'normal';
+
+	//Put it all together
+	const formPath = form === 'plain' ? species : `${species}_${form}`;
+	return `https://raw.githubusercontent.com/caomicc/polisheddex/refs/heads/main/public/sprites/pokemon/${formPath}/${shine}_front_animated.gif`;
+};
+
+export const getType = (mon: PartyMon | Mon, PF: 'polished' | 'faithful'): string[] => {
+	let species = pokemon[PF].find((pokemon) => pokemon.name === mon.species)!;
+	let form = (species.forms as Form[]).find((form) => form.id === mon.form)!;
+	return form.type;
+};
+
+const TYPE_COLOURS = {
+	bug: '#92BC2C',
+	dark: '#595761',
+	dragon: '#0C69C8',
+	electric: '#F2D94E',
+	fire: '#FBA54C',
+	fairy: '#EE90E6',
+	fighting: '#D3425F',
+	flying: '#A1BBEC',
+	ghost: '#5F6DBC',
+	grass: '#5FBD58',
+	ground: '#DA7C4D',
+	ice: '#75D0C1',
+	normal: '#A0A29F',
+	poison: '#B763CF',
+	psychic: '#FA8581',
+	rock: '#C9BB8A',
+	steel: '#5695A3',
+	water: '#539DDF'
+};
+
+export const getTypeColour = (type: string): string => {
+	return TYPE_COLOURS[type as keyof typeof TYPE_COLOURS];
 };

@@ -5,6 +5,7 @@
 		Fileupload,
 		Heading,
 		Helper,
+		Hr,
 		Label,
 		Li,
 		List,
@@ -17,6 +18,7 @@
 	import reverseParseSave from '$lib/parsers/reverseParseSave';
 	import { validateSave } from '$lib/utils';
 	import type { BagSlot, Box, PartyMon, Player } from '$lib/types';
+	import Party from './party/Party.svelte';
 
 	let PF: 'polished' | 'faithful' = $state('polished');
 	let file = $state<FileList | null>(null);
@@ -25,6 +27,7 @@
 	let boxes = $state<Box[] | null>(null);
 	let bag = $state<Record<string, BagSlot> | null>(null);
 	let player = $state<Player | null>(null);
+	let selectedEditor = $state('party');
 
 	async function handleSave(): Promise<void> {
 		if (!file?.[0]) return;
@@ -76,7 +79,7 @@
 				]}
 				onchange={() => handleSave()}
 			/>
-			<DarkMode class="shrink-0 border border-gray-300 dark:border-gray-800" />
+			<DarkMode class="border border-gray-300 dark:border-gray-800" />
 		</div>
 	</div>
 	<Label class="mt-5 mb-2">Upload Save</Label>
@@ -110,4 +113,18 @@
 	<P>
 		<em class="font-italic">Credits: Rev3lation, Sylvie (Rangi42), Cammy, Emi, FIQ, Darsh</em>
 	</P>
+	<br />
+	{#if !!party}
+		<RadioSelect
+			bind:value={selectedEditor}
+			options={[
+				{ text: 'Party', id: 'party' },
+				{ text: 'PC Boxes', id: 'boxes' },
+				{ text: 'Bag', id: 'bag' },
+				{ text: 'Player', id: 'player' }
+			]}
+		/>
+	{/if}
+	<Hr />
+	{#if selectedEditor === 'party'}<Party bind:party={party!} {PF} />{/if}
 </div>

@@ -10,7 +10,7 @@
 	}: {
 		value: T;
 		options: Array<{ text: string; id: T }>;
-		onchange: ChangeEventHandler<HTMLInputElement>;
+		onchange?: ChangeEventHandler<HTMLInputElement>;
 		disabled?: boolean;
 	} = $props();
 </script>
@@ -21,7 +21,7 @@
 			{disabled}
 			outline
 			value={id}
-			class="border-gray-300 dark:border-gray-800"
+			class="border-gray-300 dark:border-gray-800 h-[42px]"
 			checkedClass="bg-primary-700 text-white dark:bg-primary-600 dark:text-white hover:bg-primary-700 hover:text-white dark:hover:bg-primary-600 dark:hover:text-white"
 			bind:group={value}
 			{onchange}>{text}</RadioButton
