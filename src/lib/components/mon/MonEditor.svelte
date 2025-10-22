@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Accordion, AccordionItem, Button, Heading } from 'flowbite-svelte';
 	import type { Mon, PartyMon } from '$lib/types';
+	import MonBasics from './MonBasics.svelte';
 
 	let {
 		mon = $bindable(),
@@ -14,7 +15,7 @@
 	<Accordion class="mt-4">
 		<AccordionItem open>
 			{#snippet header()}Basics{/snippet}
-			<div>TODO</div>
+			<MonBasics bind:mon {PF} />
 		</AccordionItem>
 		<AccordionItem>
 			{#snippet header()}Stats{/snippet}
