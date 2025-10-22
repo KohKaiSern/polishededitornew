@@ -25,10 +25,13 @@ function parsePlayer(fileHex: string[], PF: 'polished' | 'faithful'): Player {
 	);
 
 	//Badges
-	const badgesOwned = badges[PF].filter(
-		(badge, i) =>
-			(hex2bin(fileHex[addresses.wBadges]) + hex2bin(fileHex[addresses.wBadges + 1])).at(i) === '1'
-	);
+	const badgesOwned = badges[PF].map((badge, i) => ({
+		name: badge,
+		owned:
+			(hex2bin(fileHex[addresses.wBadges]) + hex2bin(fileHex[addresses.wBadges])).at(i)! === '1'
+				? true
+				: false
+	}));
 
 	return { id, gender, name, rivalName, money, badges: badgesOwned };
 }

@@ -4,6 +4,7 @@ import reverseParseBag from './bag/reverse/reverseParseBag';
 import reverseParseBoxes from './boxes/reverse/reverseParseBoxes';
 import checksumPlayer from './checksumPlayer';
 import reverseParseParty from './party/reverse/reverseParseParty';
+import reverseParsePlayer from './player/reverse/reverseParsePlayer';
 
 async function reverseParseSave(
 	file: File,
@@ -18,6 +19,7 @@ async function reverseParseSave(
 	fileHex = reverseParseParty(fileHex, party, PF);
 	fileHex = reverseParseBoxes(fileHex, boxes, PF);
 	fileHex = reverseParseBag(fileHex, bag, PF);
+	fileHex = reverseParsePlayer(fileHex, player, PF);
 	fileHex = checksumPlayer(fileHex);
 
 	return hex2buf(fileHex);

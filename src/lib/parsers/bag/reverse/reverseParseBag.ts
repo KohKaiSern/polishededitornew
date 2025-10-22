@@ -25,9 +25,10 @@ function reverseParseBag(
 	const reverseParseFixedSlot = (address: number, slot: BagSlot, bytesPerItem = 1): void => {
 		for (let i = 0; i < slot.contents.length; i++) {
 			for (let j = 0; j < bytesPerItem; j++) {
-				fileHex[address + i + j] = slot.contents[i].qty
+				fileHex[address + i * bytesPerItem + j] = slot.contents[i].qty
 					.toString(16)
-					.slice((i + j) * bytesPerItem, (i + j + 1) * bytesPerItem);
+					.padStart(bytesPerItem * 2, '0')
+					.slice(j * 2, (j + 1) * 2);
 			}
 		}
 	};
@@ -60,7 +61,7 @@ function reverseParseBag(
 		if (!bag.keyItems.contents[i]) {
 			fileHex = fileHex
 				.slice(0, addresses.wKeyItems + i)
-				.concat('00'.repeat(39 - i), fileHex.slice(addresses.wKeyItems + 39));
+				.concat(Array(39 - i).fill('00'), fileHex.slice(addresses.wKeyItems + 39));
 			break;
 		}
 		fileHex[addresses.wKeyItems + i] = keyItems[PF].find(

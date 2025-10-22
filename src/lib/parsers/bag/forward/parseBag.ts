@@ -28,7 +28,7 @@ function parseBag(fileHex: string[], PF: 'polished' | 'faithful'): Record<string
 		for (let i = 0; i < itemNames.length; i++) {
 			let qty = '';
 			for (let j = 0; j < bytesPerItem; j++) {
-				qty += fileHex[address + i * 2 + j];
+				qty += fileHex[address + i * bytesPerItem + j];
 			}
 			contents.push({ name: itemNames[i], qty: parseInt(qty, 16) });
 		}

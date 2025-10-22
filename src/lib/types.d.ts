@@ -56,6 +56,6 @@ export interface Player {
 	name: string;
 	rivalName: string;
 	money: number;
-	badges: string[];
+	badges: { name: string; owned: boolean }[];
 	gender: string;
 }

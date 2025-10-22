@@ -10,7 +10,6 @@ export const checksumPlayer = (fileHex: string[]): string[] => {
 	for (let address = addresses.sBackupGameData; address < addresses.sBackupGameDataEnd; address++) {
 		sum += parseInt(fileHex[address], 16);
 	}
-
 	// Keep only the lower 16 bits
 	sum = sum & 0xffff;
 
