@@ -1,5 +1,4 @@
 import addresses from '$data/addresses.json';
-import checksumPlayer from '$lib/parsers/checksumPlayer';
 import { bin2hex, writeString } from '$lib/utils';
 import type { PartyMon } from '$lib/types';
 import reverseParsePartyMon from './reverseParsePartyMon';
@@ -9,7 +8,7 @@ function reverseParseParty(
 	party: PartyMon[],
 	PF: 'polished' | 'faithful'
 ): string[] {
-	const address = addresses.sPokémonData + 8;
+	const address = addresses.sBackupPokémonData + 8;
 	fileHex[address - 8] = party.filter(Boolean).length.toString(16).padStart(2, '0');
 	for (let i = 0; i < 6; i++) {
 		if (!party[i]) continue;

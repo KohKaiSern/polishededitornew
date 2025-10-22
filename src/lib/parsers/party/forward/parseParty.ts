@@ -5,7 +5,7 @@ import parsePartyMon from './parsePartyMon';
 
 function parseParty(fileHex: string[], PF: 'polished' | 'faithful'): PartyMon[] {
 	const party = Array(6).fill(null);
-	const address = addresses.sPokémonData + 8;
+	const address = addresses.sBackupPokémonData + 8;
 	for (let i = 0; i < parseInt(fileHex[address - 8], 16); i++) {
 		party[i] = parsePartyMon(fileHex, address + 48 * i, PF);
 		party[i]['OTNickname'] = readString(fileHex, address + 288 + i * 11, 7, false);

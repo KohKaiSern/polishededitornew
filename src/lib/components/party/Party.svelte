@@ -1,11 +1,15 @@
 <script lang="ts">
 	import { Button, Card, Drawer, Heading, P, Progressbar } from 'flowbite-svelte';
-	import { EditSolid } from 'flowbite-svelte-icons';
-	import { getGIFURL, getHPPercent, getType, getTypeColour } from '$lib/utils';
-	import type { PartyMon } from '$lib/types';
+	import { EditSolid, PlusOutline } from 'flowbite-svelte-icons';
+	import { getEmptyPartyMon, getGIFURL, getHPPercent, getType, getTypeColour } from '$lib/utils';
+	import type { PartyMon, Player } from '$lib/types';
 	import PartyMonEditor from './PartyMonEditor.svelte';
 
-	let { party = $bindable(), PF }: { party: PartyMon[]; PF: 'polished' | 'faithful' } = $props();
+	let {
+		party = $bindable(),
+		player,
+		PF
+	}: { party: PartyMon[]; player: Player; PF: 'polished' | 'faithful' } = $props();
 	let open = $state(false);
 	let innerWidth = $state(0);
 	let innerHeight = $state(0);
@@ -15,7 +19,19 @@
 	{#each party as mon, i}
 		{#if !party[i]}
 			<Card class="p-5">
-				<Heading tag="h5">Empty</Heading>
+				<div class="flex gap-3 justify-between items-center min-h-[40px]">
+					<Heading tag="h5">Empty</Heading>
+					{#if party[i - 1]}
+						<Button
+							class="p-2! border-gray-300 hover:bg-gray-300"
+							outline
+							color="dark"
+							onclick={() => {
+								party[i] = getEmptyPartyMon(player);
+							}}><PlusOutline class="text-gray-600 dark:text-gray-400" /></Button
+						>
+					{/if}
+				</div>
 			</Card>
 		{:else}
 			<Card class="relative p-5">

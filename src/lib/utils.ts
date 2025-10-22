@@ -1,5 +1,5 @@
 import type { Form, Species } from '../extractors/types';
-import type { Mon, PartyMon } from './types';
+import type { Mon, PartyMon, Player } from './types';
 import addresses from './data/addresses.json';
 import charmap from './data/charmap.json';
 import pokemon from './data/pokemon.json';
@@ -242,4 +242,39 @@ export const getTypeColour = (type: string): string => {
 
 export const getHPPercent = (mon: PartyMon): number => {
 	return Math.floor((mon.currentHP * 100) / mon.stats[0]);
+};
+
+export const getEmptyPartyMon = (player: Player): PartyMon => {
+	return {
+		species: 'Bulbasaur',
+		form: 'plain',
+		heldItem: 'None',
+		moves: ['Tackle', 'None', 'None', 'None'],
+		OTID: player.id,
+		exp: 0,
+		evs: [0, 0, 0, 0, 0, 0],
+		dvs: [0, 0, 0, 0, 0, 0],
+		shininess: 'Not Shiny',
+		ability: 'Overgrow',
+		nature: 'Hardy',
+		isEgg: false,
+		gender: 'Male',
+		powerPoints: [35, 0, 0, 0],
+		happiness: 0,
+		pokerus: {
+			strain: 'None',
+			daysRemaining: 'None'
+		},
+		level: 1,
+		caughtBall: 'Poké Ball',
+		caughtTime: 'Day',
+		caughtLevel: 1,
+		caughtLocation: 'New Bark Town',
+		hyperTraining: [false, false, false, false, false, false],
+		nickname: 'Bulbasaur',
+		OTNickname: player.name,
+		currentHP: 11,
+		stats: [12, 6, 6, 6, 6, 6],
+		status: 'None'
+	};
 };

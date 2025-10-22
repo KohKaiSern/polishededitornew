@@ -17,7 +17,7 @@ const SYMBOLS = [
 	'sGameDataEnd',
 	'sBackupGameData',
 	'sBackupGameDataEnd',
-	'sPokémonData',
+	'sBackupPokémonData',
 	'wNumItems',
 	'wNumMedicine',
 	'wNumBalls',

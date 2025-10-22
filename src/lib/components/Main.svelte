@@ -126,5 +126,5 @@
 		/>
 	{/if}
 	<Hr />
-	{#if selectedEditor === 'party'}<Party bind:party={party!} {PF} />{/if}
+	{#if selectedEditor === 'party'}<Party bind:party={party!} player={player!} {PF} />{/if}
 </div>
