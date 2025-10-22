@@ -26,5 +26,11 @@
 	"wWingAmounts": 6493,
 	"wCandyAmounts": 6488,
 	"wBlueCardBalance": 6658,
+	"wPlayerID": 4616,
+	"wPlayerGender": 4618,
+	"wPlayerName": 4619,
+	"wRivalName": 4630,
+	"wMoney": 5493,
+	"wBadges": 5502,
 	"wGameData": 4616
 }

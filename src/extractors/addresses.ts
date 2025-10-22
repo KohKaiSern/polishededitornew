@@ -29,6 +29,12 @@ const SYMBOLS = [
 	'wWingAmounts',
 	'wCandyAmounts',
 	'wBlueCardBalance',
+	'wPlayerID',
+	'wPlayerGender',
+	'wPlayerName',
+	'wRivalName',
+	'wMoney',
+	'wBadges',
 	'wGameData'
 ];
 

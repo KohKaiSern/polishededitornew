@@ -52,9 +52,10 @@ export interface BagSlot {
 }
 
 export interface Player {
+	id: number;
 	name: string;
+	rivalName: string;
 	money: number;
 	badges: string[];
 	gender: string;
-	palette: string;
 }
