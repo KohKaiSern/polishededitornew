@@ -2,20 +2,20 @@
 	import { Button, Card, Drawer, Heading, P, Progressbar } from 'flowbite-svelte';
 	import { EditSolid } from 'flowbite-svelte-icons';
 	import { getGIFURL, getHPPercent, getType, getTypeColour } from '$lib/utils';
-	import type { PartyMon } from '$lib/types';
-	import PartyMonEditor from './PartyMonEditor.svelte';
+	import type { Mon, PartyMon } from '$lib/types';
+	import MonEditor from './MonEditor.svelte';
 
 	let {
 		mon = $bindable(),
 		PF,
 		onDelete
-	}: { mon: PartyMon; PF: 'polished' | 'faithful'; onDelete: () => void } = $props();
+	}: { mon: PartyMon | Mon; PF: 'polished' | 'faithful'; onDelete: () => void } = $props();
 	let open = $state(false);
 	let innerHeight = $state(0);
 	let innerWidth = $state(0);
 </script>
 
-<Card class="relative p-5">
+<Card class="relative p-5 max-w-none">
 	<div class="mb-3 flex">
 		<div
 			class="mr-5 flex size-[75px] items-center justify-center rounded-lg bg-white border border-gray-300 dark:border-none"
@@ -40,12 +40,18 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex items-center gap-3 w-[50%]">
-		<P>HP</P><Progressbar
-			color={getHPPercent(mon) > 50 ? 'green' : getHPPercent(mon) > 20 ? 'yellow' : 'red'}
-			progress={getHPPercent(mon).toString()}
-		/>
-	</div>
+	{#if Object.hasOwn(mon, 'currentHP')}
+		<div class="flex items-center gap-3 w-[50%]">
+			<P>HP</P><Progressbar
+				color={getHPPercent(mon as PartyMon) > 50
+					? 'green'
+					: getHPPercent(mon as PartyMon) > 20
+						? 'yellow'
+						: 'red'}
+				progress={getHPPercent(mon as PartyMon).toString()}
+			/>
+		</div>
+	{/if}
 	<P>Lv. {mon.level}</P>
 	<P>Held Item: {mon.heldItem}</P>
 	<P>Ability: {mon.ability}</P>
@@ -62,7 +68,7 @@
 	placement={innerWidth > innerHeight ? 'right' : 'bottom'}
 	class={innerWidth > innerHeight ? 'h-full w-[75%]' : 'h-[75%] w-full'}
 >
-	<PartyMonEditor
+	<MonEditor
 		bind:mon
 		{PF}
 		onDelete={() => {

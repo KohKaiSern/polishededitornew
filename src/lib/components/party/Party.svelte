@@ -3,7 +3,7 @@
 	import { PlusOutline } from 'flowbite-svelte-icons';
 	import { getEmptyPartyMon } from '$lib/utils';
 	import type { PartyMon, Player } from '$lib/types';
-	import PartyPokemon from './PartyPokemon.svelte';
+	import MonCard from '../mon/MonCard.svelte';
 
 	let {
 		party = $bindable(),
@@ -20,7 +20,7 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
 	{#each party as mon, i}
 		{#if !party[i]}
-			<Card class="p-5">
+			<Card class="p-5 max-w-none">
 				<div class="flex gap-3 justify-between items-center min-h-[40px]">
 					<Heading tag="h5">Empty</Heading>
 					{#if party[i - 1]}
@@ -36,7 +36,7 @@
 				</div>
 			</Card>
 		{:else}
-			<PartyPokemon bind:mon={party[i]} {PF} onDelete={() => deletePokemon(i)} />
+			<MonCard bind:mon={party[i]} {PF} onDelete={() => deletePokemon(i)} />
 		{/if}
 	{/each}
 </div>

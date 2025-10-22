@@ -1,13 +1,12 @@
 <script lang="ts">
 	import { Accordion, AccordionItem, Button, Heading } from 'flowbite-svelte';
-	import { TrashBinSolid } from 'flowbite-svelte-icons';
-	import type { PartyMon } from '$lib/types';
+	import type { Mon, PartyMon } from '$lib/types';
 
 	let {
 		mon = $bindable(),
 		PF,
 		onDelete
-	}: { mon: PartyMon; PF: 'polished' | 'faithful'; onDelete: () => void } = $props();
+	}: { mon: PartyMon | Mon; PF: 'polished' | 'faithful'; onDelete: () => void } = $props();
 </script>
 
 <div class="relative h-full flex flex-col">
@@ -18,7 +17,7 @@
 			<div>TODO</div>
 		</AccordionItem>
 		<AccordionItem>
-			{#snippet header()}DVs, EVs & Nature{/snippet}
+			{#snippet header()}Stats{/snippet}
 			<div>TODO</div>
 		</AccordionItem>
 		<AccordionItem>
@@ -27,6 +26,10 @@
 		</AccordionItem>
 		<AccordionItem>
 			{#snippet header()}Miscellaneous{/snippet}
+			<div>TODO</div>
+		</AccordionItem>
+		<AccordionItem>
+			{#snippet header()}OT & Caught Data{/snippet}
 			<div>TODO</div>
 		</AccordionItem>
 	</Accordion>

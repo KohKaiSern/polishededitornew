@@ -273,7 +273,7 @@ export const getEmptyPartyMon = (player: Player): PartyMon => {
 		hyperTraining: [false, false, false, false, false, false],
 		nickname: 'Bulbasaur',
 		OTNickname: player.name,
-		currentHP: 11,
+		currentHP: 12,
 		stats: [12, 6, 6, 6, 6, 6],
 		status: 'None'
 	};
