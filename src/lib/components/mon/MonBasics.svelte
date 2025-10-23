@@ -5,23 +5,20 @@
 	import items from '$data/items.json';
 	import pokemon from '$data/pokemon.json';
 	import type { Mon, PartyMon } from '$lib/types';
-	import type { Form } from '../../../extractors/types';
+	import type { Form, Species } from '../../../extractors/types';
 
-	let { mon = $bindable(), PF }: { mon: Mon | PartyMon; PF: 'polished' | 'faithful' } = $props();
+	let {
+		mon = $bindable(),
+		species,
+		form,
+		PF
+	}: { mon: Mon | PartyMon; species: Species; form: Form; PF: 'polished' | 'faithful' } = $props();
 
-	function changeSpecies(): void {
-		const species = pokemon[PF].find((p) => p.name === mon.species)!;
-		const form = (species.forms as Form[])[0];
-		resetProps(form);
+	function resetMon(): void {
+		mon.form = species.forms[0].id!;
+		resetForm();
 	}
-
-	function changeForm(): void {
-		const species = pokemon[PF].find((p) => p.name === mon.species)!;
-		const form = (species.forms as Form[]).find((f) => f.id === mon.form)!;
-		resetProps(form);
-	}
-
-	function resetProps(form: Form): void {
+	function resetForm(): void {
 		mon.ability = form.abilities[0];
 		mon.gender = form.hasGender ? mon.gender : 'Genderless';
 		mon.nickname = pokemon[PF].find((p) => p.name === mon.nickname) ? mon.species : mon.nickname;
@@ -30,7 +27,7 @@
 	function getExpForLvl(): void {
 		const cf =
 			growthRateCoefficients[PF][
-				getGrowthRate() as keyof (typeof growthRateCoefficients)[typeof PF]
+				form.growthRate as keyof (typeof growthRateCoefficients)['polished' | 'faithful']
 			];
 		mon.exp = Math.max(
 			Math.ceil(
@@ -38,12 +35,6 @@
 			),
 			0
 		);
-	}
-
-	function getGrowthRate(): string {
-		return (pokemon[PF].find((p) => p.name === mon.species)!.forms as Form[]).find(
-			(f) => f.id === mon.form
-		)!.growthRate;
 	}
 </script>
 
@@ -55,12 +46,12 @@
 	<DropdownSearch
 		options={pokemon[PF].map((p) => p.name).filter((p) => !'?000?Egg?256?'.includes(p))}
 		bind:value={mon.species}
-		onchange={changeSpecies}
+		onchange={resetMon}
 	/>
 	<DropdownSearch
-		options={pokemon[PF].find((p) => p.name === mon.species)!.forms.map((f) => f.id)}
+		options={species.forms.map((f) => f.id)}
 		bind:value={mon.form}
-		onchange={changeForm}
+		onchange={resetForm}
 	/>
 </div>
 <Heading tag="h5" class="mt-5 mb-5">Held Item</Heading>
@@ -69,12 +60,7 @@
 	bind:value={mon.heldItem}
 />
 <Heading tag="h5" class="mt-5 mb-5">Ability</Heading>
-<RadioSelect
-	options={(pokemon[PF].find((p) => p.name === mon.species)!.forms as Form[])
-		.find((f) => f.id === mon.form)!
-		.abilities.map((a) => ({ text: a, id: a }))}
-	bind:value={mon.ability}
-/>
+<RadioSelect options={form.abilities.map((a) => ({ text: a, id: a }))} bind:value={mon.ability} />
 <Heading tag="h5" class="mt-5 mb-5">Level</Heading>
 <NumberInput bind:value={mon.level} min={1} max={100} onchange={getExpForLvl} />
 

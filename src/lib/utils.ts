@@ -1,8 +1,6 @@
-import type { Form, Species } from '../extractors/types';
-import type { Mon, PartyMon, Player } from './types';
+import type { PartyMon, Player } from './types';
 import addresses from './data/addresses.json';
 import charmap from './data/charmap.json';
-import pokemon from './data/pokemon.json';
 import versions from './data/versions.json';
 
 export const buf2hex = async (buf: File): Promise<string[]> => {
@@ -183,7 +181,7 @@ export const writeString = (
 	return fileHex;
 };
 
-const cammyFormat = (str: string): string => {
+export const cammyFormat = (str: string): string => {
 	if (str === 'spiky_eared') {
 		return 'spiky';
 	}
@@ -196,23 +194,6 @@ const cammyFormat = (str: string): string => {
 		.replaceAll('♂', '_m')
 		.replaceAll('♀', '_f')
 		.replaceAll('é', 'e');
-};
-
-export const getGIFURL = (mon: PartyMon | Mon): string => {
-	// Format names to Cammy's format
-	let species = mon.isEgg ? 'egg' : cammyFormat(mon.species);
-	let form = mon.isEgg ? 'plain' : cammyFormat(mon.form);
-	const shine = mon.shininess === 'Shiny' ? 'shiny' : 'normal';
-
-	//Put it all together
-	const formPath = form === 'plain' ? species : `${species}_${form}`;
-	return `https://raw.githubusercontent.com/caomicc/polisheddex/refs/heads/main/public/sprites/pokemon/${formPath}/${shine}_front_animated.gif`;
-};
-
-export const getType = (mon: PartyMon | Mon, PF: 'polished' | 'faithful'): string[] => {
-	let species = pokemon[PF].find((pokemon) => pokemon.name === mon.species)!;
-	let form = (species.forms as Form[]).find((form) => form.id === mon.form)!;
-	return form.type;
 };
 
 const TYPE_COLOURS = {
@@ -240,10 +221,6 @@ export const getTypeColour = (type: string): string => {
 	return TYPE_COLOURS[type as keyof typeof TYPE_COLOURS];
 };
 
-export const getHPPercent = (mon: PartyMon): number => {
-	return Math.floor((mon.currentHP * 100) / mon.stats[0]);
-};
-
 export const getEmptyPartyMon = (player: Player): PartyMon => {
 	return {
 		species: 'Bulbasaur',
@@ -259,12 +236,8 @@ export const getEmptyPartyMon = (player: Player): PartyMon => {
 		nature: 'Hardy',
 		isEgg: false,
 		gender: 'Male',
-		powerPoints: [
-			{ points: 35, PPUPs: 0 },
-			{ points: 0, PPUPs: 0 },
-			{ points: 0, PPUPs: 0 },
-			{ points: 0, PPUPs: 0 }
-		],
+		PPUPs: [0, 0, 0, 0],
+		powerPoints: [35, 0, 0, 0],
 		happiness: 0,
 		pokerus: {
 			strain: 'None',

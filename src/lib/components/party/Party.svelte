@@ -9,7 +9,11 @@
 		party = $bindable(),
 		player,
 		PF
-	}: { party: (PartyMon | null)[]; player: Player; PF: 'polished' | 'faithful' } = $props();
+	}: {
+		party: (PartyMon | null)[];
+		player: Player;
+		PF: 'polished' | 'faithful';
+	} = $props();
 
 	function deletePokemon(index: number) {
 		party.splice(index, 1);
@@ -38,7 +42,7 @@
 				</div>
 			</Card>
 		{:else}
-			<MonCard bind:mon={party[i]} {PF} onDelete={() => deletePokemon(i)} />
+			<MonCard bind:mon={party[i]} {PF} ondelete={() => deletePokemon(i)} />
 		{/if}
 	{/each}
 </div>

@@ -1,18 +1,34 @@
 <script lang="ts">
 	import { Button, Card, Drawer, Heading, P, Progressbar } from 'flowbite-svelte';
 	import { EditSolid } from 'flowbite-svelte-icons';
-	import { getGIFURL, getHPPercent, getType, getTypeColour } from '$lib/utils';
+	import pokemon from '$data/pokemon.json';
+	import { cammyFormat, getTypeColour } from '$lib/utils';
 	import type { Mon, PartyMon } from '$lib/types';
 	import MonEditor from './MonEditor.svelte';
 
 	let {
 		mon = $bindable(),
 		PF,
-		onDelete
-	}: { mon: PartyMon | Mon; PF: 'polished' | 'faithful'; onDelete: () => void } = $props();
+		ondelete
+	}: { mon: PartyMon | Mon; PF: 'polished' | 'faithful'; ondelete: () => void } = $props();
 	let open = $state(false);
 	let innerHeight = $state(0);
 	let innerWidth = $state(0);
+	let species = $derived(pokemon[PF].find((p) => p.name === mon.species)!);
+	let form = $derived(species.forms.find((f) => f.id === mon.form)!);
+	let HPPercent = $derived.by(() => {
+		if ('currentHP' in mon) {
+			return Math.floor((mon.currentHP * 100) / mon.stats[0]);
+		}
+		return null;
+	});
+	let src = $derived.by(() => {
+		let species = mon.isEgg ? 'egg' : cammyFormat(mon.species);
+		let form = mon.isEgg ? 'plain' : cammyFormat(mon.form);
+		const shine = mon.shininess === 'Shiny' ? 'shiny' : 'normal';
+		const formPath = form === 'plain' ? species : `${species}_${form}`;
+		return `https://raw.githubusercontent.com/caomicc/polisheddex/refs/heads/main/public/sprites/pokemon/${formPath}/${shine}_front_animated.gif`;
+	});
 </script>
 
 <Card class="relative p-5 max-w-none">
@@ -20,12 +36,12 @@
 		<div
 			class="mr-5 flex size-[75px] items-center justify-center rounded-lg bg-white border border-gray-300 dark:border-none"
 		>
-			<img src={getGIFURL(mon)} alt={`GIF of the front sprite of ${mon.species}`} />
+			<img {src} alt={`GIF of the front sprite of ${mon.species}`} />
 		</div>
 		<div class="flex flex-col justify-between pt-1 pb-1">
 			<Heading tag="h5">{mon.nickname}</Heading>
 			<div class="flex gap-3">
-				{#each getType(mon, PF) as type}
+				{#each form.type as type}
 					<div
 						class="flex size-[30px] items-center justify-center rounded-[50%]"
 						style:background-color={getTypeColour(type.toLowerCase())}
@@ -40,15 +56,11 @@
 			</div>
 		</div>
 	</div>
-	{#if Object.hasOwn(mon, 'currentHP')}
+	{#if 'currentHP' in mon}
 		<div class="flex items-center gap-3 w-[50%]">
 			<P>HP</P><Progressbar
-				color={getHPPercent(mon as PartyMon) > 50
-					? 'green'
-					: getHPPercent(mon as PartyMon) > 20
-						? 'yellow'
-						: 'red'}
-				progress={getHPPercent(mon as PartyMon).toString()}
+				color={HPPercent! > 50 ? 'green' : HPPercent! > 20 ? 'yellow' : 'red'}
+				progress={HPPercent!.toString()}
 			/>
 		</div>
 	{/if}
@@ -70,10 +82,12 @@
 >
 	<MonEditor
 		bind:mon
+		{species}
+		{form}
 		{PF}
-		onDelete={() => {
+		ondelete={() => {
 			open = false;
-			onDelete();
+			ondelete();
 		}}
 	/>
 </Drawer>
