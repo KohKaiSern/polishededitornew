@@ -25,7 +25,7 @@
 			<Card class="p-5 max-w-none">
 				<div class="flex gap-3 justify-between items-center min-h-[40px]">
 					<Heading tag="h5">Empty</Heading>
-					{#if party[i - 1]}
+					{#if party[i - 1] || i === 0}
 						<Button
 							class="p-2! border-gray-300 hover:bg-gray-300"
 							outline
