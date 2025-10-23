@@ -10,7 +10,7 @@ function parsePartyMon(
 	fileHex: string[],
 	address: number,
 	PF: 'polished' | 'faithful'
-): Partial<PartyMon> {
+): Omit<PartyMon, 'hyperTraining' | 'nickname' | 'OTNickname'> {
 	//Byte #1, Byte #22: Species, Form
 	const byte22 = hex2bin(fileHex[address + 21]);
 	const dexNo = parseInt(byte22.at(2)! + hex2bin(fileHex[address]), 2);
@@ -66,13 +66,12 @@ function parsePartyMon(
 	const gender = form.hasGender ? (byte22.at(0)! === '0' ? 'Male' : 'Female') : 'Genderless';
 	const isEgg = byte22.at(1)! === '0' ? false : true;
 
-	//Byte #23-#26: Move Power Points
+	//Byte #23-#26: PP Ups, Power Points
+	const PPUPs = [];
 	const powerPoints = [];
 	for (let i = 22; i < 26; i++) {
-		powerPoints.push({
-			points: parseInt(hex2bin(fileHex[address + i]).slice(2), 2),
-			PPUPs: parseInt(hex2bin(fileHex[address + i]).slice(0, 2), 2)
-		});
+		PPUPs.push(parseInt(hex2bin(fileHex[address + i]).slice(0, 2), 2));
+		powerPoints.push(parseInt(hex2bin(fileHex[address + i]).slice(0, 6), 2));
 	}
 	//Byte #27: Happiness / Hatch Cycles
 	const happiness = parseInt(fileHex[address + 26], 16);
@@ -152,6 +151,7 @@ function parsePartyMon(
 		nature,
 		gender,
 		isEgg,
+		PPUPs,
 		powerPoints,
 		happiness,
 		pokerus,

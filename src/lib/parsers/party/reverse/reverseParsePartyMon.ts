@@ -74,11 +74,11 @@ function reverseParsePartyMon(
 	byte22 = byte22.at(0)! + (mon.isEgg === true ? '1' : '0') + byte22.slice(2);
 	fileHex[address + 21] = bin2hex(byte22);
 
-	//Byte #23-#26: Move Power Points
-	for (let i = 0; i < 4; i++) {
-		fileHex[address + 22 + i] = bin2hex(
-			mon.powerPoints[i].PPUPs.toString(2).padStart(2, '0') +
-				mon.powerPoints[i].points.toString(2).padStart(6, '0')
+	//Byte #23-#26: PP Ups, Power Points
+	for (let i = 22; i < 26; i++) {
+		fileHex[address + i] = bin2hex(
+			mon.PPUPs[i - 22].toString(2).padStart(2, '0') +
+				mon.powerPoints[i - 22].toString(2).padStart(6, '0')
 		);
 	}
 
