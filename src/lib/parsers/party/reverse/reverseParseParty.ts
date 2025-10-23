@@ -15,7 +15,7 @@ function reverseParseParty(
 		fileHex = reverseParsePartyMon(fileHex, address + 48 * i, party[i], PF);
 		fileHex = writeString(fileHex, address + 288 + i * 11, 8, party[i].OTNickname, false);
 		fileHex[address + 307 + i * 11] = bin2hex(
-			party[i].hyperTraining.map((stat) => (stat ? '1' : '0')).join('')
+			party[i].hyperTraining.map((stat) => (stat ? '1' : '0')).join('') + '00'
 		);
 		fileHex = writeString(fileHex, address + 354 + i * 11, 11, party[i].nickname, false);
 	}

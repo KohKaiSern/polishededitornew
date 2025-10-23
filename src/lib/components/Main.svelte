@@ -79,7 +79,7 @@
 				]}
 				onchange={() => handleSave()}
 			/>
-			<DarkMode class="border border-gray-300 dark:border-gray-800" />
+			<DarkMode class="border border-gray-300 dark:border-gray-700" />
 		</div>
 	</div>
 	<Label class="mt-5 mb-2">Upload Save</Label>
@@ -124,7 +124,7 @@
 				{ text: 'Player', id: 'player' }
 			]}
 		/>
+		<Hr />
+		{#if selectedEditor === 'party'}<Party bind:party={party!} player={player!} {PF} />{/if}
 	{/if}
-	<Hr />
-	{#if selectedEditor === 'party'}<Party bind:party={party!} player={player!} {PF} />{/if}
 </div>
