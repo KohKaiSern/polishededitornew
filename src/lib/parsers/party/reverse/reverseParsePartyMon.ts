@@ -134,12 +134,16 @@ function reverseParsePartyMon(
 		'Sleep',
 		'Sleep'
 	];
-	if (mon.status === 'None') {
+	if (mon.status.name === 'None') {
 		fileHex[address + 32] = '00';
-	} else if (Array.isArray(mon.status)) {
-		fileHex[address + 32] = bin2hex('00000' + mon.status[1].toString(2).padStart(3, '0'));
+	} else if (mon.status.name === 'Sleep') {
+		fileHex[address + 32] = bin2hex(
+			'00000' + mon.status.turnsRemaining!.toString(2).padStart(3, '0')
+		);
 	} else {
-		fileHex[address + 32] = bin2hex(statuses.map((s) => (s === mon.status ? '1' : '0')).join(''));
+		fileHex[address + 32] = bin2hex(
+			statuses.map((s) => (s === mon.status.name ? '1' : '0')).join('')
+		);
 	}
 
 	//Byte #34: Unused

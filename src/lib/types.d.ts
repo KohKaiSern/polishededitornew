@@ -31,7 +31,10 @@ export interface Mon {
 export interface PartyMon extends Mon {
 	currentHP: number;
 	stats: number[];
-	status: string | ['Sleep', number];
+	status: {
+		name: string;
+		turnsRemaining?: number;
+	};
 	powerPoints: number[];
 }
 

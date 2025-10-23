@@ -2,7 +2,7 @@
 	import { Button, ButtonGroup, Input } from 'flowbite-svelte';
 	import { MinusOutline, PlusOutline } from 'flowbite-svelte-icons';
 
-	let { value = $bindable(), min, max, onchange } = $props();
+	let { value = $bindable(), min, max, onchange = () => {} } = $props();
 
 	const increment = () => (value === max ? min : value + 1);
 	const decrement = () => (value === min ? max : value - 1);

@@ -108,7 +108,7 @@ function parsePartyMon(
 
 	//Byte #33: Status
 	const byte33 = hex2bin(fileHex[address + 32]);
-	let status: string | ['Sleep', number] = 'None';
+	let status: { name: string; turnsRemaining?: number } = { name: 'None' };
 	if (byte33.includes('1')) {
 		const statuses = [
 			'Badly Poisoned',
@@ -120,9 +120,9 @@ function parsePartyMon(
 			'Sleep',
 			'Sleep'
 		];
-		status = statuses.find((s, i) => s === byte33[i])!;
-		if (status === 'Sleep') {
-			status = ['Sleep', parseInt(byte33.slice(5), 2)];
+		status.name = statuses.find((s, i) => '1' === byte33[i])!;
+		if (status.name === 'Sleep') {
+			status.turnsRemaining = parseInt(byte33.slice(5), 2);
 		}
 	}
 
