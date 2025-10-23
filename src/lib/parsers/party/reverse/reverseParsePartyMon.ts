@@ -4,7 +4,6 @@ import moves from '$data/moves.json';
 import pokemon from '$data/pokemon.json';
 import { bin2hex, getNatureNo, hex2bin } from '$lib/utils';
 import type { PartyMon } from '$lib/types';
-import type { Form } from '../../../../extractors/types';
 
 function reverseParsePartyMon(
 	fileHex: string[],
@@ -63,8 +62,8 @@ function reverseParsePartyMon(
 	let byte21 = hex2bin(fileHex[address + 20]);
 	byte21 = (mon.shininess === 'Shiny' ? '1' : '0') + byte21.slice(1);
 	const abilityNo =
-		(pokemon[PF].find((pokemon) => pokemon.name === mon.species)!.forms as Form[])
-			.find((form) => form.id === mon.form)!
+		pokemon[PF].find((pokemon) => pokemon.name === mon.species)!
+			.forms.find((form) => form.id === mon.form)!
 			.abilities.findIndex((ability) => ability === mon.ability)! + 1;
 	byte21 = byte21.at(0)! + abilityNo.toString(2).padStart(2, '0') + byte21.slice(3);
 	byte21 = byte21.slice(0, 3) + getNatureNo(mon.nature).toString(2).padStart(5, '0');

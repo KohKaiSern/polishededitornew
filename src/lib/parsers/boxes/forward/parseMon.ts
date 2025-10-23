@@ -5,7 +5,6 @@ import moves from '$data/moves.json';
 import pokemon from '$data/pokemon.json';
 import { getNature, hex2bin, readString } from '$lib/utils';
 import type { Mon } from '$lib/types';
-import type { Form } from '../../../../extractors/types.d.ts';
 
 function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful'): Mon {
 	//Byte #1, Byte #22: Species, Form
@@ -15,7 +14,7 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
 	//Form Number Zero TODO
 	if (formNo === 0) formNo = 1;
 	const species = pokemon[PF][dexNo];
-	const form = (pokemon[PF][dexNo].forms as Form[]).find((f) => f.formNo === formNo)!;
+	const form = pokemon[PF][dexNo].forms.find((f) => f.formNo === formNo)!;
 
 	//Byte #2: Held Item
 	let heldItem = 'None';

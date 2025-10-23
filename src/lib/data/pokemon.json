@@ -1,6 +1,22 @@
 {
 	"polished": [
-		{ "id": "?000?", "name": "?000?", "dexNo": 0, "forms": [{ "id": "plain", "formNo": 1 }] },
+		{
+			"id": "?000?",
+			"name": "?000?",
+			"dexNo": 0,
+			"forms": [
+				{
+					"id": "plain",
+					"formNo": 1,
+					"bsts": [],
+					"type": [],
+					"hasGender": false,
+					"abilities": [],
+					"growthRate": "",
+					"learnsets": { "egg": [], "tmhm": [], "level": [] }
+				}
+			]
+		},
 		{
 			"id": "bulbasaur",
 			"name": "Bulbasaur",
@@ -25120,7 +25136,23 @@
 				}
 			]
 		},
-		{ "id": "?256?", "name": "?256?", "dexNo": 256, "forms": [{ "id": "plain", "formNo": 1 }] },
+		{
+			"id": "?256?",
+			"name": "?256?",
+			"dexNo": 256,
+			"forms": [
+				{
+					"id": "plain",
+					"formNo": 1,
+					"bsts": [],
+					"type": [],
+					"hasGender": false,
+					"abilities": [],
+					"growthRate": "",
+					"learnsets": { "egg": [], "tmhm": [], "level": [] }
+				}
+			]
+		},
 		{
 			"id": "mismagius",
 			"name": "Mismagius",
@@ -28307,7 +28339,23 @@
 		}
 	],
 	"faithful": [
-		{ "id": "?000?", "name": "?000?", "dexNo": 0, "forms": [{ "id": "plain", "formNo": 1 }] },
+		{
+			"id": "?000?",
+			"name": "?000?",
+			"dexNo": 0,
+			"forms": [
+				{
+					"id": "plain",
+					"formNo": 1,
+					"bsts": [],
+					"type": [],
+					"hasGender": false,
+					"abilities": [],
+					"growthRate": "",
+					"learnsets": { "egg": [], "tmhm": [], "level": [] }
+				}
+			]
+		},
 		{
 			"id": "bulbasaur",
 			"name": "Bulbasaur",
@@ -53427,7 +53475,23 @@
 				}
 			]
 		},
-		{ "id": "?256?", "name": "?256?", "dexNo": 256, "forms": [{ "id": "plain", "formNo": 1 }] },
+		{
+			"id": "?256?",
+			"name": "?256?",
+			"dexNo": 256,
+			"forms": [
+				{
+					"id": "plain",
+					"formNo": 1,
+					"bsts": [],
+					"type": [],
+					"hasGender": false,
+					"abilities": [],
+					"growthRate": "",
+					"learnsets": { "egg": [], "tmhm": [], "level": [] }
+				}
+			]
+		},
 		{
 			"id": "mismagius",
 			"name": "Mismagius",

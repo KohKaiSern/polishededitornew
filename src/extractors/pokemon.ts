@@ -66,7 +66,13 @@ function extractForms(FORMS: string[], pokemon: Species[]): Species[] {
 		if (mon.forms.find((form) => form.formNo === 1)) continue;
 		mon.forms.push({
 			id: 'plain',
-			formNo: 1
+			formNo: 1,
+			bsts: [],
+			type: [],
+			hasGender: false,
+			abilities: [],
+			growthRate: '',
+			learnsets: { egg: [], tmhm: [], level: [] }
 		});
 	}
 	return pokemon;
@@ -101,11 +107,7 @@ function findMon(
 	return pokemon;
 }
 
-function extractAttrs(
-	ATTRS: string[],
-	form: Partial<Form>,
-	PF: 'polished' | 'faithful'
-): Partial<Form> {
+function extractAttrs(ATTRS: string[], form: Partial<Form>, PF: 'polished' | 'faithful'): Form {
 	if (!ATTRS[0].includes('db')) ATTRS = ATTRS.slice(1);
 	if (ATTRS[10].startsWith(';')) ATTRS = ATTRS.slice(0, 10).concat(ATTRS.slice(11));
 	return {

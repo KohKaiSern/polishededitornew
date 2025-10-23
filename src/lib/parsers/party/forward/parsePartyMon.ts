@@ -5,7 +5,6 @@ import moves from '$data/moves.json';
 import pokemon from '$data/pokemon.json';
 import { getNature, hex2bin } from '$lib/utils';
 import type { PartyMon } from '$lib/types';
-import type { Form } from '../../../../extractors/types';
 
 function parsePartyMon(
 	fileHex: string[],
@@ -19,7 +18,7 @@ function parsePartyMon(
 	//Form Number Zero TODO
 	if (formNo === 0) formNo = 1;
 	const species = pokemon[PF][dexNo];
-	const form = (pokemon[PF][dexNo].forms as Form[]).find((f) => f.formNo === formNo)!;
+	const form = pokemon[PF][dexNo].forms.find((f) => f.formNo === formNo)!;
 
 	//Byte #2: Held Item
 	let heldItem = 'None';
