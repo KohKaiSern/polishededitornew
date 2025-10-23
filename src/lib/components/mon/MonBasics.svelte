@@ -85,5 +85,4 @@
 			</div>
 		{/if}
 	</div>
-	<Heading tag="h5" class="mt-5">Current HP</Heading>
 {/if}

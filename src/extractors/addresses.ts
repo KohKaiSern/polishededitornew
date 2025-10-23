@@ -35,7 +35,6 @@ const SYMBOLS = [
 	'wRivalName',
 	'wMoney',
 	'wBadges',
-	'sBackupOptions3',
 	'wGameData'
 ];
 

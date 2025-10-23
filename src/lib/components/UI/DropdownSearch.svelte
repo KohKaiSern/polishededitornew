@@ -29,7 +29,7 @@
 		{#each filteredOptions as option}
 			<button
 				type="button"
-				class="block w-full px-4 py-2 text-left text-sm text-white hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+				class="block w-full px-4 py-2 text-left text-sm text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
 				onclick={() => {
 					value = option;
 					searchTerm = '';
