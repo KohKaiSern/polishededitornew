@@ -193,8 +193,8 @@ const cammyFormat = (str: string): string => {
 		.replaceAll('-', '_')
 		.replaceAll("'", '_')
 		.replaceAll('.', '_')
-		.replaceAll('♂', 'm')
-		.replaceAll('♀', 'f')
+		.replaceAll('♂', '_m')
+		.replaceAll('♀', '_f')
 		.replaceAll('é', 'e');
 };
 
@@ -259,7 +259,12 @@ export const getEmptyPartyMon = (player: Player): PartyMon => {
 		nature: 'Hardy',
 		isEgg: false,
 		gender: 'Male',
-		powerPoints: [35, 0, 0, 0],
+		powerPoints: [
+			{ points: 35, PPUPs: 0 },
+			{ points: 0, PPUPs: 0 },
+			{ points: 0, PPUPs: 0 },
+			{ points: 0, PPUPs: 0 }
+		],
 		happiness: 0,
 		pokerus: {
 			strain: 'None',
