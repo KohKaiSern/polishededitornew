@@ -1,14 +1,11 @@
 <script lang="ts">
 	import { Heading } from 'flowbite-svelte';
+	import { DropdownSearch, NumberInput, RadioSelect, TextInput } from '../UI';
 	import growthRateCoefficients from '$data/growthRateCoefficients.json';
 	import items from '$data/items.json';
 	import pokemon from '$data/pokemon.json';
 	import type { Mon, PartyMon } from '$lib/types';
 	import type { Form } from '../../../extractors/types';
-	import DropdownSearch from '../UI/DropdownSearch.svelte';
-	import NumberInput from '../UI/NumberInput.svelte';
-	import RadioSelect from '../UI/RadioSelect.svelte';
-	import TextInput from '../UI/TextInput.svelte';
 
 	let { mon = $bindable(), PF }: { mon: Mon | PartyMon; PF: 'polished' | 'faithful' } = $props();
 
