@@ -1,10 +1,12 @@
 <script lang="ts">
 	import { Heading } from 'flowbite-svelte';
+	import growthRateCoefficients from '$data/growthRateCoefficients.json';
 	import items from '$data/items.json';
 	import pokemon from '$data/pokemon.json';
 	import type { Mon, PartyMon } from '$lib/types';
 	import type { Form } from '../../../extractors/types';
 	import DropdownSearch from '../UI/DropdownSearch.svelte';
+	import NumberInput from '../UI/NumberInput.svelte';
 	import RadioSelect from '../UI/RadioSelect.svelte';
 	import TextInput from '../UI/TextInput.svelte';
 
@@ -26,6 +28,25 @@
 		mon.ability = form.abilities[0];
 		mon.gender = form.hasGender ? mon.gender : 'Genderless';
 		mon.nickname = pokemon[PF].find((p) => p.name === mon.nickname) ? mon.species : mon.nickname;
+	}
+
+	function getExpForLvl(): void {
+		const cf =
+			growthRateCoefficients[PF][
+				getGrowthRate() as keyof (typeof growthRateCoefficients)[typeof PF]
+			];
+		mon.exp = Math.max(
+			Math.ceil(
+				(cf[0] / cf[1]) * mon.level ** 3 + cf[2] * mon.level ** 2 + cf[3] * mon.level - cf[4]
+			),
+			0
+		);
+	}
+
+	function getGrowthRate(): string {
+		return (pokemon[PF].find((p) => p.name === mon.species)!.forms as Form[]).find(
+			(f) => f.id === mon.form
+		)!.growthRate;
 	}
 </script>
 
@@ -58,5 +79,9 @@
 	bind:value={mon.ability}
 />
 <Heading tag="h5" class="mt-5 mb-5">Level</Heading>
-<Heading tag="h5">Status</Heading>
-<Heading tag="h5">Current HP</Heading>
+<NumberInput bind:value={mon.level} min={1} max={100} onchange={getExpForLvl} />
+
+{#if 'currentHP' in mon}
+	<Heading tag="h5" class="mt-5 mb-5">Status</Heading>
+	<Heading tag="h5" class="mt-5">Current HP</Heading>
+{/if}
