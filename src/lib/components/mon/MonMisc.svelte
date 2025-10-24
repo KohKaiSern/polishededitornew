@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Heading, Label, P, Radio } from 'flowbite-svelte';
+	import { Heading, Label, P } from 'flowbite-svelte';
 	import { NumberInput, RadioSelect } from '../UI';
 	import type { Mon, PartyMon } from '$lib/types';
 	import type { Form } from '../../../extractors/types';

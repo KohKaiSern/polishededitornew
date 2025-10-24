@@ -30,7 +30,7 @@
 	</AccordionItem>
 	<AccordionItem>
 		{#snippet header()}Stats{/snippet}
-		<MonStats bind:mon />
+		<MonStats bind:mon {PF} />
 	</AccordionItem>
 	<AccordionItem>
 		{#snippet header()}Moveset{/snippet}

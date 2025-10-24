@@ -17,7 +17,7 @@
 	import { getNature, getTypeColour } from '$lib/utils';
 	import type { Mon, PartyMon } from '$lib/types';
 
-	let { mon = $bindable() }: { mon: PartyMon | Mon } = $props();
+	let { mon = $bindable(), PF }: { mon: PartyMon | Mon; PF: 'polished' | 'faithful' } = $props();
 
 	let hiddenPowerType = $derived.by(() => {
 		const types = [
@@ -43,7 +43,10 @@
 		for (let i = 0; i < 6; i++) {
 			x += (mon.dvs[i] % 2) * 2 ** i;
 		}
-		return types[Math.floor((x * 16) / 63)];
+		if (PF === 'polished') {
+			return types[Math.floor((x * 16) / 63)];
+		}
+		return types[Math.floor((x * 15) / 63)];
 	});
 
 	let hyperTrainingIndices = $state(
