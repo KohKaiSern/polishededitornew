@@ -21,7 +21,7 @@
 </div>
 
 <Heading tag="h5" class="mt-5 mb-5">Caught Data</Heading>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
 	<div class="flex flex-col gap-2">
 		<Label>Time of Day</Label>
 		<RadioSelect
