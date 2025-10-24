@@ -1,4 +1,4 @@
-<script lang="ts" generics="T extends string">
+<script lang="ts" generics="T">
 	import { ButtonGroup, RadioButton } from 'flowbite-svelte';
 	import type { ChangeEventHandler } from 'svelte/elements';
 

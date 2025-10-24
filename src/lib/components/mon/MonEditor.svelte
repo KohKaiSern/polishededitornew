@@ -3,6 +3,7 @@
 	import type { Mon, PartyMon } from '$lib/types';
 	import type { Form, Species } from '../../../extractors/types';
 	import MonBasics from './MonBasics.svelte';
+	import MonMisc from './MonMisc.svelte';
 	import MonMoveset from './MonMoveset.svelte';
 	import MonStats from './MonStats.svelte';
 
@@ -37,7 +38,7 @@
 	</AccordionItem>
 	<AccordionItem>
 		{#snippet header()}Miscellaneous{/snippet}
-		<div>TODO</div>
+		<MonMisc bind:mon {form} />
 	</AccordionItem>
 	<AccordionItem>
 		{#snippet header()}OT & Caught Data{/snippet}

@@ -57,7 +57,7 @@
 	}
 </script>
 
-<Heading tag="h5" class="mt-5 mb-5">Determinant Values</Heading>
+<Heading tag="h5" class="mb-5">Determinant Values</Heading>
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
 	{#each mon.dvs as dv, i}
 		<div>
