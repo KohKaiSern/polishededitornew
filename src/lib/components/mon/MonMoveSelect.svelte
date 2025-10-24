@@ -17,13 +17,13 @@
 	let selectedGroup = $state('Level-Up Moves');
 	let moveList = $derived.by(() => {
 		if (selectedGroup === 'Level-Up Moves') {
-			return form.learnsets.level.map((m) => m.name);
+			return ['None', ...form.learnsets.level.map((m) => m.name)];
 		} else if (selectedGroup === 'Egg Moves') {
-			return form.learnsets.egg;
+			return ['None', ...form.learnsets.egg];
 		} else if (selectedGroup === 'TM & HM Moves') {
-			return form.learnsets.tmhm;
+			return ['None', ...form.learnsets.tmhm];
 		} else {
-			return moves[PF].map((m) => m.name);
+			return ['None', ...moves[PF].map((m) => m.name)];
 		}
 	});
 	let filteredMoves = $derived(
@@ -66,27 +66,31 @@
 			itemOpen = true;
 		}}
 	>
-		<div class="flex flex-nowrap items-center text-white">
-			{#if getType(move) === 'UNKNOWN_T'}
-				<div
-					class="flex size-[30px] items-center justify-center rounded-[50%] mr-3 bg-gray-400 text-lg"
-				>
-					?
-				</div>
-			{:else}
-				<div
-					class="flex size-[30px] items-center justify-center rounded-[50%] mr-3"
-					style:background-color={getTypeColour(getType(move).toLowerCase())}
-				>
-					<img
-						class="size-[60%] object-contain"
-						src={`https://raw.githubusercontent.com/duiker101/pokemon-type-svg-icons/5781623f147f1bf850f426cfe1874ba56a9b75ee/icons/${getType(move).toLowerCase()}.svg`}
-						alt={`${getType(move)} logo`}
-					/>
-				</div>
-			{/if}
-			{move}
-		</div>
+		{#if move === 'None'}
+			None
+		{:else}
+			<div class="flex flex-nowrap items-center text-white">
+				{#if getType(move) === 'UNKNOWN_T'}
+					<div
+						class="flex size-[30px] items-center justify-center rounded-[50%] mr-3 bg-gray-400 text-lg"
+					>
+						?
+					</div>
+				{:else}
+					<div
+						class="flex size-[30px] items-center justify-center rounded-[50%] mr-3"
+						style:background-color={getTypeColour(getType(move).toLowerCase())}
+					>
+						<img
+							class="size-[60%] object-contain"
+							src={`https://raw.githubusercontent.com/duiker101/pokemon-type-svg-icons/5781623f147f1bf850f426cfe1874ba56a9b75ee/icons/${getType(move).toLowerCase()}.svg`}
+							alt={`${getType(move)} logo`}
+						/>
+					</div>
+				{/if}
+				{move}
+			</div>
+		{/if}
 		<ChevronDownOutline class="ms-2 h-6 w-6 text-black dark:text-white" /></Button
 	>
 	<Dropdown class="w-70 h-70 overflow-y-auto py-1" bind:isOpen={itemOpen}>
@@ -103,29 +107,31 @@
 					}}
 					class="text-black dark:text-white justify-start rounded-none border-0 w-full h-full hover:bg-gray-200 hover:text-black dark:hover:text-white dark:hover:bg-gray-500"
 				>
-					{#if getType(moveOption) === 'UNKNOWN_T'}
-						<div
-							class="flex size-[30px] items-center justify-center rounded-[50%] mr-3 bg-gray-400 text-lg"
-						>
-							?
-						</div>
-					{:else}
-						<div
-							class="flex size-[30px] items-center justify-center rounded-[50%] mr-3"
-							style:background-color={getTypeColour(getType(moveOption).toLowerCase())}
-						>
-							<img
-								class="size-[60%] object-contain"
-								src={`https://raw.githubusercontent.com/duiker101/pokemon-type-svg-icons/5781623f147f1bf850f426cfe1874ba56a9b75ee/icons/${getType(moveOption).toLowerCase()}.svg`}
-								alt={`${getType(moveOption)} logo`}
-							/>
-						</div>
-					{/if}
+					{#if moveOption != 'None'}
+						{#if getType(moveOption) === 'UNKNOWN_T'}
+							<div
+								class="flex size-[30px] items-center justify-center rounded-[50%] mr-3 bg-gray-400 text-lg"
+							>
+								?
+							</div>
+						{:else}
+							<div
+								class="flex size-[30px] items-center justify-center rounded-[50%] mr-3"
+								style:background-color={getTypeColour(getType(moveOption).toLowerCase())}
+							>
+								<img
+									class="size-[60%] object-contain"
+									src={`https://raw.githubusercontent.com/duiker101/pokemon-type-svg-icons/5781623f147f1bf850f426cfe1874ba56a9b75ee/icons/${getType(moveOption).toLowerCase()}.svg`}
+									alt={`${getType(moveOption)} logo`}
+								/>
+							</div>
+						{/if}
 
-					{#if selectedGroup === 'Level-Up Moves'}
-						<P class="text-gray-700 dark:text-gray-400 text-xs mr-3"
-							>Lv. {form.learnsets.level.find((m) => m.name === moveOption)!.level}</P
-						>
+						{#if selectedGroup === 'Level-Up Moves'}
+							<P class="text-gray-700 dark:text-gray-400 text-xs mr-3"
+								>Lv. {form.learnsets.level.find((m) => m.name === moveOption)!.level}</P
+							>
+						{/if}
 					{/if}
 					{moveOption}
 				</Button>
