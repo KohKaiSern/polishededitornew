@@ -3,6 +3,7 @@
 	import type { Mon, PartyMon } from '$lib/types';
 	import type { Form, Species } from '../../../extractors/types';
 	import MonBasics from './MonBasics.svelte';
+	import MonStats from './MonStats.svelte';
 
 	let {
 		mon = $bindable(),
@@ -27,7 +28,7 @@
 	</AccordionItem>
 	<AccordionItem>
 		{#snippet header()}Stats{/snippet}
-		<div>TODO</div>
+		<MonStats bind:mon />
 	</AccordionItem>
 	<AccordionItem>
 		{#snippet header()}Moveset{/snippet}

@@ -14,7 +14,7 @@
 	};
 </script>
 
-<ButtonGroup>
+<ButtonGroup class="w-full">
 	<Button
 		type="button"
 		onclick={() => {
