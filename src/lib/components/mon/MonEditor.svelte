@@ -5,6 +5,7 @@
 	import MonBasics from './MonBasics.svelte';
 	import MonMisc from './MonMisc.svelte';
 	import MonMoveset from './MonMoveset.svelte';
+	import MonOTCaught from './MonOTCaught.svelte';
 	import MonStats from './MonStats.svelte';
 
 	let {
@@ -42,7 +43,7 @@
 	</AccordionItem>
 	<AccordionItem>
 		{#snippet header()}OT & Caught Data{/snippet}
-		<div>TODO</div>
+		<MonOTCaught bind:mon {PF} />
 	</AccordionItem>
 </Accordion>
 <div class="mt-5 ml-auto">
