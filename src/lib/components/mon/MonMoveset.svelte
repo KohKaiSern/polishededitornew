@@ -22,14 +22,23 @@
 		}
 		return res;
 	});
-
-	$inspect(moveData);
 </script>
 
 <div class="flex flex-col gap-5">
 	{#each mon.moves as move, i}
 		<Heading tag="h5">Move {i + 1}</Heading>
-		<MonMoveSelect bind:move={mon.moves[i]} {form} {PF} />
+		<MonMoveSelect
+			bind:move={mon.moves[i]}
+			{form}
+			{PF}
+			onchange={() => {
+				if ('powerPoints' in mon) {
+					if (mon.powerPoints[i] > (moveData[i]!.powerPoints * (5 + mon.PPUPs[i])) / 5) {
+						mon.powerPoints[i] = (moveData[i]!.powerPoints * (5 + mon.PPUPs[i])) / 5;
+					}
+				}
+			}}
+		/>
 		{#if !moveData[i]}
 			<P italic>This moveslot is empty.</P>
 		{:else}
@@ -46,7 +55,18 @@
 				{/if}
 				<div class="flex flex-col gap-3">
 					<Label>PP Ups Used</Label>
-					<NumberInput bind:value={mon.PPUPs[i]} min={0} max={3} />
+					<NumberInput
+						bind:value={mon.PPUPs[i]}
+						min={0}
+						max={3}
+						onchange={() => {
+							if ('powerPoints' in mon) {
+								if (mon.powerPoints[i] > (moveData[i]!.powerPoints * (5 + mon.PPUPs[i])) / 5) {
+									mon.powerPoints[i] = (moveData[i]!.powerPoints * (5 + mon.PPUPs[i])) / 5;
+								}
+							}
+						}}
+					/>
 				</div>
 			</div>
 			<P italic>{moveData[i].description}</P>

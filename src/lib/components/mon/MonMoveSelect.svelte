@@ -8,8 +8,9 @@
 	let {
 		move = $bindable(),
 		form,
-		PF
-	}: { move: string; form: Form; PF: 'polished' | 'faithful' } = $props();
+		PF,
+		onchange
+	}: { move: string; form: Form; PF: 'polished' | 'faithful'; onchange: () => void } = $props();
 
 	let groupOpen = $state(false);
 	let itemOpen = $state(false);
@@ -69,7 +70,7 @@
 		{#if move === 'None'}
 			None
 		{:else}
-			<div class="flex flex-nowrap items-center text-white">
+			<div class="flex flex-nowrap items-center text-black dark:text-white">
 				{#if getType(move) === 'UNKNOWN_T'}
 					<div
 						class="flex size-[30px] items-center justify-center rounded-[50%] mr-3 bg-gray-400 text-lg"
@@ -104,6 +105,7 @@
 					onclick={() => {
 						move = moveOption;
 						itemOpen = false;
+						onchange();
 					}}
 					class="text-black dark:text-white justify-start rounded-none border-0 w-full h-full hover:bg-gray-200 hover:text-black dark:hover:text-white dark:hover:bg-gray-500"
 				>
