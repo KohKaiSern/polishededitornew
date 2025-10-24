@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, Card, Heading, P } from 'flowbite-svelte';
+	import { Button, Card, Heading } from 'flowbite-svelte';
 	import { PlusOutline } from 'flowbite-svelte-icons';
 	import { getEmptyPartyMon } from '$lib/utils';
 	import type { PartyMon, Player } from '$lib/types';
@@ -21,8 +21,6 @@
 	}
 </script>
 
-<Heading tag="h3">Box your Pokemon!</Heading>
-<P>Your Pokemon's stats will not update until you box them.</P>
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-7">
 	{#each party as mon, i}
 		{#if !party[i]}
