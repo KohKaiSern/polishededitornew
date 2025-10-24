@@ -253,6 +253,6 @@ export const getEmptyPartyMon = (player: Player): PartyMon => {
 		OTNickname: player.name,
 		currentHP: 12,
 		stats: [12, 6, 6, 6, 6, 6],
-		status: 'None'
+		status: { name: 'None' }
 	};
 };

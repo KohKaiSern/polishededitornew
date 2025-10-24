@@ -1,7 +1,20 @@
 <script lang="ts">
-	import { ButtonGroup, CheckboxButton, Heading, Label, P } from 'flowbite-svelte';
+	import {
+		ButtonGroup,
+		CheckboxButton,
+		Heading,
+		Label,
+		P,
+		RadioButton,
+		Table,
+		TableBody,
+		TableBodyCell,
+		TableBodyRow,
+		TableHead,
+		TableHeadCell
+	} from 'flowbite-svelte';
 	import { NumberInput } from '../UI';
-	import { getTypeColour } from '$lib/utils';
+	import { getNature, getTypeColour } from '$lib/utils';
 	import type { Mon, PartyMon } from '$lib/types';
 
 	let { mon = $bindable() }: { mon: PartyMon | Mon } = $props();
@@ -80,7 +93,7 @@
 <Heading tag="h5" class="mt-5 mb-5">Hyper Training</Heading>
 
 <!-- Single row on sm and above -->
-<ButtonGroup class="hidden sm:flex">
+<ButtonGroup class="hidden sm:flex border-0 ring-0 shadow-none">
 	{#each ['HP', 'Atk', 'Def', 'Speed', 'Sp. Atk', 'Sp. Def'] as stat, i}
 		<CheckboxButton
 			bind:group={hyperTrainingIndices}
@@ -122,3 +135,37 @@
 </div>
 
 <Heading tag="h5" class="mt-5 mb-5">Nature</Heading>
+
+<Table border={false}>
+	<TableHead>
+		<TableHeadCell class="text-center p-0">↓ \ ↑</TableHeadCell>
+		{#each ['Atk', 'Def', 'Speed', 'Sp. Atk', 'Sp. Def'] as stat}
+			<TableHeadCell class="text-center text-red-400 font-semibold py-2 px-1"
+				>↑ {stat}</TableHeadCell
+			>
+		{/each}
+	</TableHead>
+	<TableBody>
+		{#each ['Atk', 'Def', 'Speed', 'Sp. Atk', 'Sp. Def'] as decreasedStat, rowIndex}
+			<TableBodyRow>
+				<TableBodyCell
+					class="text-center text-blue-400 font-semibold text-xs whitespace-nowrap py-2 px-2"
+					>↓ {decreasedStat.toUpperCase()}</TableBodyCell
+				>
+				{#each Array(5).fill(null) as _, columnIndex}
+					<TableBodyCell class="text-center p-0">
+						<RadioButton
+							value={getNature(rowIndex * 5 + columnIndex)}
+							outline
+							bind:group={mon.nature}
+							class="w-full h-full px-2 rounded-none border-0 text-black dark:text-gray-400"
+							checkedClass="bg-primary-700 !text-white dark:bg-primary-600 dark:text-white hover:bg-primary-700 hover:text-white dark:hover:bg-primary-600 dark:hover:text-white"
+						>
+							{getNature(rowIndex * 5 + columnIndex)}
+						</RadioButton>
+					</TableBodyCell>
+				{/each}
+			</TableBodyRow>
+		{/each}
+	</TableBody>
+</Table>
