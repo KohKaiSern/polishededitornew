@@ -3,6 +3,7 @@
 	import items from '$data/items.json';
 	import type { BagSlot } from '$lib/types';
 	import BagCountedSlot from './BagCountedSlot.svelte';
+	import BagExtras from './BagExtras.svelte';
 	import BagKeyItems from './BagKeyItems.svelte';
 	import BagTMHM from './BagTMHM.svelte';
 
@@ -73,4 +74,8 @@
 
 {#if selectedSlot === 'keyItems'}
 	<BagKeyItems bind:slot={bag.keyItems} {PF} />
+{/if}
+
+{#if selectedSlot === 'extras'}
+	<BagExtras bind:bag {PF} />
 {/if}
