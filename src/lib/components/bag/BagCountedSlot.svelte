@@ -36,11 +36,18 @@
 					/>
 					<P italic>{itemList.find((item) => item.name === slot.contents[i].name)!.description}</P>
 				</div>
-				<div class="flex flex-wrap sm:flex-nowrap gap-3 mb-1 sm:justify-end sm:w-[60]">
+				<div
+					class="flex gap-3 mb-1 items-center justify-start sm:justify-end w-full sm:w-auto sm:ml-4"
+				>
 					<Button class="p-2!" color="red" outline onclick={() => deleteItem(i)}>
 						<TrashBinSolid class="h-6 w-6" />
 					</Button>
-					<NumberInput class="w-[40%]" bind:value={slot.contents[i].qty} min={1} max={99} />
+					<NumberInput
+						class="flex-1 sm:flex-initial sm:w-32 flex-shrink-0"
+						bind:value={slot.contents[i].qty}
+						min={1}
+						max={99}
+					/>
 				</div>
 			{:else}
 				<P class="my-2 mx-1 p-1">Empty</P>
