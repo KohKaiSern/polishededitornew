@@ -15,7 +15,7 @@
 	let selectedBox = $state(1);
 </script>
 
-<header class="flex gap-5 mb-5">
+<header class="flex gap-5 mb-5 bg-gray-300 dark:bg-gray-900 sticky top-0 pt-3 z-10">
 	<div class="flex flex-col gap-2">
 		<Label>Box</Label>
 		<ButtonGroup>
