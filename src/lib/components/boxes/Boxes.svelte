@@ -27,7 +27,7 @@
 				}}><AngleLeftOutline class="h-6 w-6" /></Button
 			>
 			<span
-				class="inline-flex items-center px-4 py-2 border-y border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white"
+				class="inline-flex text-sm items-center px-4 py-2 border-y border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white"
 			>
 				{selectedBox}
 			</span>
