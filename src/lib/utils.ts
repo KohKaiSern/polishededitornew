@@ -126,18 +126,19 @@ export const readString = (
 ): string => {
   let name = '';
   for (let i = 0; i < length; i++) {
+    //Strings including checksums in their MSBs will always have their MSBs set for decoding.
     if (hasChecksum) {
       fileHex[address + i] = bin2hex('1' + hex2bin(fileHex[address + i]).slice(1));
     }
-    //Terminators
+    //Terminators (0x53 if there's no checksum, 0xFB if there is)
     if (fileHex[address + i] === '53' || fileHex[address + i] === 'FB') break;
-    //Space
-    if (fileHex[address + i] === '7F') {
+    //Space (0x7F if there's no checksum, 0xFA if there is)
+    if (fileHex[address + i] === '7F' || fileHex[address + i] === 'FA') {
       name += ' ';
       continue;
     }
-    //Zero
-    if (fileHex[address + i] === '00') {
+    //Zero (0x00 if there's no checksum, 0xFC if there is)
+    if (fileHex[address + i] === '00' || fileHex[address + i] === 'FC') {
       name += '0';
       continue;
     }
@@ -154,14 +155,14 @@ export const writeString = (
   hasChecksum: boolean
 ) => {
   for (let i = 0; i < name.length; i++) {
-    //Space
+    //Space (0x7F if there's no checksum, 0xFA if there is)
     if (name[i] === ' ') {
-      fileHex[address + i] = '7F';
+      fileHex[address + i] = hasChecksum ? 'FA' : '7F';
       continue;
     }
-    //Zero
+    //Zero (0x00 if there's no checksum, 0xFC if there is)
     if (name[i] === '0' && hasChecksum) {
-      fileHex[address + i] = '00';
+      fileHex[address + i] = hasChecksum ? 'FC' : '00';
       continue;
     }
     fileHex[address + i] = Object.keys(charmap).find(
@@ -170,7 +171,7 @@ export const writeString = (
     continue;
   }
   //Once we finish the name, we should add the terminator,
-  //followed by FFs for the rest of the bytes.
+  //followed by some dummy values for the rest of the bytes.
   //...unless it's max length already.
   if (length === name.length) return fileHex;
   fileHex[address + name.length] = hasChecksum ? 'FB' : '53';
