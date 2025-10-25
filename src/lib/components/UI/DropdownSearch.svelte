@@ -13,7 +13,11 @@
 </script>
 
 <button
-	onclick={() => (isOpen = !isOpen)}
+	onmousedown={() => {
+		setTimeout(() => {
+			isOpen = !isOpen;
+		}, 0);
+	}}
 	class="{className} inline-flex items-center justify-between rounded-lg bg-purple-600 px-5 py-2.5 text-center text-sm font-medium text-white ring-0 hover:bg-purple-800 hover:text-gray-400"
 	type="button"
 >

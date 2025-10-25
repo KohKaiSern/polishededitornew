@@ -37,8 +37,10 @@
 
 <ButtonGroup class="flex">
 	<Button
-		onclick={() => {
-			groupOpen = true;
+		onmousedown={() => {
+			setTimeout(() => {
+				groupOpen = !groupOpen;
+			}, 0);
 		}}
 		class="justify-between"
 	>
@@ -63,8 +65,10 @@
 	</Dropdown>
 	<Button
 		class="flex-grow justify-between !border-r-1 !rounded-r-lg px-4 py-2.5"
-		onclick={() => {
-			itemOpen = true;
+		onmousedown={() => {
+			setTimeout(() => {
+				itemOpen = !itemOpen;
+			}, 0);
 		}}
 	>
 		{#if move === 'None'}
