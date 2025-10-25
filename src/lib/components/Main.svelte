@@ -21,6 +21,7 @@
 	import Bag from './bag/Bag.svelte';
 	import Boxes from './boxes/Boxes.svelte';
 	import Party from './party/Party.svelte';
+	import PlayerEditor from './player/Player.svelte';
 
 	let PF: 'polished' | 'faithful' = $state('polished');
 	let file = $state<FileList | null>(null);
@@ -130,5 +131,6 @@
 		{#if selectedEditor === 'party'}<Party bind:party={party!} player={player!} {PF} />{/if}
 		{#if selectedEditor === 'boxes'}<Boxes bind:boxes={boxes!} player={player!} {PF} />{/if}
 		{#if selectedEditor === 'bag'}<Bag bind:bag={bag!} {PF} />{/if}
+		{#if selectedEditor === 'player'}<PlayerEditor bind:player={player!} {PF} />{/if}
 	{/if}
 </div>
