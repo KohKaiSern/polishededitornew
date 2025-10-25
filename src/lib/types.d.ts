@@ -41,7 +41,7 @@ export interface PartyMon extends Mon {
 export interface Box {
 	name: string;
 	theme: string;
-	mons: Mon[];
+	mons: (Mon | null)[];
 }
 
 export interface Item {

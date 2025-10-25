@@ -18,6 +18,7 @@
 	import reverseParseSave from '$lib/parsers/reverseParseSave';
 	import { validateSave } from '$lib/utils';
 	import type { BagSlot, Box, PartyMon, Player } from '$lib/types';
+	import Boxes from './boxes/Boxes.svelte';
 	import Party from './party/Party.svelte';
 
 	let PF: 'polished' | 'faithful' = $state('polished');
@@ -126,5 +127,6 @@
 		/>
 		<Hr />
 		{#if selectedEditor === 'party'}<Party bind:party={party!} player={player!} {PF} />{/if}
+		{#if selectedEditor === 'boxes'}<Boxes bind:boxes={boxes!} player={player!} {PF} />{/if}
 	{/if}
 </div>

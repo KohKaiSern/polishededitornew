@@ -2,7 +2,11 @@
 	import { Helper, Input } from 'flowbite-svelte';
 	import charmap from '$data/charmap.json';
 
-	let { value = $bindable(), maxLength }: { value: string; maxLength: number } = $props();
+	let {
+		value = $bindable(),
+		maxLength,
+		class: className = ''
+	}: { value: string; maxLength: number; class?: string } = $props();
 	let helperMsg = $state('');
 
 	function enforceFormat(): void {
@@ -22,5 +26,5 @@
 	}
 </script>
 
-<Input bind:value onfocusout={enforceFormat} />
+<Input class={className} bind:value onfocusout={enforceFormat} />
 <Helper class="mt-2">{helperMsg}</Helper>
