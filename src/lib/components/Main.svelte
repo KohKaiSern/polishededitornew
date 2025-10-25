@@ -18,6 +18,7 @@
 	import reverseParseSave from '$lib/parsers/reverseParseSave';
 	import { validateSave } from '$lib/utils';
 	import type { BagSlot, Box, PartyMon, Player } from '$lib/types';
+	import Bag from './bag/Bag.svelte';
 	import Boxes from './boxes/Boxes.svelte';
 	import Party from './party/Party.svelte';
 
@@ -125,8 +126,9 @@
 				{ text: 'Player', id: 'player' }
 			]}
 		/>
-		<Hr />
+		<Hr class="mb-3" />
 		{#if selectedEditor === 'party'}<Party bind:party={party!} player={player!} {PF} />{/if}
 		{#if selectedEditor === 'boxes'}<Boxes bind:boxes={boxes!} player={player!} {PF} />{/if}
+		{#if selectedEditor === 'bag'}<Bag bind:bag={bag!} {PF} />{/if}
 	{/if}
 </div>
