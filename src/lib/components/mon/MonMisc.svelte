@@ -46,18 +46,42 @@
 <Heading tag="h5" class="mt-5 mb-5">Pokerus</Heading>
 
 <div class="flex gap-3 flex-wrap">
-	<RadioSelect
-		bind:value={mon.pokerus.strain}
-		options={[
-			{ text: 'None', id: 'None' },
-			{ text: 'Cured', id: 'Cured' },
-			{ text: 'Strain 1', id: 1 },
-			{ text: 'Strain 2', id: 2 },
-			{ text: 'Strain 3', id: 3 },
-			{ text: 'Strain 4', id: 4 }
-		]}
-		onchange={changePokerus}
-	/>
+	<div class="hidden sm:block">
+		<RadioSelect
+			bind:value={mon.pokerus.strain}
+			options={[
+				{ text: 'None', id: 'None' },
+				{ text: 'Cured', id: 'Cured' },
+				{ text: 'Strain 1', id: 1 },
+				{ text: 'Strain 2', id: 2 },
+				{ text: 'Strain 3', id: 3 },
+				{ text: 'Strain 4', id: 4 }
+			]}
+			onchange={changePokerus}
+		/>
+	</div>
+
+	<div class="flex gap-3 flex-wrap sm:hidden">
+		<RadioSelect
+			bind:value={mon.pokerus.strain}
+			options={[
+				{ text: 'None', id: 'None' },
+				{ text: 'Cured', id: 'Cured' }
+			]}
+			onchange={changePokerus}
+		/>
+		<RadioSelect
+			bind:value={mon.pokerus.strain}
+			options={[
+				{ text: 'Strain 1', id: 1 },
+				{ text: 'Strain 2', id: 2 },
+				{ text: 'Strain 3', id: 3 },
+				{ text: 'Strain 4', id: 4 }
+			]}
+			onchange={changePokerus}
+		/>
+	</div>
+
 	{#if mon.pokerus.daysRemaining != 0}
 		<div class="flex flex-col gap-2">
 			<Label>Days Remaining</Label>
