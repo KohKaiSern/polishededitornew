@@ -40,5 +40,8 @@
 		"typescript": "^5.9.2",
 		"typescript-eslint": "^8.44.1",
 		"vite": "^7.1.7"
+	},
+	"dependencies": {
+		"@vercel/analytics": "^1.5.0"
 	}
 }
