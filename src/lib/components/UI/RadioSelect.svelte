@@ -6,16 +6,18 @@
 		value = $bindable(),
 		options,
 		onchange = () => {},
-		disabled = false
+		disabled = false,
+		class: className
 	}: {
 		value: T;
 		options: Array<{ text: string; id: T }>;
 		onchange?: ChangeEventHandler<HTMLInputElement>;
 		disabled?: boolean;
+		class?: string;
 	} = $props();
 </script>
 
-<ButtonGroup>
+<ButtonGroup class={className}>
 	{#each options as { text, id }}
 		<RadioButton
 			{disabled}

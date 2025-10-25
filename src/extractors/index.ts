@@ -11,6 +11,7 @@ import keyItems from './keyItems';
 import locations from './locations';
 import moves from './moves';
 import pokemon from './pokemon';
+import tmhm from './tmhm';
 import { writeJSON } from './utils';
 import versions from './versions';
 import wings from './wings';
@@ -30,7 +31,8 @@ for (const [name, obj] of Object.entries({
 	wings,
 	expCandy,
 	pokemon,
-	apricorns
+	apricorns,
+	tmhm
 })) {
 	writeJSON(name, obj);
 }
