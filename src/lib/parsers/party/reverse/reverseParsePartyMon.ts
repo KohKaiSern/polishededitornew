@@ -103,7 +103,7 @@ function reverseParsePartyMon(
 			.itemNo.toString(2)
 			.padStart(5, '0');
 	}
-	fileHex[address + 29] = bin2hex(
+	fileHex[address + 28] = bin2hex(
 		'0' +
 			['Evening', 'Morning', 'Day', 'Night']
 				.findIndex((time) => time === mon.caughtTime)

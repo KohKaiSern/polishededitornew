@@ -59,7 +59,9 @@
 		onchange={changePokerus}
 	/>
 	{#if mon.pokerus.daysRemaining != 0}
-		<Label>Days Remaining</Label>
-		<NumberInput bind:value={mon.pokerus.daysRemaining} min={1} max={4} />
+		<div class="flex flex-col gap-2">
+			<Label>Days Remaining</Label>
+			<NumberInput bind:value={mon.pokerus.daysRemaining} min={1} max={4} />
+		</div>
 	{/if}
 </div>
