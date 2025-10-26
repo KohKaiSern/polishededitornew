@@ -141,19 +141,19 @@
 
 <Table border={false}>
 	<TableHead>
-		<TableHeadCell class="text-center p-0">↓ \ ↑</TableHeadCell>
+		<TableHeadCell class="text-center p-0">↑ \ ↓</TableHeadCell>
 		{#each ['Atk', 'Def', 'Speed', 'Sp. Atk', 'Sp. Def'] as stat}
-			<TableHeadCell class="text-center text-red-400 font-semibold py-2 px-1"
-				>↑ {stat}</TableHeadCell
+			<TableHeadCell class="text-center text-blue-400 font-semibold py-2 px-1"
+				>↓ {stat}</TableHeadCell
 			>
 		{/each}
 	</TableHead>
 	<TableBody>
-		{#each ['Atk', 'Def', 'Speed', 'Sp. Atk', 'Sp. Def'] as decreasedStat, rowIndex}
+		{#each ['Atk', 'Def', 'Speed', 'Sp. Atk', 'Sp. Def'] as increasedStat, rowIndex}
 			<TableBodyRow>
 				<TableBodyCell
-					class="text-center text-blue-400 font-semibold text-xs whitespace-nowrap py-2 px-2"
-					>↓ {decreasedStat.toUpperCase()}</TableBodyCell
+					class="text-center text-red-400 font-semibold text-xs whitespace-nowrap py-2 px-2"
+					>↑ {increasedStat.toUpperCase()}</TableBodyCell
 				>
 				{#each Array(5).fill(null) as _, columnIndex}
 					<TableBodyCell class="text-center p-0">

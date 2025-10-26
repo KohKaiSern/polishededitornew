@@ -14,7 +14,7 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
   const species = pokemon[PF][dexNo];
   let form = species.forms.find((f) => f.formNo === formNo);
   if (!form) {
-    form = species.forms.find(f => f.formNo === 1)
+    form = species.forms.find(f => f.formNo === 1)!
   }
   //Byte #2: Held Item
   let heldItem = 'None';
