@@ -55,10 +55,19 @@
 	/>
 </div>
 <Heading tag="h5" class="mt-5 mb-5">Held Item</Heading>
-<DropdownSearch
-	options={['None'].concat(items[PF].map((item) => item.name))}
-	bind:value={mon.heldItem}
-/>
+{#if 'currentHP' in mon}
+	<DropdownSearch
+		options={['None'].concat(items[PF].map((item) => item.name))}
+		bind:value={mon.heldItem}
+	/>
+{:else}
+	<DropdownSearch
+		options={['None']
+			.concat(items[PF].map((item) => item.name))
+			.filter((name) => !name.includes('Mail'))}
+		bind:value={mon.heldItem}
+	/>
+{/if}
 <Heading tag="h5" class="mt-5 mb-5">Ability</Heading>
 <RadioSelect options={form.abilities.map((a) => ({ text: a, id: a }))} bind:value={mon.ability} />
 <Heading tag="h5" class="mt-5 mb-5">Level</Heading>
