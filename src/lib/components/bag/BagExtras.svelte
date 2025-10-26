@@ -19,7 +19,7 @@
 			{#each bag.candy.contents as candy, i}
 				<ListgroupItem class="flex w-full flex-wrap py-3 gap-3 sm:justify-between sm:flex-nowrap">
 					<P>{candy.name}</P>
-					<NumberInput class="w-auto" bind:value={bag.candy.contents[i].qty} min={0} max={255} />
+					<NumberInput class="w-auto" bind:value={bag.candy.contents[i].qty} min={0} max={99} />
 				</ListgroupItem>
 			{/each}
 		</Listgroup>
@@ -30,12 +30,7 @@
 			{#each bag.apricorns.contents as apricorn, i}
 				<ListgroupItem class="flex w-full flex-wrap py-3 gap-3 sm:justify-between sm:flex-nowrap">
 					<P>{`${apricorn.name}: ${apricorns[PF].find((a) => a.name === apricorn.name)!.ball}`}</P>
-					<NumberInput
-						class="w-auto"
-						bind:value={bag.apricorns.contents[i].qty}
-						min={0}
-						max={255}
-					/>
+					<NumberInput class="w-auto" bind:value={bag.apricorns.contents[i].qty} min={0} max={99} />
 				</ListgroupItem>
 			{/each}
 		</Listgroup>
@@ -46,13 +41,13 @@
 			{#each bag.wings.contents as wing, i}
 				<ListgroupItem class="flex w-full flex-wrap py-3 gap-3 sm:justify-between sm:flex-nowrap">
 					<P>{wing.name}</P>
-					<NumberInput class="w-auto" bind:value={bag.wings.contents[i].qty} min={0} max={65535} />
+					<NumberInput class="w-auto" bind:value={bag.wings.contents[i].qty} min={0} max={999} />
 				</ListgroupItem>
 			{/each}
 		</Listgroup>
 	</AccordionItem>
 	<AccordionItem>
 		{#snippet header()}Blue Card Points{/snippet}
-		<NumberInput class="w-auto" bind:value={bag.blueCard.contents[0].qty} min={0} max={255} />
+		<NumberInput class="w-auto" bind:value={bag.blueCard.contents[0].qty} min={0} max={30} />
 	</AccordionItem>
 </Accordion>

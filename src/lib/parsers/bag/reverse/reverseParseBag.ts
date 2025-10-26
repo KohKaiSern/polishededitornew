@@ -5,88 +5,88 @@ import { bin2hex } from '$lib/utils';
 import type { BagSlot } from '$lib/types';
 
 function reverseParseBag(
-  fileHex: string[],
-  bag: Record<string, BagSlot>,
-  PF: 'polished' | 'faithful'
+	fileHex: string[],
+	bag: Record<string, BagSlot>,
+	PF: 'polished' | 'faithful'
 ): string[] {
-  const reverseParseCountedSlot = (address: number, slot: BagSlot): void => {
-    fileHex[address] = slot.count!.toString(16).padStart(2, '0');
-    for (let i = 0; i < slot.count!; i++) {
-      ((fileHex[address + 1 + i * 2] = items[PF].find(
-        (item) => item.name === slot.contents[i].name
-      )!
-        .itemNo.toString(16)
-        .padStart(2, '0')),
-        (fileHex[address + 2 + i * 2] = slot.contents[i].qty.toString(16).padStart(2, '0')));
-    }
-    fileHex[address + 1 + slot.count! * 2] = 'FF';
-  };
+	const reverseParseCountedSlot = (address: number, slot: BagSlot): void => {
+		fileHex[address] = slot.count!.toString(16).padStart(2, '0');
+		for (let i = 0; i < slot.count!; i++) {
+			((fileHex[address + 1 + i * 2] = items[PF].find(
+				(item) => item.name === slot.contents[i].name
+			)!
+				.itemNo.toString(16)
+				.padStart(2, '0')),
+				(fileHex[address + 2 + i * 2] = slot.contents[i].qty.toString(16).padStart(2, '0')));
+		}
+		fileHex[address + 1 + slot.count! * 2] = 'FF';
+	};
 
-  const reverseParseFixedSlot = (address: number, slot: BagSlot, bytesPerItem = 1): void => {
-    for (let i = 0; i < slot.contents.length; i++) {
-      for (let j = 0; j < bytesPerItem; j++) {
-        fileHex[address + i * bytesPerItem + j] = slot.contents[i].qty
-          .toString(16)
-          .padStart(bytesPerItem * 2, '0')
-          .slice(j * 2, (j + 1) * 2);
-      }
-    }
-  };
+	const reverseParseFixedSlot = (address: number, slot: BagSlot, bytesPerItem = 1): void => {
+		for (let i = 0; i < slot.contents.length; i++) {
+			for (let j = 0; j < bytesPerItem; j++) {
+				fileHex[address + i * bytesPerItem + j] = slot.contents[i].qty
+					.toString(16)
+					.padStart(bytesPerItem * 2, '0')
+					.slice(j * 2, (j + 1) * 2);
+			}
+		}
+	};
 
-  //Items
-  reverseParseCountedSlot(addresses.wNumItems, bag.items);
+	//Items
+	reverseParseCountedSlot(addresses.wNumItems, bag.items);
 
-  //Medicine
-  reverseParseCountedSlot(addresses.wNumMedicine, bag.medicine);
+	//Medicine
+	reverseParseCountedSlot(addresses.wNumMedicine, bag.medicine);
 
-  //Balls
-  reverseParseCountedSlot(addresses.wNumBalls, bag.balls);
+	//Balls
+	reverseParseCountedSlot(addresses.wNumBalls, bag.balls);
 
-  //TMs & HMs
-  const flagStr = bag.TMsHMs.contents
-    .map((tm) => tm.qty.toString())
-    .join('')
-    .padEnd(88, '0');
-  for (let i = 0; i < 11; i++) {
-    fileHex[addresses.wTMsHMs + i] = bin2hex(
-      [...flagStr.slice(i * 8, (i + 1) * 8)].toReversed().join('')
-    );
-  }
+	//TMs & HMs
+	const flagStr = bag.TMsHMs.contents
+		.map((tm) => tm.qty.toString())
+		.join('')
+		.padEnd(88, '0');
+	for (let i = 0; i < 11; i++) {
+		fileHex[addresses.wTMsHMs + i] = bin2hex(
+			[...flagStr.slice(i * 8, (i + 1) * 8)].toReversed().join('')
+		);
+	}
 
-  //Berries
-  reverseParseCountedSlot(addresses.wNumBerries, bag.berries);
+	//Berries
+	reverseParseCountedSlot(addresses.wNumBerries, bag.berries);
 
-  //Key Items
-  for (let i = 0; i < 39; i++) {
-    if (!bag.keyItems.contents[i]) {
-      fileHex = fileHex
-        .slice(0, addresses.wKeyItems + i)
-        .concat(Array(39 - i).fill('00'), fileHex.slice(addresses.wKeyItems + 39));
-      break;
-    }
-    fileHex[addresses.wKeyItems + i] = keyItems[PF].find(
-      (item) => item.name === bag.keyItems.contents[i].name
-    )!
-      .itemNo.toString(16)
-      .padStart(2, '0');
-  }
+	//Key Items
+	for (let i = 0; i < 39; i++) {
+		if (!bag.keyItems.contents[i]) {
+			fileHex = fileHex
+				.slice(0, addresses.wKeyItems + i)
+				.concat(Array(39 - i).fill('00'), fileHex.slice(addresses.wKeyItems + 39));
+			break;
+		}
+		fileHex[addresses.wKeyItems + i] = keyItems[PF].find(
+			(item) => item.name === bag.keyItems.contents[i].name
+		)!
+			.itemNo.toString(16)
+			.padStart(2, '0');
+	}
 
-  //Coins
-  fileHex[addresses.wCoins] = bag.coins.contents[0].qty.toString(16).padStart(4, '0').slice(0, 2);
-  fileHex[addresses.wCoins + 1] = bag.coins.contents[0].qty.toString(16).padStart(4, '0').slice(2);
+	//Coins
+	fileHex[addresses.wCoins] = bag.coins.contents[0].qty.toString(16).padStart(4, '0').slice(0, 2);
+	fileHex[addresses.wCoins + 1] = bag.coins.contents[0].qty.toString(16).padStart(4, '0').slice(2);
 
-  //Apricorns
-  reverseParseFixedSlot(addresses.wApricorns, bag.apricorns);
+	//Apricorns
+	reverseParseFixedSlot(addresses.wApricorns, bag.apricorns);
 
-  //Wings
-  reverseParseFixedSlot(addresses.wWingAmounts, bag.wings, 2);
+	//Wings
+	reverseParseFixedSlot(addresses.wWingAmounts, bag.wings, 2);
 
-  //Exp Candy
-  reverseParseFixedSlot(addresses.wCandyAmounts, bag.candy);
+	//Exp Candy
+	reverseParseFixedSlot(addresses.wCandyAmounts, bag.candy);
 
-  //Blue Card
-  fileHex[addresses.wBlueCardBalance] = bag.blueCard.contents[0].qty.toString(16).padStart(2, '0');
+	//Blue Card
+	fileHex[addresses.wBlueCardBalance] = bag.blueCard.contents[0].qty.toString(16).padStart(2, '0');
 
-  return fileHex;
+	return fileHex;
 }
 export default reverseParseBag;
