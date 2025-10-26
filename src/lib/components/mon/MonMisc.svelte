@@ -17,6 +17,7 @@
 		if (mon.isEgg) {
 			if ('currentHP' in mon) {
 				mon.currentHP = 0;
+				mon.status.name = 'None';
 			}
 		} else {
 			if ('currentHP' in mon) {

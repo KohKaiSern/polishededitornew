@@ -36,6 +36,8 @@
 			0
 		);
 	}
+
+	let hpRatio = $state('currentHP' in mon ? Math.ceil(mon.currentHP / mon.stats[0]) * 100 : 0);
 </script>
 
 <Heading tag="h5" class="mb-5">Nickname</Heading>
@@ -74,6 +76,18 @@
 <NumberInput bind:value={mon.level} min={1} max={100} onchange={getExpForLvl} />
 
 {#if 'currentHP' in mon && !mon.isEgg}
+	<Heading tag="h5" class="mt-5 mb-5">Current HP%</Heading>
+	<NumberInput
+		bind:value={hpRatio}
+		min={0}
+		max={100}
+		onchange={() => {
+			mon.currentHP = Math.ceil((hpRatio / 100) * mon.stats[0]);
+			if (mon.currentHP === 0) {
+				mon.status.name = 'None';
+			}
+		}}
+	/>
 	<div class="flex gap-3 items-end flex-wrap sm:flex-nowrap">
 		<div>
 			<Heading tag="h5" class="mt-5 mb-5">Status</Heading>

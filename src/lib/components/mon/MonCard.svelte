@@ -92,6 +92,11 @@
 						<P class="text-xs !text-gray-50">{status}</P>
 					</div>
 				{/if}
+				{#if mon.currentHP === 0}
+					<div class="bg-red-500 rounded-md pl-2 pr-2">
+						<P class="text-xs !text-white">FNT</P>
+					</div>
+				{/if}
 			</div>
 		{/if}
 		<P>Lv. {mon.level}</P>
