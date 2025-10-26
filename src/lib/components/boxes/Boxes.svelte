@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, ButtonGroup, Card, Heading, Label } from 'flowbite-svelte';
+	import { Button, ButtonGroup, Card, Heading, Input, Label } from 'flowbite-svelte';
 	import { AngleLeftOutline, AngleRightOutline, PlusOutline } from 'flowbite-svelte-icons';
 	import { DropdownSearch, TextInput } from '../UI';
 	import boxThemes from '$data/boxThemes.json';
@@ -13,26 +13,35 @@
 		PF
 	}: { boxes: Box[]; player: Player; PF: 'polished' | 'faithful' } = $props();
 	let selectedBox = $state(1);
+	const enforce = () => {
+		if (typeof selectedBox != 'number') return 1;
+		if (!Number.isInteger(selectedBox)) return 1;
+		if (selectedBox < 1 || selectedBox > 20) return 1;
+		return selectedBox;
+	};
 </script>
 
-<header class="flex gap-5 mb-5 bg-gray-100 dark:bg-gray-900 sticky top-0 pt-3 z-10">
+<header class="flex gap-5 mb-5 bg-gray-100 dark:bg-gray-900 sticky top-0 pt-3 pb-4 z-10">
 	<div class="flex flex-col gap-2">
 		<Label>Box</Label>
-		<ButtonGroup>
+		<ButtonGroup class="w-33">
 			<Button
-				class="p-2!"
+				class="p-2! border-1 border-gray-300 dark:border-gray-600"
 				color="purple"
 				onclick={() => {
 					selectedBox = selectedBox === 1 ? 20 : selectedBox - 1;
 				}}><AngleLeftOutline class="h-6 w-6" /></Button
 			>
-			<span
-				class="inline-flex text-sm items-center px-4 py-2 border-y border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white"
-			>
-				{selectedBox}
-			</span>
+			<Input
+				bind:value={selectedBox}
+				type="number"
+				onfocusout={() => {
+					selectedBox = enforce();
+				}}
+				class="flex-1 [appearance:textfield] text-center [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+			/>
 			<Button
-				class="p-2!"
+				class="p-2! border-1 border-gray-300 dark:border-gray-600"
 				color="purple"
 				onclick={() => {
 					selectedBox = selectedBox === 20 ? 1 : selectedBox + 1;
