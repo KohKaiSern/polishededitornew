@@ -27,4 +27,4 @@
 </script>
 
 <Input class={className} bind:value onfocusout={enforceFormat} />
-<Helper class="mt-2">{helperMsg}</Helper>
+{#if helperMsg}<Helper class="mt-2">{helperMsg}</Helper>{/if}

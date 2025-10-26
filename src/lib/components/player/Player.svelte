@@ -7,7 +7,7 @@
 </script>
 
 <Heading tag="h5" class="mb-5 mt-5">Player</Heading>
-<div class="flex flex-wrap gap-5">
+<div class="flex flex-wrap gap-3">
 	<div class="flex flex-col gap-2">
 		<Label>Name</Label>
 		<TextInput bind:value={player.name} maxLength={7} />
