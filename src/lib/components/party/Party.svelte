@@ -21,7 +21,7 @@
 	}
 </script>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-7">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-7">
 	{#each party as mon, i}
 		{#if !party[i]}
 			<Card class="p-5 max-w-none">

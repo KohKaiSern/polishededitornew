@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Button, Card, Drawer, Heading, P, Progressbar } from 'flowbite-svelte';
-	import { EditSolid } from 'flowbite-svelte-icons';
+	import { EditSolid, HeartOutline } from 'flowbite-svelte-icons';
 	import pokemon from '$data/pokemon.json';
 	import { cammyFormat, getTypeColour } from '$lib/utils';
 	import type { Mon, PartyMon } from '$lib/types';
@@ -53,6 +53,12 @@
 		}
 		return null;
 	});
+	function heal(): void {
+		if ('currentHP' in mon) {
+			mon.currentHP = mon.stats[0];
+			mon.status.name = 'None';
+		}
+	}
 </script>
 
 <Card class="relative p-5 max-w-none flex flex-col justify-between">
@@ -104,12 +110,23 @@
 		<P>Ability: {mon.ability}</P>
 		<P>Nature: {mon.nature}</P>
 	</div>
-	<Button
-		class="absolute right-5 bottom-5 p-2! border-gray-300 hover:bg-gray-300"
-		outline
-		color="dark"
-		onclick={() => (open = true)}><EditSolid class="text-gray-600 dark:text-gray-400" /></Button
-	>
+	<div class="flex absolute bottom-5 right-5 gap-3">
+		{#if 'currentHP' in mon && !mon.isEgg}
+			{#if mon.status.name != 'None' || mon.currentHP != mon.stats[0]}
+				<Button
+					class="p-2! border-green-300 hover:bg-green-300 focus:ring-green-300 focus:border-transparent"
+					outline
+					onclick={heal}><HeartOutline class="text-green-700" /></Button
+				>
+			{/if}
+		{/if}
+		<Button
+			class="p-2! border-gray-300 hover:bg-gray-300"
+			outline
+			color="dark"
+			onclick={() => (open = true)}><EditSolid class="text-gray-600 dark:text-gray-400" /></Button
+		>
+	</div>
 </Card>
 <Drawer
 	bind:open

@@ -90,24 +90,26 @@
 			}
 		}}
 	/>
-	<div class="flex gap-3 items-end flex-wrap sm:flex-nowrap">
-		<div>
-			<Heading tag="h5" class="mt-5 mb-5">Status</Heading>
-			<DropdownSearch
-				options={['None', 'Paralysis', 'Burn', 'Freeze', 'Poison', 'Sleep']}
-				bind:value={mon.status.name}
-				onchange={() => {
-					if (mon.status.name === 'Sleep') {
-						mon.status.turnsRemaining = 1;
-					}
-				}}
-			/>
-		</div>
-		{#if mon.status.name === 'Sleep'}
+	{#if mon.currentHP != 0}
+		<div class="flex gap-3 items-end flex-wrap sm:flex-nowrap">
 			<div>
-				<Heading tag="h5" class="mt-5 mb-5">Sleep Duration</Heading>
-				<NumberInput bind:value={mon.status.turnsRemaining!} min={1} max={7} />
+				<Heading tag="h5" class="mt-5 mb-5">Status</Heading>
+				<DropdownSearch
+					options={['None', 'Paralysis', 'Burn', 'Freeze', 'Poison', 'Sleep']}
+					bind:value={mon.status.name}
+					onchange={() => {
+						if (mon.status.name === 'Sleep') {
+							mon.status.turnsRemaining = 1;
+						}
+					}}
+				/>
 			</div>
-		{/if}
-	</div>
+			{#if mon.status.name === 'Sleep'}
+				<div>
+					<Heading tag="h5" class="mt-5 mb-5">Sleep Duration</Heading>
+					<NumberInput bind:value={mon.status.turnsRemaining!} min={1} max={7} />
+				</div>
+			{/if}
+		</div>
+	{/if}
 {/if}

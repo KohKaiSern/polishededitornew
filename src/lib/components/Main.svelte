@@ -63,7 +63,7 @@
 </script>
 
 {#if toastMsg}
-	<div transition:blur={{ amount: 10 }} class="absolute top-5 right-5">
+	<div transition:blur={{ amount: 10 }} class="absolute top-5 right-5 z-10">
 		<Toast>
 			{toastMsg}
 		</Toast>
