@@ -12,6 +12,18 @@
 			mon.pokerus.daysRemaining = Math.max(mon.pokerus.daysRemaining, 1);
 		}
 	}
+	//Eggs cannot have HP
+	function toggleEgg(): void {
+		if (mon.isEgg) {
+			if ('currentHP' in mon) {
+				mon.currentHP = 0;
+			}
+		} else {
+			if ('currentHP' in mon) {
+				mon.currentHP = mon.stats[0];
+			}
+		}
+	}
 </script>
 
 {#if mon.isEgg}
@@ -50,6 +62,7 @@
 		{ text: 'Is Egg', id: true },
 		{ text: 'Is Not Egg', id: false }
 	]}
+	onchange={toggleEgg}
 />
 
 <Heading tag="h5" class="mt-5 mb-5">Pokerus</Heading>

@@ -49,7 +49,7 @@
 		onchange={resetMon}
 	/>
 	<DropdownSearch
-		options={species.forms.map((f) => f.id)}
+		options={species.forms.map((f) => f.id!)}
 		bind:value={mon.form}
 		onchange={resetForm}
 	/>
@@ -90,7 +90,7 @@
 		{#if mon.status.name === 'Sleep'}
 			<div>
 				<Heading tag="h5" class="mt-5 mb-5">Sleep Duration</Heading>
-				<NumberInput bind:value={mon.status.turnsRemaining} min={1} max={7} />
+				<NumberInput bind:value={mon.status.turnsRemaining!} min={1} max={7} />
 			</div>
 		{/if}
 	</div>

@@ -55,7 +55,7 @@
 	});
 </script>
 
-<Card class="relative p-5 max-w-none">
+<Card class="relative p-5 max-w-none flex flex-col justify-between">
 	<div class="mb-3 flex">
 		<div
 			class="mr-5 flex size-[75px] items-center justify-center rounded-lg bg-white border border-gray-300 dark:border-none"
@@ -80,23 +80,25 @@
 			</div>
 		</div>
 	</div>
-	{#if 'currentHP' in mon}
-		<div class="flex items-center gap-3 w-[70%]">
-			<P>HP</P><Progressbar
-				color={HPPercent! > 50 ? 'green' : HPPercent! > 20 ? 'yellow' : 'red'}
-				progress={HPPercent!.toString()}
-			/>
-			{#if mon.status.name != 'None'}
-				<div style:background-color={statusColor} class="rounded-md pl-2 pr-2">
-					<P class="text-xs !text-gray-50">{status}</P>
-				</div>
-			{/if}
-		</div>
-	{/if}
-	<P>Lv. {mon.level}</P>
-	<P>Held Item: {mon.heldItem}</P>
-	<P>Ability: {mon.ability}</P>
-	<P>Nature: {mon.nature}</P>
+	<div>
+		{#if 'currentHP' in mon && !mon.isEgg}
+			<div class="flex items-center gap-3 w-[70%]">
+				<P>HP</P><Progressbar
+					color={HPPercent! > 50 ? 'green' : HPPercent! > 20 ? 'yellow' : 'red'}
+					progress={HPPercent!.toString()}
+				/>
+				{#if mon.status.name != 'None'}
+					<div style:background-color={statusColor} class="rounded-md pl-2 pr-2">
+						<P class="text-xs !text-gray-50">{status}</P>
+					</div>
+				{/if}
+			</div>
+		{/if}
+		<P>Lv. {mon.level}</P>
+		<P>Held Item: {mon.heldItem}</P>
+		<P>Ability: {mon.ability}</P>
+		<P>Nature: {mon.nature}</P>
+	</div>
 	<Button
 		class="absolute right-5 bottom-5 p-2! border-gray-300 hover:bg-gray-300"
 		outline
