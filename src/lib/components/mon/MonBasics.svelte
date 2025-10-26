@@ -64,7 +64,7 @@
 <Heading tag="h5" class="mt-5 mb-5">Level</Heading>
 <NumberInput bind:value={mon.level} min={1} max={100} onchange={getExpForLvl} />
 
-{#if 'currentHP' in mon}
+{#if 'currentHP' in mon && !mon.isEgg}
 	<div class="flex gap-3 items-end flex-wrap sm:flex-nowrap">
 		<div>
 			<Heading tag="h5" class="mt-5 mb-5">Status</Heading>

@@ -43,6 +43,15 @@
 	]}
 />
 
+<Heading tag="h5" class="mt-5 mb-5">Is Egg</Heading>
+<RadioSelect
+	bind:value={mon.isEgg}
+	options={[
+		{ text: 'Is Egg', id: true },
+		{ text: 'Is Not Egg', id: false }
+	]}
+/>
+
 <Heading tag="h5" class="mt-5 mb-5">Pokerus</Heading>
 
 <div class="flex gap-3 flex-wrap">
