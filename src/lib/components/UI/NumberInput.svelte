@@ -41,7 +41,7 @@
 				decrement();
 				onchange?.();
 			}}
-			class="p-2!"
+			class="p-2! focus:border-transparent focus:ring-4 focus:ring-primary-300"
 		>
 			<AngleLeftOutline class="size-6" />
 		</Button>
@@ -52,7 +52,7 @@
 				decrement();
 				onchange?.();
 			}}
-			class="p-2!"
+			class="p-2! focus:border-transparent focus:ring-4 focus:ring-primary-300"
 		>
 			<MinusOutline class="size-6" />
 		</Button>
@@ -64,7 +64,7 @@
 			enforce();
 			onchange?.();
 		}}
-		class="flex-1 [appearance:textfield] text-center [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+		class="focus:border-transparent focus:ring-4 focus:ring-primary-300 flex-1 [appearance:textfield] text-center [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
 	/>
 	{#if carousel}
 		<Button
@@ -74,7 +74,7 @@
 				increment();
 				onchange?.();
 			}}
-			class="p-2!"
+			class="p-2! focus:border-transparent focus:ring-4 focus:ring-primary-300"
 		>
 			<AngleRightOutline class="size-6" />
 		</Button>
@@ -85,7 +85,7 @@
 				increment();
 				onchange?.();
 			}}
-			class="p-2!"
+			class="p-2! focus:border-transparent focus:ring-4 focus:ring-primary-300"
 		>
 			<PlusOutline class="size-6" />
 		</Button>
