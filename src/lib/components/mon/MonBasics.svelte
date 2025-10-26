@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { Heading } from 'flowbite-svelte';
+	import { Heading, P } from 'flowbite-svelte';
 	import { DropdownSearch, NumberInput, RadioSelect, TextInput } from '../UI';
+	import abilities from '$data/abilities.json';
 	import growthRateCoefficients from '$data/growthRateCoefficients.json';
 	import items from '$data/items.json';
 	import pokemon from '$data/pokemon.json';
@@ -72,6 +73,7 @@
 {/if}
 <Heading tag="h5" class="mt-5 mb-5">Ability</Heading>
 <RadioSelect options={form.abilities.map((a) => ({ text: a, id: a }))} bind:value={mon.ability} />
+<P class="mt-5" italic>{abilities[PF].find((a) => a.name === mon.ability)!.description}</P>
 <Heading tag="h5" class="mt-5 mb-5">Level</Heading>
 <NumberInput bind:value={mon.level} min={1} max={100} onchange={getExpForLvl} />
 
