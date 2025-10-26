@@ -17,13 +17,13 @@
 		<NumberInput bind:value={player.id} min={0} max={65535} />
 	</div>
 	<div class="flex flex-col gap-2">
-		<Label>Gender</Label>
+		<Label>In-Game Model</Label>
 		<RadioSelect
 			bind:value={player.gender}
 			options={[
-				{ text: 'Male', id: 'Male' },
-				{ text: 'Female', id: 'Female' },
-				{ text: 'Non-Binary', id: 'Non-Binary' }
+				{ text: 'Chris', id: 'Male' },
+				{ text: 'Kris', id: 'Female' },
+				{ text: 'Crys', id: 'Non-Binary' }
 			]}
 		/>
 	</div>
