@@ -29,7 +29,7 @@
 </script>
 
 <Input
-	class={className}
+	class={`${className} border-1 focus:border-transparent focus:ring-4 focus:ring-primary-300`}
 	bind:value={text}
 	onfocusout={enforceFormat}
 	onkeydown={(e) => {
