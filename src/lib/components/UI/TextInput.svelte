@@ -7,24 +7,33 @@
 		maxLength,
 		class: className = ''
 	}: { value: string; maxLength: number; class?: string } = $props();
+	let text = $state(value);
 	let helperMsg = $state('');
 
 	function enforceFormat(): void {
-		if (value.length > maxLength) {
+		if (text.length > maxLength) {
 			helperMsg = `Name is too long. Max ${maxLength} characters.`;
-			value = 'NAME';
+			text = value;
 			return;
 		}
-		for (const c of value) {
-			if (!Object.entries(charmap).find(([k, v]) => v === c)) {
+		for (const c of text) {
+			if (!Object.entries(charmap).find(([_, v]) => v === c)) {
 				helperMsg = `'${c}' is not a valid character.`;
-				value = 'NAME';
+				text = value;
 				return;
 			}
 		}
 		helperMsg = '';
+		value = text;
 	}
 </script>
 
-<Input class={className} bind:value onfocusout={enforceFormat} />
+<Input
+	class={className}
+	bind:value={text}
+	onfocusout={enforceFormat}
+	onkeydown={(e) => {
+		if (e.key === 'Enter') enforceFormat();
+	}}
+/>
 {#if helperMsg}<Helper class="mt-2">{helperMsg}</Helper>{/if}
