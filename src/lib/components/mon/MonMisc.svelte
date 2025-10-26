@@ -31,7 +31,7 @@
 {:else}
 	<Heading tag="h5" class="mb-5">Happiness</Heading>
 {/if}
-<NumberInput bind:value={mon.happiness} min={0} max={255} />
+<NumberInput bind:value={mon.happiness} min={0} max={255} class="w-full sm:w-fit" />
 
 <Heading tag="h5" class="mt-5 mb-5">Gender</Heading>
 {#if form.hasGender}

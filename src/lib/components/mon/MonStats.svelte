@@ -65,7 +65,7 @@
 	{#each mon.dvs as dv, i}
 		<div>
 			<Label class="mb-2">{['HP', 'Atk', 'Def', 'Speed', 'Sp. Atk', 'Sp. Def'][i]}</Label>
-			<NumberInput bind:value={mon.dvs[i]} min={0} max={15} />
+			<NumberInput bind:value={mon.dvs[i]} min={0} max={15} class="w-full" />
 		</div>
 	{/each}
 </div>
@@ -88,7 +88,7 @@
 	{#each mon.evs as ev, i}
 		<div>
 			<Label class="mb-2">{['HP', 'Atk', 'Def', 'Speed', 'Sp. Atk', 'Sp. Def'][i]}</Label>
-			<NumberInput bind:value={mon.evs[i]} min={0} max={255} />
+			<NumberInput bind:value={mon.evs[i]} min={0} max={255} class="w-full" />
 		</div>
 	{/each}
 </div>

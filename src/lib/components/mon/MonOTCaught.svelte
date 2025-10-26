@@ -32,6 +32,7 @@
 				{ text: 'Morning', id: 'Morning' },
 				{ text: 'Evening', id: 'Evening' }
 			]}
+			class="w-fit"
 		/>
 	</div>
 	<div class="flex flex-col gap-2">
@@ -43,7 +44,7 @@
 	</div>
 	<div class="flex flex-col gap-2">
 		<Label>Level</Label>
-		<NumberInput bind:value={mon.caughtLevel} min={1} max={100} />
+		<NumberInput bind:value={mon.caughtLevel} min={1} max={100} class="w-full sm:w-fit" />
 	</div>
 	<div class="flex flex-col gap-2">
 		<Label>Location</Label>
