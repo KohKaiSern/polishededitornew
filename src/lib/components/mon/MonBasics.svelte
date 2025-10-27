@@ -71,7 +71,11 @@
 		bind:value={mon.heldItem}
 	/>
 {/if}
-<P class="mt-5" italic>{items[PF].find((i) => i.name === mon.heldItem)!.description}</P>
+{#if mon.heldItem === 'None'}
+	<P class="mt-5" italic>This Pokemon has no held item.</P>
+{:else}
+	<P class="mt-5" italic>{items[PF].find((i) => i.name === mon.heldItem)!.description}</P>
+{/if}
 <Heading tag="h5" class="mt-5 mb-5">Ability</Heading>
 <RadioSelect options={form.abilities.map((a) => ({ text: a, id: a }))} bind:value={mon.ability} />
 <P class="mt-5" italic>{abilities[PF].find((a) => a.name === mon.ability)!.description}</P>
@@ -79,7 +83,7 @@
 <NumberInput bind:value={mon.level} min={1} max={100} onchange={getExpForLvl} />
 
 {#if 'currentHP' in mon && !mon.isEgg}
-	<Heading tag="h5" class="mt-5 mb-5">Current HP %</Heading>
+	<Heading tag="h5" class="mt-5 mb-5">Current HP%</Heading>
 	<NumberInput
 		bind:value={hpRatio}
 		min={0}
