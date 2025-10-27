@@ -64,7 +64,7 @@
 			enforce();
 			onchange?.();
 		}}
-		class="focus:border-transparent focus:ring-4 focus:ring-primary-300 flex-1 [appearance:textfield] text-center [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+		class="!h-[41.33px] focus:border-transparent focus:ring-4 focus:ring-primary-300 [appearance:textfield] text-center [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
 	/>
 	{#if carousel}
 		<Button
