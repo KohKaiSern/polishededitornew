@@ -35,6 +35,7 @@
 			{ text: 'Balls', id: 'balls' },
 			{ text: 'TMs & HMs', id: 'TMsHMs' }
 		]}
+		class="w-fit"
 	/>
 	<RadioSelect
 		bind:value={selectedSlot}
@@ -43,6 +44,7 @@
 			{ text: 'Key Items', id: 'keyItems' },
 			{ text: 'Extras', id: 'extras' }
 		]}
+		class="w-fit"
 	/>
 </div>
 
