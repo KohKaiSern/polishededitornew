@@ -96,8 +96,8 @@
 	<P>
 		Polished Editor is a save editor for Polished Crystal. It auto-updates by scraping game files. <br
 		/>
-		Contact Rev3lation on the Polished Crystal Discord Server to report bugs (bad eggs, corrupted saves,
-		etc).
+		Contact Rev3lation on the Polished Crystal Discord Server (in #save-editor) to report bugs (bad eggs,
+		corrupted saves, etc).
 		<br />
 		I am not responsible for any corrupted saves - please backup your original saves. <br /> <br />
 		Instructions for use:
