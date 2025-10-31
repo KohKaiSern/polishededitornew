@@ -35,7 +35,7 @@
 					class="bg-white size-fit p-2 border-1 rounded-lg border-gray-300 dark:border-gray-600 peer-checked:border-transparent peer-checked:ring-4 peer-checked:ring-primary-300"
 				>
 					<Img
-						src={`https://raw.githubusercontent.com/KohKaiSern/polishededitor/refs/heads/main/src/gfx/${model.toLowerCase()}.png`}
+						src={`https://raw.githubusercontent.com/KohKaiSern/polishededitor/refs/heads/main/gfx/trainers/${model.toLowerCase()}.png`}
 					/>
 				</div>
 			</Radio>
