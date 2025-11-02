@@ -156,6 +156,8 @@ export const writeString = (
   name: string,
   hasChecksum: boolean
 ) => {
+  //TODO: TempFix: Do not edit if string length is longer than max length.
+  if (name.length > length) return fileHex;
   for (let i = 0; i < name.length; i++) {
     //Space (0x7F if there's no checksum, 0xFA if there is)
     if (name[i] === ' ') {
