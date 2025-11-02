@@ -114,8 +114,12 @@
 	</List>
 	<br />
 	<P>
-		<em class="font-italic">Credits: Rev3lation, Sylvie (Rangi42), Cammy, Emi, FIQ, Darsh</em>
+		<em class="font-italic">Credits: Rev3lation, Sylvie (Rangi42), Cammy, Emi, FIQ, Darsh</em><br />
+		<a href="https://github.com/KohKaiSern/polishededitor" class="underline text-blue-500"
+			>GitHub Repository</a
+		>
 	</P>
+
 	<br />
 	{#if !!party}
 		<RadioSelect
