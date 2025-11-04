@@ -31,9 +31,10 @@
 				form.growthRate as keyof (typeof growthRateCoefficients)['polished' | 'faithful']
 			];
 		mon.exp = Math.max(
-			Math.ceil(
-				(cf[0] / cf[1]) * mon.level ** 3 + cf[2] * mon.level ** 2 + cf[3] * mon.level - cf[4]
-			),
+			Math.floor((cf[0] / cf[1]) * mon.level ** 3) +
+				cf[2] * mon.level ** 2 +
+				cf[3] * mon.level -
+				cf[4],
 			0
 		);
 	}
