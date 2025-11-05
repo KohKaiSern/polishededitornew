@@ -105,5 +105,5 @@ export function findMove(
 }
 
 export function writeJSON(name: string, obj: object): void {
-  writeFileSync(import.meta.dirname + '../data/' + name + '.json', JSON.stringify(obj));
+  writeFileSync(import.meta.dirname + '/../data/' + name + '.json', JSON.stringify(obj));
 }
