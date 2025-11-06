@@ -61,34 +61,6 @@ export function reduce(str: string): string {
     .replaceAll('é', 'e');
 }
 
-//This function combines two different object arrays into one,
-//as long as they share the same id (which can be changed). It uses a JavaScript map
-//to reduce the time complexity down to linear time, at the cost
-//of space complexity.
-export function consolidate<T extends Record<string, any>>(
-  id: keyof T,
-  ...data: Partial<T>[][]
-): T[] {
-  const map = new Map<T[keyof T], Partial<T>>();
-  const keys = new Set<string>();
-
-  for (const fragment of data) {
-    for (const obj of fragment) {
-      map.set(obj[id] as T[keyof T], { ...map.get(obj[id] as T[keyof T]), ...obj });
-      for (const key of Object.keys(obj)) {
-        keys.add(key);
-      }
-    }
-  }
-
-  return Array.from(map.values()).filter((obj) => {
-    for (const key of keys) {
-      if (!obj.hasOwnProperty(key)) return false;
-    }
-    return true;
-  }) as T[];
-}
-
 export function capitalize(str: string): string {
   return str.at(0)!.toUpperCase() + str.slice(1).toLowerCase();
 }
