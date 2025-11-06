@@ -38,7 +38,10 @@
 			0
 		);
 	}
-
+	let itemSrc = $derived.by(() => {
+		const spritePath = items[PF].find((i) => i.name === mon.heldItem)!.spritePath;
+		return `https://raw.githubusercontent.com/KohKaiSern/polishededitor/refs/heads/main/src/${spritePath}`;
+	});
 	let hpRatio = $state('currentHP' in mon ? Math.ceil(mon.currentHP / mon.stats[0]) * 100 : 0);
 </script>
 
@@ -72,11 +75,20 @@
 		bind:value={mon.heldItem}
 	/>
 {/if}
-{#if mon.heldItem === 'None'}
-	<P class="mt-5" italic>This Pokemon has no held item.</P>
-{:else}
-	<P class="mt-5" italic>{items[PF].find((i) => i.name === mon.heldItem)!.description}</P>
-{/if}
+<div class="flex items-center mt-5 gap-3">
+	<div
+		class="size-[35px] flex bg-white rounded-lg justify-center items-center border border-gray-300 dark:border-none"
+	>
+		{#if mon.heldItem != 'None'}
+			<img class="rounded-sm" src={itemSrc} alt={`Sprite of ${mon.heldItem}`} />
+		{/if}
+	</div>
+	{#if mon.heldItem === 'None'}
+		<P italic>This Pokemon has no held item.</P>
+	{:else}
+		<P italic>{items[PF].find((i) => i.name === mon.heldItem)!.description}</P>
+	{/if}
+</div>
 <Heading tag="h5" class="mt-5 mb-5">Ability</Heading>
 <RadioSelect options={form.abilities.map((a) => ({ text: a, id: a }))} bind:value={mon.ability} />
 <P class="mt-5" italic>{abilities[PF].find((a) => a.name === mon.ability)!.description}</P>

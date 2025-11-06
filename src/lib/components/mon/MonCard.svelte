@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Button, Card, Drawer, Heading, P, Progressbar } from 'flowbite-svelte';
 	import { EditSolid, HeartOutline } from 'flowbite-svelte-icons';
+	import items from '$data/items.json';
 	import pokemon from '$data/pokemon.json';
 	import { cammyFormat, getTypeColour } from '$lib/utils';
 	import type { Mon, PartyMon } from '$lib/types';
@@ -28,6 +29,10 @@
 		const shine = mon.shininess === 'Shiny' ? 'shiny' : 'normal';
 		const formPath = form === 'plain' ? species : `${species}_${form}`;
 		return `https://raw.githubusercontent.com/caomicc/polisheddex/refs/heads/main/public/sprites/pokemon/${formPath}/${shine}_front_animated.gif`;
+	});
+	let itemSrc = $derived.by(() => {
+		const spritePath = items[PF].find((i) => i.name === mon.heldItem)!.spritePath;
+		return `https://raw.githubusercontent.com/KohKaiSern/polishededitor/refs/heads/main/src/${spritePath}`;
 	});
 	let status = $derived.by(() => {
 		if ('status' in mon) {
@@ -71,6 +76,13 @@
 		<div class="flex flex-col justify-between pt-1 pb-1">
 			<Heading tag="h5">{mon.nickname}</Heading>
 			<div class="flex gap-3">
+				<div
+					class="size-[30px] flex bg-white rounded-lg justify-center items-center border border-gray-300 dark:border-none"
+				>
+					{#if mon.heldItem != 'None'}
+						<img class="rounded-sm" src={itemSrc} alt={`Sprite of ${mon.heldItem}`} />
+					{/if}
+				</div>
 				{#each form.type as type}
 					<div
 						class="flex size-[30px] items-center justify-center rounded-[50%]"

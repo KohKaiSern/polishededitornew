@@ -2,14 +2,16 @@
 	import { Button, Listgroup, ListgroupItem, P } from 'flowbite-svelte';
 	import { PlusOutline, TrashBinSolid } from 'flowbite-svelte-icons';
 	import { DropdownSearch, NumberInput } from '../UI';
+	import items from '$data/items.json';
 	import type { BagSlot } from '$lib/types';
 	import type { Item } from '../../../extractors/types';
 
 	let {
 		slot = $bindable(),
 		capacity,
-		itemList
-	}: { slot: BagSlot; capacity: number; itemList: Item[] } = $props();
+		itemList,
+		PF
+	}: { slot: BagSlot; capacity: number; itemList: Item[]; PF: 'polished' | 'faithful' } = $props();
 
 	const addItem = (): void => {
 		slot.contents.push({
@@ -23,6 +25,11 @@
 		slot.contents.splice(i, 1);
 		slot.count! -= 1;
 	};
+
+	const src = (item: string): string => {
+		const spritePath = items[PF].find((i) => i.name === item)!.spritePath;
+		return `https://raw.githubusercontent.com/KohKaiSern/polishededitor/refs/heads/main/src/${spritePath}`;
+	};
 </script>
 
 <Listgroup class="mt-8">
@@ -34,7 +41,20 @@
 						options={itemList.map((item) => item.name)}
 						bind:value={slot.contents[i].name}
 					/>
-					<P italic>{itemList.find((item) => item.name === slot.contents[i].name)!.description}</P>
+					<div class="flex items-center gap-3">
+						<div
+							class="size-[35px] flex bg-white rounded-lg justify-center items-center border
+							border-gray-300 dark:border-none"
+						>
+							<img
+								class="rounded-sm"
+								src={src(slot.contents[i].name)}
+								alt={`Sprite of ${slot.contents[i]}`}
+							/>
+						</div>
+						<P italic>{itemList.find((item) => item.name === slot.contents[i].name)!.description}</P
+						>
+					</div>
 				</div>
 				<div
 					class="flex gap-3 mb-1 items-center justify-start sm:justify-end w-full sm:w-auto sm:ml-4"

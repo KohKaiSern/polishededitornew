@@ -67,6 +67,7 @@
 					berries: 'BERRIES'
 				}[selectedSlot]!
 		)}
+		{PF}
 	/>
 {/if}
 
