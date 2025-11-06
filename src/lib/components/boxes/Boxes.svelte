@@ -22,11 +22,17 @@
 	</div>
 	<div class="flex flex-col gap-2">
 		<Label>Theme</Label>
-		<DropdownSearch bind:value={boxes[selectedBox - 1].theme} options={boxThemes} class="h-full" />
+		<DropdownSearch
+			bind:value={boxes[selectedBox - 1].theme}
+			options={boxThemes[PF].map((b) => b.name)}
+			class="h-full"
+		/>
 	</div>
 	<div class="flex flex-col gap-2">
 		<Label>Name</Label>
-		<TextInput bind:value={boxes[selectedBox - 1].name} maxLength={9} />
+		{#key selectedBox}
+			<TextInput bind:value={boxes[selectedBox - 1].name} maxLength={9} />
+		{/key}
 	</div>
 </header>
 

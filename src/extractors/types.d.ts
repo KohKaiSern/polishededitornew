@@ -63,3 +63,7 @@ export interface Apricorn extends Base {
   ball: string;
   spritePath: string;
 }
+
+export interface BoxTheme extends Base {
+  name: string;
+}

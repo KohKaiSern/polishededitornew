@@ -1,7 +1,6 @@
 import abilities from './abilities';
 import addresses from './addresses';
 import apricorns from './apricorns';
-import badges from './badges';
 import boxThemes from './boxThemes';
 import charmap from './charmap';
 import expCandy from './expCandy';
@@ -17,22 +16,21 @@ import versions from './versions';
 import wings from './wings';
 
 for (const [name, obj] of Object.entries({
-	addresses,
-	locations,
-	abilities,
-	items,
-	keyItems,
-	moves,
-	boxThemes,
-	growthRateCoefficients,
-	versions,
-	badges,
-	charmap,
-	wings,
-	expCandy,
-	pokemon,
-	apricorns,
-	tmhm
+  addresses,
+  locations,
+  abilities,
+  items,
+  keyItems,
+  moves,
+  boxThemes,
+  growthRateCoefficients,
+  versions,
+  charmap,
+  wings,
+  expCandy,
+  pokemon,
+  apricorns,
+  tmhm
 })) {
-	writeJSON(name, obj);
+  writeJSON(name, obj);
 }

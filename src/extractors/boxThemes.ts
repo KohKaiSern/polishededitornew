@@ -1,15 +1,33 @@
-import { splitRead } from './utils';
+import type { BoxTheme } from './types';
+import { extractIDs, extractNames } from './common';
+import { splitReadNew } from './utils';
 
-function extractBoxThemes(BOX_THEMES: string[]): string[] {
-	const boxThemes = [];
-	for (let lineNo = 0; lineNo < BOX_THEMES.length; lineNo++) {
-		if (!BOX_THEMES[lineNo].includes('"')) continue;
-		boxThemes.push(BOX_THEMES[lineNo].split('"').at(1)!);
-	}
-	return boxThemes;
+const IDS = splitReadNew('constants/pc_constants.asm');
+const NAMES = splitReadNew('data/pc/theme_names.asm');
+
+const boxThemes: {
+  polished: BoxTheme[];
+  faithful: BoxTheme[];
+} = {
+  polished: [],
+  faithful: []
+};
+
+const NULL_BOXTHEME: BoxTheme = {
+  id: null,
+  index: -1,
+  name: ''
+};
+
+for (const PF of ['polished', 'faithful'] as const) {
+  boxThemes[PF] = extractIDs(
+    boxThemes[PF],
+    IDS[PF],
+    NULL_BOXTHEME,
+    undefined,
+    'NUM_BILLS_PC_THEMES'
+  );
+  boxThemes[PF] = extractNames(boxThemes[PF], NAMES[PF], 0);
 }
 
-const BOX_THEMES = splitRead('data/pc/theme_names.asm');
-
-const boxThemes = extractBoxThemes(BOX_THEMES.polished);
 export default boxThemes;
