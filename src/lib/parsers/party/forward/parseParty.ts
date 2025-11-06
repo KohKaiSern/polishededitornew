@@ -5,9 +5,8 @@ import parsePartyMon from './parsePartyMon';
 
 function parseParty(fileHex: string[], PF: 'polished' | 'faithful'): PartyMon[] {
   const party = Array(6).fill(null);
-  const address = addresses.sBackupPokémonData + 8;
-  for (let i = 0; i < parseInt(fileHex[address - 8], 16); i++) {
-    party[i] = parsePartyMon(fileHex, address + 48 * i, PF);
+  for (let i = 0; i < parseInt(fileHex[addresses.sBackupPokémonData], 16); i++) {
+    party[i] = parsePartyMon(fileHex, addresses.sBackupPokémonData + 8 + 48 * i, PF);
     party[i]['OTNickname'] = readString(fileHex, addresses.wPartyMonOTs + i * 11, 7, false);
     party[i]['hyperTraining'] = [...hex2bin(fileHex[addresses.wPartyMon1HyperTraining + i * 11]).slice(0, 6)].map(
       (stat) => (stat === '1' ? true : false)
