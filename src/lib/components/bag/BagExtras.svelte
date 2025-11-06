@@ -34,13 +34,16 @@
 		<Listgroup>
 			{#each bag.apricorns.contents as apricorn, i}
 				<ListgroupItem class="flex w-full flex-wrap py-3 gap-3 sm:justify-between sm:flex-nowrap">
-					<div
-						class="size-[35px] flex bg-white rounded-lg justify-center items-center border
+					<div class="flex items-center gap-3">
+						<div
+							class="size-[35px] flex bg-white rounded-lg justify-center items-center border
 							border-gray-300 dark:border-none"
-					>
-						<img class="rounded-sm" src={src(apricorn.name)} alt={`Sprite of ${apricorn.name}`} />
+						>
+							<img class="rounded-sm" src={src(apricorn.name)} alt={`Sprite of ${apricorn.name}`} />
+						</div>
+						<P>{`${apricorn.name}: ${apricorns[PF].find((a) => a.name === apricorn.name)!.ball}`}</P
+						>
 					</div>
-					<P>{`${apricorn.name}: ${apricorns[PF].find((a) => a.name === apricorn.name)!.ball}`}</P>
 					<NumberInput class="w-auto" bind:value={bag.apricorns.contents[i].qty} min={0} max={99} />
 				</ListgroupItem>
 			{/each}
