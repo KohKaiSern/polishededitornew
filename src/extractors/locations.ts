@@ -1,43 +1,42 @@
 import type { Location } from './types';
-import { consolidate, reduce, splitRead } from './utils';
+import { extractIDs } from './common';
+import { splitRead } from './utils';
 
-function extractNames(NAMES: string[]): Omit<Location, 'locationNo'>[] {
-	const names: Omit<Location, 'locationNo'>[] = [];
-	for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
-		if (!NAMES[lineNo].includes('"')) continue;
-		names.push({
-			id: reduce(NAMES[lineNo].split(':').at(0)!.replace('Name', '')),
-			name: NAMES[lineNo].split('"').at(1)!
-		});
-	}
-	return names;
+//This file uses pointers instead of a simple index-based system, which is why
+//it requires a special extractNames implementation.
+function extractNames(data: Location[], NAMES: string[]): Location[] {
+  let index = 0;
+  for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
+    if (!NAMES[lineNo].startsWith('landmark')) continue;
+    const pointer = NAMES[lineNo].split(', ').at(-1)! + ':';
+    let descIndex = NAMES.findIndex((l) => l.includes(pointer))!;
+    while (!NAMES[descIndex].includes('"')) descIndex++;
+    data.find((i) => i.index === index)!.name = NAMES[descIndex].split('"').at(1)!;
+    index++;
+  }
+  return data;
 }
 
-function extractIndexes(INDEXES: string[]): Omit<Location, 'name'>[] {
-	const indexes: Omit<Location, 'name'>[] = [];
-	for (let lineNo = 0; lineNo < INDEXES.length; lineNo++) {
-		if (!INDEXES[lineNo].includes('const ')) continue;
-		indexes.push({
-			id: reduce(INDEXES[lineNo].split(' ').at(1)!),
-			locationNo: parseInt(INDEXES[lineNo].slice(-2), 16)
-		});
-	}
-	return indexes;
-}
-
+const IDS = splitRead('constants/landmark_constants.asm');
 const NAMES = splitRead('data/maps/landmarks.asm');
-const INDEXES = splitRead('constants/landmark_constants.asm');
 
-const locations: { polished: Location[]; faithful: Location[] } = {
-	polished: consolidate<Location>(
-		'id',
-		extractNames(NAMES.polished),
-		extractIndexes(INDEXES.polished)
-	).sort((a, b) => a.locationNo - b.locationNo),
-	faithful: consolidate<Location>(
-		'id',
-		extractNames(NAMES.faithful),
-		extractIndexes(INDEXES.faithful)
-	).sort((a, b) => a.locationNo - b.locationNo)
+const locations: {
+  polished: Location[];
+  faithful: Location[];
+} = {
+  polished: [],
+  faithful: []
 };
+
+const NULL_LOCATION: Location = {
+  id: null,
+  index: -1,
+  name: ''
+};
+
+for (const PF of ['polished', 'faithful'] as const) {
+  locations[PF] = extractIDs(locations[PF], IDS[PF], NULL_LOCATION, undefined, 'NUM_LANDMARKS');
+  locations[PF] = extractNames(locations[PF], NAMES[PF]);
+}
+
 export default locations;

@@ -50,10 +50,8 @@ export interface Ability extends Base {
   description: string;
 }
 
-export interface Location {
-  id: string;
+export interface Location extends Base {
   name: string;
-  locationNo: number;
 }
 
 export interface Apricorn extends Base {
