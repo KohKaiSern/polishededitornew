@@ -1,5 +1,5 @@
 export interface Base {
-  id: string;
+  id: string | null;
   index: number;
 }
 
@@ -41,8 +41,7 @@ export interface Move {
   description: string;
 }
 
-export interface Ability {
-  id: string;
+export interface Ability extends Base {
   name: string;
   description: string;
 }

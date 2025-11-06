@@ -119,7 +119,7 @@ function extractAttrs(ATTRS: string[], form: Partial<Form>, PF: 'polished' | 'fa
     abilities: ATTRS[9]
       .split(', ')
       .slice(1)
-      .map((ability) => abilities[PF].find((a) => a.id === reduce(ability))!.name),
+      .map((ability) => abilities[PF].find((a) => a.id === ability)!.name),
     growthRate: reduce(ATTRS[10].match(/GROWTH_(.+?) /)!.at(1)!),
     learnsets: {
       tmhm: (ATTRS[16].match(/[A-Z_]+/g) || []).map((move) => findMove(reduce(move), moves, PF)),
