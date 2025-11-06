@@ -64,6 +64,12 @@ export interface Apricorn extends Base {
   spritePath: string;
 }
 
+export interface ExpCandy extends Base {
+  name: string;
+  description: string;
+  spritePath: string;
+}
+
 export interface BoxTheme extends Base {
   name: string;
 }

@@ -1,14 +1,15 @@
 <script lang="ts">
-	import { Accordion, AccordionItem, Heading, Listgroup, ListgroupItem, P } from 'flowbite-svelte';
+	import { Accordion, AccordionItem, Listgroup, ListgroupItem, P } from 'flowbite-svelte';
 	import { NumberInput } from '../UI';
 	import apricorns from '$data/apricorns.json';
+	import expCandy from '$data/expCandy.json';
 	import type { BagSlot } from '$lib/types';
 
 	let { bag = $bindable(), PF }: { bag: Record<string, BagSlot>; PF: 'polished' | 'faithful' } =
 		$props();
 
-	const src = (item: string): string => {
-		const spritePath = apricorns[PF].find((i) => i.name === item)!.spritePath;
+	const src = (item: string, list: any): string => {
+		const spritePath = list.find((i: any) => i.name === item)!.spritePath;
 		return `https://raw.githubusercontent.com/KohKaiSern/polishededitor/refs/heads/main/src/${spritePath}`;
 	};
 </script>
@@ -23,7 +24,19 @@
 		<Listgroup>
 			{#each bag.candy.contents as candy, i}
 				<ListgroupItem class="flex w-full flex-wrap py-3 gap-3 sm:justify-between sm:flex-nowrap">
-					<P>{candy.name}</P>
+					<div class="flex items-center gap-3">
+						<div
+							class="size-[35px] flex bg-white rounded-lg justify-center items-center border
+							border-gray-300 dark:border-none"
+						>
+							<img
+								class="rounded-sm"
+								src={src(candy.name, expCandy[PF])}
+								alt={`Sprite of ${candy.name}`}
+							/>
+						</div>
+						<P>{candy.name}</P>
+					</div>
 					<NumberInput class="w-auto" bind:value={bag.candy.contents[i].qty} min={0} max={99} />
 				</ListgroupItem>
 			{/each}
@@ -39,7 +52,11 @@
 							class="size-[35px] flex bg-white rounded-lg justify-center items-center border
 							border-gray-300 dark:border-none"
 						>
-							<img class="rounded-sm" src={src(apricorn.name)} alt={`Sprite of ${apricorn.name}`} />
+							<img
+								class="rounded-sm"
+								src={src(apricorn.name, apricorns[PF])}
+								alt={`Sprite of ${apricorn.name}`}
+							/>
 						</div>
 						<P>{`${apricorn.name}: ${apricorns[PF].find((a) => a.name === apricorn.name)!.ball}`}</P
 						>

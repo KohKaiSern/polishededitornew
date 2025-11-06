@@ -94,7 +94,7 @@ function parseBag(fileHex: string[], PF: 'polished' | 'faithful'): Record<string
   bag['wings'] = parseFixedItemSlot(addresses.wWingAmounts, wings[PF], 2);
 
   //XP Candy
-  bag['candy'] = parseFixedItemSlot(addresses.wCandyAmounts, expCandy[PF]);
+  bag['candy'] = parseFixedItemSlot(addresses.wCandyAmounts, expCandy[PF].map(c => c.name));
 
   //Blue Card
   bag['blueCard'] = {

@@ -1,18 +1,46 @@
-import { splitRead } from './utils';
+import type { ExpCandy } from './types';
+import { extractDescs, extractIDs, extractNames, extractPaths } from './common';
+import { applyPalette, splitReadNew } from './utils';
 
-function extractNames(NAMES: string[]): string[] {
-	const names: string[] = [];
-	for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
-		if (!NAMES[lineNo].includes('"')) continue;
-		names.push(NAMES[lineNo].split('"').at(1)!);
-	}
-	return names;
+const IDS = splitReadNew('constants/item_constants.asm');
+const NAMES = splitReadNew('data/items/exp_candy_names.asm');
+const DESCS = splitReadNew('data/items/descriptions.asm');
+const PTRS = splitReadNew('data/items/icon_pointers.asm');
+const PATHS = splitReadNew('gfx/items.asm');
+
+//TODO: Exp Candy Palettes
+function extractPNGs(expCandy: ExpCandy[]): ExpCandy[] {
+  for (const candy of expCandy) {
+    const color1 = [8, 21, 31];
+    const color2 = [31, 11, 27];
+    applyPalette(candy.spritePath, `gfx/items/${candy.id}.png`, color1, color2);
+    candy.spritePath = `gfx/items/${candy.id}.png`;
+  }
+  return expCandy;
 }
 
-const NAMES = splitRead('data/items/exp_candy_names.asm');
-
-const expCandy = {
-	polished: extractNames(NAMES.polished),
-	faithful: extractNames(NAMES.faithful)
+const expCandy: {
+  polished: ExpCandy[];
+  faithful: ExpCandy[];
+} = {
+  polished: [],
+  faithful: []
 };
+
+const NULL_EXPCANDY: ExpCandy = {
+  id: null,
+  index: -1,
+  name: '',
+  description: '',
+  spritePath: ''
+};
+
+for (const PF of ['polished', 'faithful'] as const) {
+  expCandy[PF] = extractIDs(expCandy[PF], IDS[PF], NULL_EXPCANDY, 'NUM_WINGS', 'NUM_CANDIES');
+  expCandy[PF] = extractNames(expCandy[PF], NAMES[PF], 1);
+  expCandy[PF] = extractDescs(expCandy[PF], DESCS[PF], 1, 'NUM_KEY_ITEMS', 'NUM_CANDIES');
+  expCandy[PF] = extractPaths(expCandy[PF], PTRS[PF], PATHS[PF], 0, 'NUM_KEY_ITEMS', 'NUM_CANDIES');
+  expCandy[PF] = extractPNGs(expCandy[PF]);
+}
+
 export default expCandy;
