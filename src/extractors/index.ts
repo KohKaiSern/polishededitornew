@@ -7,6 +7,7 @@ import expCandy from './expCandy';
 import growthRates from './growthRates';
 import items from './items';
 import keyItems from './keyItems';
+import keyboard from './keyboard';
 import locations from './locations';
 import moves from './moves';
 import pokemon from './pokemon';
@@ -21,6 +22,7 @@ for (const [name, obj] of Object.entries({
   abilities,
   items,
   keyItems,
+  keyboard,
   moves,
   boxThemes,
   growthRates,
