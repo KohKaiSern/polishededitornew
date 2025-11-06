@@ -36,15 +36,17 @@
 </script>
 
 <ButtonGroup class="flex">
-	<Button
-		onclick={() => {
-			groupOpen = !groupOpen;
-		}}
-		class="justify-between"
-	>
-		{selectedGroup}
-		<ChevronDownOutline class="ms-2 h-6 w-6 text-black dark:text-white" />
-	</Button>
+	<div>
+		<Button
+			onclick={() => {
+				groupOpen = !groupOpen;
+			}}
+			class="justify-between h-full w-full rounded-l-lg rounded-r-none"
+		>
+			{selectedGroup}
+			<ChevronDownOutline class="ms-2 h-6 w-6 text-black dark:text-white" />
+		</Button>
+	</div>
 	<Dropdown bind:isOpen={groupOpen} class="list-none">
 		{#each ['Level-Up Moves', 'Egg Moves', 'TM & HM Moves', 'All Moves'] as learnset}
 			<DropdownItem class="p-0">

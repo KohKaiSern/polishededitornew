@@ -34,7 +34,6 @@ const SYMBOLS = [
   'wPlayerName',
   'wRivalName',
   'wMoney',
-  'wBadges',
   'wPartyMonOTs',
   'wPartyMon1HyperTraining',
   'wPartyMon1Nickname',
