@@ -58,8 +58,8 @@ export interface Location {
   locationNo: number;
 }
 
-export interface Apricorn {
-  id: string;
+export interface Apricorn extends Base {
   name: string;
   ball: string;
+  spritePath: string;
 }

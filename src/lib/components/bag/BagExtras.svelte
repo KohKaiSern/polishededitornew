@@ -6,6 +6,11 @@
 
 	let { bag = $bindable(), PF }: { bag: Record<string, BagSlot>; PF: 'polished' | 'faithful' } =
 		$props();
+
+	const src = (item: string): string => {
+		const spritePath = apricorns[PF].find((i) => i.name === item)!.spritePath;
+		return `https://raw.githubusercontent.com/KohKaiSern/polishededitor/refs/heads/main/src/${spritePath}`;
+	};
 </script>
 
 <Accordion class="mt-8">
@@ -29,6 +34,12 @@
 		<Listgroup>
 			{#each bag.apricorns.contents as apricorn, i}
 				<ListgroupItem class="flex w-full flex-wrap py-3 gap-3 sm:justify-between sm:flex-nowrap">
+					<div
+						class="size-[35px] flex bg-white rounded-lg justify-center items-center border
+							border-gray-300 dark:border-none"
+					>
+						<img class="rounded-sm" src={src(apricorn.name)} alt={`Sprite of ${apricorn.name}`} />
+					</div>
 					<P>{`${apricorn.name}: ${apricorns[PF].find((a) => a.name === apricorn.name)!.ball}`}</P>
 					<NumberInput class="w-auto" bind:value={bag.apricorns.contents[i].qty} min={0} max={99} />
 				</ListgroupItem>
