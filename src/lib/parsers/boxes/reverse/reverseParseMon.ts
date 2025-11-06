@@ -37,7 +37,7 @@ function reverseParseMon(
       mon.moves[i - 2] === 'None'
         ? '00'
         : moves[PF].find((move) => move.name === mon.moves[i - 2])!
-          .moveNo.toString(16)
+          .index.toString(16)
           .padStart(2, '0');
   }
 

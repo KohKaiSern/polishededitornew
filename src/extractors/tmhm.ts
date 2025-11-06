@@ -1,24 +1,41 @@
-import moves from '$data/moves.json';
-import { reduce, splitRead } from './utils';
+import type { Move } from './types';
+import moves from './moves';
+import { splitReadNew } from './utils';
 
-function extractNames(NAMES: string[], PF: 'polished' | 'faithful'): Record<string, string> {
-  const names: Record<string, string> = {};
-  for (let lineNo = 0; lineNo < NAMES.length - 2; lineNo++) {
-    if (!NAMES[lineNo].includes('db')) continue;
-    if (PF === 'polished') {
-      NAMES[lineNo] = NAMES[lineNo].replace('ROCK_SMASH', 'BRICK_BREAK');
-    }
-    names[NAMES[lineNo].match(/; (.+?) /)!.at(1)!] = moves[PF].find(
-      (m) => m.id === reduce(NAMES[lineNo].match(/db (.+?) /)!.at(1)!)
-    )!.name;
+function extractTMHMs(
+  tmhms: Record<string, string>,
+  TMHMS: string[],
+  moves: Move[]
+): Record<string, string> {
+  let index = 1;
+  let NUM_TMS = -1;
+  for (let lineNo = 0; lineNo < TMHMS.length; lineNo++) {
+    if (TMHMS[lineNo].includes('NUM_HMS')) break;
+    if (TMHMS[lineNo].includes('NUM_TMS')) NUM_TMS = index - 1;
+    if (!TMHMS[lineNo].startsWith('db')) continue;
+    const move = moves.find((m) => m.id === TMHMS[lineNo].match(/[A-Z_]+/)!.at(0)!)!.name;
+    tmhms[
+      NUM_TMS === -1
+        ? `TM${index.toString().padStart(2, '0')}`
+        : `HM0${(index - NUM_TMS).toString()}`
+    ] = move;
+    index++;
   }
-  return names;
+  return tmhms;
 }
 
-const NAMES = splitRead('data/moves/tmhm_moves.asm');
+const TMHMS = splitReadNew('data/moves/tmhm_moves.asm');
 
-const tmhm = {
-  polished: extractNames(NAMES.polished, 'polished'),
-  faithful: extractNames(NAMES.faithful, 'faithful')
+const tmhms: {
+  polished: Record<string, string>;
+  faithful: Record<string, string>;
+} = {
+  polished: {},
+  faithful: {}
 };
-export default tmhm;
+
+for (const PF of ['polished', 'faithful'] as const) {
+  tmhms[PF] = extractTMHMs(tmhms[PF], TMHMS[PF], moves[PF]);
+}
+
+export default tmhms;

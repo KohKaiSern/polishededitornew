@@ -122,7 +122,7 @@ function extractAttrs(ATTRS: string[], form: Partial<Form>, PF: 'polished' | 'fa
       .map((ability) => abilities[PF].find((a) => a.id === ability)!.name),
     growthRate: reduce(ATTRS[10].match(/GROWTH_(.+?) /)!.at(1)!),
     learnsets: {
-      tmhm: (ATTRS[16].match(/[A-Z_]+/g) || []).map((move) => findMove(reduce(move), moves, PF)),
+      tmhm: (ATTRS[16].match(/[A-Z_]+/g) || []).map((move) => findMove(move, moves, PF)),
       egg: [],
       level: []
     }
@@ -156,7 +156,7 @@ function extractEggMoves(
         while (EGG_MOVES[lineNo].startsWith('dp')) lineNo++;
         while (!EGG_MOVES[lineNo].includes('$ff')) {
           form.learnsets!.egg.push(
-            findMove(reduce(EGG_MOVES[lineNo].match(/[A-Z_]+/)!.at(0)!), moves, PF)
+            findMove(EGG_MOVES[lineNo].match(/[A-Z_]+/)!.at(0)!, moves, PF)
           );
           lineNo++;
         }
@@ -191,7 +191,7 @@ function extractLevelMoves(
         while (!LEVEL_MOVES[entry].startsWith('learnset')) entry++;
         while (LEVEL_MOVES[entry].startsWith('learnset')) {
           form.learnsets!.level.push({
-            name: findMove(reduce(LEVEL_MOVES[entry].match(/[A-Z_]+/)!.at(0)!), moves, PF),
+            name: findMove(LEVEL_MOVES[entry].match(/[A-Z_]+/)!.at(0)!, moves, PF),
             level: parseInt(LEVEL_MOVES[entry].match(/\d+/)!.at(0)!)
           });
           entry++;

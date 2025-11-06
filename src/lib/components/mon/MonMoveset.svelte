@@ -32,7 +32,11 @@
 			{form}
 			{PF}
 			onchange={() => {
-				if ('powerPoints' in mon) {
+				if ('powerPoints' in mon && !moveData[i]) {
+					mon.PPUPs[i] = 0;
+					mon.powerPoints[i] = 0;
+				}
+				if ('powerPoints' in mon && moveData[i]) {
 					if (mon.powerPoints[i] > (moveData[i]!.powerPoints * (5 + mon.PPUPs[i])) / 5) {
 						mon.powerPoints[i] = (moveData[i]!.powerPoints * (5 + mon.PPUPs[i])) / 5;
 					}

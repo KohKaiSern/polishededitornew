@@ -28,7 +28,7 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
     if (fileHex[address + i] === '00') {
       moveset.push('None');
     } else {
-      moveset.push(moves[PF][parseInt(fileHex[address + i], 16) - 1].name);
+      moveset.push(moves[PF][parseInt(fileHex[address + i], 16)].name);
     }
   }
 

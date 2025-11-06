@@ -98,11 +98,7 @@ export function findMove(
   moves: { polished: Move[]; faithful: Move[] },
   PF: 'polished' | 'faithful'
 ): string {
-  let move = moves[PF].find((m) => m.id === id);
-  if (!move) {
-    return "Brick Break"
-  }
-  return move.name;
+  return moves[PF].find((m) => m.id === id)!.name;
 }
 
 export function splitReadNew(path: string): { polished: string[]; faithful: string[] } {

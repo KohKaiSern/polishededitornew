@@ -24,7 +24,7 @@
 		} else if (selectedGroup === 'TM & HM Moves') {
 			return ['None', ...form.learnsets.tmhm];
 		} else {
-			return ['None', ...moves[PF].map((m) => m.name)];
+			return ['None', ...moves[PF].slice(1, -1).map((m) => m.name)];
 		}
 	});
 	let filteredMoves = $derived(

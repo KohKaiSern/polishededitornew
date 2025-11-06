@@ -34,10 +34,8 @@ export interface KeyItem extends Base {
   spritePath: string;
 }
 
-export interface Move {
-  id: string;
+export interface Move extends Base {
   name: string;
-  moveNo: number;
   basePower: number;
   type: string;
   accuracy: number;
