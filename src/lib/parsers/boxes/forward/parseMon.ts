@@ -102,7 +102,7 @@ function parseMon(fileHex: string[], address: number, PF: 'polished' | 'faithful
   const level = parseInt(fileHex[address + 28], 16);
 
   //Byte #30: Hyper Training
-  const hyperTraining = [...hex2bin(fileHex[address + 29])].map((stat) =>
+  const hyperTraining = [...hex2bin(fileHex[address + 29]).slice(0, 6)].map((stat) =>
     stat === '1' ? true : false
   );
 
