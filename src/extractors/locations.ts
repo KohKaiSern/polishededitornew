@@ -1,6 +1,6 @@
 import type { Location } from './types';
 import { extractIDs } from './common';
-import { splitRead } from './utils';
+import { splitReadNew } from './utils';
 
 //This file uses pointers instead of a simple index-based system, which is why
 //it requires a special extractNames implementation.
@@ -17,8 +17,8 @@ function extractNames(data: Location[], NAMES: string[]): Location[] {
   return data;
 }
 
-const IDS = splitRead('constants/landmark_constants.asm');
-const NAMES = splitRead('data/maps/landmarks.asm');
+const IDS = splitReadNew('constants/landmark_constants.asm');
+const NAMES = splitReadNew('data/maps/landmarks.asm');
 
 const locations: {
   polished: Location[];

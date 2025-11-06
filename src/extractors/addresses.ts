@@ -1,4 +1,4 @@
-import { splitRead } from './utils';
+import { splitReadNew } from './utils';
 
 //Symbols
 const SYMBOLS = [
@@ -63,6 +63,6 @@ function extractAddresses(ADDRESSES: string[]): Record<string, number> {
   return addresses;
 }
 
-const ADDRESSES = splitRead('../polishedcrystal.sym');
+const ADDRESSES = splitReadNew('../polishedcrystal.sym');
 const addresses = makeAddress(extractAddresses(ADDRESSES.polished));
 export default addresses;

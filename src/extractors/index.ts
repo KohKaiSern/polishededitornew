@@ -4,7 +4,7 @@ import apricorns from './apricorns';
 import boxThemes from './boxThemes';
 import charmap from './charmap';
 import expCandy from './expCandy';
-import growthRateCoefficients from './growthRateCoefficients';
+import growthRates from './growthRates';
 import items from './items';
 import keyItems from './keyItems';
 import locations from './locations';
@@ -23,7 +23,7 @@ for (const [name, obj] of Object.entries({
   keyItems,
   moves,
   boxThemes,
-  growthRateCoefficients,
+  growthRates,
   versions,
   charmap,
   wings,

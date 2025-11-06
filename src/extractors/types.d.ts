@@ -74,3 +74,7 @@ export interface Wing extends Base {
 export interface BoxTheme extends Base {
   name: string;
 }
+
+export interface GrowthRate extends Base {
+  coefficients: number[]
+}

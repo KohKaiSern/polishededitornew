@@ -2,7 +2,7 @@
 	import { Heading, P } from 'flowbite-svelte';
 	import { DropdownSearch, NumberInput, RadioSelect, TextInput } from '../UI';
 	import abilities from '$data/abilities.json';
-	import growthRateCoefficients from '$data/growthRateCoefficients.json';
+	import growthRates from '$data/growthRates.json';
 	import items from '$data/items.json';
 	import pokemon from '$data/pokemon.json';
 	import type { Mon, PartyMon } from '$lib/types';
@@ -26,10 +26,7 @@
 	}
 
 	function getExpForLvl(): void {
-		const cf =
-			growthRateCoefficients[PF][
-				form.growthRate as keyof (typeof growthRateCoefficients)['polished' | 'faithful']
-			];
+		const cf = growthRates[PF].find((g) => g.id === form.growthRate)!.coefficients;
 		mon.exp = Math.max(
 			Math.floor((cf[0] / cf[1]) * mon.level ** 3) +
 				cf[2] * mon.level ** 2 +
