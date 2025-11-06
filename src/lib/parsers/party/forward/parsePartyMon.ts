@@ -24,7 +24,7 @@ function parsePartyMon(
   //Byte #2: Held Item
   let heldItem = 'None';
   if (!(fileHex[address + 1] === '00')) {
-    heldItem = items[PF][parseInt(fileHex[address + 1], 16) - 1].name;
+    heldItem = items[PF][parseInt(fileHex[address + 1], 16)].name;
   }
 
   //Bytes #3-#6: Moveset
@@ -95,7 +95,7 @@ function parsePartyMon(
   const caughtTime = ['Evening', 'Morning', 'Day', 'Night'][parseInt(byte26.slice(1, 3), 2)];
   let caughtBall = 'Park Ball';
   if (byte26.slice(3) != '00000') {
-    caughtBall = items[PF][parseInt(byte26.slice(3), 2) - 1].name;
+    caughtBall = items[PF][parseInt(byte26.slice(3), 2)].name;
   }
 
   //Byte #30: Caught Level

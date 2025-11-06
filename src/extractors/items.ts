@@ -1,81 +1,53 @@
 import type { Item } from './types';
-import { consolidate, splitRead } from './utils';
+import { extractDescs, extractIDs, extractNames, extractPNGs, extractPaths } from './common';
+import { splitReadNew } from './utils';
 
-function extractNames(NAMES: string[]): Pick<Item, 'itemNo' | 'name'>[] {
-	const names: Omit<Item, 'description' | 'category'>[] = [];
-	let itemNo = 0;
-	for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
-		if (!NAMES[lineNo].includes('"')) continue;
-		names.push({
-			itemNo,
-			name: NAMES[lineNo].split('"').at(1)!
-		});
-		itemNo++;
-	}
-	return names;
+function extractAttrs(items: Item[], ATTRS: string[]): Item[] {
+  let index = 1;
+  for (let lineNo = 0; lineNo < ATTRS.length; lineNo++) {
+    if (ATTRS[lineNo].includes('NUM_ITEMS')) break;
+    if (!ATTRS[lineNo].startsWith('item_attribute')) continue;
+    items.find((i) => i.index === index)!.category = ATTRS[lineNo].split(',').at(3)!.slice(1);
+    index++;
+  }
+  return items;
 }
 
-function extractCategories(CATEGORIES: string[]): Pick<Item, 'itemNo' | 'category'>[] {
-	const attributes: Pick<Item, 'itemNo' | 'category'>[] = [];
-	let itemNo = 1;
-	for (let lineNo = 0; lineNo < CATEGORIES.length; lineNo++) {
-		if (!CATEGORIES[lineNo].startsWith('item_attribute')) continue;
-		attributes.push({
-			itemNo,
-			category: CATEGORIES[lineNo].split(',').at(3)!.slice(1)
-		});
-		itemNo++;
-	}
-	return attributes;
-}
+const IDS = splitReadNew('constants/item_constants.asm');
+const NAMES = splitReadNew('data/items/names.asm');
+const DESCS = splitReadNew('data/items/descriptions.asm');
+const ATTRS = splitReadNew('data/items/attributes.asm');
+const PTRS = splitReadNew('data/items/icon_pointers.asm');
+const PATHS = splitReadNew('gfx/items.asm');
+const PALS = splitReadNew('gfx/items/items.pal');
 
-function extractDescs(DESCS: string[]): Pick<Item, 'itemNo' | 'description'>[] {
-	const descriptions: Pick<Item, 'itemNo' | 'description'>[] = [];
-	for (let lineNo = 0; lineNo < DESCS.length; lineNo++) {
-		if (!DESCS[lineNo].includes('Desc:')) continue;
-		//Collect all items with this description.
-		const ids = [];
-		while (DESCS[lineNo].includes('Desc:')) {
-			ids.push(DESCS[lineNo].slice(0, -1));
-			lineNo++;
-		}
-		//Then read the description.
-		let description = '';
-		while (DESCS[lineNo].includes('"')) {
-			description += DESCS[lineNo].split('"').at(1)!;
-			//Deal with hyphens
-			description = description.at(-1) === '-' ? description.slice(0, -1) : description + ' ';
-			lineNo++;
-		}
-		//Remove the extra space at the end
-		description = description.slice(0, -1);
-
-		for (const id of ids) {
-			descriptions.push({
-				itemNo: DESCS.findIndex((line) => line.includes(id)) - 1,
-				description
-			});
-		}
-	}
-	return descriptions;
-}
-
-const NAMES = splitRead('data/items/names.asm');
-const CATEGORIES = splitRead('data/items/attributes.asm');
-const DESCS = splitRead('data/items/descriptions.asm');
-
-const items = {
-	polished: consolidate<Item>(
-		'itemNo',
-		extractNames(NAMES.polished),
-		extractCategories(CATEGORIES.polished),
-		extractDescs(DESCS.polished)
-	),
-	faithful: consolidate<Item>(
-		'itemNo',
-		extractNames(NAMES.faithful),
-		extractCategories(CATEGORIES.faithful),
-		extractDescs(DESCS.faithful)
-	)
+const items: {
+  polished: Item[];
+  faithful: Item[];
+} = {
+  polished: [],
+  faithful: []
 };
+
+const NULL_ITEM: Item = {
+  id: null,
+  index: -1,
+  name: '',
+  description: '',
+  category: '',
+  spritePath: ''
+};
+
+for (const PF of ['polished', 'faithful'] as const) {
+  items[PF] = extractIDs(items[PF], IDS[PF], NULL_ITEM, undefined, 'NUM_ITEMS');
+  items[PF] = extractNames(items[PF], NAMES[PF], 0);
+  items[PF] = extractDescs(items[PF], DESCS[PF], 1, undefined, 'NUM_ITEMS');
+  items[PF] = extractAttrs(items[PF], ATTRS[PF]);
+  items[PF] = extractPaths(items[PF], PTRS[PF], PATHS[PF], 0, undefined, 'NUM_ITEMS');
+  //Special Case: Park Ball
+  items[PF][0].id = 'PARK_BALL';
+  items[PF][0].spritePath = 'gfx/items/park_ball.png';
+  items[PF] = extractPNGs(items[PF], PALS[PF], 0);
+}
+
 export default items;

@@ -1,3054 +1,4086 @@
 {
 	"polished": [
 		{
-			"itemNo": 1,
+			"id": "PARK_BALL",
+			"index": 0,
+			"name": "Park Ball",
+			"description": "",
+			"category": "",
+			"spritePath": "gfx/items/PARK_BALL.png"
+		},
+		{
+			"id": "POKE_BALL",
+			"index": 1,
 			"name": "Poké Ball",
+			"description": "An item for catching Pokémon.",
 			"category": "BALL",
-			"description": "An item for catching Pokémon."
+			"spritePath": "gfx/items/POKE_BALL.png"
 		},
 		{
-			"itemNo": 2,
+			"id": "GREAT_BALL",
+			"index": 2,
 			"name": "Great Ball",
+			"description": "A Ball with a decent success rate.",
 			"category": "BALL",
-			"description": "A Ball with a decent success rate."
+			"spritePath": "gfx/items/GREAT_BALL.png"
 		},
 		{
-			"itemNo": 3,
+			"id": "ULTRA_BALL",
+			"index": 3,
 			"name": "Ultra Ball",
+			"description": "A Ball with a high rate of success.",
 			"category": "BALL",
-			"description": "A Ball with a high rate of success."
+			"spritePath": "gfx/items/ULTRA_BALL.png"
 		},
 		{
-			"itemNo": 4,
+			"id": "MASTER_BALL",
+			"index": 4,
 			"name": "Master Ball",
+			"description": "The best Ball. It never misses.",
 			"category": "BALL",
-			"description": "The best Ball. It never misses."
+			"spritePath": "gfx/items/MASTER_BALL.png"
 		},
 		{
-			"itemNo": 5,
+			"id": "SAFARI_BALL",
+			"index": 5,
 			"name": "Safari Ball",
+			"description": "The Safari Game Ball.",
 			"category": "BALL",
-			"description": "The Safari Game Ball."
+			"spritePath": "gfx/items/SAFARI_BALL.png"
 		},
 		{
-			"itemNo": 6,
+			"id": "LEVEL_BALL",
+			"index": 6,
 			"name": "Level Ball",
+			"description": "A Ball for lowerlevel Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for lowerlevel Pokémon."
+			"spritePath": "gfx/items/LEVEL_BALL.png"
 		},
 		{
-			"itemNo": 7,
+			"id": "LURE_BALL",
+			"index": 7,
 			"name": "Lure Ball",
+			"description": "A Ball for Pokémon hooked by a Rod.",
 			"category": "BALL",
-			"description": "A Ball for Pokémon hooked by a Rod."
+			"spritePath": "gfx/items/LURE_BALL.png"
 		},
 		{
-			"itemNo": 8,
+			"id": "MOON_BALL",
+			"index": 8,
 			"name": "Moon Ball",
+			"description": "A Ball for Moon Stone evolvers.",
 			"category": "BALL",
-			"description": "A Ball for Moon Stone evolvers."
+			"spritePath": "gfx/items/MOON_BALL.png"
 		},
 		{
-			"itemNo": 9,
+			"id": "FRIEND_BALL",
+			"index": 9,
 			"name": "Friend Ball",
+			"description": "A Ball that makes Pokémon friendly.",
 			"category": "BALL",
-			"description": "A Ball that makes Pokémon friendly."
+			"spritePath": "gfx/items/FRIEND_BALL.png"
 		},
 		{
-			"itemNo": 10,
+			"id": "FAST_BALL",
+			"index": 10,
 			"name": "Fast Ball",
+			"description": "A Ball for catching fast Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for catching fast Pokémon."
+			"spritePath": "gfx/items/FAST_BALL.png"
 		},
 		{
-			"itemNo": 11,
+			"id": "HEAVY_BALL",
+			"index": 11,
 			"name": "Heavy Ball",
+			"description": "A Ball for catching heavy Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for catching heavy Pokémon."
+			"spritePath": "gfx/items/HEAVY_BALL.png"
 		},
 		{
-			"itemNo": 12,
+			"id": "LOVE_BALL",
+			"index": 12,
 			"name": "Love Ball",
+			"description": "A Ball for the opposite gender.",
 			"category": "BALL",
-			"description": "A Ball for the opposite gender."
+			"spritePath": "gfx/items/LOVE_BALL.png"
 		},
 		{
-			"itemNo": 13,
+			"id": "REPEAT_BALL",
+			"index": 13,
 			"name": "Repeat Ball",
+			"description": "A Ball for Pokémon caught before.",
 			"category": "BALL",
-			"description": "A Ball for Pokémon caught before."
+			"spritePath": "gfx/items/REPEAT_BALL.png"
 		},
 		{
-			"itemNo": 14,
+			"id": "TIMER_BALL",
+			"index": 14,
 			"name": "Timer Ball",
+			"description": "A Ball for late in a battle.",
 			"category": "BALL",
-			"description": "A Ball for late in a battle."
+			"spritePath": "gfx/items/TIMER_BALL.png"
 		},
 		{
-			"itemNo": 15,
+			"id": "NEST_BALL",
+			"index": 15,
 			"name": "Nest Ball",
+			"description": "A Ball for weaker Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for weaker Pokémon."
+			"spritePath": "gfx/items/NEST_BALL.png"
 		},
 		{
-			"itemNo": 16,
+			"id": "NET_BALL",
+			"index": 16,
 			"name": "Net Ball",
+			"description": "A Ball for Water or Bug Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for Water or Bug Pokémon."
+			"spritePath": "gfx/items/NET_BALL.png"
 		},
 		{
-			"itemNo": 17,
+			"id": "DIVE_BALL",
+			"index": 17,
 			"name": "Dive Ball",
+			"description": "A Ball for underwater Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for underwater Pokémon."
+			"spritePath": "gfx/items/DIVE_BALL.png"
 		},
 		{
-			"itemNo": 18,
+			"id": "LUXURY_BALL",
+			"index": 18,
 			"name": "Luxury Ball",
+			"description": "A cozy Ball to befriend Pokémon.",
 			"category": "BALL",
-			"description": "A cozy Ball to befriend Pokémon."
+			"spritePath": "gfx/items/LUXURY_BALL.png"
 		},
 		{
-			"itemNo": 19,
+			"id": "HEAL_BALL",
+			"index": 19,
 			"name": "Heal Ball",
+			"description": "A remedial Ball to heal Pokémon.",
 			"category": "BALL",
-			"description": "A remedial Ball to heal Pokémon."
+			"spritePath": "gfx/items/HEAL_BALL.png"
 		},
 		{
-			"itemNo": 20,
+			"id": "QUICK_BALL",
+			"index": 20,
 			"name": "Quick Ball",
+			"description": "A Ball for early in a battle.",
 			"category": "BALL",
-			"description": "A Ball for early in a battle."
+			"spritePath": "gfx/items/QUICK_BALL.png"
 		},
 		{
-			"itemNo": 21,
+			"id": "DUSK_BALL",
+			"index": 21,
 			"name": "Dusk Ball",
+			"description": "A Ball for nighttime or caves.",
 			"category": "BALL",
-			"description": "A Ball for nighttime or caves."
+			"spritePath": "gfx/items/DUSK_BALL.png"
 		},
 		{
-			"itemNo": 22,
+			"id": "DREAM_BALL",
+			"index": 22,
 			"name": "Dream Ball",
+			"description": "A Ball for sleeping Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for sleeping Pokémon."
+			"spritePath": "gfx/items/DREAM_BALL.png"
 		},
 		{
-			"itemNo": 23,
+			"id": "PREMIER_BALL",
+			"index": 23,
 			"name": "Premier Ball",
+			"description": "A rare commemorative Ball.",
 			"category": "BALL",
-			"description": "A rare commemorative Ball."
+			"spritePath": "gfx/items/PREMIER_BALL.png"
 		},
 		{
-			"itemNo": 24,
+			"id": "CHERISH_BALL",
+			"index": 24,
 			"name": "Cherish Ball",
+			"description": "A quite rare commemorative Ball.",
 			"category": "BALL",
-			"description": "A quite rare commemorative Ball."
+			"spritePath": "gfx/items/CHERISH_BALL.png"
 		},
 		{
-			"itemNo": 25,
+			"id": "POTION",
+			"index": 25,
 			"name": "Potion",
+			"description": "Restores Pokémon HP by 20.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 20."
+			"spritePath": "gfx/items/POTION.png"
 		},
 		{
-			"itemNo": 26,
+			"id": "SUPER_POTION",
+			"index": 26,
 			"name": "Super Potion",
+			"description": "Restores Pokémon HP by 60.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 60."
+			"spritePath": "gfx/items/SUPER_POTION.png"
 		},
 		{
-			"itemNo": 27,
+			"id": "HYPER_POTION",
+			"index": 27,
 			"name": "Hyper Potion",
+			"description": "Restores Pokémon HP by 120.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 120."
+			"spritePath": "gfx/items/HYPER_POTION.png"
 		},
 		{
-			"itemNo": 28,
+			"id": "MAX_POTION",
+			"index": 28,
 			"name": "Max Potion",
+			"description": "Fully restores Pokémon HP.",
 			"category": "MEDICINE",
-			"description": "Fully restores Pokémon HP."
+			"spritePath": "gfx/items/MAX_POTION.png"
 		},
 		{
-			"itemNo": 29,
+			"id": "ANTIDOTE",
+			"index": 29,
 			"name": "Antidote",
+			"description": "Cures poisoned Pokémon.",
 			"category": "MEDICINE",
-			"description": "Cures poisoned Pokémon."
+			"spritePath": "gfx/items/ANTIDOTE.png"
 		},
 		{
-			"itemNo": 30,
+			"id": "BURN_HEAL",
+			"index": 30,
 			"name": "Burn Heal",
+			"description": "Heals burned Pokémon.",
 			"category": "MEDICINE",
-			"description": "Heals burned Pokémon."
+			"spritePath": "gfx/items/BURN_HEAL.png"
 		},
 		{
-			"itemNo": 31,
+			"id": "PARALYZEHEAL",
+			"index": 31,
 			"name": "ParalyzeHeal",
+			"description": "Heals paralyzed Pokémon.",
 			"category": "MEDICINE",
-			"description": "Heals paralyzed Pokémon."
+			"spritePath": "gfx/items/PARALYZEHEAL.png"
 		},
 		{
-			"itemNo": 32,
+			"id": "AWAKENING",
+			"index": 32,
 			"name": "Awakening",
+			"description": "Awakens sleeping Pokémon.",
 			"category": "MEDICINE",
-			"description": "Awakens sleeping Pokémon."
+			"spritePath": "gfx/items/AWAKENING.png"
 		},
 		{
-			"itemNo": 33,
+			"id": "ICE_HEAL",
+			"index": 33,
 			"name": "Ice Heal",
+			"description": "Defrosts frozen Pokémon.",
 			"category": "MEDICINE",
-			"description": "Defrosts frozen Pokémon."
+			"spritePath": "gfx/items/ICE_HEAL.png"
 		},
 		{
-			"itemNo": 34,
+			"id": "FULL_HEAL",
+			"index": 34,
 			"name": "Full Heal",
+			"description": "Eliminates all status problems.",
 			"category": "MEDICINE",
-			"description": "Eliminates all status problems."
+			"spritePath": "gfx/items/FULL_HEAL.png"
 		},
 		{
-			"itemNo": 35,
+			"id": "FULL_RESTORE",
+			"index": 35,
 			"name": "Full Restore",
+			"description": "Fully restores HP & status.",
 			"category": "MEDICINE",
-			"description": "Fully restores HP & status."
+			"spritePath": "gfx/items/FULL_RESTORE.png"
 		},
 		{
-			"itemNo": 36,
+			"id": "REVIVE",
+			"index": 36,
 			"name": "Revive",
+			"description": "Restores a fainted Pokémon to 1/2 HP.",
 			"category": "MEDICINE",
-			"description": "Restores a fainted Pokémon to 1/2 HP."
+			"spritePath": "gfx/items/REVIVE.png"
 		},
 		{
-			"itemNo": 37,
+			"id": "MAX_REVIVE",
+			"index": 37,
 			"name": "Max Revive",
+			"description": "Fully restores a fainted Pokémon.",
 			"category": "MEDICINE",
-			"description": "Fully restores a fainted Pokémon."
+			"spritePath": "gfx/items/MAX_REVIVE.png"
 		},
 		{
-			"itemNo": 38,
+			"id": "ETHER",
+			"index": 38,
 			"name": "Ether",
+			"description": "Restores PP of one move by 10.",
 			"category": "MEDICINE",
-			"description": "Restores PP of one move by 10."
+			"spritePath": "gfx/items/ETHER.png"
 		},
 		{
-			"itemNo": 39,
+			"id": "MAX_ETHER",
+			"index": 39,
 			"name": "Max Ether",
+			"description": "Fully restores PP of one move.",
 			"category": "MEDICINE",
-			"description": "Fully restores PP of one move."
+			"spritePath": "gfx/items/MAX_ETHER.png"
 		},
 		{
-			"itemNo": 40,
+			"id": "ELIXIR",
+			"index": 40,
 			"name": "Elixir",
+			"description": "Restores PP of all moves by 10.",
 			"category": "MEDICINE",
-			"description": "Restores PP of all moves by 10."
+			"spritePath": "gfx/items/ELIXIR.png"
 		},
 		{
-			"itemNo": 41,
+			"id": "MAX_ELIXIR",
+			"index": 41,
 			"name": "Max Elixir",
+			"description": "Fully restores the PP of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Fully restores the PP of one Pokémon."
+			"spritePath": "gfx/items/MAX_ELIXIR.png"
 		},
 		{
-			"itemNo": 42,
+			"id": "HP_UP",
+			"index": 42,
 			"name": "HP Up",
+			"description": "Raises the HP of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises the HP of one Pokémon."
+			"spritePath": "gfx/items/HP_UP.png"
 		},
 		{
-			"itemNo": 43,
+			"id": "PROTEIN",
+			"index": 43,
 			"name": "Protein",
+			"description": "Raises Attack of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises Attack of one Pokémon."
+			"spritePath": "gfx/items/PROTEIN.png"
 		},
 		{
-			"itemNo": 44,
+			"id": "IRON",
+			"index": 44,
 			"name": "Iron",
+			"description": "Raises Defense of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises Defense of one Pokémon."
+			"spritePath": "gfx/items/IRON.png"
 		},
 		{
-			"itemNo": 45,
+			"id": "CARBOS",
+			"index": 45,
 			"name": "Carbos",
+			"description": "Raises Speed of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises Speed of one Pokémon."
+			"spritePath": "gfx/items/CARBOS.png"
 		},
 		{
-			"itemNo": 46,
+			"id": "CALCIUM",
+			"index": 46,
 			"name": "Calcium",
+			"description": "Raises Sp.Atk of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises Sp.Atk of one Pokémon."
+			"spritePath": "gfx/items/CALCIUM.png"
 		},
 		{
-			"itemNo": 47,
+			"id": "ZINC",
+			"index": 47,
 			"name": "Zinc",
+			"description": "Raises Sp.Def of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises Sp.Def of one Pokémon."
+			"spritePath": "gfx/items/ZINC.png"
 		},
 		{
-			"itemNo": 48,
+			"id": "RARE_CANDY",
+			"index": 48,
 			"name": "Rare Candy",
+			"description": "Raises level of a Pokémon by one.",
 			"category": "MEDICINE",
-			"description": "Raises level of a Pokémon by one."
+			"spritePath": "gfx/items/RARE_CANDY.png"
 		},
 		{
-			"itemNo": 49,
+			"id": "PP_UP",
+			"index": 49,
 			"name": "PP Up",
+			"description": "Raises max PP of a selected move.",
 			"category": "MEDICINE",
-			"description": "Raises max PP of a selected move."
+			"spritePath": "gfx/items/PP_UP.png"
 		},
 		{
-			"itemNo": 50,
+			"id": "PP_MAX",
+			"index": 50,
 			"name": "PP Max",
+			"description": "Maximizes PP of a selected move.",
 			"category": "MEDICINE",
-			"description": "Maximizes PP of a selected move."
+			"spritePath": "gfx/items/PP_MAX.png"
 		},
 		{
-			"itemNo": 51,
+			"id": "FRESH_WATER",
+			"index": 51,
 			"name": "Fresh Water",
+			"description": "Restores Pokémon HP by 30.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 30."
+			"spritePath": "gfx/items/FRESH_WATER.png"
 		},
 		{
-			"itemNo": 52,
+			"id": "SODA_POP",
+			"index": 52,
 			"name": "Soda Pop",
+			"description": "Restores Pokémon HP by 50.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 50."
+			"spritePath": "gfx/items/SODA_POP.png"
 		},
 		{
-			"itemNo": 53,
+			"id": "LEMONADE",
+			"index": 53,
 			"name": "Lemonade",
+			"description": "Restores Pokémon HP by 70.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 70."
+			"spritePath": "gfx/items/LEMONADE.png"
 		},
 		{
-			"itemNo": 54,
+			"id": "MOOMOO_MILK",
+			"index": 54,
 			"name": "Moomoo Milk",
+			"description": "Restores Pokémon HP by 100.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 100."
+			"spritePath": "gfx/items/MOOMOO_MILK.png"
 		},
 		{
-			"itemNo": 55,
+			"id": "RAGECANDYBAR",
+			"index": 55,
 			"name": "Cake of Rage",
+			"description": "Eliminates all status problems.",
 			"category": "MEDICINE",
-			"description": "Eliminates all status problems."
+			"spritePath": "gfx/items/RAGECANDYBAR.png"
 		},
 		{
-			"itemNo": 56,
+			"id": "PEWTERCRUNCH",
+			"index": 56,
 			"name": "PewterCrunch",
+			"description": "Eliminates all status problems.",
 			"category": "MEDICINE",
-			"description": "Eliminates all status problems."
+			"spritePath": "gfx/items/PEWTERCRUNCH.png"
 		},
 		{
-			"itemNo": 57,
+			"id": "ENERGYPOWDER",
+			"index": 57,
 			"name": "EnergyPowder",
+			"description": "Restores Pokémon HP by 60. Bitter.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 60. Bitter."
+			"spritePath": "gfx/items/ENERGYPOWDER.png"
 		},
 		{
-			"itemNo": 58,
+			"id": "ENERGY_ROOT",
+			"index": 58,
 			"name": "Energy Root",
+			"description": "Restores Pokémon HP by 120. Bitter.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 120. Bitter."
+			"spritePath": "gfx/items/ENERGY_ROOT.png"
 		},
 		{
-			"itemNo": 59,
+			"id": "HEAL_POWDER",
+			"index": 59,
 			"name": "Heal Powder",
+			"description": "Cures all status problems. Bitter.",
 			"category": "MEDICINE",
-			"description": "Cures all status problems. Bitter."
+			"spritePath": "gfx/items/HEAL_POWDER.png"
 		},
 		{
-			"itemNo": 60,
+			"id": "REVIVAL_HERB",
+			"index": 60,
 			"name": "Revival Herb",
+			"description": "Revives fainted Pokémon. Bitter.",
 			"category": "MEDICINE",
-			"description": "Revives fainted Pokémon. Bitter."
+			"spritePath": "gfx/items/REVIVAL_HERB.png"
 		},
 		{
-			"itemNo": 61,
+			"id": "SACRED_ASH",
+			"index": 61,
 			"name": "Sacred Ash",
+			"description": "Fully revives all fainted Pokémon.",
 			"category": "MEDICINE",
-			"description": "Fully revives all fainted Pokémon."
+			"spritePath": "gfx/items/SACRED_ASH.png"
 		},
 		{
-			"itemNo": 62,
+			"id": "CHERI_BERRY",
+			"index": 62,
 			"name": "Cheri Berry",
+			"description": "A self-cure for paralysis. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-cure for paralysis. (Hold)"
+			"spritePath": "gfx/items/CHERI_BERRY.png"
 		},
 		{
-			"itemNo": 63,
+			"id": "CHESTO_BERRY",
+			"index": 63,
 			"name": "Chesto Berry",
+			"description": "A self-awakening for sleep. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-awakening for sleep. (Hold)"
+			"spritePath": "gfx/items/CHESTO_BERRY.png"
 		},
 		{
-			"itemNo": 64,
+			"id": "PECHA_BERRY",
+			"index": 64,
 			"name": "Pecha Berry",
+			"description": "A self-cure for poison. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-cure for poison. (Hold)"
+			"spritePath": "gfx/items/PECHA_BERRY.png"
 		},
 		{
-			"itemNo": 65,
+			"id": "RAWST_BERRY",
+			"index": 65,
 			"name": "Rawst Berry",
+			"description": "A self-heal for a burn. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-heal for a burn. (Hold)"
+			"spritePath": "gfx/items/RAWST_BERRY.png"
 		},
 		{
-			"itemNo": 66,
+			"id": "ASPEAR_BERRY",
+			"index": 66,
 			"name": "Aspear Berry",
+			"description": "A self-cure for freezing. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-cure for freezing. (Hold)"
+			"spritePath": "gfx/items/ASPEAR_BERRY.png"
 		},
 		{
-			"itemNo": 67,
+			"id": "LEPPA_BERRY",
+			"index": 67,
 			"name": "Leppa Berry",
+			"description": "A self-restore item. (10<BOLDP><BOLDP>, Hold)",
 			"category": "BERRIES",
-			"description": "A self-restore item. (10<BOLDP><BOLDP>, Hold)"
+			"spritePath": "gfx/items/LEPPA_BERRY.png"
 		},
 		{
-			"itemNo": 68,
+			"id": "ORAN_BERRY",
+			"index": 68,
 			"name": "Oran Berry",
+			"description": "A self-restore item. (10HP, Hold)",
 			"category": "BERRIES",
-			"description": "A self-restore item. (10HP, Hold)"
+			"spritePath": "gfx/items/ORAN_BERRY.png"
 		},
 		{
-			"itemNo": 69,
+			"id": "PERSIM_BERRY",
+			"index": 69,
 			"name": "Persim Berry",
+			"description": "A self-cure for confusion. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-cure for confusion. (Hold)"
+			"spritePath": "gfx/items/PERSIM_BERRY.png"
 		},
 		{
-			"itemNo": 70,
+			"id": "LUM_BERRY",
+			"index": 70,
 			"name": "Lum Berry",
+			"description": "Cures all status problems. (Hold)",
 			"category": "BERRIES",
-			"description": "Cures all status problems. (Hold)"
+			"spritePath": "gfx/items/LUM_BERRY.png"
 		},
 		{
-			"itemNo": 71,
+			"id": "SITRUS_BERRY",
+			"index": 71,
 			"name": "Sitrus Berry",
+			"description": "Self-restore item. (1/4 max HP, Hold)",
 			"category": "BERRIES",
-			"description": "Self-restore item. (1/4 max HP, Hold)"
+			"spritePath": "gfx/items/SITRUS_BERRY.png"
 		},
 		{
-			"itemNo": 72,
+			"id": "FIGY_BERRY",
+			"index": 72,
 			"name": "Figy Berry",
+			"description": "Self-restore item. (1/3 max HP, Hold)",
 			"category": "BERRIES",
-			"description": "Self-restore item. (1/3 max HP, Hold)"
+			"spritePath": "gfx/items/FIGY_BERRY.png"
 		},
 		{
-			"itemNo": 73,
+			"id": "POMEG_BERRY",
+			"index": 73,
 			"name": "Pomeg Berry",
+			"description": "Raises friendship but lowers HP.",
 			"category": "BERRIES",
-			"description": "Raises friendship but lowers HP."
+			"spritePath": "gfx/items/POMEG_BERRY.png"
 		},
 		{
-			"itemNo": 74,
+			"id": "KELPSY_BERRY",
+			"index": 74,
 			"name": "Kelpsy Berry",
+			"description": "Raises friendship but lowers Attack.",
 			"category": "BERRIES",
-			"description": "Raises friendship but lowers Attack."
+			"spritePath": "gfx/items/KELPSY_BERRY.png"
 		},
 		{
-			"itemNo": 75,
+			"id": "QUALOT_BERRY",
+			"index": 75,
 			"name": "Qualot Berry",
+			"description": "Raises friendship, lowers Defense.",
 			"category": "BERRIES",
-			"description": "Raises friendship, lowers Defense."
+			"spritePath": "gfx/items/QUALOT_BERRY.png"
 		},
 		{
-			"itemNo": 76,
+			"id": "HONDEW_BERRY",
+			"index": 76,
 			"name": "Hondew Berry",
+			"description": "Raises friendship but lowers Sp.Atk.",
 			"category": "BERRIES",
-			"description": "Raises friendship but lowers Sp.Atk."
+			"spritePath": "gfx/items/HONDEW_BERRY.png"
 		},
 		{
-			"itemNo": 77,
+			"id": "GREPA_BERRY",
+			"index": 77,
 			"name": "Grepa Berry",
+			"description": "Raises friendship but lowers Sp.Def.",
 			"category": "BERRIES",
-			"description": "Raises friendship but lowers Sp.Def."
+			"spritePath": "gfx/items/GREPA_BERRY.png"
 		},
 		{
-			"itemNo": 78,
+			"id": "TAMATO_BERRY",
+			"index": 78,
 			"name": "Tamato Berry",
+			"description": "Raises friendship but lowers Speed.",
 			"category": "BERRIES",
-			"description": "Raises friendship but lowers Speed."
+			"spritePath": "gfx/items/TAMATO_BERRY.png"
 		},
 		{
-			"itemNo": 79,
+			"id": "LIECHI_BERRY",
+			"index": 79,
 			"name": "Liechi Berry",
+			"description": "Raises Attack in a pinch.",
 			"category": "BERRIES",
-			"description": "Raises Attack in a pinch."
+			"spritePath": "gfx/items/LIECHI_BERRY.png"
 		},
 		{
-			"itemNo": 80,
+			"id": "GANLON_BERRY",
+			"index": 80,
 			"name": "Ganlon Berry",
+			"description": "Raises Defense in a pinch.",
 			"category": "BERRIES",
-			"description": "Raises Defense in a pinch."
+			"spritePath": "gfx/items/GANLON_BERRY.png"
 		},
 		{
-			"itemNo": 81,
+			"id": "SALAC_BERRY",
+			"index": 81,
 			"name": "Salac Berry",
+			"description": "Raises Speed in a pinch.",
 			"category": "BERRIES",
-			"description": "Raises Speed in a pinch."
+			"spritePath": "gfx/items/SALAC_BERRY.png"
 		},
 		{
-			"itemNo": 82,
+			"id": "PETAYA_BERRY",
+			"index": 82,
 			"name": "Petaya Berry",
+			"description": "Raises Sp.Atk in a pinch.",
 			"category": "BERRIES",
-			"description": "Raises Sp.Atk in a pinch."
+			"spritePath": "gfx/items/PETAYA_BERRY.png"
 		},
 		{
-			"itemNo": 83,
+			"id": "APICOT_BERRY",
+			"index": 83,
 			"name": "Apicot Berry",
+			"description": "Raises Sp.Def in a pinch.",
 			"category": "BERRIES",
-			"description": "Raises Sp.Def in a pinch."
+			"spritePath": "gfx/items/APICOT_BERRY.png"
 		},
 		{
-			"itemNo": 84,
+			"id": "LANSAT_BERRY",
+			"index": 84,
 			"name": "Lansat Berry",
+			"description": "Ups critical hit ratio in a pinch.",
 			"category": "BERRIES",
-			"description": "Ups critical hit ratio in a pinch."
+			"spritePath": "gfx/items/LANSAT_BERRY.png"
 		},
 		{
-			"itemNo": 85,
+			"id": "STARF_BERRY",
+			"index": 85,
 			"name": "Starf Berry",
+			"description": "Ups a random stat in a pinch.",
 			"category": "BERRIES",
-			"description": "Ups a random stat in a pinch."
+			"spritePath": "gfx/items/STARF_BERRY.png"
 		},
 		{
-			"itemNo": 86,
+			"id": "ENIGMA_BERRY",
+			"index": 86,
 			"name": "Enigma Berry",
+			"description": "Restores HP on super-effective hit.",
 			"category": "BERRIES",
-			"description": "Restores HP on super-effective hit."
+			"spritePath": "gfx/items/ENIGMA_BERRY.png"
 		},
 		{
-			"itemNo": 87,
+			"id": "CUSTAP_BERRY",
+			"index": 87,
 			"name": "Custap Berry",
+			"description": "Moves first in a pinch.",
 			"category": "BERRIES",
-			"description": "Moves first in a pinch."
+			"spritePath": "gfx/items/CUSTAP_BERRY.png"
 		},
 		{
-			"itemNo": 88,
+			"id": "JABOCA_BERRY",
+			"index": 88,
 			"name": "Jaboca Berry",
+			"description": "Damages foe on a physical hit.",
 			"category": "BERRIES",
-			"description": "Damages foe on a physical hit."
+			"spritePath": "gfx/items/JABOCA_BERRY.png"
 		},
 		{
-			"itemNo": 89,
+			"id": "ROWAP_BERRY",
+			"index": 89,
 			"name": "Rowap Berry",
+			"description": "Damages foe on a special hit.",
 			"category": "BERRIES",
-			"description": "Damages foe on a special hit."
+			"spritePath": "gfx/items/ROWAP_BERRY.png"
 		},
 		{
-			"itemNo": 90,
+			"id": "KEE_BERRY",
+			"index": 90,
 			"name": "Kee Berry",
+			"description": "Raises Defense on a physical hit.",
 			"category": "BERRIES",
-			"description": "Raises Defense on a physical hit."
+			"spritePath": "gfx/items/KEE_BERRY.png"
 		},
 		{
-			"itemNo": 91,
+			"id": "MARANGABERRY",
+			"index": 91,
 			"name": "MarangaBerry",
+			"description": "Raises Sp.Def on a special hit.",
 			"category": "BERRIES",
-			"description": "Raises Sp.Def on a special hit."
+			"spritePath": "gfx/items/MARANGABERRY.png"
 		},
 		{
-			"itemNo": 92,
+			"id": "BERRY_JUICE",
+			"index": 92,
 			"name": "Berry Juice",
+			"description": "A self-restore item. (20HP, Hold)",
 			"category": "BERRIES",
-			"description": "A self-restore item. (20HP, Hold)"
+			"spritePath": "gfx/items/BERRY_JUICE.png"
 		},
 		{
-			"itemNo": 93,
+			"id": "REPEL",
+			"index": 93,
 			"name": "Repel",
+			"description": "Repels weak Pokémon for 100 steps.",
 			"category": "ITEM",
-			"description": "Repels weak Pokémon for 100 steps."
+			"spritePath": "gfx/items/REPEL.png"
 		},
 		{
-			"itemNo": 94,
+			"id": "SUPER_REPEL",
+			"index": 94,
 			"name": "Super Repel",
+			"description": "Repels weak Pokémon for 200 steps.",
 			"category": "ITEM",
-			"description": "Repels weak Pokémon for 200 steps."
+			"spritePath": "gfx/items/SUPER_REPEL.png"
 		},
 		{
-			"itemNo": 95,
+			"id": "MAX_REPEL",
+			"index": 95,
 			"name": "Max Repel",
+			"description": "Repels weak Pokémon for 250 steps.",
 			"category": "ITEM",
-			"description": "Repels weak Pokémon for 250 steps."
+			"spritePath": "gfx/items/MAX_REPEL.png"
 		},
 		{
-			"itemNo": 96,
+			"id": "ESCAPE_ROPE",
+			"index": 96,
 			"name": "Escape Rope",
+			"description": "Use for escaping from caves, etc.",
 			"category": "ITEM",
-			"description": "Use for escaping from caves, etc."
+			"spritePath": "gfx/items/ESCAPE_ROPE.png"
 		},
 		{
-			"itemNo": 97,
+			"id": "POKE_DOLL",
+			"index": 97,
 			"name": "Poké Doll",
+			"description": "Use to escape from a wild Pokémon.",
 			"category": "ITEM",
-			"description": "Use to escape from a wild Pokémon."
+			"spritePath": "gfx/items/POKE_DOLL.png"
 		},
 		{
-			"itemNo": 98,
+			"id": "MULCH",
+			"index": 98,
 			"name": "Mulch",
+			"description": "Plant fertilizer for Berry trees.",
 			"category": "ITEM",
-			"description": "Plant fertilizer for Berry trees."
+			"spritePath": "gfx/items/MULCH.png"
 		},
 		{
-			"itemNo": 99,
+			"id": "SWEET_HONEY",
+			"index": 99,
 			"name": "Sweet Honey",
+			"description": "The aroma attracts wild Pokémon.",
 			"category": "ITEM",
-			"description": "The aroma attracts wild Pokémon."
+			"spritePath": "gfx/items/SWEET_HONEY.png"
 		},
 		{
-			"itemNo": 100,
+			"id": "X_ATTACK",
+			"index": 100,
 			"name": "X Attack",
+			"description": "Raises Attack. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises Attack. (1 battle)"
+			"spritePath": "gfx/items/X_ATTACK.png"
 		},
 		{
-			"itemNo": 101,
+			"id": "X_DEFEND",
+			"index": 101,
 			"name": "X Defend",
+			"description": "Raises Defense. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises Defense. (1 battle)"
+			"spritePath": "gfx/items/X_DEFEND.png"
 		},
 		{
-			"itemNo": 102,
+			"id": "X_SPEED",
+			"index": 102,
 			"name": "X Speed",
+			"description": "Raises Speed. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises Speed. (1 battle)"
+			"spritePath": "gfx/items/X_SPEED.png"
 		},
 		{
-			"itemNo": 103,
+			"id": "X_SP_ATK",
+			"index": 103,
 			"name": "X Sp.Atk",
+			"description": "Raises Sp.Atk. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises Sp.Atk. (1 battle)"
+			"spritePath": "gfx/items/X_SP_ATK.png"
 		},
 		{
-			"itemNo": 104,
+			"id": "X_SP_DEF",
+			"index": 104,
 			"name": "X Sp.Def",
+			"description": "Raises Sp.Def. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises Sp.Def. (1 battle)"
+			"spritePath": "gfx/items/X_SP_DEF.png"
 		},
 		{
-			"itemNo": 105,
+			"id": "X_ACCURACY",
+			"index": 105,
 			"name": "X Accuracy",
+			"description": "Raises accuracy. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises accuracy. (1 battle)"
+			"spritePath": "gfx/items/X_ACCURACY.png"
 		},
 		{
-			"itemNo": 106,
+			"id": "DIRE_HIT",
+			"index": 106,
 			"name": "Dire Hit",
+			"description": "Ups critical hit ratio. (1 battle)",
 			"category": "ITEM",
-			"description": "Ups critical hit ratio. (1 battle)"
+			"spritePath": "gfx/items/DIRE_HIT.png"
 		},
 		{
-			"itemNo": 107,
+			"id": "GUARD_SPEC",
+			"index": 107,
 			"name": "Guard Stats",
+			"description": "Prevents stat drops. (1 battle)",
 			"category": "ITEM",
-			"description": "Prevents stat drops. (1 battle)"
+			"spritePath": "gfx/items/GUARD_SPEC.png"
 		},
 		{
-			"itemNo": 108,
+			"id": "ABILITY_CAP",
+			"index": 108,
 			"name": "Ability Cap",
+			"description": "Switches a Pokémon's ability.",
 			"category": "ITEM",
-			"description": "Switches a Pokémon's ability."
+			"spritePath": "gfx/items/ABILITY_CAP.png"
 		},
 		{
-			"itemNo": 109,
+			"id": "ABILITYPATCH",
+			"index": 109,
 			"name": "AbilityPatch",
+			"description": "Switches to a rare ability.",
 			"category": "ITEM",
-			"description": "Switches to a rare ability."
+			"spritePath": "gfx/items/ABILITYPATCH.png"
 		},
 		{
-			"itemNo": 110,
+			"id": "LEAF_STONE",
+			"index": 110,
 			"name": "Leaf Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/LEAF_STONE.png"
 		},
 		{
-			"itemNo": 111,
+			"id": "FIRE_STONE",
+			"index": 111,
 			"name": "Fire Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/FIRE_STONE.png"
 		},
 		{
-			"itemNo": 112,
+			"id": "WATER_STONE",
+			"index": 112,
 			"name": "Water Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/WATER_STONE.png"
 		},
 		{
-			"itemNo": 113,
+			"id": "THUNDERSTONE",
+			"index": 113,
 			"name": "ThunderStone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/THUNDERSTONE.png"
 		},
 		{
-			"itemNo": 114,
+			"id": "ICE_STONE",
+			"index": 114,
 			"name": "Ice Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/ICE_STONE.png"
 		},
 		{
-			"itemNo": 115,
+			"id": "MOON_STONE",
+			"index": 115,
 			"name": "Moon Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/MOON_STONE.png"
 		},
 		{
-			"itemNo": 116,
+			"id": "SUN_STONE",
+			"index": 116,
 			"name": "Sun Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/SUN_STONE.png"
 		},
 		{
-			"itemNo": 117,
+			"id": "DUSK_STONE",
+			"index": 117,
 			"name": "Dusk Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/DUSK_STONE.png"
 		},
 		{
-			"itemNo": 118,
+			"id": "SHINY_STONE",
+			"index": 118,
 			"name": "Shiny Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/SHINY_STONE.png"
 		},
 		{
-			"itemNo": 119,
+			"id": "EVERSTONE",
+			"index": 119,
 			"name": "Everstone",
+			"description": "Stops evolution. (Hold)",
 			"category": "ITEM",
-			"description": "Stops evolution. (Hold)"
+			"spritePath": "gfx/items/EVERSTONE.png"
 		},
 		{
-			"itemNo": 120,
+			"id": "EXP_SHARE",
+			"index": 120,
 			"name": "Exp.Share",
+			"description": "Shares battle Exp. Points. (Hold)",
 			"category": "ITEM",
-			"description": "Shares battle Exp. Points. (Hold)"
+			"spritePath": "gfx/items/EXP_SHARE.png"
 		},
 		{
-			"itemNo": 121,
+			"id": "SILK_SCARF",
+			"index": 121,
 			"name": "Silk Scarf",
+			"description": "Powers up Normaltype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Normaltype moves. (Hold)"
+			"spritePath": "gfx/items/SILK_SCARF.png"
 		},
 		{
-			"itemNo": 122,
+			"id": "BLACK_BELT",
+			"index": 122,
 			"name": "Black Belt",
+			"description": "Boosts Fightingtype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Boosts Fightingtype moves. (Hold)"
+			"spritePath": "gfx/items/BLACK_BELT.png"
 		},
 		{
-			"itemNo": 123,
+			"id": "SHARP_BEAK",
+			"index": 123,
 			"name": "Sharp Beak",
+			"description": "Powers up Flyingtype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Flyingtype moves. (Hold)"
+			"spritePath": "gfx/items/SHARP_BEAK.png"
 		},
 		{
-			"itemNo": 124,
+			"id": "POISON_BARB",
+			"index": 124,
 			"name": "Poison Barb",
+			"description": "Powers up Poisontype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Poisontype moves. (Hold)"
+			"spritePath": "gfx/items/POISON_BARB.png"
 		},
 		{
-			"itemNo": 125,
+			"id": "SOFT_SAND",
+			"index": 125,
 			"name": "Soft Sand",
+			"description": "Powers up Groundtype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Groundtype moves. (Hold)"
+			"spritePath": "gfx/items/SOFT_SAND.png"
 		},
 		{
-			"itemNo": 126,
+			"id": "HARD_STONE",
+			"index": 126,
 			"name": "Hard Stone",
+			"description": "Powers up Rocktype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Rocktype moves. (Hold)"
+			"spritePath": "gfx/items/HARD_STONE.png"
 		},
 		{
-			"itemNo": 127,
+			"id": "SILVERPOWDER",
+			"index": 127,
 			"name": "SilverPowder",
+			"description": "Powers up Bug-type moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Bug-type moves. (Hold)"
+			"spritePath": "gfx/items/SILVERPOWDER.png"
 		},
 		{
-			"itemNo": 128,
+			"id": "SPELL_TAG",
+			"index": 128,
 			"name": "Spell Tag",
+			"description": "Powers up Ghosttype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Ghosttype moves. (Hold)"
+			"spritePath": "gfx/items/SPELL_TAG.png"
 		},
 		{
-			"itemNo": 129,
+			"id": "METAL_COAT",
+			"index": 129,
 			"name": "Metal Coat",
+			"description": "Powers up Steeltype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Steeltype moves. (Hold)"
+			"spritePath": "gfx/items/METAL_COAT.png"
 		},
 		{
-			"itemNo": 130,
+			"id": "CHARCOAL",
+			"index": 130,
 			"name": "Charcoal",
+			"description": "Powers up Firetype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Firetype moves. (Hold)"
+			"spritePath": "gfx/items/CHARCOAL.png"
 		},
 		{
-			"itemNo": 131,
+			"id": "MYSTIC_WATER",
+			"index": 131,
 			"name": "Mystic Water",
+			"description": "Powers up Watertype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Watertype moves. (Hold)"
+			"spritePath": "gfx/items/MYSTIC_WATER.png"
 		},
 		{
-			"itemNo": 132,
+			"id": "MIRACLE_SEED",
+			"index": 132,
 			"name": "Miracle Seed",
+			"description": "Powers up Grasstype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Grasstype moves. (Hold)"
+			"spritePath": "gfx/items/MIRACLE_SEED.png"
 		},
 		{
-			"itemNo": 133,
+			"id": "MAGNET",
+			"index": 133,
 			"name": "Magnet",
+			"description": "Boosts Electrictype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Boosts Electrictype moves. (Hold)"
+			"spritePath": "gfx/items/MAGNET.png"
 		},
 		{
-			"itemNo": 134,
+			"id": "TWISTEDSPOON",
+			"index": 134,
 			"name": "TwistedSpoon",
+			"description": "Powers up Psychictype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Psychictype moves. (Hold)"
+			"spritePath": "gfx/items/TWISTEDSPOON.png"
 		},
 		{
-			"itemNo": 135,
+			"id": "NEVERMELTICE",
+			"index": 135,
 			"name": "NeverMeltIce",
+			"description": "Powers up Ice-type moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Ice-type moves. (Hold)"
+			"spritePath": "gfx/items/NEVERMELTICE.png"
 		},
 		{
-			"itemNo": 136,
+			"id": "DRAGON_FANG",
+			"index": 136,
 			"name": "Dragon Fang",
+			"description": "Powers up Dragontype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Dragontype moves. (Hold)"
+			"spritePath": "gfx/items/DRAGON_FANG.png"
 		},
 		{
-			"itemNo": 137,
+			"id": "BLACKGLASSES",
+			"index": 137,
 			"name": "BlackGlasses",
+			"description": "Powers up Darktype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Darktype moves. (Hold)"
+			"spritePath": "gfx/items/BLACKGLASSES.png"
 		},
 		{
-			"itemNo": 138,
+			"id": "PINK_BOW",
+			"index": 138,
 			"name": "Pink Bow",
+			"description": "Powers up Fairytype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Fairytype moves. (Hold)"
+			"spritePath": "gfx/items/PINK_BOW.png"
 		},
 		{
-			"itemNo": 139,
+			"id": "BERSERK_GENE",
+			"index": 139,
 			"name": "Berserk Gene",
+			"description": "Boosts Attack but causes confusion.",
 			"category": "ITEM",
-			"description": "Boosts Attack but causes confusion."
+			"spritePath": "gfx/items/BERSERK_GENE.png"
 		},
 		{
-			"itemNo": 140,
+			"id": "BRIGHTPOWDER",
+			"index": 140,
 			"name": "BrightPowder",
+			"description": "Lowers the foe's accuracy. (Hold)",
 			"category": "ITEM",
-			"description": "Lowers the foe's accuracy. (Hold)"
+			"spritePath": "gfx/items/BRIGHTPOWDER.png"
 		},
 		{
-			"itemNo": 141,
+			"id": "QUICK_CLAW",
+			"index": 141,
 			"name": "Quick Claw",
+			"description": "Boosts chances of moving 1st. (Hold)",
 			"category": "ITEM",
-			"description": "Boosts chances of moving 1st. (Hold)"
+			"spritePath": "gfx/items/QUICK_CLAW.png"
 		},
 		{
-			"itemNo": 142,
+			"id": "KINGS_ROCK",
+			"index": 142,
 			"name": "King's Rock",
+			"description": "May make the foe flinch. (Hold)",
 			"category": "ITEM",
-			"description": "May make the foe flinch. (Hold)"
+			"spritePath": "gfx/items/KINGS_ROCK.png"
 		},
 		{
-			"itemNo": 143,
+			"id": "AMULET_COIN",
+			"index": 143,
 			"name": "Amulet Coin",
+			"description": "Doubles monetary earnings. (Hold)",
 			"category": "ITEM",
-			"description": "Doubles monetary earnings. (Hold)"
+			"spritePath": "gfx/items/AMULET_COIN.png"
 		},
 		{
-			"itemNo": 144,
+			"id": "CLEANSE_TAG",
+			"index": 144,
 			"name": "Cleanse Tag",
+			"description": "Helps repel wild Pokémon. (Hold)",
 			"category": "ITEM",
-			"description": "Helps repel wild Pokémon. (Hold)"
+			"spritePath": "gfx/items/CLEANSE_TAG.png"
 		},
 		{
-			"itemNo": 145,
+			"id": "SMOKE_BALL",
+			"index": 145,
 			"name": "Smoke Ball",
+			"description": "Escape from wild Pokémon. (Hold)",
 			"category": "ITEM",
-			"description": "Escape from wild Pokémon. (Hold)"
+			"spritePath": "gfx/items/SMOKE_BALL.png"
 		},
 		{
-			"itemNo": 146,
+			"id": "FOCUS_BAND",
+			"index": 146,
 			"name": "Focus Band",
+			"description": "May prevent fainting. (Hold)",
 			"category": "ITEM",
-			"description": "May prevent fainting. (Hold)"
+			"spritePath": "gfx/items/FOCUS_BAND.png"
 		},
 		{
-			"itemNo": 147,
+			"id": "LUCKY_EGG",
+			"index": 147,
 			"name": "Lucky Egg",
+			"description": "Earns extra Exp. points. (Hold)",
 			"category": "ITEM",
-			"description": "Earns extra Exp. points. (Hold)"
+			"spritePath": "gfx/items/LUCKY_EGG.png"
 		},
 		{
-			"itemNo": 148,
+			"id": "LEFTOVERS",
+			"index": 148,
 			"name": "Leftovers",
+			"description": "Restores HP during battle. (Hold)",
 			"category": "ITEM",
-			"description": "Restores HP during battle. (Hold)"
+			"spritePath": "gfx/items/LEFTOVERS.png"
 		},
 		{
-			"itemNo": 149,
+			"id": "SOOTHE_BELL",
+			"index": 149,
 			"name": "Soothe Bell",
+			"description": "Calms and fosters friendship. (Hold)",
 			"category": "ITEM",
-			"description": "Calms and fosters friendship. (Hold)"
+			"spritePath": "gfx/items/SOOTHE_BELL.png"
 		},
 		{
-			"itemNo": 150,
+			"id": "SHELL_BELL",
+			"index": 150,
 			"name": "Shell Bell",
+			"description": "Self-restore item. (1/8 damage, Hold)",
 			"category": "ITEM",
-			"description": "Self-restore item. (1/8 damage, Hold)"
+			"spritePath": "gfx/items/SHELL_BELL.png"
 		},
 		{
-			"itemNo": 151,
+			"id": "MUSCLE_BAND",
+			"index": 151,
 			"name": "Muscle Band",
+			"description": "Powers up physical moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up physical moves. (Hold)"
+			"spritePath": "gfx/items/MUSCLE_BAND.png"
 		},
 		{
-			"itemNo": 152,
+			"id": "WISE_GLASSES",
+			"index": 152,
 			"name": "Wise Glasses",
+			"description": "Powers up special moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up special moves. (Hold)"
+			"spritePath": "gfx/items/WISE_GLASSES.png"
 		},
 		{
-			"itemNo": 153,
+			"id": "EXPERT_BELT",
+			"index": 153,
 			"name": "Expert Belt",
+			"description": "Ups super effective moves. (Hold)",
 			"category": "ITEM",
-			"description": "Ups super effective moves. (Hold)"
+			"spritePath": "gfx/items/EXPERT_BELT.png"
 		},
 		{
-			"itemNo": 154,
+			"id": "LIGHT_CLAY",
+			"index": 154,
 			"name": "Light Clay",
+			"description": "Extends duration of barrier moves.",
 			"category": "ITEM",
-			"description": "Extends duration of barrier moves."
+			"spritePath": "gfx/items/LIGHT_CLAY.png"
 		},
 		{
-			"itemNo": 155,
+			"id": "LIFE_ORB",
+			"index": 155,
 			"name": "Life Orb",
+			"description": "Powers up moves with HP. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up moves with HP. (Hold)"
+			"spritePath": "gfx/items/LIFE_ORB.png"
 		},
 		{
-			"itemNo": 156,
+			"id": "FOCUS_SASH",
+			"index": 156,
 			"name": "Focus Sash",
+			"description": "Endures one OHKO move at full HP.",
 			"category": "ITEM",
-			"description": "Endures one OHKO move at full HP."
+			"spritePath": "gfx/items/FOCUS_SASH.png"
 		},
 		{
-			"itemNo": 157,
+			"id": "METRONOME_I",
+			"index": 157,
 			"name": "Metronome",
+			"description": "Powers up moves used again. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up moves used again. (Hold)"
+			"spritePath": "gfx/items/METRONOME_I.png"
 		},
 		{
-			"itemNo": 158,
+			"id": "IRON_BALL",
+			"index": 158,
 			"name": "Iron Ball",
+			"description": "Lowers Speed and grounds. (Hold)",
 			"category": "ITEM",
-			"description": "Lowers Speed and grounds. (Hold)"
+			"spritePath": "gfx/items/IRON_BALL.png"
 		},
 		{
-			"itemNo": 159,
+			"id": "LAGGING_TAIL",
+			"index": 159,
 			"name": "Lagging Tail",
+			"description": "Always moves last. (Hold)",
 			"category": "ITEM",
-			"description": "Always moves last. (Hold)"
+			"spritePath": "gfx/items/LAGGING_TAIL.png"
 		},
 		{
-			"itemNo": 160,
+			"id": "DESTINY_KNOT",
+			"index": 160,
 			"name": "Destiny Knot",
+			"description": "Infatuates the foe back. (Hold)",
 			"category": "ITEM",
-			"description": "Infatuates the foe back. (Hold)"
+			"spritePath": "gfx/items/DESTINY_KNOT.png"
 		},
 		{
-			"itemNo": 161,
+			"id": "GRIP_CLAW",
+			"index": 161,
 			"name": "Grip Claw",
+			"description": "Extends duration of trapping moves.",
 			"category": "ITEM",
-			"description": "Extends duration of trapping moves."
+			"spritePath": "gfx/items/GRIP_CLAW.png"
 		},
 		{
-			"itemNo": 162,
+			"id": "SHED_SHELL",
+			"index": 162,
 			"name": "Shed Shell",
+			"description": "Allows switching out. (Hold)",
 			"category": "ITEM",
-			"description": "Allows switching out. (Hold)"
+			"spritePath": "gfx/items/SHED_SHELL.png"
 		},
 		{
-			"itemNo": 163,
+			"id": "BIG_ROOT",
+			"index": 163,
 			"name": "Big Root",
+			"description": "Powers up draining moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up draining moves. (Hold)"
+			"spritePath": "gfx/items/BIG_ROOT.png"
 		},
 		{
-			"itemNo": 164,
+			"id": "EVIOLITE",
+			"index": 164,
 			"name": "Eviolite",
+			"description": "Ups Def and Sp.Def of evolvers.",
 			"category": "ITEM",
-			"description": "Ups Def and Sp.Def of evolvers."
+			"spritePath": "gfx/items/EVIOLITE.png"
 		},
 		{
-			"itemNo": 165,
+			"id": "ROCKY_HELMET",
+			"index": 165,
 			"name": "Rocky Helmet",
+			"description": "Damages foe on contact. (Hold)",
 			"category": "ITEM",
-			"description": "Damages foe on contact. (Hold)"
+			"spritePath": "gfx/items/ROCKY_HELMET.png"
 		},
 		{
-			"itemNo": 166,
+			"id": "AIR_BALLOON",
+			"index": 166,
 			"name": "Air Balloon",
+			"description": "Avoids Ground attacks until popped.",
 			"category": "ITEM",
-			"description": "Avoids Ground attacks until popped."
+			"spritePath": "gfx/items/AIR_BALLOON.png"
 		},
 		{
-			"itemNo": 167,
+			"id": "RED_CARD",
+			"index": 167,
 			"name": "Red Card",
+			"description": "Switches out foe when hit. (Hold)",
 			"category": "ITEM",
-			"description": "Switches out foe when hit. (Hold)"
+			"spritePath": "gfx/items/RED_CARD.png"
 		},
 		{
-			"itemNo": 168,
+			"id": "BINDING_BAND",
+			"index": 168,
 			"name": "Binding Band",
+			"description": "Powers up trapping moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up trapping moves. (Hold)"
+			"spritePath": "gfx/items/BINDING_BAND.png"
 		},
 		{
-			"itemNo": 169,
+			"id": "EJECT_BUTTON",
+			"index": 169,
 			"name": "Eject Button",
+			"description": "Switches out when hit. (Hold)",
 			"category": "ITEM",
-			"description": "Switches out when hit. (Hold)"
+			"spritePath": "gfx/items/EJECT_BUTTON.png"
 		},
 		{
-			"itemNo": 170,
+			"id": "WEAK_POLICY",
+			"index": 170,
 			"name": "Weak Policy",
+			"description": "Super effective hit ups offenses.",
 			"category": "ITEM",
-			"description": "Super effective hit ups offenses."
+			"spritePath": "gfx/items/WEAK_POLICY.png"
 		},
 		{
-			"itemNo": 171,
+			"id": "ASSAULT_VEST",
+			"index": 171,
 			"name": "Assault Vest",
+			"description": "Boosts Sp.Def, but bans status moves.",
 			"category": "ITEM",
-			"description": "Boosts Sp.Def, but bans status moves."
+			"spritePath": "gfx/items/ASSAULT_VEST.png"
 		},
 		{
-			"itemNo": 172,
+			"id": "SAFE_GOGGLES",
+			"index": 172,
 			"name": "Safe Goggles",
+			"description": "Protects from weather damage.",
 			"category": "ITEM",
-			"description": "Protects from weather damage."
+			"spritePath": "gfx/items/SAFE_GOGGLES.png"
 		},
 		{
-			"itemNo": 173,
+			"id": "PROTECT_PADS",
+			"index": 173,
 			"name": "Protect Pads",
+			"description": "Protects from contact effects.",
 			"category": "ITEM",
-			"description": "Protects from contact effects."
+			"spritePath": "gfx/items/PROTECT_PADS.png"
 		},
 		{
-			"itemNo": 174,
+			"id": "THROAT_SPRAY",
+			"index": 174,
 			"name": "Throat Spray",
+			"description": "Raises Sp.Atk on a sound move.",
 			"category": "ITEM",
-			"description": "Raises Sp.Atk on a sound move."
+			"spritePath": "gfx/items/THROAT_SPRAY.png"
 		},
 		{
-			"itemNo": 175,
+			"id": "EJECT_PACK",
+			"index": 175,
 			"name": "Eject Pack",
+			"description": "Switches out when stats fall. (Hold)",
 			"category": "ITEM",
-			"description": "Switches out when stats fall. (Hold)"
+			"spritePath": "gfx/items/EJECT_PACK.png"
 		},
 		{
-			"itemNo": 176,
+			"id": "HEAVY_BOOTS",
+			"index": 176,
 			"name": "Heavy Boots",
+			"description": "Protects from traps. (Hold)",
 			"category": "ITEM",
-			"description": "Protects from traps. (Hold)"
+			"spritePath": "gfx/items/HEAVY_BOOTS.png"
 		},
 		{
-			"itemNo": 177,
+			"id": "BLUNDRPOLICY",
+			"index": 177,
 			"name": "BlundrPolicy",
+			"description": "Raises Speed when a move misses.",
 			"category": "ITEM",
-			"description": "Raises Speed when a move misses."
+			"spritePath": "gfx/items/BLUNDRPOLICY.png"
 		},
 		{
-			"itemNo": 178,
+			"id": "ROOM_SERVICE",
+			"index": 178,
 			"name": "Room Service",
+			"description": "Lowers Speed in Trick Room. (Hold)",
 			"category": "ITEM",
-			"description": "Lowers Speed in Trick Room. (Hold)"
+			"spritePath": "gfx/items/ROOM_SERVICE.png"
 		},
 		{
-			"itemNo": 179,
+			"id": "CLEAR_AMULET",
+			"index": 179,
 			"name": "Clear Amulet",
+			"description": "Prevents statlowering by foes.",
 			"category": "ITEM",
-			"description": "Prevents statlowering by foes."
+			"spritePath": "gfx/items/CLEAR_AMULET.png"
 		},
 		{
-			"itemNo": 180,
+			"id": "MIRROR_HERB",
+			"index": 180,
 			"name": "Mirror Herb",
+			"description": "Copies foe's statboost once.",
 			"category": "ITEM",
-			"description": "Copies foe's statboost once."
+			"spritePath": "gfx/items/MIRROR_HERB.png"
 		},
 		{
-			"itemNo": 181,
+			"id": "PUNCHINGLOVE",
+			"index": 181,
 			"name": "PunchinGlove",
+			"description": "Powers punch moves with no contact.",
 			"category": "ITEM",
-			"description": "Powers punch moves with no contact."
+			"spritePath": "gfx/items/PUNCHINGLOVE.png"
 		},
 		{
-			"itemNo": 182,
+			"id": "COVERT_CLOAK",
+			"index": 182,
 			"name": "Covert Cloak",
+			"description": "Blocks additional attack effects.",
 			"category": "ITEM",
-			"description": "Blocks additional attack effects."
+			"spritePath": "gfx/items/COVERT_CLOAK.png"
 		},
 		{
-			"itemNo": 183,
+			"id": "LOADED_DICE",
+			"index": 183,
 			"name": "Loaded Dice",
+			"description": "Multi-hit moves hit more often.",
 			"category": "ITEM",
-			"description": "Multi-hit moves hit more often."
+			"spritePath": "gfx/items/LOADED_DICE.png"
 		},
 		{
-			"itemNo": 184,
+			"id": "LIGHT_BALL",
+			"index": 184,
 			"name": "Light Ball",
+			"description": "Boost Pikachu's Attack and Sp.Atk.",
 			"category": "ITEM",
-			"description": "Boost Pikachu's Attack and Sp.Atk."
+			"spritePath": "gfx/items/LIGHT_BALL.png"
 		},
 		{
-			"itemNo": 185,
+			"id": "LEEK",
+			"index": 185,
 			"name": "Leek",
+			"description": "An ordinary leek. Sell low.",
 			"category": "ITEM",
-			"description": "An ordinary leek. Sell low."
+			"spritePath": "gfx/items/LEEK.png"
 		},
 		{
-			"itemNo": 186,
+			"id": "THICK_CLUB",
+			"index": 186,
 			"name": "Thick Club",
+			"description": "Boost Cubone's and Marowak's Attack.",
 			"category": "ITEM",
-			"description": "Boost Cubone's and Marowak's Attack."
+			"spritePath": "gfx/items/THICK_CLUB.png"
 		},
 		{
-			"itemNo": 187,
+			"id": "LUCKY_PUNCH",
+			"index": 187,
 			"name": "Lucky Punch",
+			"description": "Ups critical hit ratio of Chansey.",
 			"category": "ITEM",
-			"description": "Ups critical hit ratio of Chansey."
+			"spritePath": "gfx/items/LUCKY_PUNCH.png"
 		},
 		{
-			"itemNo": 188,
+			"id": "METAL_POWDER",
+			"index": 188,
 			"name": "Metal Powder",
+			"description": "Raises Defense of Ditto. (Hold)",
 			"category": "ITEM",
-			"description": "Raises Defense of Ditto. (Hold)"
+			"spritePath": "gfx/items/METAL_POWDER.png"
 		},
 		{
-			"itemNo": 189,
+			"id": "QUICK_POWDER",
+			"index": 189,
 			"name": "Quick Powder",
+			"description": "Raises Speed of Ditto. (Hold)",
 			"category": "ITEM",
-			"description": "Raises Speed of Ditto. (Hold)"
+			"spritePath": "gfx/items/QUICK_POWDER.png"
 		},
 		{
-			"itemNo": 190,
+			"id": "ARMOR_SUIT",
+			"index": 190,
 			"name": "Armor Suit",
+			"description": "A suit of armor for some Pokémon.",
 			"category": "ITEM",
-			"description": "A suit of armor for some Pokémon."
+			"spritePath": "gfx/items/ARMOR_SUIT.png"
 		},
 		{
-			"itemNo": 191,
+			"id": "SCOPE_LENS",
+			"index": 191,
 			"name": "Scope Lens",
+			"description": "Raises critical hit ratio. (Hold)",
 			"category": "ITEM",
-			"description": "Raises critical hit ratio. (Hold)"
+			"spritePath": "gfx/items/SCOPE_LENS.png"
 		},
 		{
-			"itemNo": 192,
+			"id": "WIDE_LENS",
+			"index": 192,
 			"name": "Wide Lens",
+			"description": "Slightly boosts accuracy. (Hold)",
 			"category": "ITEM",
-			"description": "Slightly boosts accuracy. (Hold)"
+			"spritePath": "gfx/items/WIDE_LENS.png"
 		},
 		{
-			"itemNo": 193,
+			"id": "ZOOM_LENS",
+			"index": 193,
 			"name": "Zoom Lens",
+			"description": "Boosts accuracy when moving 2nd.",
 			"category": "ITEM",
-			"description": "Boosts accuracy when moving 2nd."
+			"spritePath": "gfx/items/ZOOM_LENS.png"
 		},
 		{
-			"itemNo": 194,
+			"id": "MENTAL_HERB",
+			"index": 194,
 			"name": "Mental Herb",
+			"description": "A self-cure for infatuation.",
 			"category": "ITEM",
-			"description": "A self-cure for infatuation."
+			"spritePath": "gfx/items/MENTAL_HERB.png"
 		},
 		{
-			"itemNo": 195,
+			"id": "POWER_HERB",
+			"index": 195,
 			"name": "Power Herb",
+			"description": "Skips charging of moves. (Hold)",
 			"category": "ITEM",
-			"description": "Skips charging of moves. (Hold)"
+			"spritePath": "gfx/items/POWER_HERB.png"
 		},
 		{
-			"itemNo": 196,
+			"id": "WHITE_HERB",
+			"index": 196,
 			"name": "White Herb",
+			"description": "A self-cure for lowered stats.",
 			"category": "ITEM",
-			"description": "A self-cure for lowered stats."
+			"spritePath": "gfx/items/WHITE_HERB.png"
 		},
 		{
-			"itemNo": 197,
+			"id": "DAMP_ROCK",
+			"index": 197,
 			"name": "Damp Rock",
+			"description": "Extends duration of rain. (Hold)",
 			"category": "ITEM",
-			"description": "Extends duration of rain. (Hold)"
+			"spritePath": "gfx/items/DAMP_ROCK.png"
 		},
 		{
-			"itemNo": 198,
+			"id": "HEAT_ROCK",
+			"index": 198,
 			"name": "Heat Rock",
+			"description": "Extends duration of sun. (Hold)",
 			"category": "ITEM",
-			"description": "Extends duration of sun. (Hold)"
+			"spritePath": "gfx/items/HEAT_ROCK.png"
 		},
 		{
-			"itemNo": 199,
+			"id": "SMOOTH_ROCK",
+			"index": 199,
 			"name": "Smooth Rock",
+			"description": "Extends duration of sandstorms.",
 			"category": "ITEM",
-			"description": "Extends duration of sandstorms."
+			"spritePath": "gfx/items/SMOOTH_ROCK.png"
 		},
 		{
-			"itemNo": 200,
+			"id": "ICY_ROCK",
+			"index": 200,
 			"name": "Icy Rock",
+			"description": "Extends duration of hail. (Hold)",
 			"category": "ITEM",
-			"description": "Extends duration of hail. (Hold)"
+			"spritePath": "gfx/items/ICY_ROCK.png"
 		},
 		{
-			"itemNo": 201,
+			"id": "CHOICE_BAND",
+			"index": 201,
 			"name": "Choice Band",
+			"description": "Boosts Attack, but allows one move.",
 			"category": "ITEM",
-			"description": "Boosts Attack, but allows one move."
+			"spritePath": "gfx/items/CHOICE_BAND.png"
 		},
 		{
-			"itemNo": 202,
+			"id": "CHOICE_SCARF",
+			"index": 202,
 			"name": "Choice Scarf",
+			"description": "Boosts Speed, but allows one move.",
 			"category": "ITEM",
-			"description": "Boosts Speed, but allows one move."
+			"spritePath": "gfx/items/CHOICE_SCARF.png"
 		},
 		{
-			"itemNo": 203,
+			"id": "CHOICE_SPECS",
+			"index": 203,
 			"name": "Choice Specs",
+			"description": "Boosts Sp.Atk, but allows one move.",
 			"category": "ITEM",
-			"description": "Boosts Sp.Atk, but allows one move."
+			"spritePath": "gfx/items/CHOICE_SPECS.png"
 		},
 		{
-			"itemNo": 204,
+			"id": "FLAME_ORB",
+			"index": 204,
 			"name": "Flame Orb",
+			"description": "Causes a burn. (Hold)",
 			"category": "ITEM",
-			"description": "Causes a burn. (Hold)"
+			"spritePath": "gfx/items/FLAME_ORB.png"
 		},
 		{
-			"itemNo": 205,
+			"id": "TOXIC_ORB",
+			"index": 205,
 			"name": "Toxic Orb",
+			"description": "Causes bad poison. (Hold)",
 			"category": "ITEM",
-			"description": "Causes bad poison. (Hold)"
+			"spritePath": "gfx/items/TOXIC_ORB.png"
 		},
 		{
-			"itemNo": 206,
+			"id": "BLACK_SLUDGE",
+			"index": 206,
 			"name": "Black Sludge",
+			"description": "Restores HP for Poison Pokémon.",
 			"category": "ITEM",
-			"description": "Restores HP for Poison Pokémon."
+			"spritePath": "gfx/items/BLACK_SLUDGE.png"
 		},
 		{
-			"itemNo": 207,
+			"id": "MACHO_BRACE",
+			"index": 207,
 			"name": "Macho Brace",
+			"description": "Boosts stat gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Boosts stat gain, but lowers Speed."
+			"spritePath": "gfx/items/MACHO_BRACE.png"
 		},
 		{
-			"itemNo": 208,
+			"id": "POWER_WEIGHT",
+			"index": 208,
 			"name": "Power Weight",
+			"description": "Boosts HP gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Boosts HP gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_WEIGHT.png"
 		},
 		{
-			"itemNo": 209,
+			"id": "POWER_BRACER",
+			"index": 209,
 			"name": "Power Bracer",
+			"description": "Ups Attack gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Ups Attack gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_BRACER.png"
 		},
 		{
-			"itemNo": 210,
+			"id": "POWER_BELT",
+			"index": 210,
 			"name": "Power Belt",
+			"description": "Ups Defense gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Ups Defense gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_BELT.png"
 		},
 		{
-			"itemNo": 211,
+			"id": "POWER_LENS",
+			"index": 211,
 			"name": "Power Lens",
+			"description": "Ups Sp.Atk gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Ups Sp.Atk gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_LENS.png"
 		},
 		{
-			"itemNo": 212,
+			"id": "POWER_BAND",
+			"index": 212,
 			"name": "Power Band",
+			"description": "Ups Sp.Def gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Ups Sp.Def gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_BAND.png"
 		},
 		{
-			"itemNo": 213,
+			"id": "POWER_ANKLET",
+			"index": 213,
 			"name": "Power Anklet",
+			"description": "Ups Speed gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Ups Speed gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_ANKLET.png"
 		},
 		{
-			"itemNo": 214,
+			"id": "DRAGON_SCALE",
+			"index": 214,
 			"name": "Dragon Scale",
+			"description": "A rare Dragon-type item.",
 			"category": "ITEM",
-			"description": "A rare Dragon-type item."
+			"spritePath": "gfx/items/DRAGON_SCALE.png"
 		},
 		{
-			"itemNo": 215,
+			"id": "UPGRADE",
+			"index": 215,
 			"name": "Upgrade",
+			"description": "A mysterious box made by Silph Co.",
 			"category": "ITEM",
-			"description": "A mysterious box made by Silph Co."
+			"spritePath": "gfx/items/UPGRADE.png"
 		},
 		{
-			"itemNo": 216,
+			"id": "DUBIOUS_DISC",
+			"index": 216,
 			"name": "Dubious Disc",
+			"description": "A transparent disc of unknown origin.",
 			"category": "ITEM",
-			"description": "A transparent disc of unknown origin."
+			"spritePath": "gfx/items/DUBIOUS_DISC.png"
 		},
 		{
-			"itemNo": 217,
+			"id": "PROTECTOR",
+			"index": 217,
 			"name": "Protector",
+			"description": "A protective item. Stiff and heavy.",
 			"category": "ITEM",
-			"description": "A protective item. Stiff and heavy."
+			"spritePath": "gfx/items/PROTECTOR.png"
 		},
 		{
-			"itemNo": 218,
+			"id": "ELECTIRIZER",
+			"index": 218,
 			"name": "Electirizer",
+			"description": "A box packed with electric energy.",
 			"category": "ITEM",
-			"description": "A box packed with electric energy."
+			"spritePath": "gfx/items/ELECTIRIZER.png"
 		},
 		{
-			"itemNo": 219,
+			"id": "MAGMARIZER",
+			"index": 219,
 			"name": "Magmarizer",
+			"description": "A box packed with magma energy.",
 			"category": "ITEM",
-			"description": "A box packed with magma energy."
+			"spritePath": "gfx/items/MAGMARIZER.png"
 		},
 		{
-			"itemNo": 220,
+			"id": "RAZOR_FANG",
+			"index": 220,
 			"name": "Razor Fang",
+			"description": "May make the foe flinch. (Hold)",
 			"category": "ITEM",
-			"description": "May make the foe flinch. (Hold)"
+			"spritePath": "gfx/items/RAZOR_FANG.png"
 		},
 		{
-			"itemNo": 221,
+			"id": "RAZOR_CLAW",
+			"index": 221,
 			"name": "Razor Claw",
+			"description": "Raises critical hit ratio. (Hold)",
 			"category": "ITEM",
-			"description": "Raises critical hit ratio. (Hold)"
+			"spritePath": "gfx/items/RAZOR_CLAW.png"
 		},
 		{
-			"itemNo": 222,
+			"id": "OVAL_STONE",
+			"index": 222,
 			"name": "Oval Stone",
+			"description": "A stone as round as a Pokémon Egg.",
 			"category": "ITEM",
-			"description": "A stone as round as a Pokémon Egg."
+			"spritePath": "gfx/items/OVAL_STONE.png"
 		},
 		{
-			"itemNo": 223,
+			"id": "ODD_SOUVENIR",
+			"index": 223,
 			"name": "Odd Souvenir",
+			"description": "An ornament from a far-away place.",
 			"category": "ITEM",
-			"description": "An ornament from a far-away place."
+			"spritePath": "gfx/items/ODD_SOUVENIR.png"
 		},
 		{
-			"itemNo": 224,
+			"id": "LINKING_CORD",
+			"index": 224,
 			"name": "Linking Cord",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/LINKING_CORD.png"
 		},
 		{
-			"itemNo": 225,
+			"id": "SILVER_LEAF",
+			"index": 225,
 			"name": "Silver Leaf",
+			"description": "A strange, silvercolored leaf.",
 			"category": "ITEM",
-			"description": "A strange, silvercolored leaf."
+			"spritePath": "gfx/items/SILVER_LEAF.png"
 		},
 		{
-			"itemNo": 226,
+			"id": "GOLD_LEAF",
+			"index": 226,
 			"name": "Gold Leaf",
+			"description": "A strange, goldcolored leaf.",
 			"category": "ITEM",
-			"description": "A strange, goldcolored leaf."
+			"spritePath": "gfx/items/GOLD_LEAF.png"
 		},
 		{
-			"itemNo": 227,
+			"id": "MINT_LEAF",
+			"index": 227,
 			"name": "Mint Leaf",
+			"description": "A fragrant sprig of mint.",
 			"category": "ITEM",
-			"description": "A fragrant sprig of mint."
+			"spritePath": "gfx/items/MINT_LEAF.png"
 		},
 		{
-			"itemNo": 228,
+			"id": "BOTTLE_CAP",
+			"index": 228,
 			"name": "Bottle Cap",
+			"description": "A shiny, rare bottle cap.",
 			"category": "ITEM",
-			"description": "A shiny, rare bottle cap."
+			"spritePath": "gfx/items/BOTTLE_CAP.png"
 		},
 		{
-			"itemNo": 229,
+			"id": "NUGGET",
+			"index": 229,
 			"name": "Nugget",
+			"description": "Made of pure gold. Sell high.",
 			"category": "ITEM",
-			"description": "Made of pure gold. Sell high."
+			"spritePath": "gfx/items/NUGGET.png"
 		},
 		{
-			"itemNo": 230,
+			"id": "BIG_NUGGET",
+			"index": 230,
 			"name": "Big Nugget",
+			"description": "Made of pure gold. Sell very high.",
 			"category": "ITEM",
-			"description": "Made of pure gold. Sell very high."
+			"spritePath": "gfx/items/BIG_NUGGET.png"
 		},
 		{
-			"itemNo": 231,
+			"id": "TINYMUSHROOM",
+			"index": 231,
 			"name": "TinyMushroom",
+			"description": "An ordinary mushroom. Sell low.",
 			"category": "ITEM",
-			"description": "An ordinary mushroom. Sell low."
+			"spritePath": "gfx/items/TINYMUSHROOM.png"
 		},
 		{
-			"itemNo": 232,
+			"id": "BIG_MUSHROOM",
+			"index": 232,
 			"name": "Big Mushroom",
+			"description": "A rare mushroom. Sell high.",
 			"category": "ITEM",
-			"description": "A rare mushroom. Sell high."
+			"spritePath": "gfx/items/BIG_MUSHROOM.png"
 		},
 		{
-			"itemNo": 233,
+			"id": "BALMMUSHROOM",
+			"index": 233,
 			"name": "BalmMushroom",
+			"description": "A rare mushroom. Sell very high.",
 			"category": "ITEM",
-			"description": "A rare mushroom. Sell very high."
+			"spritePath": "gfx/items/BALMMUSHROOM.png"
 		},
 		{
-			"itemNo": 234,
+			"id": "PEARL",
+			"index": 234,
 			"name": "Pearl",
+			"description": "A beautiful pearl. Sell low.",
 			"category": "ITEM",
-			"description": "A beautiful pearl. Sell low."
+			"spritePath": "gfx/items/PEARL.png"
 		},
 		{
-			"itemNo": 235,
+			"id": "BIG_PEARL",
+			"index": 235,
 			"name": "Big Pearl",
+			"description": "A big, beautiful pearl. Sell high.",
 			"category": "ITEM",
-			"description": "A big, beautiful pearl. Sell high."
+			"spritePath": "gfx/items/BIG_PEARL.png"
 		},
 		{
-			"itemNo": 236,
+			"id": "PEARL_STRING",
+			"index": 236,
 			"name": "Pearl String",
+			"description": "Big, shiny pearls. Sell very high.",
 			"category": "ITEM",
-			"description": "Big, shiny pearls. Sell very high."
+			"spritePath": "gfx/items/PEARL_STRING.png"
 		},
 		{
-			"itemNo": 237,
+			"id": "STARDUST",
+			"index": 237,
 			"name": "Stardust",
+			"description": "Pretty, red sand. Sell high.",
 			"category": "ITEM",
-			"description": "Pretty, red sand. Sell high."
+			"spritePath": "gfx/items/STARDUST.png"
 		},
 		{
-			"itemNo": 238,
+			"id": "STAR_PIECE",
+			"index": 238,
 			"name": "Star Piece",
+			"description": "A hunk of red gem. Sell very high.",
 			"category": "ITEM",
-			"description": "A hunk of red gem. Sell very high."
+			"spritePath": "gfx/items/STAR_PIECE.png"
 		},
 		{
-			"itemNo": 239,
+			"id": "BRICK_PIECE",
+			"index": 239,
 			"name": "Brick Piece",
+			"description": "A chunk of tile. Sell low.",
 			"category": "ITEM",
-			"description": "A chunk of tile. Sell low."
+			"spritePath": "gfx/items/BRICK_PIECE.png"
 		},
 		{
-			"itemNo": 240,
+			"id": "RARE_BONE",
+			"index": 240,
 			"name": "Rare Bone",
+			"description": "A rare bone. Sell high.",
 			"category": "ITEM",
-			"description": "A rare bone. Sell high."
+			"spritePath": "gfx/items/RARE_BONE.png"
 		},
 		{
-			"itemNo": 241,
+			"id": "SLOWPOKETAIL",
+			"index": 241,
 			"name": "SlowpokeTail",
+			"description": "Very tasty. Sell high.",
 			"category": "ITEM",
-			"description": "Very tasty. Sell high."
+			"spritePath": "gfx/items/SLOWPOKETAIL.png"
 		},
 		{
-			"itemNo": 242,
+			"id": "HELIX_FOSSIL",
+			"index": 242,
 			"name": "Helix Fossil",
+			"description": "A fossilized Pokémon shell.",
 			"category": "ITEM",
-			"description": "A fossilized Pokémon shell."
+			"spritePath": "gfx/items/HELIX_FOSSIL.png"
 		},
 		{
-			"itemNo": 243,
+			"id": "DOME_FOSSIL",
+			"index": 243,
 			"name": "Dome Fossil",
+			"description": "A fossilized Pokémon shell.",
 			"category": "ITEM",
-			"description": "A fossilized Pokémon shell."
+			"spritePath": "gfx/items/DOME_FOSSIL.png"
 		},
 		{
-			"itemNo": 244,
+			"id": "OLD_AMBER",
+			"index": 244,
 			"name": "Old Amber",
+			"description": "Fossilized resin containing DNA.",
 			"category": "ITEM",
-			"description": "Fossilized resin containing DNA."
+			"spritePath": "gfx/items/OLD_AMBER.png"
 		},
 		{
-			"itemNo": 245,
+			"id": "FLOWER_MAIL",
+			"index": 245,
 			"name": "Flower Mail",
+			"description": "Flower-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Flower-print Mail. (Hold)"
+			"spritePath": "gfx/items/FLOWER_MAIL.png"
 		},
 		{
-			"itemNo": 246,
+			"id": "SURF_MAIL",
+			"index": 246,
 			"name": "Surf Mail",
+			"description": "Lapras-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Lapras-print Mail. (Hold)"
+			"spritePath": "gfx/items/SURF_MAIL.png"
 		},
 		{
-			"itemNo": 247,
+			"id": "LITEBLUEMAIL",
+			"index": 247,
 			"name": "LiteBlueMail",
+			"description": "Dratini-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Dratini-print Mail. (Hold)"
+			"spritePath": "gfx/items/LITEBLUEMAIL.png"
 		},
 		{
-			"itemNo": 248,
+			"id": "PORTRAITMAIL",
+			"index": 248,
 			"name": "PortraitMail",
+			"description": "Mail featuring the holder's likeness.",
 			"category": "ITEM",
-			"description": "Mail featuring the holder's likeness."
+			"spritePath": "gfx/items/PORTRAITMAIL.png"
 		},
 		{
-			"itemNo": 249,
+			"id": "LOVELY_MAIL",
+			"index": 249,
 			"name": "Lovely Mail",
+			"description": "Heart-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Heart-print Mail. (Hold)"
+			"spritePath": "gfx/items/LOVELY_MAIL.png"
 		},
 		{
-			"itemNo": 250,
+			"id": "EON_MAIL",
+			"index": 250,
 			"name": "Eon Mail",
+			"description": "Eevee-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Eevee-print Mail. (Hold)"
+			"spritePath": "gfx/items/EON_MAIL.png"
 		},
 		{
-			"itemNo": 251,
+			"id": "MORPH_MAIL",
+			"index": 251,
 			"name": "Morph Mail",
+			"description": "Ditto-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Ditto-print Mail. (Hold)"
+			"spritePath": "gfx/items/MORPH_MAIL.png"
 		},
 		{
-			"itemNo": 252,
+			"id": "BLUESKY_MAIL",
+			"index": 252,
 			"name": "BlueSky Mail",
+			"description": "Sky-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Sky-print Mail. (Hold)"
+			"spritePath": "gfx/items/BLUESKY_MAIL.png"
 		},
 		{
-			"itemNo": 253,
+			"id": "MUSIC_MAIL",
+			"index": 253,
 			"name": "Music Mail",
+			"description": "Natu-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Natu-print Mail. (Hold)"
+			"spritePath": "gfx/items/MUSIC_MAIL.png"
 		},
 		{
-			"itemNo": 254,
+			"id": "MIRAGE_MAIL",
+			"index": 254,
 			"name": "Mirage Mail",
+			"description": "Mew-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Mew-print Mail. (Hold)"
+			"spritePath": "gfx/items/MIRAGE_MAIL.png"
 		}
 	],
 	"faithful": [
 		{
-			"itemNo": 1,
+			"id": "PARK_BALL",
+			"index": 0,
+			"name": "Park Ball",
+			"description": "",
+			"category": "",
+			"spritePath": "gfx/items/PARK_BALL.png"
+		},
+		{
+			"id": "POKE_BALL",
+			"index": 1,
 			"name": "Poké Ball",
+			"description": "An item for catching Pokémon.",
 			"category": "BALL",
-			"description": "An item for catching Pokémon."
+			"spritePath": "gfx/items/POKE_BALL.png"
 		},
 		{
-			"itemNo": 2,
+			"id": "GREAT_BALL",
+			"index": 2,
 			"name": "Great Ball",
+			"description": "A Ball with a decent success rate.",
 			"category": "BALL",
-			"description": "A Ball with a decent success rate."
+			"spritePath": "gfx/items/GREAT_BALL.png"
 		},
 		{
-			"itemNo": 3,
+			"id": "ULTRA_BALL",
+			"index": 3,
 			"name": "Ultra Ball",
+			"description": "A Ball with a high rate of success.",
 			"category": "BALL",
-			"description": "A Ball with a high rate of success."
+			"spritePath": "gfx/items/ULTRA_BALL.png"
 		},
 		{
-			"itemNo": 4,
+			"id": "MASTER_BALL",
+			"index": 4,
 			"name": "Master Ball",
+			"description": "The best Ball. It never misses.",
 			"category": "BALL",
-			"description": "The best Ball. It never misses."
+			"spritePath": "gfx/items/MASTER_BALL.png"
 		},
 		{
-			"itemNo": 5,
+			"id": "SAFARI_BALL",
+			"index": 5,
 			"name": "Safari Ball",
+			"description": "The Safari Game Ball.",
 			"category": "BALL",
-			"description": "The Safari Game Ball."
+			"spritePath": "gfx/items/SAFARI_BALL.png"
 		},
 		{
-			"itemNo": 6,
+			"id": "LEVEL_BALL",
+			"index": 6,
 			"name": "Level Ball",
+			"description": "A Ball for lowerlevel Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for lowerlevel Pokémon."
+			"spritePath": "gfx/items/LEVEL_BALL.png"
 		},
 		{
-			"itemNo": 7,
+			"id": "LURE_BALL",
+			"index": 7,
 			"name": "Lure Ball",
+			"description": "A Ball for Pokémon hooked by a Rod.",
 			"category": "BALL",
-			"description": "A Ball for Pokémon hooked by a Rod."
+			"spritePath": "gfx/items/LURE_BALL.png"
 		},
 		{
-			"itemNo": 8,
+			"id": "MOON_BALL",
+			"index": 8,
 			"name": "Moon Ball",
+			"description": "A Ball for Moon Stone evolvers.",
 			"category": "BALL",
-			"description": "A Ball for Moon Stone evolvers."
+			"spritePath": "gfx/items/MOON_BALL.png"
 		},
 		{
-			"itemNo": 9,
+			"id": "FRIEND_BALL",
+			"index": 9,
 			"name": "Friend Ball",
+			"description": "A Ball that makes Pokémon friendly.",
 			"category": "BALL",
-			"description": "A Ball that makes Pokémon friendly."
+			"spritePath": "gfx/items/FRIEND_BALL.png"
 		},
 		{
-			"itemNo": 10,
+			"id": "FAST_BALL",
+			"index": 10,
 			"name": "Fast Ball",
+			"description": "A Ball for catching fast Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for catching fast Pokémon."
+			"spritePath": "gfx/items/FAST_BALL.png"
 		},
 		{
-			"itemNo": 11,
+			"id": "HEAVY_BALL",
+			"index": 11,
 			"name": "Heavy Ball",
+			"description": "A Ball for catching heavy Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for catching heavy Pokémon."
+			"spritePath": "gfx/items/HEAVY_BALL.png"
 		},
 		{
-			"itemNo": 12,
+			"id": "LOVE_BALL",
+			"index": 12,
 			"name": "Love Ball",
+			"description": "A Ball for the opposite gender.",
 			"category": "BALL",
-			"description": "A Ball for the opposite gender."
+			"spritePath": "gfx/items/LOVE_BALL.png"
 		},
 		{
-			"itemNo": 13,
+			"id": "REPEAT_BALL",
+			"index": 13,
 			"name": "Repeat Ball",
+			"description": "A Ball for Pokémon caught before.",
 			"category": "BALL",
-			"description": "A Ball for Pokémon caught before."
+			"spritePath": "gfx/items/REPEAT_BALL.png"
 		},
 		{
-			"itemNo": 14,
+			"id": "TIMER_BALL",
+			"index": 14,
 			"name": "Timer Ball",
+			"description": "A Ball for late in a battle.",
 			"category": "BALL",
-			"description": "A Ball for late in a battle."
+			"spritePath": "gfx/items/TIMER_BALL.png"
 		},
 		{
-			"itemNo": 15,
+			"id": "NEST_BALL",
+			"index": 15,
 			"name": "Nest Ball",
+			"description": "A Ball for weaker Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for weaker Pokémon."
+			"spritePath": "gfx/items/NEST_BALL.png"
 		},
 		{
-			"itemNo": 16,
+			"id": "NET_BALL",
+			"index": 16,
 			"name": "Net Ball",
+			"description": "A Ball for Water or Bug Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for Water or Bug Pokémon."
+			"spritePath": "gfx/items/NET_BALL.png"
 		},
 		{
-			"itemNo": 17,
+			"id": "DIVE_BALL",
+			"index": 17,
 			"name": "Dive Ball",
+			"description": "A Ball for underwater Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for underwater Pokémon."
+			"spritePath": "gfx/items/DIVE_BALL.png"
 		},
 		{
-			"itemNo": 18,
+			"id": "LUXURY_BALL",
+			"index": 18,
 			"name": "Luxury Ball",
+			"description": "A cozy Ball to befriend Pokémon.",
 			"category": "BALL",
-			"description": "A cozy Ball to befriend Pokémon."
+			"spritePath": "gfx/items/LUXURY_BALL.png"
 		},
 		{
-			"itemNo": 19,
+			"id": "HEAL_BALL",
+			"index": 19,
 			"name": "Heal Ball",
+			"description": "A remedial Ball to heal Pokémon.",
 			"category": "BALL",
-			"description": "A remedial Ball to heal Pokémon."
+			"spritePath": "gfx/items/HEAL_BALL.png"
 		},
 		{
-			"itemNo": 20,
+			"id": "QUICK_BALL",
+			"index": 20,
 			"name": "Quick Ball",
+			"description": "A Ball for early in a battle.",
 			"category": "BALL",
-			"description": "A Ball for early in a battle."
+			"spritePath": "gfx/items/QUICK_BALL.png"
 		},
 		{
-			"itemNo": 21,
+			"id": "DUSK_BALL",
+			"index": 21,
 			"name": "Dusk Ball",
+			"description": "A Ball for nighttime or caves.",
 			"category": "BALL",
-			"description": "A Ball for nighttime or caves."
+			"spritePath": "gfx/items/DUSK_BALL.png"
 		},
 		{
-			"itemNo": 22,
+			"id": "DREAM_BALL",
+			"index": 22,
 			"name": "Dream Ball",
+			"description": "A Ball for sleeping Pokémon.",
 			"category": "BALL",
-			"description": "A Ball for sleeping Pokémon."
+			"spritePath": "gfx/items/DREAM_BALL.png"
 		},
 		{
-			"itemNo": 23,
+			"id": "PREMIER_BALL",
+			"index": 23,
 			"name": "Premier Ball",
+			"description": "A rare commemorative Ball.",
 			"category": "BALL",
-			"description": "A rare commemorative Ball."
+			"spritePath": "gfx/items/PREMIER_BALL.png"
 		},
 		{
-			"itemNo": 24,
+			"id": "CHERISH_BALL",
+			"index": 24,
 			"name": "Cherish Ball",
+			"description": "A quite rare commemorative Ball.",
 			"category": "BALL",
-			"description": "A quite rare commemorative Ball."
+			"spritePath": "gfx/items/CHERISH_BALL.png"
 		},
 		{
-			"itemNo": 25,
+			"id": "POTION",
+			"index": 25,
 			"name": "Potion",
+			"description": "Restores Pokémon HP by 20.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 20."
+			"spritePath": "gfx/items/POTION.png"
 		},
 		{
-			"itemNo": 26,
+			"id": "SUPER_POTION",
+			"index": 26,
 			"name": "Super Potion",
+			"description": "Restores Pokémon HP by 60.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 60."
+			"spritePath": "gfx/items/SUPER_POTION.png"
 		},
 		{
-			"itemNo": 27,
+			"id": "HYPER_POTION",
+			"index": 27,
 			"name": "Hyper Potion",
+			"description": "Restores Pokémon HP by 120.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 120."
+			"spritePath": "gfx/items/HYPER_POTION.png"
 		},
 		{
-			"itemNo": 28,
+			"id": "MAX_POTION",
+			"index": 28,
 			"name": "Max Potion",
+			"description": "Fully restores Pokémon HP.",
 			"category": "MEDICINE",
-			"description": "Fully restores Pokémon HP."
+			"spritePath": "gfx/items/MAX_POTION.png"
 		},
 		{
-			"itemNo": 29,
+			"id": "ANTIDOTE",
+			"index": 29,
 			"name": "Antidote",
+			"description": "Cures poisoned Pokémon.",
 			"category": "MEDICINE",
-			"description": "Cures poisoned Pokémon."
+			"spritePath": "gfx/items/ANTIDOTE.png"
 		},
 		{
-			"itemNo": 30,
+			"id": "BURN_HEAL",
+			"index": 30,
 			"name": "Burn Heal",
+			"description": "Heals burned Pokémon.",
 			"category": "MEDICINE",
-			"description": "Heals burned Pokémon."
+			"spritePath": "gfx/items/BURN_HEAL.png"
 		},
 		{
-			"itemNo": 31,
+			"id": "PARALYZEHEAL",
+			"index": 31,
 			"name": "ParalyzeHeal",
+			"description": "Heals paralyzed Pokémon.",
 			"category": "MEDICINE",
-			"description": "Heals paralyzed Pokémon."
+			"spritePath": "gfx/items/PARALYZEHEAL.png"
 		},
 		{
-			"itemNo": 32,
+			"id": "AWAKENING",
+			"index": 32,
 			"name": "Awakening",
+			"description": "Awakens sleeping Pokémon.",
 			"category": "MEDICINE",
-			"description": "Awakens sleeping Pokémon."
+			"spritePath": "gfx/items/AWAKENING.png"
 		},
 		{
-			"itemNo": 33,
+			"id": "ICE_HEAL",
+			"index": 33,
 			"name": "Ice Heal",
+			"description": "Defrosts frozen Pokémon.",
 			"category": "MEDICINE",
-			"description": "Defrosts frozen Pokémon."
+			"spritePath": "gfx/items/ICE_HEAL.png"
 		},
 		{
-			"itemNo": 34,
+			"id": "FULL_HEAL",
+			"index": 34,
 			"name": "Full Heal",
+			"description": "Eliminates all status problems.",
 			"category": "MEDICINE",
-			"description": "Eliminates all status problems."
+			"spritePath": "gfx/items/FULL_HEAL.png"
 		},
 		{
-			"itemNo": 35,
+			"id": "FULL_RESTORE",
+			"index": 35,
 			"name": "Full Restore",
+			"description": "Fully restores HP & status.",
 			"category": "MEDICINE",
-			"description": "Fully restores HP & status."
+			"spritePath": "gfx/items/FULL_RESTORE.png"
 		},
 		{
-			"itemNo": 36,
+			"id": "REVIVE",
+			"index": 36,
 			"name": "Revive",
+			"description": "Restores a fainted Pokémon to 1/2 HP.",
 			"category": "MEDICINE",
-			"description": "Restores a fainted Pokémon to 1/2 HP."
+			"spritePath": "gfx/items/REVIVE.png"
 		},
 		{
-			"itemNo": 37,
+			"id": "MAX_REVIVE",
+			"index": 37,
 			"name": "Max Revive",
+			"description": "Fully restores a fainted Pokémon.",
 			"category": "MEDICINE",
-			"description": "Fully restores a fainted Pokémon."
+			"spritePath": "gfx/items/MAX_REVIVE.png"
 		},
 		{
-			"itemNo": 38,
+			"id": "ETHER",
+			"index": 38,
 			"name": "Ether",
+			"description": "Restores PP of one move by 10.",
 			"category": "MEDICINE",
-			"description": "Restores PP of one move by 10."
+			"spritePath": "gfx/items/ETHER.png"
 		},
 		{
-			"itemNo": 39,
+			"id": "MAX_ETHER",
+			"index": 39,
 			"name": "Max Ether",
+			"description": "Fully restores PP of one move.",
 			"category": "MEDICINE",
-			"description": "Fully restores PP of one move."
+			"spritePath": "gfx/items/MAX_ETHER.png"
 		},
 		{
-			"itemNo": 40,
+			"id": "ELIXIR",
+			"index": 40,
 			"name": "Elixir",
+			"description": "Restores PP of all moves by 10.",
 			"category": "MEDICINE",
-			"description": "Restores PP of all moves by 10."
+			"spritePath": "gfx/items/ELIXIR.png"
 		},
 		{
-			"itemNo": 41,
+			"id": "MAX_ELIXIR",
+			"index": 41,
 			"name": "Max Elixir",
+			"description": "Fully restores the PP of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Fully restores the PP of one Pokémon."
+			"spritePath": "gfx/items/MAX_ELIXIR.png"
 		},
 		{
-			"itemNo": 42,
+			"id": "HP_UP",
+			"index": 42,
 			"name": "HP Up",
+			"description": "Raises the HP of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises the HP of one Pokémon."
+			"spritePath": "gfx/items/HP_UP.png"
 		},
 		{
-			"itemNo": 43,
+			"id": "PROTEIN",
+			"index": 43,
 			"name": "Protein",
+			"description": "Raises Attack of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises Attack of one Pokémon."
+			"spritePath": "gfx/items/PROTEIN.png"
 		},
 		{
-			"itemNo": 44,
+			"id": "IRON",
+			"index": 44,
 			"name": "Iron",
+			"description": "Raises Defense of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises Defense of one Pokémon."
+			"spritePath": "gfx/items/IRON.png"
 		},
 		{
-			"itemNo": 45,
+			"id": "CARBOS",
+			"index": 45,
 			"name": "Carbos",
+			"description": "Raises Speed of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises Speed of one Pokémon."
+			"spritePath": "gfx/items/CARBOS.png"
 		},
 		{
-			"itemNo": 46,
+			"id": "CALCIUM",
+			"index": 46,
 			"name": "Calcium",
+			"description": "Raises Sp.Atk of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises Sp.Atk of one Pokémon."
+			"spritePath": "gfx/items/CALCIUM.png"
 		},
 		{
-			"itemNo": 47,
+			"id": "ZINC",
+			"index": 47,
 			"name": "Zinc",
+			"description": "Raises Sp.Def of one Pokémon.",
 			"category": "MEDICINE",
-			"description": "Raises Sp.Def of one Pokémon."
+			"spritePath": "gfx/items/ZINC.png"
 		},
 		{
-			"itemNo": 48,
+			"id": "RARE_CANDY",
+			"index": 48,
 			"name": "Rare Candy",
+			"description": "Raises level of a Pokémon by one.",
 			"category": "MEDICINE",
-			"description": "Raises level of a Pokémon by one."
+			"spritePath": "gfx/items/RARE_CANDY.png"
 		},
 		{
-			"itemNo": 49,
+			"id": "PP_UP",
+			"index": 49,
 			"name": "PP Up",
+			"description": "Raises max PP of a selected move.",
 			"category": "MEDICINE",
-			"description": "Raises max PP of a selected move."
+			"spritePath": "gfx/items/PP_UP.png"
 		},
 		{
-			"itemNo": 50,
+			"id": "PP_MAX",
+			"index": 50,
 			"name": "PP Max",
+			"description": "Maximizes PP of a selected move.",
 			"category": "MEDICINE",
-			"description": "Maximizes PP of a selected move."
+			"spritePath": "gfx/items/PP_MAX.png"
 		},
 		{
-			"itemNo": 51,
+			"id": "FRESH_WATER",
+			"index": 51,
 			"name": "Fresh Water",
+			"description": "Restores Pokémon HP by 30.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 30."
+			"spritePath": "gfx/items/FRESH_WATER.png"
 		},
 		{
-			"itemNo": 52,
+			"id": "SODA_POP",
+			"index": 52,
 			"name": "Soda Pop",
+			"description": "Restores Pokémon HP by 50.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 50."
+			"spritePath": "gfx/items/SODA_POP.png"
 		},
 		{
-			"itemNo": 53,
+			"id": "LEMONADE",
+			"index": 53,
 			"name": "Lemonade",
+			"description": "Restores Pokémon HP by 70.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 70."
+			"spritePath": "gfx/items/LEMONADE.png"
 		},
 		{
-			"itemNo": 54,
+			"id": "MOOMOO_MILK",
+			"index": 54,
 			"name": "Moomoo Milk",
+			"description": "Restores Pokémon HP by 100.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 100."
+			"spritePath": "gfx/items/MOOMOO_MILK.png"
 		},
 		{
-			"itemNo": 55,
+			"id": "RAGECANDYBAR",
+			"index": 55,
 			"name": "RageCandyBar",
+			"description": "Eliminates all status problems.",
 			"category": "MEDICINE",
-			"description": "Eliminates all status problems."
+			"spritePath": "gfx/items/RAGECANDYBAR.png"
 		},
 		{
-			"itemNo": 56,
+			"id": "PEWTERCRUNCH",
+			"index": 56,
 			"name": "PewterCrunch",
+			"description": "Eliminates all status problems.",
 			"category": "MEDICINE",
-			"description": "Eliminates all status problems."
+			"spritePath": "gfx/items/PEWTERCRUNCH.png"
 		},
 		{
-			"itemNo": 57,
+			"id": "ENERGYPOWDER",
+			"index": 57,
 			"name": "EnergyPowder",
+			"description": "Restores Pokémon HP by 60. Bitter.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 60. Bitter."
+			"spritePath": "gfx/items/ENERGYPOWDER.png"
 		},
 		{
-			"itemNo": 58,
+			"id": "ENERGY_ROOT",
+			"index": 58,
 			"name": "Energy Root",
+			"description": "Restores Pokémon HP by 120. Bitter.",
 			"category": "MEDICINE",
-			"description": "Restores Pokémon HP by 120. Bitter."
+			"spritePath": "gfx/items/ENERGY_ROOT.png"
 		},
 		{
-			"itemNo": 59,
+			"id": "HEAL_POWDER",
+			"index": 59,
 			"name": "Heal Powder",
+			"description": "Cures all status problems. Bitter.",
 			"category": "MEDICINE",
-			"description": "Cures all status problems. Bitter."
+			"spritePath": "gfx/items/HEAL_POWDER.png"
 		},
 		{
-			"itemNo": 60,
+			"id": "REVIVAL_HERB",
+			"index": 60,
 			"name": "Revival Herb",
+			"description": "Revives fainted Pokémon. Bitter.",
 			"category": "MEDICINE",
-			"description": "Revives fainted Pokémon. Bitter."
+			"spritePath": "gfx/items/REVIVAL_HERB.png"
 		},
 		{
-			"itemNo": 61,
+			"id": "SACRED_ASH",
+			"index": 61,
 			"name": "Sacred Ash",
+			"description": "Fully revives all fainted Pokémon.",
 			"category": "MEDICINE",
-			"description": "Fully revives all fainted Pokémon."
+			"spritePath": "gfx/items/SACRED_ASH.png"
 		},
 		{
-			"itemNo": 62,
+			"id": "CHERI_BERRY",
+			"index": 62,
 			"name": "Cheri Berry",
+			"description": "A self-cure for paralysis. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-cure for paralysis. (Hold)"
+			"spritePath": "gfx/items/CHERI_BERRY.png"
 		},
 		{
-			"itemNo": 63,
+			"id": "CHESTO_BERRY",
+			"index": 63,
 			"name": "Chesto Berry",
+			"description": "A self-awakening for sleep. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-awakening for sleep. (Hold)"
+			"spritePath": "gfx/items/CHESTO_BERRY.png"
 		},
 		{
-			"itemNo": 64,
+			"id": "PECHA_BERRY",
+			"index": 64,
 			"name": "Pecha Berry",
+			"description": "A self-cure for poison. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-cure for poison. (Hold)"
+			"spritePath": "gfx/items/PECHA_BERRY.png"
 		},
 		{
-			"itemNo": 65,
+			"id": "RAWST_BERRY",
+			"index": 65,
 			"name": "Rawst Berry",
+			"description": "A self-heal for a burn. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-heal for a burn. (Hold)"
+			"spritePath": "gfx/items/RAWST_BERRY.png"
 		},
 		{
-			"itemNo": 66,
+			"id": "ASPEAR_BERRY",
+			"index": 66,
 			"name": "Aspear Berry",
+			"description": "A self-cure for freezing. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-cure for freezing. (Hold)"
+			"spritePath": "gfx/items/ASPEAR_BERRY.png"
 		},
 		{
-			"itemNo": 67,
+			"id": "LEPPA_BERRY",
+			"index": 67,
 			"name": "Leppa Berry",
+			"description": "A self-restore item. (10<BOLDP><BOLDP>, Hold)",
 			"category": "BERRIES",
-			"description": "A self-restore item. (10<BOLDP><BOLDP>, Hold)"
+			"spritePath": "gfx/items/LEPPA_BERRY.png"
 		},
 		{
-			"itemNo": 68,
+			"id": "ORAN_BERRY",
+			"index": 68,
 			"name": "Oran Berry",
+			"description": "A self-restore item. (10HP, Hold)",
 			"category": "BERRIES",
-			"description": "A self-restore item. (10HP, Hold)"
+			"spritePath": "gfx/items/ORAN_BERRY.png"
 		},
 		{
-			"itemNo": 69,
+			"id": "PERSIM_BERRY",
+			"index": 69,
 			"name": "Persim Berry",
+			"description": "A self-cure for confusion. (Hold)",
 			"category": "BERRIES",
-			"description": "A self-cure for confusion. (Hold)"
+			"spritePath": "gfx/items/PERSIM_BERRY.png"
 		},
 		{
-			"itemNo": 70,
+			"id": "LUM_BERRY",
+			"index": 70,
 			"name": "Lum Berry",
+			"description": "Cures all status problems. (Hold)",
 			"category": "BERRIES",
-			"description": "Cures all status problems. (Hold)"
+			"spritePath": "gfx/items/LUM_BERRY.png"
 		},
 		{
-			"itemNo": 71,
+			"id": "SITRUS_BERRY",
+			"index": 71,
 			"name": "Sitrus Berry",
+			"description": "Self-restore item. (1/4 max HP, Hold)",
 			"category": "BERRIES",
-			"description": "Self-restore item. (1/4 max HP, Hold)"
+			"spritePath": "gfx/items/SITRUS_BERRY.png"
 		},
 		{
-			"itemNo": 72,
+			"id": "FIGY_BERRY",
+			"index": 72,
 			"name": "Figy Berry",
+			"description": "Self-restore item. (1/3 max HP, Hold)",
 			"category": "BERRIES",
-			"description": "Self-restore item. (1/3 max HP, Hold)"
+			"spritePath": "gfx/items/FIGY_BERRY.png"
 		},
 		{
-			"itemNo": 73,
+			"id": "POMEG_BERRY",
+			"index": 73,
 			"name": "Pomeg Berry",
+			"description": "Raises friendship but lowers HP.",
 			"category": "BERRIES",
-			"description": "Raises friendship but lowers HP."
+			"spritePath": "gfx/items/POMEG_BERRY.png"
 		},
 		{
-			"itemNo": 74,
+			"id": "KELPSY_BERRY",
+			"index": 74,
 			"name": "Kelpsy Berry",
+			"description": "Raises friendship but lowers Attack.",
 			"category": "BERRIES",
-			"description": "Raises friendship but lowers Attack."
+			"spritePath": "gfx/items/KELPSY_BERRY.png"
 		},
 		{
-			"itemNo": 75,
+			"id": "QUALOT_BERRY",
+			"index": 75,
 			"name": "Qualot Berry",
+			"description": "Raises friendship, lowers Defense.",
 			"category": "BERRIES",
-			"description": "Raises friendship, lowers Defense."
+			"spritePath": "gfx/items/QUALOT_BERRY.png"
 		},
 		{
-			"itemNo": 76,
+			"id": "HONDEW_BERRY",
+			"index": 76,
 			"name": "Hondew Berry",
+			"description": "Raises friendship but lowers Sp.Atk.",
 			"category": "BERRIES",
-			"description": "Raises friendship but lowers Sp.Atk."
+			"spritePath": "gfx/items/HONDEW_BERRY.png"
 		},
 		{
-			"itemNo": 77,
+			"id": "GREPA_BERRY",
+			"index": 77,
 			"name": "Grepa Berry",
+			"description": "Raises friendship but lowers Sp.Def.",
 			"category": "BERRIES",
-			"description": "Raises friendship but lowers Sp.Def."
+			"spritePath": "gfx/items/GREPA_BERRY.png"
 		},
 		{
-			"itemNo": 78,
+			"id": "TAMATO_BERRY",
+			"index": 78,
 			"name": "Tamato Berry",
+			"description": "Raises friendship but lowers Speed.",
 			"category": "BERRIES",
-			"description": "Raises friendship but lowers Speed."
+			"spritePath": "gfx/items/TAMATO_BERRY.png"
 		},
 		{
-			"itemNo": 79,
+			"id": "LIECHI_BERRY",
+			"index": 79,
 			"name": "Liechi Berry",
+			"description": "Raises Attack in a pinch.",
 			"category": "BERRIES",
-			"description": "Raises Attack in a pinch."
+			"spritePath": "gfx/items/LIECHI_BERRY.png"
 		},
 		{
-			"itemNo": 80,
+			"id": "GANLON_BERRY",
+			"index": 80,
 			"name": "Ganlon Berry",
+			"description": "Raises Defense in a pinch.",
 			"category": "BERRIES",
-			"description": "Raises Defense in a pinch."
+			"spritePath": "gfx/items/GANLON_BERRY.png"
 		},
 		{
-			"itemNo": 81,
+			"id": "SALAC_BERRY",
+			"index": 81,
 			"name": "Salac Berry",
+			"description": "Raises Speed in a pinch.",
 			"category": "BERRIES",
-			"description": "Raises Speed in a pinch."
+			"spritePath": "gfx/items/SALAC_BERRY.png"
 		},
 		{
-			"itemNo": 82,
+			"id": "PETAYA_BERRY",
+			"index": 82,
 			"name": "Petaya Berry",
+			"description": "Raises Sp.Atk in a pinch.",
 			"category": "BERRIES",
-			"description": "Raises Sp.Atk in a pinch."
+			"spritePath": "gfx/items/PETAYA_BERRY.png"
 		},
 		{
-			"itemNo": 83,
+			"id": "APICOT_BERRY",
+			"index": 83,
 			"name": "Apicot Berry",
+			"description": "Raises Sp.Def in a pinch.",
 			"category": "BERRIES",
-			"description": "Raises Sp.Def in a pinch."
+			"spritePath": "gfx/items/APICOT_BERRY.png"
 		},
 		{
-			"itemNo": 84,
+			"id": "LANSAT_BERRY",
+			"index": 84,
 			"name": "Lansat Berry",
+			"description": "Ups critical hit ratio in a pinch.",
 			"category": "BERRIES",
-			"description": "Ups critical hit ratio in a pinch."
+			"spritePath": "gfx/items/LANSAT_BERRY.png"
 		},
 		{
-			"itemNo": 85,
+			"id": "STARF_BERRY",
+			"index": 85,
 			"name": "Starf Berry",
+			"description": "Ups a random stat in a pinch.",
 			"category": "BERRIES",
-			"description": "Ups a random stat in a pinch."
+			"spritePath": "gfx/items/STARF_BERRY.png"
 		},
 		{
-			"itemNo": 86,
+			"id": "ENIGMA_BERRY",
+			"index": 86,
 			"name": "Enigma Berry",
+			"description": "Restores HP on super-effective hit.",
 			"category": "BERRIES",
-			"description": "Restores HP on super-effective hit."
+			"spritePath": "gfx/items/ENIGMA_BERRY.png"
 		},
 		{
-			"itemNo": 87,
+			"id": "CUSTAP_BERRY",
+			"index": 87,
 			"name": "Custap Berry",
+			"description": "Moves first in a pinch.",
 			"category": "BERRIES",
-			"description": "Moves first in a pinch."
+			"spritePath": "gfx/items/CUSTAP_BERRY.png"
 		},
 		{
-			"itemNo": 88,
+			"id": "JABOCA_BERRY",
+			"index": 88,
 			"name": "Jaboca Berry",
+			"description": "Damages foe on a physical hit.",
 			"category": "BERRIES",
-			"description": "Damages foe on a physical hit."
+			"spritePath": "gfx/items/JABOCA_BERRY.png"
 		},
 		{
-			"itemNo": 89,
+			"id": "ROWAP_BERRY",
+			"index": 89,
 			"name": "Rowap Berry",
+			"description": "Damages foe on a special hit.",
 			"category": "BERRIES",
-			"description": "Damages foe on a special hit."
+			"spritePath": "gfx/items/ROWAP_BERRY.png"
 		},
 		{
-			"itemNo": 90,
+			"id": "KEE_BERRY",
+			"index": 90,
 			"name": "Kee Berry",
+			"description": "Raises Defense on a physical hit.",
 			"category": "BERRIES",
-			"description": "Raises Defense on a physical hit."
+			"spritePath": "gfx/items/KEE_BERRY.png"
 		},
 		{
-			"itemNo": 91,
+			"id": "MARANGABERRY",
+			"index": 91,
 			"name": "MarangaBerry",
+			"description": "Raises Sp.Def on a special hit.",
 			"category": "BERRIES",
-			"description": "Raises Sp.Def on a special hit."
+			"spritePath": "gfx/items/MARANGABERRY.png"
 		},
 		{
-			"itemNo": 92,
+			"id": "BERRY_JUICE",
+			"index": 92,
 			"name": "Berry Juice",
+			"description": "A self-restore item. (20HP, Hold)",
 			"category": "BERRIES",
-			"description": "A self-restore item. (20HP, Hold)"
+			"spritePath": "gfx/items/BERRY_JUICE.png"
 		},
 		{
-			"itemNo": 93,
+			"id": "REPEL",
+			"index": 93,
 			"name": "Repel",
+			"description": "Repels weak Pokémon for 100 steps.",
 			"category": "ITEM",
-			"description": "Repels weak Pokémon for 100 steps."
+			"spritePath": "gfx/items/REPEL.png"
 		},
 		{
-			"itemNo": 94,
+			"id": "SUPER_REPEL",
+			"index": 94,
 			"name": "Super Repel",
+			"description": "Repels weak Pokémon for 200 steps.",
 			"category": "ITEM",
-			"description": "Repels weak Pokémon for 200 steps."
+			"spritePath": "gfx/items/SUPER_REPEL.png"
 		},
 		{
-			"itemNo": 95,
+			"id": "MAX_REPEL",
+			"index": 95,
 			"name": "Max Repel",
+			"description": "Repels weak Pokémon for 250 steps.",
 			"category": "ITEM",
-			"description": "Repels weak Pokémon for 250 steps."
+			"spritePath": "gfx/items/MAX_REPEL.png"
 		},
 		{
-			"itemNo": 96,
+			"id": "ESCAPE_ROPE",
+			"index": 96,
 			"name": "Escape Rope",
+			"description": "Use for escaping from caves, etc.",
 			"category": "ITEM",
-			"description": "Use for escaping from caves, etc."
+			"spritePath": "gfx/items/ESCAPE_ROPE.png"
 		},
 		{
-			"itemNo": 97,
+			"id": "POKE_DOLL",
+			"index": 97,
 			"name": "Poké Doll",
+			"description": "Use to escape from a wild Pokémon.",
 			"category": "ITEM",
-			"description": "Use to escape from a wild Pokémon."
+			"spritePath": "gfx/items/POKE_DOLL.png"
 		},
 		{
-			"itemNo": 98,
+			"id": "MULCH",
+			"index": 98,
 			"name": "Mulch",
+			"description": "Plant fertilizer for Berry trees.",
 			"category": "ITEM",
-			"description": "Plant fertilizer for Berry trees."
+			"spritePath": "gfx/items/MULCH.png"
 		},
 		{
-			"itemNo": 99,
+			"id": "SWEET_HONEY",
+			"index": 99,
 			"name": "Honey",
+			"description": "The aroma attracts wild Pokémon.",
 			"category": "ITEM",
-			"description": "The aroma attracts wild Pokémon."
+			"spritePath": "gfx/items/SWEET_HONEY.png"
 		},
 		{
-			"itemNo": 100,
+			"id": "X_ATTACK",
+			"index": 100,
 			"name": "X Attack",
+			"description": "Raises Attack. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises Attack. (1 battle)"
+			"spritePath": "gfx/items/X_ATTACK.png"
 		},
 		{
-			"itemNo": 101,
+			"id": "X_DEFEND",
+			"index": 101,
 			"name": "X Defend",
+			"description": "Raises Defense. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises Defense. (1 battle)"
+			"spritePath": "gfx/items/X_DEFEND.png"
 		},
 		{
-			"itemNo": 102,
+			"id": "X_SPEED",
+			"index": 102,
 			"name": "X Speed",
+			"description": "Raises Speed. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises Speed. (1 battle)"
+			"spritePath": "gfx/items/X_SPEED.png"
 		},
 		{
-			"itemNo": 103,
+			"id": "X_SP_ATK",
+			"index": 103,
 			"name": "X Sp.Atk",
+			"description": "Raises Sp.Atk. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises Sp.Atk. (1 battle)"
+			"spritePath": "gfx/items/X_SP_ATK.png"
 		},
 		{
-			"itemNo": 104,
+			"id": "X_SP_DEF",
+			"index": 104,
 			"name": "X Sp.Def",
+			"description": "Raises Sp.Def. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises Sp.Def. (1 battle)"
+			"spritePath": "gfx/items/X_SP_DEF.png"
 		},
 		{
-			"itemNo": 105,
+			"id": "X_ACCURACY",
+			"index": 105,
 			"name": "X Accuracy",
+			"description": "Raises accuracy. (1 battle)",
 			"category": "ITEM",
-			"description": "Raises accuracy. (1 battle)"
+			"spritePath": "gfx/items/X_ACCURACY.png"
 		},
 		{
-			"itemNo": 106,
+			"id": "DIRE_HIT",
+			"index": 106,
 			"name": "Dire Hit",
+			"description": "Ups critical hit ratio. (1 battle)",
 			"category": "ITEM",
-			"description": "Ups critical hit ratio. (1 battle)"
+			"spritePath": "gfx/items/DIRE_HIT.png"
 		},
 		{
-			"itemNo": 107,
+			"id": "GUARD_SPEC",
+			"index": 107,
 			"name": "Guard Spec.",
+			"description": "Prevents stat drops. (1 battle)",
 			"category": "ITEM",
-			"description": "Prevents stat drops. (1 battle)"
+			"spritePath": "gfx/items/GUARD_SPEC.png"
 		},
 		{
-			"itemNo": 108,
+			"id": "ABILITY_CAP",
+			"index": 108,
 			"name": "Ability Cap",
+			"description": "Switches a Pokémon's ability.",
 			"category": "ITEM",
-			"description": "Switches a Pokémon's ability."
+			"spritePath": "gfx/items/ABILITY_CAP.png"
 		},
 		{
-			"itemNo": 109,
+			"id": "ABILITYPATCH",
+			"index": 109,
 			"name": "AbilityPatch",
+			"description": "Switches to a rare ability.",
 			"category": "ITEM",
-			"description": "Switches to a rare ability."
+			"spritePath": "gfx/items/ABILITYPATCH.png"
 		},
 		{
-			"itemNo": 110,
+			"id": "LEAF_STONE",
+			"index": 110,
 			"name": "Leaf Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/LEAF_STONE.png"
 		},
 		{
-			"itemNo": 111,
+			"id": "FIRE_STONE",
+			"index": 111,
 			"name": "Fire Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/FIRE_STONE.png"
 		},
 		{
-			"itemNo": 112,
+			"id": "WATER_STONE",
+			"index": 112,
 			"name": "Water Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/WATER_STONE.png"
 		},
 		{
-			"itemNo": 113,
+			"id": "THUNDERSTONE",
+			"index": 113,
 			"name": "ThunderStone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/THUNDERSTONE.png"
 		},
 		{
-			"itemNo": 114,
+			"id": "ICE_STONE",
+			"index": 114,
 			"name": "Ice Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/ICE_STONE.png"
 		},
 		{
-			"itemNo": 115,
+			"id": "MOON_STONE",
+			"index": 115,
 			"name": "Moon Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/MOON_STONE.png"
 		},
 		{
-			"itemNo": 116,
+			"id": "SUN_STONE",
+			"index": 116,
 			"name": "Sun Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/SUN_STONE.png"
 		},
 		{
-			"itemNo": 117,
+			"id": "DUSK_STONE",
+			"index": 117,
 			"name": "Dusk Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/DUSK_STONE.png"
 		},
 		{
-			"itemNo": 118,
+			"id": "SHINY_STONE",
+			"index": 118,
 			"name": "Shiny Stone",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/SHINY_STONE.png"
 		},
 		{
-			"itemNo": 119,
+			"id": "EVERSTONE",
+			"index": 119,
 			"name": "Everstone",
+			"description": "Stops evolution. (Hold)",
 			"category": "ITEM",
-			"description": "Stops evolution. (Hold)"
+			"spritePath": "gfx/items/EVERSTONE.png"
 		},
 		{
-			"itemNo": 120,
+			"id": "EXP_SHARE",
+			"index": 120,
 			"name": "Exp.Share",
+			"description": "Shares battle Exp. Points. (Hold)",
 			"category": "ITEM",
-			"description": "Shares battle Exp. Points. (Hold)"
+			"spritePath": "gfx/items/EXP_SHARE.png"
 		},
 		{
-			"itemNo": 121,
+			"id": "SILK_SCARF",
+			"index": 121,
 			"name": "Silk Scarf",
+			"description": "Powers up Normaltype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Normaltype moves. (Hold)"
+			"spritePath": "gfx/items/SILK_SCARF.png"
 		},
 		{
-			"itemNo": 122,
+			"id": "BLACK_BELT",
+			"index": 122,
 			"name": "Black Belt",
+			"description": "Boosts Fightingtype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Boosts Fightingtype moves. (Hold)"
+			"spritePath": "gfx/items/BLACK_BELT.png"
 		},
 		{
-			"itemNo": 123,
+			"id": "SHARP_BEAK",
+			"index": 123,
 			"name": "Sharp Beak",
+			"description": "Powers up Flyingtype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Flyingtype moves. (Hold)"
+			"spritePath": "gfx/items/SHARP_BEAK.png"
 		},
 		{
-			"itemNo": 124,
+			"id": "POISON_BARB",
+			"index": 124,
 			"name": "Poison Barb",
+			"description": "Powers up Poisontype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Poisontype moves. (Hold)"
+			"spritePath": "gfx/items/POISON_BARB.png"
 		},
 		{
-			"itemNo": 125,
+			"id": "SOFT_SAND",
+			"index": 125,
 			"name": "Soft Sand",
+			"description": "Powers up Groundtype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Groundtype moves. (Hold)"
+			"spritePath": "gfx/items/SOFT_SAND.png"
 		},
 		{
-			"itemNo": 126,
+			"id": "HARD_STONE",
+			"index": 126,
 			"name": "Hard Stone",
+			"description": "Powers up Rocktype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Rocktype moves. (Hold)"
+			"spritePath": "gfx/items/HARD_STONE.png"
 		},
 		{
-			"itemNo": 127,
+			"id": "SILVERPOWDER",
+			"index": 127,
 			"name": "SilverPowder",
+			"description": "Powers up Bug-type moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Bug-type moves. (Hold)"
+			"spritePath": "gfx/items/SILVERPOWDER.png"
 		},
 		{
-			"itemNo": 128,
+			"id": "SPELL_TAG",
+			"index": 128,
 			"name": "Spell Tag",
+			"description": "Powers up Ghosttype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Ghosttype moves. (Hold)"
+			"spritePath": "gfx/items/SPELL_TAG.png"
 		},
 		{
-			"itemNo": 129,
+			"id": "METAL_COAT",
+			"index": 129,
 			"name": "Metal Coat",
+			"description": "Powers up Steeltype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Steeltype moves. (Hold)"
+			"spritePath": "gfx/items/METAL_COAT.png"
 		},
 		{
-			"itemNo": 130,
+			"id": "CHARCOAL",
+			"index": 130,
 			"name": "Charcoal",
+			"description": "Powers up Firetype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Firetype moves. (Hold)"
+			"spritePath": "gfx/items/CHARCOAL.png"
 		},
 		{
-			"itemNo": 131,
+			"id": "MYSTIC_WATER",
+			"index": 131,
 			"name": "Mystic Water",
+			"description": "Powers up Watertype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Watertype moves. (Hold)"
+			"spritePath": "gfx/items/MYSTIC_WATER.png"
 		},
 		{
-			"itemNo": 132,
+			"id": "MIRACLE_SEED",
+			"index": 132,
 			"name": "Miracle Seed",
+			"description": "Powers up Grasstype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Grasstype moves. (Hold)"
+			"spritePath": "gfx/items/MIRACLE_SEED.png"
 		},
 		{
-			"itemNo": 133,
+			"id": "MAGNET",
+			"index": 133,
 			"name": "Magnet",
+			"description": "Boosts Electrictype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Boosts Electrictype moves. (Hold)"
+			"spritePath": "gfx/items/MAGNET.png"
 		},
 		{
-			"itemNo": 134,
+			"id": "TWISTEDSPOON",
+			"index": 134,
 			"name": "TwistedSpoon",
+			"description": "Powers up Psychictype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Psychictype moves. (Hold)"
+			"spritePath": "gfx/items/TWISTEDSPOON.png"
 		},
 		{
-			"itemNo": 135,
+			"id": "NEVERMELTICE",
+			"index": 135,
 			"name": "NeverMeltIce",
+			"description": "Powers up Ice-type moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Ice-type moves. (Hold)"
+			"spritePath": "gfx/items/NEVERMELTICE.png"
 		},
 		{
-			"itemNo": 136,
+			"id": "DRAGON_FANG",
+			"index": 136,
 			"name": "Dragon Fang",
+			"description": "Powers up Dragontype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Dragontype moves. (Hold)"
+			"spritePath": "gfx/items/DRAGON_FANG.png"
 		},
 		{
-			"itemNo": 137,
+			"id": "BLACKGLASSES",
+			"index": 137,
 			"name": "BlackGlasses",
+			"description": "Powers up Darktype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Darktype moves. (Hold)"
+			"spritePath": "gfx/items/BLACKGLASSES.png"
 		},
 		{
-			"itemNo": 138,
+			"id": "PINK_BOW",
+			"index": 138,
 			"name": "Pink Bow",
+			"description": "Powers up Fairytype moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up Fairytype moves. (Hold)"
+			"spritePath": "gfx/items/PINK_BOW.png"
 		},
 		{
-			"itemNo": 139,
+			"id": "BERSERK_GENE",
+			"index": 139,
 			"name": "Berserk Gene",
+			"description": "Boosts Attack but causes confusion.",
 			"category": "ITEM",
-			"description": "Boosts Attack but causes confusion."
+			"spritePath": "gfx/items/BERSERK_GENE.png"
 		},
 		{
-			"itemNo": 140,
+			"id": "BRIGHTPOWDER",
+			"index": 140,
 			"name": "BrightPowder",
+			"description": "Lowers the foe's accuracy. (Hold)",
 			"category": "ITEM",
-			"description": "Lowers the foe's accuracy. (Hold)"
+			"spritePath": "gfx/items/BRIGHTPOWDER.png"
 		},
 		{
-			"itemNo": 141,
+			"id": "QUICK_CLAW",
+			"index": 141,
 			"name": "Quick Claw",
+			"description": "Boosts chances of moving 1st. (Hold)",
 			"category": "ITEM",
-			"description": "Boosts chances of moving 1st. (Hold)"
+			"spritePath": "gfx/items/QUICK_CLAW.png"
 		},
 		{
-			"itemNo": 142,
+			"id": "KINGS_ROCK",
+			"index": 142,
 			"name": "King's Rock",
+			"description": "May make the foe flinch. (Hold)",
 			"category": "ITEM",
-			"description": "May make the foe flinch. (Hold)"
+			"spritePath": "gfx/items/KINGS_ROCK.png"
 		},
 		{
-			"itemNo": 143,
+			"id": "AMULET_COIN",
+			"index": 143,
 			"name": "Amulet Coin",
+			"description": "Doubles monetary earnings. (Hold)",
 			"category": "ITEM",
-			"description": "Doubles monetary earnings. (Hold)"
+			"spritePath": "gfx/items/AMULET_COIN.png"
 		},
 		{
-			"itemNo": 144,
+			"id": "CLEANSE_TAG",
+			"index": 144,
 			"name": "Cleanse Tag",
+			"description": "Helps repel wild Pokémon. (Hold)",
 			"category": "ITEM",
-			"description": "Helps repel wild Pokémon. (Hold)"
+			"spritePath": "gfx/items/CLEANSE_TAG.png"
 		},
 		{
-			"itemNo": 145,
+			"id": "SMOKE_BALL",
+			"index": 145,
 			"name": "Smoke Ball",
+			"description": "Escape from wild Pokémon. (Hold)",
 			"category": "ITEM",
-			"description": "Escape from wild Pokémon. (Hold)"
+			"spritePath": "gfx/items/SMOKE_BALL.png"
 		},
 		{
-			"itemNo": 146,
+			"id": "FOCUS_BAND",
+			"index": 146,
 			"name": "Focus Band",
+			"description": "May prevent fainting. (Hold)",
 			"category": "ITEM",
-			"description": "May prevent fainting. (Hold)"
+			"spritePath": "gfx/items/FOCUS_BAND.png"
 		},
 		{
-			"itemNo": 147,
+			"id": "LUCKY_EGG",
+			"index": 147,
 			"name": "Lucky Egg",
+			"description": "Earns extra Exp. points. (Hold)",
 			"category": "ITEM",
-			"description": "Earns extra Exp. points. (Hold)"
+			"spritePath": "gfx/items/LUCKY_EGG.png"
 		},
 		{
-			"itemNo": 148,
+			"id": "LEFTOVERS",
+			"index": 148,
 			"name": "Leftovers",
+			"description": "Restores HP during battle. (Hold)",
 			"category": "ITEM",
-			"description": "Restores HP during battle. (Hold)"
+			"spritePath": "gfx/items/LEFTOVERS.png"
 		},
 		{
-			"itemNo": 149,
+			"id": "SOOTHE_BELL",
+			"index": 149,
 			"name": "Soothe Bell",
+			"description": "Calms and fosters friendship. (Hold)",
 			"category": "ITEM",
-			"description": "Calms and fosters friendship. (Hold)"
+			"spritePath": "gfx/items/SOOTHE_BELL.png"
 		},
 		{
-			"itemNo": 150,
+			"id": "SHELL_BELL",
+			"index": 150,
 			"name": "Shell Bell",
+			"description": "Self-restore item. (1/8 damage, Hold)",
 			"category": "ITEM",
-			"description": "Self-restore item. (1/8 damage, Hold)"
+			"spritePath": "gfx/items/SHELL_BELL.png"
 		},
 		{
-			"itemNo": 151,
+			"id": "MUSCLE_BAND",
+			"index": 151,
 			"name": "Muscle Band",
+			"description": "Powers up physical moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up physical moves. (Hold)"
+			"spritePath": "gfx/items/MUSCLE_BAND.png"
 		},
 		{
-			"itemNo": 152,
+			"id": "WISE_GLASSES",
+			"index": 152,
 			"name": "Wise Glasses",
+			"description": "Powers up special moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up special moves. (Hold)"
+			"spritePath": "gfx/items/WISE_GLASSES.png"
 		},
 		{
-			"itemNo": 153,
+			"id": "EXPERT_BELT",
+			"index": 153,
 			"name": "Expert Belt",
+			"description": "Ups super effective moves. (Hold)",
 			"category": "ITEM",
-			"description": "Ups super effective moves. (Hold)"
+			"spritePath": "gfx/items/EXPERT_BELT.png"
 		},
 		{
-			"itemNo": 154,
+			"id": "LIGHT_CLAY",
+			"index": 154,
 			"name": "Light Clay",
+			"description": "Extends duration of barrier moves.",
 			"category": "ITEM",
-			"description": "Extends duration of barrier moves."
+			"spritePath": "gfx/items/LIGHT_CLAY.png"
 		},
 		{
-			"itemNo": 155,
+			"id": "LIFE_ORB",
+			"index": 155,
 			"name": "Life Orb",
+			"description": "Powers up moves with HP. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up moves with HP. (Hold)"
+			"spritePath": "gfx/items/LIFE_ORB.png"
 		},
 		{
-			"itemNo": 156,
+			"id": "FOCUS_SASH",
+			"index": 156,
 			"name": "Focus Sash",
+			"description": "Endures one OHKO move at full HP.",
 			"category": "ITEM",
-			"description": "Endures one OHKO move at full HP."
+			"spritePath": "gfx/items/FOCUS_SASH.png"
 		},
 		{
-			"itemNo": 157,
+			"id": "METRONOME_I",
+			"index": 157,
 			"name": "Metronome",
+			"description": "Powers up moves used again. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up moves used again. (Hold)"
+			"spritePath": "gfx/items/METRONOME_I.png"
 		},
 		{
-			"itemNo": 158,
+			"id": "IRON_BALL",
+			"index": 158,
 			"name": "Iron Ball",
+			"description": "Lowers Speed and grounds. (Hold)",
 			"category": "ITEM",
-			"description": "Lowers Speed and grounds. (Hold)"
+			"spritePath": "gfx/items/IRON_BALL.png"
 		},
 		{
-			"itemNo": 159,
+			"id": "LAGGING_TAIL",
+			"index": 159,
 			"name": "Lagging Tail",
+			"description": "Always moves last. (Hold)",
 			"category": "ITEM",
-			"description": "Always moves last. (Hold)"
+			"spritePath": "gfx/items/LAGGING_TAIL.png"
 		},
 		{
-			"itemNo": 160,
+			"id": "DESTINY_KNOT",
+			"index": 160,
 			"name": "Destiny Knot",
+			"description": "Infatuates the foe back. (Hold)",
 			"category": "ITEM",
-			"description": "Infatuates the foe back. (Hold)"
+			"spritePath": "gfx/items/DESTINY_KNOT.png"
 		},
 		{
-			"itemNo": 161,
+			"id": "GRIP_CLAW",
+			"index": 161,
 			"name": "Grip Claw",
+			"description": "Extends duration of trapping moves.",
 			"category": "ITEM",
-			"description": "Extends duration of trapping moves."
+			"spritePath": "gfx/items/GRIP_CLAW.png"
 		},
 		{
-			"itemNo": 162,
+			"id": "SHED_SHELL",
+			"index": 162,
 			"name": "Shed Shell",
+			"description": "Allows switching out. (Hold)",
 			"category": "ITEM",
-			"description": "Allows switching out. (Hold)"
+			"spritePath": "gfx/items/SHED_SHELL.png"
 		},
 		{
-			"itemNo": 163,
+			"id": "BIG_ROOT",
+			"index": 163,
 			"name": "Big Root",
+			"description": "Powers up draining moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up draining moves. (Hold)"
+			"spritePath": "gfx/items/BIG_ROOT.png"
 		},
 		{
-			"itemNo": 164,
+			"id": "EVIOLITE",
+			"index": 164,
 			"name": "Eviolite",
+			"description": "Ups Def and Sp.Def of evolvers.",
 			"category": "ITEM",
-			"description": "Ups Def and Sp.Def of evolvers."
+			"spritePath": "gfx/items/EVIOLITE.png"
 		},
 		{
-			"itemNo": 165,
+			"id": "ROCKY_HELMET",
+			"index": 165,
 			"name": "Rocky Helmet",
+			"description": "Damages foe on contact. (Hold)",
 			"category": "ITEM",
-			"description": "Damages foe on contact. (Hold)"
+			"spritePath": "gfx/items/ROCKY_HELMET.png"
 		},
 		{
-			"itemNo": 166,
+			"id": "AIR_BALLOON",
+			"index": 166,
 			"name": "Air Balloon",
+			"description": "Avoids Ground attacks until popped.",
 			"category": "ITEM",
-			"description": "Avoids Ground attacks until popped."
+			"spritePath": "gfx/items/AIR_BALLOON.png"
 		},
 		{
-			"itemNo": 167,
+			"id": "RED_CARD",
+			"index": 167,
 			"name": "Red Card",
+			"description": "Switches out foe when hit. (Hold)",
 			"category": "ITEM",
-			"description": "Switches out foe when hit. (Hold)"
+			"spritePath": "gfx/items/RED_CARD.png"
 		},
 		{
-			"itemNo": 168,
+			"id": "BINDING_BAND",
+			"index": 168,
 			"name": "Binding Band",
+			"description": "Powers up trapping moves. (Hold)",
 			"category": "ITEM",
-			"description": "Powers up trapping moves. (Hold)"
+			"spritePath": "gfx/items/BINDING_BAND.png"
 		},
 		{
-			"itemNo": 169,
+			"id": "EJECT_BUTTON",
+			"index": 169,
 			"name": "Eject Button",
+			"description": "Switches out when hit. (Hold)",
 			"category": "ITEM",
-			"description": "Switches out when hit. (Hold)"
+			"spritePath": "gfx/items/EJECT_BUTTON.png"
 		},
 		{
-			"itemNo": 170,
+			"id": "WEAK_POLICY",
+			"index": 170,
 			"name": "Weak Policy",
+			"description": "Super effective hit ups offenses.",
 			"category": "ITEM",
-			"description": "Super effective hit ups offenses."
+			"spritePath": "gfx/items/WEAK_POLICY.png"
 		},
 		{
-			"itemNo": 171,
+			"id": "ASSAULT_VEST",
+			"index": 171,
 			"name": "Assault Vest",
+			"description": "Boosts Sp.Def, but bans status moves.",
 			"category": "ITEM",
-			"description": "Boosts Sp.Def, but bans status moves."
+			"spritePath": "gfx/items/ASSAULT_VEST.png"
 		},
 		{
-			"itemNo": 172,
+			"id": "SAFE_GOGGLES",
+			"index": 172,
 			"name": "Safe Goggles",
+			"description": "Protects from weather damage.",
 			"category": "ITEM",
-			"description": "Protects from weather damage."
+			"spritePath": "gfx/items/SAFE_GOGGLES.png"
 		},
 		{
-			"itemNo": 173,
+			"id": "PROTECT_PADS",
+			"index": 173,
 			"name": "Protect Pads",
+			"description": "Protects from contact effects.",
 			"category": "ITEM",
-			"description": "Protects from contact effects."
+			"spritePath": "gfx/items/PROTECT_PADS.png"
 		},
 		{
-			"itemNo": 174,
+			"id": "THROAT_SPRAY",
+			"index": 174,
 			"name": "Throat Spray",
+			"description": "Raises Sp.Atk on a sound move.",
 			"category": "ITEM",
-			"description": "Raises Sp.Atk on a sound move."
+			"spritePath": "gfx/items/THROAT_SPRAY.png"
 		},
 		{
-			"itemNo": 175,
+			"id": "EJECT_PACK",
+			"index": 175,
 			"name": "Eject Pack",
+			"description": "Switches out when stats fall. (Hold)",
 			"category": "ITEM",
-			"description": "Switches out when stats fall. (Hold)"
+			"spritePath": "gfx/items/EJECT_PACK.png"
 		},
 		{
-			"itemNo": 176,
+			"id": "HEAVY_BOOTS",
+			"index": 176,
 			"name": "Heavy Boots",
+			"description": "Protects from traps. (Hold)",
 			"category": "ITEM",
-			"description": "Protects from traps. (Hold)"
+			"spritePath": "gfx/items/HEAVY_BOOTS.png"
 		},
 		{
-			"itemNo": 177,
+			"id": "BLUNDRPOLICY",
+			"index": 177,
 			"name": "BlundrPolicy",
+			"description": "Raises Speed when a move misses.",
 			"category": "ITEM",
-			"description": "Raises Speed when a move misses."
+			"spritePath": "gfx/items/BLUNDRPOLICY.png"
 		},
 		{
-			"itemNo": 178,
+			"id": "ROOM_SERVICE",
+			"index": 178,
 			"name": "Room Service",
+			"description": "Lowers Speed in Trick Room. (Hold)",
 			"category": "ITEM",
-			"description": "Lowers Speed in Trick Room. (Hold)"
+			"spritePath": "gfx/items/ROOM_SERVICE.png"
 		},
 		{
-			"itemNo": 179,
+			"id": "CLEAR_AMULET",
+			"index": 179,
 			"name": "Clear Amulet",
+			"description": "Prevents statlowering by foes.",
 			"category": "ITEM",
-			"description": "Prevents statlowering by foes."
+			"spritePath": "gfx/items/CLEAR_AMULET.png"
 		},
 		{
-			"itemNo": 180,
+			"id": "MIRROR_HERB",
+			"index": 180,
 			"name": "Mirror Herb",
+			"description": "Copies foe's statboost once.",
 			"category": "ITEM",
-			"description": "Copies foe's statboost once."
+			"spritePath": "gfx/items/MIRROR_HERB.png"
 		},
 		{
-			"itemNo": 181,
+			"id": "PUNCHINGLOVE",
+			"index": 181,
 			"name": "PunchinGlove",
+			"description": "Powers punch moves with no contact.",
 			"category": "ITEM",
-			"description": "Powers punch moves with no contact."
+			"spritePath": "gfx/items/PUNCHINGLOVE.png"
 		},
 		{
-			"itemNo": 182,
+			"id": "COVERT_CLOAK",
+			"index": 182,
 			"name": "Covert Cloak",
+			"description": "Blocks additional attack effects.",
 			"category": "ITEM",
-			"description": "Blocks additional attack effects."
+			"spritePath": "gfx/items/COVERT_CLOAK.png"
 		},
 		{
-			"itemNo": 183,
+			"id": "LOADED_DICE",
+			"index": 183,
 			"name": "Loaded Dice",
+			"description": "Multi-hit moves hit more often.",
 			"category": "ITEM",
-			"description": "Multi-hit moves hit more often."
+			"spritePath": "gfx/items/LOADED_DICE.png"
 		},
 		{
-			"itemNo": 184,
+			"id": "LIGHT_BALL",
+			"index": 184,
 			"name": "Light Ball",
+			"description": "Boost Pikachu's Attack and Sp.Atk.",
 			"category": "ITEM",
-			"description": "Boost Pikachu's Attack and Sp.Atk."
+			"spritePath": "gfx/items/LIGHT_BALL.png"
 		},
 		{
-			"itemNo": 185,
+			"id": "LEEK",
+			"index": 185,
 			"name": "Leek",
+			"description": "An ordinary leek. Sell low.",
 			"category": "ITEM",
-			"description": "An ordinary leek. Sell low."
+			"spritePath": "gfx/items/LEEK.png"
 		},
 		{
-			"itemNo": 186,
+			"id": "THICK_CLUB",
+			"index": 186,
 			"name": "Thick Club",
+			"description": "Boost Cubone's and Marowak's Attack.",
 			"category": "ITEM",
-			"description": "Boost Cubone's and Marowak's Attack."
+			"spritePath": "gfx/items/THICK_CLUB.png"
 		},
 		{
-			"itemNo": 187,
+			"id": "LUCKY_PUNCH",
+			"index": 187,
 			"name": "Lucky Punch",
+			"description": "Ups critical hit ratio of Chansey.",
 			"category": "ITEM",
-			"description": "Ups critical hit ratio of Chansey."
+			"spritePath": "gfx/items/LUCKY_PUNCH.png"
 		},
 		{
-			"itemNo": 188,
+			"id": "METAL_POWDER",
+			"index": 188,
 			"name": "Metal Powder",
+			"description": "Raises Defense of Ditto. (Hold)",
 			"category": "ITEM",
-			"description": "Raises Defense of Ditto. (Hold)"
+			"spritePath": "gfx/items/METAL_POWDER.png"
 		},
 		{
-			"itemNo": 189,
+			"id": "QUICK_POWDER",
+			"index": 189,
 			"name": "Quick Powder",
+			"description": "Raises Speed of Ditto. (Hold)",
 			"category": "ITEM",
-			"description": "Raises Speed of Ditto. (Hold)"
+			"spritePath": "gfx/items/QUICK_POWDER.png"
 		},
 		{
-			"itemNo": 190,
+			"id": "ARMOR_SUIT",
+			"index": 190,
 			"name": "Armor Suit",
+			"description": "A suit of armor for some Pokémon.",
 			"category": "ITEM",
-			"description": "A suit of armor for some Pokémon."
+			"spritePath": "gfx/items/ARMOR_SUIT.png"
 		},
 		{
-			"itemNo": 191,
+			"id": "SCOPE_LENS",
+			"index": 191,
 			"name": "Scope Lens",
+			"description": "Raises critical hit ratio. (Hold)",
 			"category": "ITEM",
-			"description": "Raises critical hit ratio. (Hold)"
+			"spritePath": "gfx/items/SCOPE_LENS.png"
 		},
 		{
-			"itemNo": 192,
+			"id": "WIDE_LENS",
+			"index": 192,
 			"name": "Wide Lens",
+			"description": "Slightly boosts accuracy. (Hold)",
 			"category": "ITEM",
-			"description": "Slightly boosts accuracy. (Hold)"
+			"spritePath": "gfx/items/WIDE_LENS.png"
 		},
 		{
-			"itemNo": 193,
+			"id": "ZOOM_LENS",
+			"index": 193,
 			"name": "Zoom Lens",
+			"description": "Boosts accuracy when moving 2nd.",
 			"category": "ITEM",
-			"description": "Boosts accuracy when moving 2nd."
+			"spritePath": "gfx/items/ZOOM_LENS.png"
 		},
 		{
-			"itemNo": 194,
+			"id": "MENTAL_HERB",
+			"index": 194,
 			"name": "Mental Herb",
+			"description": "A self-cure for infatuation.",
 			"category": "ITEM",
-			"description": "A self-cure for infatuation."
+			"spritePath": "gfx/items/MENTAL_HERB.png"
 		},
 		{
-			"itemNo": 195,
+			"id": "POWER_HERB",
+			"index": 195,
 			"name": "Power Herb",
+			"description": "Skips charging of moves. (Hold)",
 			"category": "ITEM",
-			"description": "Skips charging of moves. (Hold)"
+			"spritePath": "gfx/items/POWER_HERB.png"
 		},
 		{
-			"itemNo": 196,
+			"id": "WHITE_HERB",
+			"index": 196,
 			"name": "White Herb",
+			"description": "A self-cure for lowered stats.",
 			"category": "ITEM",
-			"description": "A self-cure for lowered stats."
+			"spritePath": "gfx/items/WHITE_HERB.png"
 		},
 		{
-			"itemNo": 197,
+			"id": "DAMP_ROCK",
+			"index": 197,
 			"name": "Damp Rock",
+			"description": "Extends duration of rain. (Hold)",
 			"category": "ITEM",
-			"description": "Extends duration of rain. (Hold)"
+			"spritePath": "gfx/items/DAMP_ROCK.png"
 		},
 		{
-			"itemNo": 198,
+			"id": "HEAT_ROCK",
+			"index": 198,
 			"name": "Heat Rock",
+			"description": "Extends duration of sun. (Hold)",
 			"category": "ITEM",
-			"description": "Extends duration of sun. (Hold)"
+			"spritePath": "gfx/items/HEAT_ROCK.png"
 		},
 		{
-			"itemNo": 199,
+			"id": "SMOOTH_ROCK",
+			"index": 199,
 			"name": "Smooth Rock",
+			"description": "Extends duration of sandstorms.",
 			"category": "ITEM",
-			"description": "Extends duration of sandstorms."
+			"spritePath": "gfx/items/SMOOTH_ROCK.png"
 		},
 		{
-			"itemNo": 200,
+			"id": "ICY_ROCK",
+			"index": 200,
 			"name": "Icy Rock",
+			"description": "Extends duration of hail. (Hold)",
 			"category": "ITEM",
-			"description": "Extends duration of hail. (Hold)"
+			"spritePath": "gfx/items/ICY_ROCK.png"
 		},
 		{
-			"itemNo": 201,
+			"id": "CHOICE_BAND",
+			"index": 201,
 			"name": "Choice Band",
+			"description": "Boosts Attack, but allows one move.",
 			"category": "ITEM",
-			"description": "Boosts Attack, but allows one move."
+			"spritePath": "gfx/items/CHOICE_BAND.png"
 		},
 		{
-			"itemNo": 202,
+			"id": "CHOICE_SCARF",
+			"index": 202,
 			"name": "Choice Scarf",
+			"description": "Boosts Speed, but allows one move.",
 			"category": "ITEM",
-			"description": "Boosts Speed, but allows one move."
+			"spritePath": "gfx/items/CHOICE_SCARF.png"
 		},
 		{
-			"itemNo": 203,
+			"id": "CHOICE_SPECS",
+			"index": 203,
 			"name": "Choice Specs",
+			"description": "Boosts Sp.Atk, but allows one move.",
 			"category": "ITEM",
-			"description": "Boosts Sp.Atk, but allows one move."
+			"spritePath": "gfx/items/CHOICE_SPECS.png"
 		},
 		{
-			"itemNo": 204,
+			"id": "FLAME_ORB",
+			"index": 204,
 			"name": "Flame Orb",
+			"description": "Causes a burn. (Hold)",
 			"category": "ITEM",
-			"description": "Causes a burn. (Hold)"
+			"spritePath": "gfx/items/FLAME_ORB.png"
 		},
 		{
-			"itemNo": 205,
+			"id": "TOXIC_ORB",
+			"index": 205,
 			"name": "Toxic Orb",
+			"description": "Causes bad poison. (Hold)",
 			"category": "ITEM",
-			"description": "Causes bad poison. (Hold)"
+			"spritePath": "gfx/items/TOXIC_ORB.png"
 		},
 		{
-			"itemNo": 206,
+			"id": "BLACK_SLUDGE",
+			"index": 206,
 			"name": "Black Sludge",
+			"description": "Restores HP for Poison Pokémon.",
 			"category": "ITEM",
-			"description": "Restores HP for Poison Pokémon."
+			"spritePath": "gfx/items/BLACK_SLUDGE.png"
 		},
 		{
-			"itemNo": 207,
+			"id": "MACHO_BRACE",
+			"index": 207,
 			"name": "Macho Brace",
+			"description": "Boosts stat gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Boosts stat gain, but lowers Speed."
+			"spritePath": "gfx/items/MACHO_BRACE.png"
 		},
 		{
-			"itemNo": 208,
+			"id": "POWER_WEIGHT",
+			"index": 208,
 			"name": "Power Weight",
+			"description": "Boosts HP gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Boosts HP gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_WEIGHT.png"
 		},
 		{
-			"itemNo": 209,
+			"id": "POWER_BRACER",
+			"index": 209,
 			"name": "Power Bracer",
+			"description": "Ups Attack gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Ups Attack gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_BRACER.png"
 		},
 		{
-			"itemNo": 210,
+			"id": "POWER_BELT",
+			"index": 210,
 			"name": "Power Belt",
+			"description": "Ups Defense gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Ups Defense gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_BELT.png"
 		},
 		{
-			"itemNo": 211,
+			"id": "POWER_LENS",
+			"index": 211,
 			"name": "Power Lens",
+			"description": "Ups Sp.Atk gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Ups Sp.Atk gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_LENS.png"
 		},
 		{
-			"itemNo": 212,
+			"id": "POWER_BAND",
+			"index": 212,
 			"name": "Power Band",
+			"description": "Ups Sp.Def gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Ups Sp.Def gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_BAND.png"
 		},
 		{
-			"itemNo": 213,
+			"id": "POWER_ANKLET",
+			"index": 213,
 			"name": "Power Anklet",
+			"description": "Ups Speed gain, but lowers Speed.",
 			"category": "ITEM",
-			"description": "Ups Speed gain, but lowers Speed."
+			"spritePath": "gfx/items/POWER_ANKLET.png"
 		},
 		{
-			"itemNo": 214,
+			"id": "DRAGON_SCALE",
+			"index": 214,
 			"name": "Dragon Scale",
+			"description": "A rare Dragon-type item.",
 			"category": "ITEM",
-			"description": "A rare Dragon-type item."
+			"spritePath": "gfx/items/DRAGON_SCALE.png"
 		},
 		{
-			"itemNo": 215,
+			"id": "UPGRADE",
+			"index": 215,
 			"name": "Upgrade",
+			"description": "A mysterious box made by Silph Co.",
 			"category": "ITEM",
-			"description": "A mysterious box made by Silph Co."
+			"spritePath": "gfx/items/UPGRADE.png"
 		},
 		{
-			"itemNo": 216,
+			"id": "DUBIOUS_DISC",
+			"index": 216,
 			"name": "Dubious Disc",
+			"description": "A transparent disc of unknown origin.",
 			"category": "ITEM",
-			"description": "A transparent disc of unknown origin."
+			"spritePath": "gfx/items/DUBIOUS_DISC.png"
 		},
 		{
-			"itemNo": 217,
+			"id": "PROTECTOR",
+			"index": 217,
 			"name": "Protector",
+			"description": "A protective item. Stiff and heavy.",
 			"category": "ITEM",
-			"description": "A protective item. Stiff and heavy."
+			"spritePath": "gfx/items/PROTECTOR.png"
 		},
 		{
-			"itemNo": 218,
+			"id": "ELECTIRIZER",
+			"index": 218,
 			"name": "Electirizer",
+			"description": "A box packed with electric energy.",
 			"category": "ITEM",
-			"description": "A box packed with electric energy."
+			"spritePath": "gfx/items/ELECTIRIZER.png"
 		},
 		{
-			"itemNo": 219,
+			"id": "MAGMARIZER",
+			"index": 219,
 			"name": "Magmarizer",
+			"description": "A box packed with magma energy.",
 			"category": "ITEM",
-			"description": "A box packed with magma energy."
+			"spritePath": "gfx/items/MAGMARIZER.png"
 		},
 		{
-			"itemNo": 220,
+			"id": "RAZOR_FANG",
+			"index": 220,
 			"name": "Razor Fang",
+			"description": "May make the foe flinch. (Hold)",
 			"category": "ITEM",
-			"description": "May make the foe flinch. (Hold)"
+			"spritePath": "gfx/items/RAZOR_FANG.png"
 		},
 		{
-			"itemNo": 221,
+			"id": "RAZOR_CLAW",
+			"index": 221,
 			"name": "Razor Claw",
+			"description": "Raises critical hit ratio. (Hold)",
 			"category": "ITEM",
-			"description": "Raises critical hit ratio. (Hold)"
+			"spritePath": "gfx/items/RAZOR_CLAW.png"
 		},
 		{
-			"itemNo": 222,
+			"id": "OVAL_STONE",
+			"index": 222,
 			"name": "Oval Stone",
+			"description": "A stone as round as a Pokémon Egg.",
 			"category": "ITEM",
-			"description": "A stone as round as a Pokémon Egg."
+			"spritePath": "gfx/items/OVAL_STONE.png"
 		},
 		{
-			"itemNo": 223,
+			"id": "ODD_SOUVENIR",
+			"index": 223,
 			"name": "Odd Souvenir",
+			"description": "An ornament from a far-away place.",
 			"category": "ITEM",
-			"description": "An ornament from a far-away place."
+			"spritePath": "gfx/items/ODD_SOUVENIR.png"
 		},
 		{
-			"itemNo": 224,
+			"id": "LINKING_CORD",
+			"index": 224,
 			"name": "Linking Cord",
+			"description": "Evolves certain kinds of Pokémon.",
 			"category": "ITEM",
-			"description": "Evolves certain kinds of Pokémon."
+			"spritePath": "gfx/items/LINKING_CORD.png"
 		},
 		{
-			"itemNo": 225,
+			"id": "SILVER_LEAF",
+			"index": 225,
 			"name": "Silver Leaf",
+			"description": "A strange, silvercolored leaf.",
 			"category": "ITEM",
-			"description": "A strange, silvercolored leaf."
+			"spritePath": "gfx/items/SILVER_LEAF.png"
 		},
 		{
-			"itemNo": 226,
+			"id": "GOLD_LEAF",
+			"index": 226,
 			"name": "Gold Leaf",
+			"description": "A strange, goldcolored leaf.",
 			"category": "ITEM",
-			"description": "A strange, goldcolored leaf."
+			"spritePath": "gfx/items/GOLD_LEAF.png"
 		},
 		{
-			"itemNo": 227,
+			"id": "MINT_LEAF",
+			"index": 227,
 			"name": "Mint Leaf",
+			"description": "A fragrant sprig of mint.",
 			"category": "ITEM",
-			"description": "A fragrant sprig of mint."
+			"spritePath": "gfx/items/MINT_LEAF.png"
 		},
 		{
-			"itemNo": 228,
+			"id": "BOTTLE_CAP",
+			"index": 228,
 			"name": "Bottle Cap",
+			"description": "A shiny, rare bottle cap.",
 			"category": "ITEM",
-			"description": "A shiny, rare bottle cap."
+			"spritePath": "gfx/items/BOTTLE_CAP.png"
 		},
 		{
-			"itemNo": 229,
+			"id": "NUGGET",
+			"index": 229,
 			"name": "Nugget",
+			"description": "Made of pure gold. Sell high.",
 			"category": "ITEM",
-			"description": "Made of pure gold. Sell high."
+			"spritePath": "gfx/items/NUGGET.png"
 		},
 		{
-			"itemNo": 230,
+			"id": "BIG_NUGGET",
+			"index": 230,
 			"name": "Big Nugget",
+			"description": "Made of pure gold. Sell very high.",
 			"category": "ITEM",
-			"description": "Made of pure gold. Sell very high."
+			"spritePath": "gfx/items/BIG_NUGGET.png"
 		},
 		{
-			"itemNo": 231,
+			"id": "TINYMUSHROOM",
+			"index": 231,
 			"name": "TinyMushroom",
+			"description": "An ordinary mushroom. Sell low.",
 			"category": "ITEM",
-			"description": "An ordinary mushroom. Sell low."
+			"spritePath": "gfx/items/TINYMUSHROOM.png"
 		},
 		{
-			"itemNo": 232,
+			"id": "BIG_MUSHROOM",
+			"index": 232,
 			"name": "Big Mushroom",
+			"description": "A rare mushroom. Sell high.",
 			"category": "ITEM",
-			"description": "A rare mushroom. Sell high."
+			"spritePath": "gfx/items/BIG_MUSHROOM.png"
 		},
 		{
-			"itemNo": 233,
+			"id": "BALMMUSHROOM",
+			"index": 233,
 			"name": "BalmMushroom",
+			"description": "A rare mushroom. Sell very high.",
 			"category": "ITEM",
-			"description": "A rare mushroom. Sell very high."
+			"spritePath": "gfx/items/BALMMUSHROOM.png"
 		},
 		{
-			"itemNo": 234,
+			"id": "PEARL",
+			"index": 234,
 			"name": "Pearl",
+			"description": "A beautiful pearl. Sell low.",
 			"category": "ITEM",
-			"description": "A beautiful pearl. Sell low."
+			"spritePath": "gfx/items/PEARL.png"
 		},
 		{
-			"itemNo": 235,
+			"id": "BIG_PEARL",
+			"index": 235,
 			"name": "Big Pearl",
+			"description": "A big, beautiful pearl. Sell high.",
 			"category": "ITEM",
-			"description": "A big, beautiful pearl. Sell high."
+			"spritePath": "gfx/items/BIG_PEARL.png"
 		},
 		{
-			"itemNo": 236,
+			"id": "PEARL_STRING",
+			"index": 236,
 			"name": "Pearl String",
+			"description": "Big, shiny pearls. Sell very high.",
 			"category": "ITEM",
-			"description": "Big, shiny pearls. Sell very high."
+			"spritePath": "gfx/items/PEARL_STRING.png"
 		},
 		{
-			"itemNo": 237,
+			"id": "STARDUST",
+			"index": 237,
 			"name": "Stardust",
+			"description": "Pretty, red sand. Sell high.",
 			"category": "ITEM",
-			"description": "Pretty, red sand. Sell high."
+			"spritePath": "gfx/items/STARDUST.png"
 		},
 		{
-			"itemNo": 238,
+			"id": "STAR_PIECE",
+			"index": 238,
 			"name": "Star Piece",
+			"description": "A hunk of red gem. Sell very high.",
 			"category": "ITEM",
-			"description": "A hunk of red gem. Sell very high."
+			"spritePath": "gfx/items/STAR_PIECE.png"
 		},
 		{
-			"itemNo": 239,
+			"id": "BRICK_PIECE",
+			"index": 239,
 			"name": "Brick Piece",
+			"description": "A chunk of tile. Sell low.",
 			"category": "ITEM",
-			"description": "A chunk of tile. Sell low."
+			"spritePath": "gfx/items/BRICK_PIECE.png"
 		},
 		{
-			"itemNo": 240,
+			"id": "RARE_BONE",
+			"index": 240,
 			"name": "Rare Bone",
+			"description": "A rare bone. Sell high.",
 			"category": "ITEM",
-			"description": "A rare bone. Sell high."
+			"spritePath": "gfx/items/RARE_BONE.png"
 		},
 		{
-			"itemNo": 241,
+			"id": "SLOWPOKETAIL",
+			"index": 241,
 			"name": "SlowpokeTail",
+			"description": "Very tasty. Sell high.",
 			"category": "ITEM",
-			"description": "Very tasty. Sell high."
+			"spritePath": "gfx/items/SLOWPOKETAIL.png"
 		},
 		{
-			"itemNo": 242,
+			"id": "HELIX_FOSSIL",
+			"index": 242,
 			"name": "Helix Fossil",
+			"description": "A fossilized Pokémon shell.",
 			"category": "ITEM",
-			"description": "A fossilized Pokémon shell."
+			"spritePath": "gfx/items/HELIX_FOSSIL.png"
 		},
 		{
-			"itemNo": 243,
+			"id": "DOME_FOSSIL",
+			"index": 243,
 			"name": "Dome Fossil",
+			"description": "A fossilized Pokémon shell.",
 			"category": "ITEM",
-			"description": "A fossilized Pokémon shell."
+			"spritePath": "gfx/items/DOME_FOSSIL.png"
 		},
 		{
-			"itemNo": 244,
+			"id": "OLD_AMBER",
+			"index": 244,
 			"name": "Old Amber",
+			"description": "Fossilized resin containing DNA.",
 			"category": "ITEM",
-			"description": "Fossilized resin containing DNA."
+			"spritePath": "gfx/items/OLD_AMBER.png"
 		},
 		{
-			"itemNo": 245,
+			"id": "FLOWER_MAIL",
+			"index": 245,
 			"name": "Flower Mail",
+			"description": "Flower-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Flower-print Mail. (Hold)"
+			"spritePath": "gfx/items/FLOWER_MAIL.png"
 		},
 		{
-			"itemNo": 246,
+			"id": "SURF_MAIL",
+			"index": 246,
 			"name": "Surf Mail",
+			"description": "Lapras-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Lapras-print Mail. (Hold)"
+			"spritePath": "gfx/items/SURF_MAIL.png"
 		},
 		{
-			"itemNo": 247,
+			"id": "LITEBLUEMAIL",
+			"index": 247,
 			"name": "LiteBlueMail",
+			"description": "Dratini-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Dratini-print Mail. (Hold)"
+			"spritePath": "gfx/items/LITEBLUEMAIL.png"
 		},
 		{
-			"itemNo": 248,
+			"id": "PORTRAITMAIL",
+			"index": 248,
 			"name": "PortraitMail",
+			"description": "Mail featuring the holder's likeness.",
 			"category": "ITEM",
-			"description": "Mail featuring the holder's likeness."
+			"spritePath": "gfx/items/PORTRAITMAIL.png"
 		},
 		{
-			"itemNo": 249,
+			"id": "LOVELY_MAIL",
+			"index": 249,
 			"name": "Lovely Mail",
+			"description": "Heart-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Heart-print Mail. (Hold)"
+			"spritePath": "gfx/items/LOVELY_MAIL.png"
 		},
 		{
-			"itemNo": 250,
+			"id": "EON_MAIL",
+			"index": 250,
 			"name": "Eon Mail",
+			"description": "Eevee-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Eevee-print Mail. (Hold)"
+			"spritePath": "gfx/items/EON_MAIL.png"
 		},
 		{
-			"itemNo": 251,
+			"id": "MORPH_MAIL",
+			"index": 251,
 			"name": "Morph Mail",
+			"description": "Ditto-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Ditto-print Mail. (Hold)"
+			"spritePath": "gfx/items/MORPH_MAIL.png"
 		},
 		{
-			"itemNo": 252,
+			"id": "BLUESKY_MAIL",
+			"index": 252,
 			"name": "BlueSky Mail",
+			"description": "Sky-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Sky-print Mail. (Hold)"
+			"spritePath": "gfx/items/BLUESKY_MAIL.png"
 		},
 		{
-			"itemNo": 253,
+			"id": "MUSIC_MAIL",
+			"index": 253,
 			"name": "Music Mail",
+			"description": "Natu-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Natu-print Mail. (Hold)"
+			"spritePath": "gfx/items/MUSIC_MAIL.png"
 		},
 		{
-			"itemNo": 254,
+			"id": "MIRAGE_MAIL",
+			"index": 254,
 			"name": "Mirage Mail",
+			"description": "Mew-print Mail. (Hold)",
 			"category": "ITEM",
-			"description": "Mew-print Mail. (Hold)"
+			"spritePath": "gfx/items/MIRAGE_MAIL.png"
 		}
 	]
 }

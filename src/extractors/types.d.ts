@@ -21,11 +21,11 @@ export interface Species {
   forms: Partial<Form>[];
 }
 
-export interface Item {
+export interface Item extends Base {
   name: string;
-  itemNo: number;
   description: string;
   category: string;
+  spritePath: string;
 }
 
 export interface Move {
