@@ -17,6 +17,11 @@
 	const deleteItem = (i: number): void => {
 		slot.contents.splice(i, 1);
 	};
+
+	const src = (item: string): string => {
+		const spritePath = keyItems[PF].find((i) => i.name === item)!.spritePath;
+		return `https://raw.githubusercontent.com/KohKaiSern/polishededitor/refs/heads/main/src/${spritePath}`;
+	};
 </script>
 
 <Listgroup class="mt-8">
@@ -28,9 +33,21 @@
 						options={keyItems[PF].map((item) => item.name)}
 						bind:value={slot.contents[i].name}
 					/>
-					<P italic
-						>{keyItems[PF].find((item) => item.name === slot.contents[i].name)!.description}</P
-					>
+					<div class="flex items-center gap-3">
+						<div
+							class="size-[35px] flex bg-white rounded-lg justify-center items-center border
+							border-gray-300 dark:border-none"
+						>
+							<img
+								class="rounded-sm"
+								src={src(slot.contents[i].name)}
+								alt={`Sprite of ${slot.contents[i]}`}
+							/>
+						</div>
+						<P italic
+							>{keyItems[PF].find((item) => item.name === slot.contents[i].name)!.description}</P
+						>
+					</div>
 				</div>
 				<Button class="p-2! mt-2 sm:mt-0" color="red" outline onclick={() => deleteItem(i)}>
 					<TrashBinSolid class="h-6 w-6" />

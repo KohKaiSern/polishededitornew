@@ -68,7 +68,7 @@ function parseBag(fileHex: string[], PF: 'polished' | 'faithful'): Record<string
     if (fileHex[addresses.wKeyItems + i] === '00') break;
     bag.keyItems.contents.push({
       name: keyItems[PF].find(
-        (item) => item.itemNo === parseInt(fileHex[addresses.wKeyItems + i], 16)
+        (item) => item.index === parseInt(fileHex[addresses.wKeyItems + i], 16)
       )!.name,
       qty: 1
     });

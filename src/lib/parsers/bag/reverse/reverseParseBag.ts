@@ -67,7 +67,7 @@ function reverseParseBag(
     fileHex[addresses.wKeyItems + i] = keyItems[PF].find(
       (item) => item.name === bag.keyItems.contents[i].name
     )!
-      .itemNo.toString(16)
+      .index.toString(16)
       .padStart(2, '0');
   }
 

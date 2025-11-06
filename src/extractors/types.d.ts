@@ -28,6 +28,12 @@ export interface Item extends Base {
   spritePath: string;
 }
 
+export interface KeyItem extends Base {
+  name: string;
+  description: string;
+  spritePath: string;
+}
+
 export interface Move {
   id: string;
   name: string;
