@@ -1,0 +1,104 @@
+{
+  "polished": [
+    {
+      "id": "RED_APRICORN",
+      "index": 1,
+      "name": "Red Apricorn",
+      "ball": "Level Ball",
+      "spritePath": "gfx/items/RED_APRICORN.png"
+    },
+    {
+      "id": "BLU_APRICORN",
+      "index": 2,
+      "name": "Blu Apricorn",
+      "ball": "Lure Ball",
+      "spritePath": "gfx/items/BLU_APRICORN.png"
+    },
+    {
+      "id": "YLW_APRICORN",
+      "index": 3,
+      "name": "Ylw Apricorn",
+      "ball": "Moon Ball",
+      "spritePath": "gfx/items/YLW_APRICORN.png"
+    },
+    {
+      "id": "GRN_APRICORN",
+      "index": 4,
+      "name": "Grn Apricorn",
+      "ball": "Friend Ball",
+      "spritePath": "gfx/items/GRN_APRICORN.png"
+    },
+    {
+      "id": "WHT_APRICORN",
+      "index": 5,
+      "name": "Wht Apricorn",
+      "ball": "Fast Ball",
+      "spritePath": "gfx/items/WHT_APRICORN.png"
+    },
+    {
+      "id": "BLK_APRICORN",
+      "index": 6,
+      "name": "Blk Apricorn",
+      "ball": "Heavy Ball",
+      "spritePath": "gfx/items/BLK_APRICORN.png"
+    },
+    {
+      "id": "PNK_APRICORN",
+      "index": 7,
+      "name": "Pnk Apricorn",
+      "ball": "Love Ball",
+      "spritePath": "gfx/items/PNK_APRICORN.png"
+    }
+  ],
+  "faithful": [
+    {
+      "id": "RED_APRICORN",
+      "index": 1,
+      "name": "Red Apricorn",
+      "ball": "Level Ball",
+      "spritePath": "gfx/items/RED_APRICORN.png"
+    },
+    {
+      "id": "BLU_APRICORN",
+      "index": 2,
+      "name": "Blu Apricorn",
+      "ball": "Lure Ball",
+      "spritePath": "gfx/items/BLU_APRICORN.png"
+    },
+    {
+      "id": "YLW_APRICORN",
+      "index": 3,
+      "name": "Ylw Apricorn",
+      "ball": "Moon Ball",
+      "spritePath": "gfx/items/YLW_APRICORN.png"
+    },
+    {
+      "id": "GRN_APRICORN",
+      "index": 4,
+      "name": "Grn Apricorn",
+      "ball": "Friend Ball",
+      "spritePath": "gfx/items/GRN_APRICORN.png"
+    },
+    {
+      "id": "WHT_APRICORN",
+      "index": 5,
+      "name": "Wht Apricorn",
+      "ball": "Fast Ball",
+      "spritePath": "gfx/items/WHT_APRICORN.png"
+    },
+    {
+      "id": "BLK_APRICORN",
+      "index": 6,
+      "name": "Blk Apricorn",
+      "ball": "Heavy Ball",
+      "spritePath": "gfx/items/BLK_APRICORN.png"
+    },
+    {
+      "id": "PNK_APRICORN",
+      "index": 7,
+      "name": "Pnk Apricorn",
+      "ball": "Love Ball",
+      "spritePath": "gfx/items/PNK_APRICORN.png"
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "polished": [
+    {
+      "id": "THEME_STANDARD",
+      "index": 0,
+      "name": "Standard"
+    },
+    {
+      "id": "THEME_PRO",
+      "index": 1,
+      "name": "Pro"
+    },
+    {
+      "id": "THEME_MOBILE",
+      "index": 2,
+      "name": "Mobile"
+    },
+    {
+      "id": "THEME_CLASSIC",
+      "index": 3,
+      "name": "Classic"
+    },
+    {
+      "id": "THEME_BLISS",
+      "index": 4,
+      "name": "Bliss"
+    },
+    {
+      "id": "THEME_CONTRAST",
+      "index": 5,
+      "name": "Contrast"
+    },
+    {
+      "id": "THEME_NATURE",
+      "index": 6,
+      "name": "Nature"
+    },
+    {
+      "id": "THEME_HEART",
+      "index": 7,
+      "name": "Heart"
+    },
+    {
+      "id": "THEME_SOUL",
+      "index": 8,
+      "name": "Soul"
+    },
+    {
+      "id": "THEME_TRUTH",
+      "index": 9,
+      "name": "Truth"
+    },
+    {
+      "id": "THEME_IDEALS",
+      "index": 10,
+      "name": "Ideals"
+    },
+    {
+      "id": "THEME_LIGHT",
+      "index": 11,
+      "name": "Light"
+    },
+    {
+      "id": "THEME_DARKNESS",
+      "index": 12,
+      "name": "Darkness"
+    },
+    {
+      "id": "THEME_MATTE",
+      "index": 13,
+      "name": "Matte"
+    },
+    {
+      "id": "THEME_MATRIX",
+      "index": 14,
+      "name": "Matrix"
+    },
+    {
+      "id": "THEME_NORMAL",
+      "index": 15,
+      "name": "Normal"
+    },
+    {
+      "id": "THEME_FIGHTING",
+      "index": 16,
+      "name": "Fighting"
+    },
+    {
+      "id": "THEME_FLYING",
+      "index": 17,
+      "name": "Flying"
+    },
+    {
+      "id": "THEME_POISON",
+      "index": 18,
+      "name": "Poison"
+    },
+    {
+      "id": "THEME_GROUND",
+      "index": 19,
+      "name": "Ground"
+    },
+    {
+      "id": "THEME_ROCK",
+      "index": 20,
+      "name": "Rock"
+    },
+    {
+      "id": "THEME_BUG",
+      "index": 21,
+      "name": "Bug"
+    },
+    {
+      "id": "THEME_GHOST",
+      "index": 22,
+      "name": "Ghost"
+    },
+    {
+      "id": "THEME_STEEL",
+      "index": 23,
+      "name": "Steel"
+    },
+    {
+      "id": "THEME_FIRE",
+      "index": 24,
+      "name": "Fire"
+    },
+    {
+      "id": "THEME_WATER",
+      "index": 25,
+      "name": "Water"
+    },
+    {
+      "id": "THEME_GRASS",
+      "index": 26,
+      "name": "Grass"
+    },
+    {
+      "id": "THEME_ELECTRIC",
+      "index": 27,
+      "name": "Electric"
+    },
+    {
+      "id": "THEME_PSYCHIC",
+      "index": 28,
+      "name": "Psychic"
+    },
+    {
+      "id": "THEME_ICE",
+      "index": 29,
+      "name": "Ice"
+    },
+    {
+      "id": "THEME_DRAGON",
+      "index": 30,
+      "name": "Dragon"
+    },
+    {
+      "id": "THEME_DARK",
+      "index": 31,
+      "name": "Dark"
+    },
+    {
+      "id": "THEME_FAIRY",
+      "index": 32,
+      "name": "Fairy"
+    }
+  ],
+  "faithful": [
+    {
+      "id": "THEME_STANDARD",
+      "index": 0,
+      "name": "Standard"
+    },
+    {
+      "id": "THEME_PRO",
+      "index": 1,
+      "name": "Pro"
+    },
+    {
+      "id": "THEME_MOBILE",
+      "index": 2,
+      "name": "Mobile"
+    },
+    {
+      "id": "THEME_CLASSIC",
+      "index": 3,
+      "name": "Classic"
+    },
+    {
+      "id": "THEME_BLISS",
+      "index": 4,
+      "name": "Bliss"
+    },
+    {
+      "id": "THEME_CONTRAST",
+      "index": 5,
+      "name": "Contrast"
+    },
+    {
+      "id": "THEME_NATURE",
+      "index": 6,
+      "name": "Nature"
+    },
+    {
+      "id": "THEME_HEART",
+      "index": 7,
+      "name": "Heart"
+    },
+    {
+      "id": "THEME_SOUL",
+      "index": 8,
+      "name": "Soul"
+    },
+    {
+      "id": "THEME_TRUTH",
+      "index": 9,
+      "name": "Truth"
+    },
+    {
+      "id": "THEME_IDEALS",
+      "index": 10,
+      "name": "Ideals"
+    },
+    {
+      "id": "THEME_LIGHT",
+      "index": 11,
+      "name": "Light"
+    },
+    {
+      "id": "THEME_DARKNESS",
+      "index": 12,
+      "name": "Darkness"
+    },
+    {
+      "id": "THEME_MATTE",
+      "index": 13,
+      "name": "Matte"
+    },
+    {
+      "id": "THEME_MATRIX",
+      "index": 14,
+      "name": "Matrix"
+    },
+    {
+      "id": "THEME_NORMAL",
+      "index": 15,
+      "name": "Normal"
+    },
+    {
+      "id": "THEME_FIGHTING",
+      "index": 16,
+      "name": "Fighting"
+    },
+    {
+      "id": "THEME_FLYING",
+      "index": 17,
+      "name": "Flying"
+    },
+    {
+      "id": "THEME_POISON",
+      "index": 18,
+      "name": "Poison"
+    },
+    {
+      "id": "THEME_GROUND",
+      "index": 19,
+      "name": "Ground"
+    },
+    {
+      "id": "THEME_ROCK",
+      "index": 20,
+      "name": "Rock"
+    },
+    {
+      "id": "THEME_BUG",
+      "index": 21,
+      "name": "Bug"
+    },
+    {
+      "id": "THEME_GHOST",
+      "index": 22,
+      "name": "Ghost"
+    },
+    {
+      "id": "THEME_STEEL",
+      "index": 23,
+      "name": "Steel"
+    },
+    {
+      "id": "THEME_FIRE",
+      "index": 24,
+      "name": "Fire"
+    },
+    {
+      "id": "THEME_WATER",
+      "index": 25,
+      "name": "Water"
+    },
+    {
+      "id": "THEME_GRASS",
+      "index": 26,
+      "name": "Grass"
+    },
+    {
+      "id": "THEME_ELECTRIC",
+      "index": 27,
+      "name": "Electric"
+    },
+    {
+      "id": "THEME_PSYCHIC",
+      "index": 28,
+      "name": "Psychic"
+    },
+    {
+      "id": "THEME_ICE",
+      "index": 29,
+      "name": "Ice"
+    },
+    {
+      "id": "THEME_DRAGON",
+      "index": 30,
+      "name": "Dragon"
+    },
+    {
+      "id": "THEME_DARK",
+      "index": 31,
+      "name": "Dark"
+    },
+    {
+      "id": "THEME_FAIRY",
+      "index": 32,
+      "name": "Fairy"
+    }
+  ]
+}
