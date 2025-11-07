@@ -1,0 +1,78 @@
+{
+  "polished": [
+    {
+      "id": "HEALTH_WING",
+      "index": 0,
+      "name": "Health Wing",
+      "spritePath": "gfx/items/HEALTH_WING.png"
+    },
+    {
+      "id": "MUSCLE_WING",
+      "index": 1,
+      "name": "Muscle Wing",
+      "spritePath": "gfx/items/MUSCLE_WING.png"
+    },
+    {
+      "id": "RESIST_WING",
+      "index": 2,
+      "name": "Resist Wing",
+      "spritePath": "gfx/items/RESIST_WING.png"
+    },
+    {
+      "id": "SWIFT_WING",
+      "index": 3,
+      "name": "Swift Wing",
+      "spritePath": "gfx/items/SWIFT_WING.png"
+    },
+    {
+      "id": "GENIUS_WING",
+      "index": 4,
+      "name": "Genius Wing",
+      "spritePath": "gfx/items/GENIUS_WING.png"
+    },
+    {
+      "id": "CLEVER_WING",
+      "index": 5,
+      "name": "Clever Wing",
+      "spritePath": "gfx/items/CLEVER_WING.png"
+    }
+  ],
+  "faithful": [
+    {
+      "id": "HEALTH_WING",
+      "index": 0,
+      "name": "Health Wing",
+      "spritePath": "gfx/items/HEALTH_WING.png"
+    },
+    {
+      "id": "MUSCLE_WING",
+      "index": 1,
+      "name": "Muscle Wing",
+      "spritePath": "gfx/items/MUSCLE_WING.png"
+    },
+    {
+      "id": "RESIST_WING",
+      "index": 2,
+      "name": "Resist Wing",
+      "spritePath": "gfx/items/RESIST_WING.png"
+    },
+    {
+      "id": "SWIFT_WING",
+      "index": 3,
+      "name": "Swift Wing",
+      "spritePath": "gfx/items/SWIFT_WING.png"
+    },
+    {
+      "id": "GENIUS_WING",
+      "index": 4,
+      "name": "Genius Wing",
+      "spritePath": "gfx/items/GENIUS_WING.png"
+    },
+    {
+      "id": "CLEVER_WING",
+      "index": 5,
+      "name": "Clever Wing",
+      "spritePath": "gfx/items/CLEVER_WING.png"
+    }
+  ]
+}

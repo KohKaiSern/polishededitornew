@@ -1,0 +1,76 @@
+{
+  "polished": [
+    {
+      "id": "EXP_CANDY_XS",
+      "index": 1,
+      "name": "Exp.Candy XS",
+      "description": "A candy that gives Exp.Points.",
+      "spritePath": "gfx/items/EXP_CANDY_XS.png"
+    },
+    {
+      "id": "EXP_CANDY_S",
+      "index": 2,
+      "name": "Exp.Candy S",
+      "description": "A candy that gives Exp.Points.",
+      "spritePath": "gfx/items/EXP_CANDY_S.png"
+    },
+    {
+      "id": "EXP_CANDY_M",
+      "index": 3,
+      "name": "Exp.Candy M",
+      "description": "A candy that gives Exp.Points.",
+      "spritePath": "gfx/items/EXP_CANDY_M.png"
+    },
+    {
+      "id": "EXP_CANDY_L",
+      "index": 4,
+      "name": "Exp.Candy L",
+      "description": "A candy that gives Exp.Points.",
+      "spritePath": "gfx/items/EXP_CANDY_L.png"
+    },
+    {
+      "id": "EXP_CANDY_XL",
+      "index": 5,
+      "name": "Exp.Candy XL",
+      "description": "A candy that gives Exp.Points.",
+      "spritePath": "gfx/items/EXP_CANDY_XL.png"
+    }
+  ],
+  "faithful": [
+    {
+      "id": "EXP_CANDY_XS",
+      "index": 1,
+      "name": "Exp.Candy XS",
+      "description": "A candy that gives Exp.Points.",
+      "spritePath": "gfx/items/EXP_CANDY_XS.png"
+    },
+    {
+      "id": "EXP_CANDY_S",
+      "index": 2,
+      "name": "Exp.Candy S",
+      "description": "A candy that gives Exp.Points.",
+      "spritePath": "gfx/items/EXP_CANDY_S.png"
+    },
+    {
+      "id": "EXP_CANDY_M",
+      "index": 3,
+      "name": "Exp.Candy M",
+      "description": "A candy that gives Exp.Points.",
+      "spritePath": "gfx/items/EXP_CANDY_M.png"
+    },
+    {
+      "id": "EXP_CANDY_L",
+      "index": 4,
+      "name": "Exp.Candy L",
+      "description": "A candy that gives Exp.Points.",
+      "spritePath": "gfx/items/EXP_CANDY_L.png"
+    },
+    {
+      "id": "EXP_CANDY_XL",
+      "index": 5,
+      "name": "Exp.Candy XL",
+      "description": "A candy that gives Exp.Points.",
+      "spritePath": "gfx/items/EXP_CANDY_XL.png"
+    }
+  ]
+}

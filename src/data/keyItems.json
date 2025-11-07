@@ -1,0 +1,538 @@
+{
+  "polished": [
+    {
+      "id": "BICYCLE",
+      "index": 1,
+      "name": "Bicycle",
+      "description": "A collapsible bike for fast movement.",
+      "spritePath": "gfx/items/BICYCLE.png"
+    },
+    {
+      "id": "OLD_ROD",
+      "index": 2,
+      "name": "Old Rod",
+      "description": "Use by water to fish for Pokémon.",
+      "spritePath": "gfx/items/OLD_ROD.png"
+    },
+    {
+      "id": "GOOD_ROD",
+      "index": 3,
+      "name": "Good Rod",
+      "description": "A good Rod for catching Pokémon.",
+      "spritePath": "gfx/items/GOOD_ROD.png"
+    },
+    {
+      "id": "SUPER_ROD",
+      "index": 4,
+      "name": "Super Rod",
+      "description": "The best Rod for catching Pokémon.",
+      "spritePath": "gfx/items/SUPER_ROD.png"
+    },
+    {
+      "id": "ITEMFINDER",
+      "index": 5,
+      "name": "Itemfinder",
+      "description": "Checks for unseen items in the area.",
+      "spritePath": "gfx/items/ITEMFINDER.png"
+    },
+    {
+      "id": "COIN_CASE",
+      "index": 6,
+      "name": "Coin Case",
+      "description": "Holds up to 50K game coins.",
+      "spritePath": "gfx/items/COIN_CASE.png"
+    },
+    {
+      "id": "APRICORN_BOX",
+      "index": 7,
+      "name": "Apricorn Box",
+      "description": "Holds up to 99 of each Apricorn.",
+      "spritePath": "gfx/items/APRICORN_BOX.png"
+    },
+    {
+      "id": "WING_CASE",
+      "index": 8,
+      "name": "Wing Case",
+      "description": "Holds up to 999 of each Wing.",
+      "spritePath": "gfx/items/WING_CASE.png"
+    },
+    {
+      "id": "CANDY_JAR",
+      "index": 9,
+      "name": "Candy Jar",
+      "description": "Holds up to 99 of each Exp.Candy.",
+      "spritePath": "gfx/items/CANDY_JAR.png"
+    },
+    {
+      "id": "TYPE_CHART",
+      "index": 10,
+      "name": "Type Chart",
+      "description": "Summarizes all type advantages.",
+      "spritePath": "gfx/items/TYPE_CHART.png"
+    },
+    {
+      "id": "GBC_SOUNDS",
+      "index": 11,
+      "name": "GBC Sounds",
+      "description": "A music player filled with songs.",
+      "spritePath": "gfx/items/GBC_SOUNDS.png"
+    },
+    {
+      "id": "BLUE_CARD",
+      "index": 12,
+      "name": "Blue Card",
+      "description": "Card to save points.",
+      "spritePath": "gfx/items/BLUE_CARD.png"
+    },
+    {
+      "id": "SQUIRTBOTTLE",
+      "index": 13,
+      "name": "SquirtBottle",
+      "description": "A bottle used for watering plants.",
+      "spritePath": "gfx/items/SQUIRTBOTTLE.png"
+    },
+    {
+      "id": "SILPHSCOPE2",
+      "index": 14,
+      "name": "SilphScope2",
+      "description": "A scope to see invisible Pokémon.",
+      "spritePath": "gfx/items/SILPHSCOPE2.png"
+    },
+    {
+      "id": "MYSTERY_EGG",
+      "index": 15,
+      "name": "Mystery Egg",
+      "description": "An Egg obtained from Mr.Pokémon.",
+      "spritePath": "gfx/items/MYSTERY_EGG.png"
+    },
+    {
+      "id": "SECRETPOTION",
+      "index": 16,
+      "name": "SecretPotion",
+      "description": "Fully heals any Pokémon.",
+      "spritePath": "gfx/items/SECRETPOTION.png"
+    },
+    {
+      "id": "GO_GOGGLES",
+      "index": 17,
+      "name": "Go-Goggles",
+      "description": "Nifty goggles for sand or hail.",
+      "spritePath": "gfx/items/GO_GOGGLES.png"
+    },
+    {
+      "id": "RED_SCALE",
+      "index": 18,
+      "name": "Red Scale",
+      "description": "A scale from the red Gyarados.",
+      "spritePath": "gfx/items/RED_SCALE.png"
+    },
+    {
+      "id": "CARD_KEY",
+      "index": 19,
+      "name": "Card Key",
+      "description": "Opens shutters in the Radio Tower.",
+      "spritePath": "gfx/items/CARD_KEY.png"
+    },
+    {
+      "id": "BASEMENT_KEY",
+      "index": 20,
+      "name": "Basement Key",
+      "description": "Opens doors.",
+      "spritePath": "gfx/items/BASEMENT_KEY.png"
+    },
+    {
+      "id": "LOST_ITEM",
+      "index": 21,
+      "name": "Lost Item",
+      "description": "The Poké Doll lost by the Copycat.",
+      "spritePath": "gfx/items/LOST_ITEM.png"
+    },
+    {
+      "id": "MACHINE_PART",
+      "index": 22,
+      "name": "Machine Part",
+      "description": "A machine part for the Power Plant.",
+      "spritePath": "gfx/items/MACHINE_PART.png"
+    },
+    {
+      "id": "RAINBOW_WING",
+      "index": 23,
+      "name": "Rainbow Wing",
+      "description": "A mystical feather of rainbow colors.",
+      "spritePath": "gfx/items/RAINBOW_WING.png"
+    },
+    {
+      "id": "SILVER_WING",
+      "index": 24,
+      "name": "Silver Wing",
+      "description": "A strange, silvercolored feather.",
+      "spritePath": "gfx/items/SILVER_WING.png"
+    },
+    {
+      "id": "CLEAR_BELL",
+      "index": 25,
+      "name": "Clear Bell",
+      "description": "Makes a gentle ringing.",
+      "spritePath": "gfx/items/CLEAR_BELL.png"
+    },
+    {
+      "id": "GS_BALL",
+      "index": 26,
+      "name": "GS Ball",
+      "description": "The mysterious Ball.",
+      "spritePath": "gfx/items/GS_BALL.png"
+    },
+    {
+      "id": "S_S_TICKET",
+      "index": 27,
+      "name": "S.S.Ticket",
+      "description": "A ticket for the S.S.Aqua.",
+      "spritePath": "gfx/items/S_S_TICKET.png"
+    },
+    {
+      "id": "PASS",
+      "index": 28,
+      "name": "Pass",
+      "description": "A ticket for the Magnet Train.",
+      "spritePath": "gfx/items/PASS.png"
+    },
+    {
+      "id": "ORANGETICKET",
+      "index": 29,
+      "name": "OrangeTicket",
+      "description": "A ticket for the Seagallop Ferry.",
+      "spritePath": "gfx/items/ORANGETICKET.png"
+    },
+    {
+      "id": "MYSTICTICKET",
+      "index": 30,
+      "name": "MysticTicket",
+      "description": "A ticket for the Seagallop Ferry.",
+      "spritePath": "gfx/items/MYSTICTICKET.png"
+    },
+    {
+      "id": "OLD_SEA_MAP",
+      "index": 31,
+      "name": "Old Sea Map",
+      "description": "A faded sea chart of a small island.",
+      "spritePath": "gfx/items/OLD_SEA_MAP.png"
+    },
+    {
+      "id": "LIFT_KEY",
+      "index": 32,
+      "name": "Lift Key",
+      "description": "Operates the lift in a building.",
+      "spritePath": "gfx/items/LIFT_KEY.png"
+    },
+    {
+      "id": "HARSH_LURE",
+      "index": 33,
+      "name": "Harsh Lure",
+      "description": "A bottle with a cruel scent.",
+      "spritePath": "gfx/items/HARSH_LURE.png"
+    },
+    {
+      "id": "POTENT_LURE",
+      "index": 34,
+      "name": "Potent Lure",
+      "description": "A bottle with a strong smell.",
+      "spritePath": "gfx/items/POTENT_LURE.png"
+    },
+    {
+      "id": "MALIGN_LURE",
+      "index": 35,
+      "name": "Malign Lure",
+      "description": "A bottle with a malevolent odor.",
+      "spritePath": "gfx/items/MALIGN_LURE.png"
+    },
+    {
+      "id": "SHINY_CHARM",
+      "index": 36,
+      "name": "Shiny Charm",
+      "description": "A charm for finding shiny Pokémon.",
+      "spritePath": "gfx/items/SHINY_CHARM.png"
+    },
+    {
+      "id": "OVAL_CHARM",
+      "index": 37,
+      "name": "Oval Charm",
+      "description": "A charm for finding Eggs.",
+      "spritePath": "gfx/items/OVAL_CHARM.png"
+    },
+    {
+      "id": "CATCH_CHARM",
+      "index": 38,
+      "name": "Catch Charm",
+      "description": "A charm for catching Pokémon.",
+      "spritePath": "gfx/items/CATCH_CHARM.png"
+    }
+  ],
+  "faithful": [
+    {
+      "id": "BICYCLE",
+      "index": 1,
+      "name": "Bicycle",
+      "description": "A collapsible bike for fast movement.",
+      "spritePath": "gfx/items/BICYCLE.png"
+    },
+    {
+      "id": "OLD_ROD",
+      "index": 2,
+      "name": "Old Rod",
+      "description": "Use by water to fish for Pokémon.",
+      "spritePath": "gfx/items/OLD_ROD.png"
+    },
+    {
+      "id": "GOOD_ROD",
+      "index": 3,
+      "name": "Good Rod",
+      "description": "A good Rod for catching Pokémon.",
+      "spritePath": "gfx/items/GOOD_ROD.png"
+    },
+    {
+      "id": "SUPER_ROD",
+      "index": 4,
+      "name": "Super Rod",
+      "description": "The best Rod for catching Pokémon.",
+      "spritePath": "gfx/items/SUPER_ROD.png"
+    },
+    {
+      "id": "ITEMFINDER",
+      "index": 5,
+      "name": "Itemfinder",
+      "description": "Checks for unseen items in the area.",
+      "spritePath": "gfx/items/ITEMFINDER.png"
+    },
+    {
+      "id": "COIN_CASE",
+      "index": 6,
+      "name": "Coin Case",
+      "description": "Holds up to 50K game coins.",
+      "spritePath": "gfx/items/COIN_CASE.png"
+    },
+    {
+      "id": "APRICORN_BOX",
+      "index": 7,
+      "name": "Apricorn Box",
+      "description": "Holds up to 99 of each Apricorn.",
+      "spritePath": "gfx/items/APRICORN_BOX.png"
+    },
+    {
+      "id": "WING_CASE",
+      "index": 8,
+      "name": "Wing Case",
+      "description": "Holds up to 999 of each Wing.",
+      "spritePath": "gfx/items/WING_CASE.png"
+    },
+    {
+      "id": "CANDY_JAR",
+      "index": 9,
+      "name": "Candy Jar",
+      "description": "Holds up to 99 of each Exp.Candy.",
+      "spritePath": "gfx/items/CANDY_JAR.png"
+    },
+    {
+      "id": "TYPE_CHART",
+      "index": 10,
+      "name": "Type Chart",
+      "description": "Summarizes all type advantages.",
+      "spritePath": "gfx/items/TYPE_CHART.png"
+    },
+    {
+      "id": "GBC_SOUNDS",
+      "index": 11,
+      "name": "GBC Sounds",
+      "description": "A music player filled with songs.",
+      "spritePath": "gfx/items/GBC_SOUNDS.png"
+    },
+    {
+      "id": "BLUE_CARD",
+      "index": 12,
+      "name": "Blue Card",
+      "description": "Card to save points.",
+      "spritePath": "gfx/items/BLUE_CARD.png"
+    },
+    {
+      "id": "SQUIRTBOTTLE",
+      "index": 13,
+      "name": "SquirtBottle",
+      "description": "A bottle used for watering plants.",
+      "spritePath": "gfx/items/SQUIRTBOTTLE.png"
+    },
+    {
+      "id": "SILPHSCOPE2",
+      "index": 14,
+      "name": "SilphScope2",
+      "description": "A scope to see invisible Pokémon.",
+      "spritePath": "gfx/items/SILPHSCOPE2.png"
+    },
+    {
+      "id": "MYSTERY_EGG",
+      "index": 15,
+      "name": "Mystery Egg",
+      "description": "An Egg obtained from Mr.Pokémon.",
+      "spritePath": "gfx/items/MYSTERY_EGG.png"
+    },
+    {
+      "id": "SECRETPOTION",
+      "index": 16,
+      "name": "SecretPotion",
+      "description": "Fully heals any Pokémon.",
+      "spritePath": "gfx/items/SECRETPOTION.png"
+    },
+    {
+      "id": "GO_GOGGLES",
+      "index": 17,
+      "name": "Go-Goggles",
+      "description": "Nifty goggles for sand or hail.",
+      "spritePath": "gfx/items/GO_GOGGLES.png"
+    },
+    {
+      "id": "RED_SCALE",
+      "index": 18,
+      "name": "Red Scale",
+      "description": "A scale from the red Gyarados.",
+      "spritePath": "gfx/items/RED_SCALE.png"
+    },
+    {
+      "id": "CARD_KEY",
+      "index": 19,
+      "name": "Card Key",
+      "description": "Opens shutters in the Radio Tower.",
+      "spritePath": "gfx/items/CARD_KEY.png"
+    },
+    {
+      "id": "BASEMENT_KEY",
+      "index": 20,
+      "name": "Basement Key",
+      "description": "Opens doors.",
+      "spritePath": "gfx/items/BASEMENT_KEY.png"
+    },
+    {
+      "id": "LOST_ITEM",
+      "index": 21,
+      "name": "Lost Item",
+      "description": "The Poké Doll lost by the Copycat.",
+      "spritePath": "gfx/items/LOST_ITEM.png"
+    },
+    {
+      "id": "MACHINE_PART",
+      "index": 22,
+      "name": "Machine Part",
+      "description": "A machine part for the Power Plant.",
+      "spritePath": "gfx/items/MACHINE_PART.png"
+    },
+    {
+      "id": "RAINBOW_WING",
+      "index": 23,
+      "name": "Rainbow Wing",
+      "description": "A mystical feather of rainbow colors.",
+      "spritePath": "gfx/items/RAINBOW_WING.png"
+    },
+    {
+      "id": "SILVER_WING",
+      "index": 24,
+      "name": "Silver Wing",
+      "description": "A strange, silvercolored feather.",
+      "spritePath": "gfx/items/SILVER_WING.png"
+    },
+    {
+      "id": "CLEAR_BELL",
+      "index": 25,
+      "name": "Clear Bell",
+      "description": "Makes a gentle ringing.",
+      "spritePath": "gfx/items/CLEAR_BELL.png"
+    },
+    {
+      "id": "GS_BALL",
+      "index": 26,
+      "name": "GS Ball",
+      "description": "The mysterious Ball.",
+      "spritePath": "gfx/items/GS_BALL.png"
+    },
+    {
+      "id": "S_S_TICKET",
+      "index": 27,
+      "name": "S.S.Ticket",
+      "description": "A ticket for the S.S.Aqua.",
+      "spritePath": "gfx/items/S_S_TICKET.png"
+    },
+    {
+      "id": "PASS",
+      "index": 28,
+      "name": "Pass",
+      "description": "A ticket for the Magnet Train.",
+      "spritePath": "gfx/items/PASS.png"
+    },
+    {
+      "id": "ORANGETICKET",
+      "index": 29,
+      "name": "OrangeTicket",
+      "description": "A ticket for the Seagallop Ferry.",
+      "spritePath": "gfx/items/ORANGETICKET.png"
+    },
+    {
+      "id": "MYSTICTICKET",
+      "index": 30,
+      "name": "MysticTicket",
+      "description": "A ticket for the Seagallop Ferry.",
+      "spritePath": "gfx/items/MYSTICTICKET.png"
+    },
+    {
+      "id": "OLD_SEA_MAP",
+      "index": 31,
+      "name": "Old Sea Map",
+      "description": "A faded sea chart of a small island.",
+      "spritePath": "gfx/items/OLD_SEA_MAP.png"
+    },
+    {
+      "id": "LIFT_KEY",
+      "index": 32,
+      "name": "Lift Key",
+      "description": "Operates the lift in a building.",
+      "spritePath": "gfx/items/LIFT_KEY.png"
+    },
+    {
+      "id": "HARSH_LURE",
+      "index": 33,
+      "name": "Harsh Lure",
+      "description": "A bottle with a cruel scent.",
+      "spritePath": "gfx/items/HARSH_LURE.png"
+    },
+    {
+      "id": "POTENT_LURE",
+      "index": 34,
+      "name": "Potent Lure",
+      "description": "A bottle with a strong smell.",
+      "spritePath": "gfx/items/POTENT_LURE.png"
+    },
+    {
+      "id": "MALIGN_LURE",
+      "index": 35,
+      "name": "Malign Lure",
+      "description": "A bottle with a malevolent odor.",
+      "spritePath": "gfx/items/MALIGN_LURE.png"
+    },
+    {
+      "id": "SHINY_CHARM",
+      "index": 36,
+      "name": "Shiny Charm",
+      "description": "A charm for finding shiny Pokémon.",
+      "spritePath": "gfx/items/SHINY_CHARM.png"
+    },
+    {
+      "id": "OVAL_CHARM",
+      "index": 37,
+      "name": "Oval Charm",
+      "description": "A charm for finding Eggs.",
+      "spritePath": "gfx/items/OVAL_CHARM.png"
+    },
+    {
+      "id": "CATCH_CHARM",
+      "index": 38,
+      "name": "Catch Charm",
+      "description": "A charm for catching Pokémon.",
+      "spritePath": "gfx/items/CATCH_CHARM.png"
+    }
+  ]
+}

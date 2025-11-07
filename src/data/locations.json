@@ -1,0 +1,1456 @@
+{
+  "polished": [
+    {
+      "id": "SPECIAL_MAP",
+      "index": 0,
+      "name": "?"
+    },
+    {
+      "id": "NEW_BARK_TOWN",
+      "index": 1,
+      "name": "New Bark Town"
+    },
+    {
+      "id": "ROUTE_29",
+      "index": 2,
+      "name": "Route 29"
+    },
+    {
+      "id": "CHERRYGROVE_CITY",
+      "index": 3,
+      "name": "Cherrygrove City"
+    },
+    {
+      "id": "CHERRYGROVE_BAY",
+      "index": 4,
+      "name": "Cherrygrove Bay"
+    },
+    {
+      "id": "ROUTE_30",
+      "index": 5,
+      "name": "Route 30"
+    },
+    {
+      "id": "ROUTE_31",
+      "index": 6,
+      "name": "Route 31"
+    },
+    {
+      "id": "VIOLET_CITY",
+      "index": 7,
+      "name": "Violet City"
+    },
+    {
+      "id": "SPROUT_TOWER",
+      "index": 8,
+      "name": "Sprout Tower"
+    },
+    {
+      "id": "VIOLET_OUTSKIRTS",
+      "index": 9,
+      "name": "Violet Outskirts"
+    },
+    {
+      "id": "RUINS_OF_ALPH",
+      "index": 10,
+      "name": "Ruins of Alph"
+    },
+    {
+      "id": "ROUTE_32",
+      "index": 11,
+      "name": "Route 32"
+    },
+    {
+      "id": "ROUTE_32_COAST",
+      "index": 12,
+      "name": "Route 32 Coast"
+    },
+    {
+      "id": "UNION_CAVE",
+      "index": 13,
+      "name": "Union Cave"
+    },
+    {
+      "id": "ROUTE_33",
+      "index": 14,
+      "name": "Route 33"
+    },
+    {
+      "id": "AZALEA_TOWN",
+      "index": 15,
+      "name": "Azalea Town"
+    },
+    {
+      "id": "SLOWPOKE_WELL",
+      "index": 16,
+      "name": "Slowpoke Well"
+    },
+    {
+      "id": "ILEX_FOREST",
+      "index": 17,
+      "name": "Ilex Forest"
+    },
+    {
+      "id": "ROUTE_34",
+      "index": 18,
+      "name": "Route 34"
+    },
+    {
+      "id": "ROUTE_34_COAST",
+      "index": 19,
+      "name": "Route 34 Coast"
+    },
+    {
+      "id": "STORMY_BEACH",
+      "index": 20,
+      "name": "Stormy Beach"
+    },
+    {
+      "id": "MURKY_SWAMP",
+      "index": 21,
+      "name": "Murky Swamp"
+    },
+    {
+      "id": "GOLDENROD_CITY",
+      "index": 22,
+      "name": "Goldenrod City"
+    },
+    {
+      "id": "RADIO_TOWER",
+      "index": 23,
+      "name": "Radio Tower"
+    },
+    {
+      "id": "GOLDENROD_HARBOR",
+      "index": 24,
+      "name": "Goldenrod Harbor"
+    },
+    {
+      "id": "MAGNET_TUNNEL",
+      "index": 25,
+      "name": "Magnet Tunnel"
+    },
+    {
+      "id": "ROUTE_35",
+      "index": 26,
+      "name": "Route 35"
+    },
+    {
+      "id": "ROUTE_35_COAST",
+      "index": 27,
+      "name": "Route 35 Coast"
+    },
+    {
+      "id": "NATIONAL_PARK",
+      "index": 28,
+      "name": "National Park"
+    },
+    {
+      "id": "ROUTE_36",
+      "index": 29,
+      "name": "Route 36"
+    },
+    {
+      "id": "ROUTE_37",
+      "index": 30,
+      "name": "Route 37"
+    },
+    {
+      "id": "ECRUTEAK_CITY",
+      "index": 31,
+      "name": "Ecruteak City"
+    },
+    {
+      "id": "BELLCHIME_TRAIL",
+      "index": 32,
+      "name": "Bellchime Trail"
+    },
+    {
+      "id": "TIN_TOWER",
+      "index": 33,
+      "name": "Bell Tower"
+    },
+    {
+      "id": "BURNED_TOWER",
+      "index": 34,
+      "name": "Burned Tower"
+    },
+    {
+      "id": "ROUTE_38",
+      "index": 35,
+      "name": "Route 38"
+    },
+    {
+      "id": "ROUTE_39",
+      "index": 36,
+      "name": "Route 39"
+    },
+    {
+      "id": "RUGGED_ROAD",
+      "index": 37,
+      "name": "Rugged Road"
+    },
+    {
+      "id": "SNOWTOP_MOUNTAIN",
+      "index": 38,
+      "name": "Snowtop Mountain"
+    },
+    {
+      "id": "OLIVINE_CITY",
+      "index": 39,
+      "name": "Olivine City"
+    },
+    {
+      "id": "LIGHTHOUSE",
+      "index": 40,
+      "name": "Lighthouse"
+    },
+    {
+      "id": "ROUTE_40",
+      "index": 41,
+      "name": "Route 40"
+    },
+    {
+      "id": "BATTLE_TOWER",
+      "index": 42,
+      "name": "Battle Tower"
+    },
+    {
+      "id": "WHIRL_ISLANDS",
+      "index": 43,
+      "name": "Whirl Islands"
+    },
+    {
+      "id": "ROUTE_41",
+      "index": 44,
+      "name": "Route 41"
+    },
+    {
+      "id": "CIANWOOD_CITY",
+      "index": 45,
+      "name": "Cianwood City"
+    },
+    {
+      "id": "CLIFF_EDGE_GATE",
+      "index": 46,
+      "name": "Cliff Edge Gate"
+    },
+    {
+      "id": "ROUTE_47",
+      "index": 47,
+      "name": "Route 47"
+    },
+    {
+      "id": "CLIFF_CAVE",
+      "index": 48,
+      "name": "Cliff Cave"
+    },
+    {
+      "id": "ROUTE_48",
+      "index": 49,
+      "name": "Route 48"
+    },
+    {
+      "id": "YELLOW_FOREST",
+      "index": 50,
+      "name": "Yellow Forest"
+    },
+    {
+      "id": "QUIET_CAVE",
+      "index": 51,
+      "name": "Quiet Cave"
+    },
+    {
+      "id": "ROUTE_42",
+      "index": 52,
+      "name": "Route 42"
+    },
+    {
+      "id": "MT_MORTAR",
+      "index": 53,
+      "name": "Mt.Mortar"
+    },
+    {
+      "id": "MAHOGANY_TOWN",
+      "index": 54,
+      "name": "Mahogany Town"
+    },
+    {
+      "id": "ROUTE_43",
+      "index": 55,
+      "name": "Route 43"
+    },
+    {
+      "id": "LAKE_OF_RAGE",
+      "index": 56,
+      "name": "Lake of Rage"
+    },
+    {
+      "id": "ROUTE_44",
+      "index": 57,
+      "name": "Route 44"
+    },
+    {
+      "id": "ICE_PATH",
+      "index": 58,
+      "name": "Ice Path"
+    },
+    {
+      "id": "BLACKTHORN_CITY",
+      "index": 59,
+      "name": "Blackthorn City"
+    },
+    {
+      "id": "DRAGONS_DEN",
+      "index": 60,
+      "name": "Dragon's Den"
+    },
+    {
+      "id": "ROUTE_45",
+      "index": 61,
+      "name": "Route 45"
+    },
+    {
+      "id": "DARK_CAVE",
+      "index": 62,
+      "name": "Dark Cave"
+    },
+    {
+      "id": "ROUTE_46",
+      "index": 63,
+      "name": "Route 46"
+    },
+    {
+      "id": "SILVER_CAVE",
+      "index": 64,
+      "name": "Silver Cave"
+    },
+    {
+      "id": "FAST_SHIP",
+      "index": 65,
+      "name": "Fast Ship"
+    },
+    {
+      "id": "SINJOH_RUINS",
+      "index": 66,
+      "name": "Sinjoh Ruins"
+    },
+    {
+      "id": "MYSTRI_STAGE",
+      "index": 67,
+      "name": "Mystri Stage"
+    },
+    {
+      "id": "PALLET_TOWN",
+      "index": 68,
+      "name": "Pallet Town"
+    },
+    {
+      "id": "ROUTE_1",
+      "index": 69,
+      "name": "Route 1"
+    },
+    {
+      "id": "VIRIDIAN_CITY",
+      "index": 70,
+      "name": "Viridian City"
+    },
+    {
+      "id": "ROUTE_2",
+      "index": 71,
+      "name": "Route 2"
+    },
+    {
+      "id": "VIRIDIAN_FOREST",
+      "index": 72,
+      "name": "Viridian Forest"
+    },
+    {
+      "id": "PEWTER_CITY",
+      "index": 73,
+      "name": "Pewter City"
+    },
+    {
+      "id": "ROUTE_3",
+      "index": 74,
+      "name": "Route 3"
+    },
+    {
+      "id": "MT_MOON",
+      "index": 75,
+      "name": "Mt.Moon"
+    },
+    {
+      "id": "ROUTE_4",
+      "index": 76,
+      "name": "Route 4"
+    },
+    {
+      "id": "CERULEAN_CITY",
+      "index": 77,
+      "name": "Cerulean City"
+    },
+    {
+      "id": "CERULEAN_CAVE",
+      "index": 78,
+      "name": "Cerulean Cave"
+    },
+    {
+      "id": "ROUTE_24",
+      "index": 79,
+      "name": "Route 24"
+    },
+    {
+      "id": "ROUTE_25",
+      "index": 80,
+      "name": "Route 25"
+    },
+    {
+      "id": "CERULEAN_CAPE",
+      "index": 81,
+      "name": "Cerulean Cape"
+    },
+    {
+      "id": "ROUTE_5",
+      "index": 82,
+      "name": "Route 5"
+    },
+    {
+      "id": "UNDERGROUND",
+      "index": 83,
+      "name": "Underground"
+    },
+    {
+      "id": "ROUTE_6",
+      "index": 84,
+      "name": "Route 6"
+    },
+    {
+      "id": "VERMILION_CITY",
+      "index": 85,
+      "name": "Vermilion City"
+    },
+    {
+      "id": "DIGLETTS_CAVE",
+      "index": 86,
+      "name": "Diglett's Cave"
+    },
+    {
+      "id": "ROUTE_7",
+      "index": 87,
+      "name": "Route 7"
+    },
+    {
+      "id": "ROUTE_8",
+      "index": 88,
+      "name": "Route 8"
+    },
+    {
+      "id": "ROUTE_9",
+      "index": 89,
+      "name": "Route 9"
+    },
+    {
+      "id": "ROUTE_10",
+      "index": 90,
+      "name": "Route 10"
+    },
+    {
+      "id": "ROCK_TUNNEL",
+      "index": 91,
+      "name": "Rock Tunnel"
+    },
+    {
+      "id": "POWER_PLANT",
+      "index": 92,
+      "name": "Power Plant"
+    },
+    {
+      "id": "DIM_CAVE",
+      "index": 93,
+      "name": "Dim Cave"
+    },
+    {
+      "id": "LAVENDER_TOWN",
+      "index": 94,
+      "name": "Lavender Town"
+    },
+    {
+      "id": "LAV_RADIO_TOWER",
+      "index": 95,
+      "name": "Lav.Radio Tower"
+    },
+    {
+      "id": "SOUL_HOUSE",
+      "index": 96,
+      "name": "House of Souls"
+    },
+    {
+      "id": "CELADON_CITY",
+      "index": 97,
+      "name": "Celadon City"
+    },
+    {
+      "id": "CELADON_UNIVERSITY",
+      "index": 98,
+      "name": "Celadon University"
+    },
+    {
+      "id": "SAFFRON_CITY",
+      "index": 99,
+      "name": "Saffron City"
+    },
+    {
+      "id": "ROUTE_11",
+      "index": 100,
+      "name": "Route 11"
+    },
+    {
+      "id": "ROUTE_12",
+      "index": 101,
+      "name": "Route 12"
+    },
+    {
+      "id": "ROUTE_13",
+      "index": 102,
+      "name": "Route 13"
+    },
+    {
+      "id": "ROUTE_14",
+      "index": 103,
+      "name": "Route 14"
+    },
+    {
+      "id": "ROUTE_15",
+      "index": 104,
+      "name": "Route 15"
+    },
+    {
+      "id": "LUCKY_ISLAND",
+      "index": 105,
+      "name": "Lucky Island"
+    },
+    {
+      "id": "ROUTE_16",
+      "index": 106,
+      "name": "Route 16"
+    },
+    {
+      "id": "ROUTE_17",
+      "index": 107,
+      "name": "Route 17"
+    },
+    {
+      "id": "ROUTE_18",
+      "index": 108,
+      "name": "Route 18"
+    },
+    {
+      "id": "FUCHSIA_CITY",
+      "index": 109,
+      "name": "Fuchsia City"
+    },
+    {
+      "id": "SAFARI_ZONE",
+      "index": 110,
+      "name": "Safari Zone"
+    },
+    {
+      "id": "URAGA_CHANNEL",
+      "index": 111,
+      "name": "Uraga Channel"
+    },
+    {
+      "id": "SCARY_CAVE",
+      "index": 112,
+      "name": "Scary Cave"
+    },
+    {
+      "id": "ROUTE_19",
+      "index": 113,
+      "name": "Route 19"
+    },
+    {
+      "id": "ROUTE_20",
+      "index": 114,
+      "name": "Route 20"
+    },
+    {
+      "id": "SEAFOAM_ISLANDS",
+      "index": 115,
+      "name": "Seafoam Islands"
+    },
+    {
+      "id": "CINNABAR_ISLAND",
+      "index": 116,
+      "name": "Cinnabar Island"
+    },
+    {
+      "id": "POKEMON_MANSION",
+      "index": 117,
+      "name": "Pokémon Mansion"
+    },
+    {
+      "id": "CINNABAR_VOLCANO",
+      "index": 118,
+      "name": "Cinnabar Volcano"
+    },
+    {
+      "id": "ROUTE_21",
+      "index": 119,
+      "name": "Route 21"
+    },
+    {
+      "id": "ROUTE_22",
+      "index": 120,
+      "name": "Route 22"
+    },
+    {
+      "id": "ROUTE_27",
+      "index": 121,
+      "name": "Route 27"
+    },
+    {
+      "id": "TOHJO_FALLS",
+      "index": 122,
+      "name": "Tohjo Falls"
+    },
+    {
+      "id": "ROUTE_26",
+      "index": 123,
+      "name": "Route 26"
+    },
+    {
+      "id": "POKEMON_LEAGUE",
+      "index": 124,
+      "name": "Pokémon League Gate"
+    },
+    {
+      "id": "ROUTE_23",
+      "index": 125,
+      "name": "Route 23"
+    },
+    {
+      "id": "VICTORY_ROAD",
+      "index": 126,
+      "name": "Victory Road"
+    },
+    {
+      "id": "INDIGO_PLATEAU",
+      "index": 127,
+      "name": "Indigo Plateau"
+    },
+    {
+      "id": "ROUTE_28",
+      "index": 128,
+      "name": "Route 28"
+    },
+    {
+      "id": "CINNABAR_LAB",
+      "index": 129,
+      "name": "Pokémon Lab"
+    },
+    {
+      "id": "SHAMOUTI_ISLAND",
+      "index": 130,
+      "name": "Shamouti Island"
+    },
+    {
+      "id": "BEAUTIFUL_BEACH",
+      "index": 131,
+      "name": "Beautiful Beach"
+    },
+    {
+      "id": "ROCKY_BEACH",
+      "index": 132,
+      "name": "Rocky Beach"
+    },
+    {
+      "id": "NOISY_FOREST",
+      "index": 133,
+      "name": "Noisy Forest"
+    },
+    {
+      "id": "SHRINE_RUINS",
+      "index": 134,
+      "name": "Shrine Ruins"
+    },
+    {
+      "id": "SHAMOUTI_TUNNEL",
+      "index": 135,
+      "name": "Shamouti Tunnel"
+    },
+    {
+      "id": "WARM_BEACH",
+      "index": 136,
+      "name": "Warm Beach"
+    },
+    {
+      "id": "SHAMOUTI_COAST",
+      "index": 137,
+      "name": "Shamouti Coast"
+    },
+    {
+      "id": "FIRE_ISLAND",
+      "index": 138,
+      "name": "Fire Island"
+    },
+    {
+      "id": "ICE_ISLAND",
+      "index": 139,
+      "name": "Ice Island"
+    },
+    {
+      "id": "LIGHTNING_ISLAND",
+      "index": 140,
+      "name": "Lightning Island"
+    },
+    {
+      "id": "ROUTE_49",
+      "index": 141,
+      "name": "Route 49"
+    },
+    {
+      "id": "VALENCIA_ISLAND",
+      "index": 142,
+      "name": "Valencia Island"
+    },
+    {
+      "id": "NAVEL_ROCK",
+      "index": 143,
+      "name": "Navel Rock"
+    },
+    {
+      "id": "FARAWAY_ISLAND",
+      "index": 144,
+      "name": "Faraway Island"
+    }
+  ],
+  "faithful": [
+    {
+      "id": "SPECIAL_MAP",
+      "index": 0,
+      "name": "?"
+    },
+    {
+      "id": "NEW_BARK_TOWN",
+      "index": 1,
+      "name": "New Bark Town"
+    },
+    {
+      "id": "ROUTE_29",
+      "index": 2,
+      "name": "Route 29"
+    },
+    {
+      "id": "CHERRYGROVE_CITY",
+      "index": 3,
+      "name": "Cherrygrove City"
+    },
+    {
+      "id": "CHERRYGROVE_BAY",
+      "index": 4,
+      "name": "Cherrygrove Bay"
+    },
+    {
+      "id": "ROUTE_30",
+      "index": 5,
+      "name": "Route 30"
+    },
+    {
+      "id": "ROUTE_31",
+      "index": 6,
+      "name": "Route 31"
+    },
+    {
+      "id": "VIOLET_CITY",
+      "index": 7,
+      "name": "Violet City"
+    },
+    {
+      "id": "SPROUT_TOWER",
+      "index": 8,
+      "name": "Sprout Tower"
+    },
+    {
+      "id": "VIOLET_OUTSKIRTS",
+      "index": 9,
+      "name": "Violet Outskirts"
+    },
+    {
+      "id": "RUINS_OF_ALPH",
+      "index": 10,
+      "name": "Ruins of Alph"
+    },
+    {
+      "id": "ROUTE_32",
+      "index": 11,
+      "name": "Route 32"
+    },
+    {
+      "id": "ROUTE_32_COAST",
+      "index": 12,
+      "name": "Route 32 Coast"
+    },
+    {
+      "id": "UNION_CAVE",
+      "index": 13,
+      "name": "Union Cave"
+    },
+    {
+      "id": "ROUTE_33",
+      "index": 14,
+      "name": "Route 33"
+    },
+    {
+      "id": "AZALEA_TOWN",
+      "index": 15,
+      "name": "Azalea Town"
+    },
+    {
+      "id": "SLOWPOKE_WELL",
+      "index": 16,
+      "name": "Slowpoke Well"
+    },
+    {
+      "id": "ILEX_FOREST",
+      "index": 17,
+      "name": "Ilex Forest"
+    },
+    {
+      "id": "ROUTE_34",
+      "index": 18,
+      "name": "Route 34"
+    },
+    {
+      "id": "ROUTE_34_COAST",
+      "index": 19,
+      "name": "Route 34 Coast"
+    },
+    {
+      "id": "STORMY_BEACH",
+      "index": 20,
+      "name": "Stormy Beach"
+    },
+    {
+      "id": "MURKY_SWAMP",
+      "index": 21,
+      "name": "Murky Swamp"
+    },
+    {
+      "id": "GOLDENROD_CITY",
+      "index": 22,
+      "name": "Goldenrod City"
+    },
+    {
+      "id": "RADIO_TOWER",
+      "index": 23,
+      "name": "Radio Tower"
+    },
+    {
+      "id": "GOLDENROD_HARBOR",
+      "index": 24,
+      "name": "Goldenrod Harbor"
+    },
+    {
+      "id": "MAGNET_TUNNEL",
+      "index": 25,
+      "name": "Magnet Tunnel"
+    },
+    {
+      "id": "ROUTE_35",
+      "index": 26,
+      "name": "Route 35"
+    },
+    {
+      "id": "ROUTE_35_COAST",
+      "index": 27,
+      "name": "Route 35 Coast"
+    },
+    {
+      "id": "NATIONAL_PARK",
+      "index": 28,
+      "name": "National Park"
+    },
+    {
+      "id": "ROUTE_36",
+      "index": 29,
+      "name": "Route 36"
+    },
+    {
+      "id": "ROUTE_37",
+      "index": 30,
+      "name": "Route 37"
+    },
+    {
+      "id": "ECRUTEAK_CITY",
+      "index": 31,
+      "name": "Ecruteak City"
+    },
+    {
+      "id": "BELLCHIME_TRAIL",
+      "index": 32,
+      "name": "Bellchime Trail"
+    },
+    {
+      "id": "TIN_TOWER",
+      "index": 33,
+      "name": "Bell Tower"
+    },
+    {
+      "id": "BURNED_TOWER",
+      "index": 34,
+      "name": "Burned Tower"
+    },
+    {
+      "id": "ROUTE_38",
+      "index": 35,
+      "name": "Route 38"
+    },
+    {
+      "id": "ROUTE_39",
+      "index": 36,
+      "name": "Route 39"
+    },
+    {
+      "id": "RUGGED_ROAD",
+      "index": 37,
+      "name": "Rugged Road"
+    },
+    {
+      "id": "SNOWTOP_MOUNTAIN",
+      "index": 38,
+      "name": "Snowtop Mountain"
+    },
+    {
+      "id": "OLIVINE_CITY",
+      "index": 39,
+      "name": "Olivine City"
+    },
+    {
+      "id": "LIGHTHOUSE",
+      "index": 40,
+      "name": "Lighthouse"
+    },
+    {
+      "id": "ROUTE_40",
+      "index": 41,
+      "name": "Route 40"
+    },
+    {
+      "id": "BATTLE_TOWER",
+      "index": 42,
+      "name": "Battle Tower"
+    },
+    {
+      "id": "WHIRL_ISLANDS",
+      "index": 43,
+      "name": "Whirl Islands"
+    },
+    {
+      "id": "ROUTE_41",
+      "index": 44,
+      "name": "Route 41"
+    },
+    {
+      "id": "CIANWOOD_CITY",
+      "index": 45,
+      "name": "Cianwood City"
+    },
+    {
+      "id": "CLIFF_EDGE_GATE",
+      "index": 46,
+      "name": "Cliff Edge Gate"
+    },
+    {
+      "id": "ROUTE_47",
+      "index": 47,
+      "name": "Route 47"
+    },
+    {
+      "id": "CLIFF_CAVE",
+      "index": 48,
+      "name": "Cliff Cave"
+    },
+    {
+      "id": "ROUTE_48",
+      "index": 49,
+      "name": "Route 48"
+    },
+    {
+      "id": "YELLOW_FOREST",
+      "index": 50,
+      "name": "Yellow Forest"
+    },
+    {
+      "id": "QUIET_CAVE",
+      "index": 51,
+      "name": "Quiet Cave"
+    },
+    {
+      "id": "ROUTE_42",
+      "index": 52,
+      "name": "Route 42"
+    },
+    {
+      "id": "MT_MORTAR",
+      "index": 53,
+      "name": "Mt.Mortar"
+    },
+    {
+      "id": "MAHOGANY_TOWN",
+      "index": 54,
+      "name": "Mahogany Town"
+    },
+    {
+      "id": "ROUTE_43",
+      "index": 55,
+      "name": "Route 43"
+    },
+    {
+      "id": "LAKE_OF_RAGE",
+      "index": 56,
+      "name": "Lake of Rage"
+    },
+    {
+      "id": "ROUTE_44",
+      "index": 57,
+      "name": "Route 44"
+    },
+    {
+      "id": "ICE_PATH",
+      "index": 58,
+      "name": "Ice Path"
+    },
+    {
+      "id": "BLACKTHORN_CITY",
+      "index": 59,
+      "name": "Blackthorn City"
+    },
+    {
+      "id": "DRAGONS_DEN",
+      "index": 60,
+      "name": "Dragon's Den"
+    },
+    {
+      "id": "ROUTE_45",
+      "index": 61,
+      "name": "Route 45"
+    },
+    {
+      "id": "DARK_CAVE",
+      "index": 62,
+      "name": "Dark Cave"
+    },
+    {
+      "id": "ROUTE_46",
+      "index": 63,
+      "name": "Route 46"
+    },
+    {
+      "id": "SILVER_CAVE",
+      "index": 64,
+      "name": "Silver Cave"
+    },
+    {
+      "id": "FAST_SHIP",
+      "index": 65,
+      "name": "Fast Ship"
+    },
+    {
+      "id": "SINJOH_RUINS",
+      "index": 66,
+      "name": "Sinjoh Ruins"
+    },
+    {
+      "id": "MYSTRI_STAGE",
+      "index": 67,
+      "name": "Mystri Stage"
+    },
+    {
+      "id": "PALLET_TOWN",
+      "index": 68,
+      "name": "Pallet Town"
+    },
+    {
+      "id": "ROUTE_1",
+      "index": 69,
+      "name": "Route 1"
+    },
+    {
+      "id": "VIRIDIAN_CITY",
+      "index": 70,
+      "name": "Viridian City"
+    },
+    {
+      "id": "ROUTE_2",
+      "index": 71,
+      "name": "Route 2"
+    },
+    {
+      "id": "VIRIDIAN_FOREST",
+      "index": 72,
+      "name": "Viridian Forest"
+    },
+    {
+      "id": "PEWTER_CITY",
+      "index": 73,
+      "name": "Pewter City"
+    },
+    {
+      "id": "ROUTE_3",
+      "index": 74,
+      "name": "Route 3"
+    },
+    {
+      "id": "MT_MOON",
+      "index": 75,
+      "name": "Mt.Moon"
+    },
+    {
+      "id": "ROUTE_4",
+      "index": 76,
+      "name": "Route 4"
+    },
+    {
+      "id": "CERULEAN_CITY",
+      "index": 77,
+      "name": "Cerulean City"
+    },
+    {
+      "id": "CERULEAN_CAVE",
+      "index": 78,
+      "name": "Cerulean Cave"
+    },
+    {
+      "id": "ROUTE_24",
+      "index": 79,
+      "name": "Route 24"
+    },
+    {
+      "id": "ROUTE_25",
+      "index": 80,
+      "name": "Route 25"
+    },
+    {
+      "id": "CERULEAN_CAPE",
+      "index": 81,
+      "name": "Cerulean Cape"
+    },
+    {
+      "id": "ROUTE_5",
+      "index": 82,
+      "name": "Route 5"
+    },
+    {
+      "id": "UNDERGROUND",
+      "index": 83,
+      "name": "Underground"
+    },
+    {
+      "id": "ROUTE_6",
+      "index": 84,
+      "name": "Route 6"
+    },
+    {
+      "id": "VERMILION_CITY",
+      "index": 85,
+      "name": "Vermilion City"
+    },
+    {
+      "id": "DIGLETTS_CAVE",
+      "index": 86,
+      "name": "Diglett's Cave"
+    },
+    {
+      "id": "ROUTE_7",
+      "index": 87,
+      "name": "Route 7"
+    },
+    {
+      "id": "ROUTE_8",
+      "index": 88,
+      "name": "Route 8"
+    },
+    {
+      "id": "ROUTE_9",
+      "index": 89,
+      "name": "Route 9"
+    },
+    {
+      "id": "ROUTE_10",
+      "index": 90,
+      "name": "Route 10"
+    },
+    {
+      "id": "ROCK_TUNNEL",
+      "index": 91,
+      "name": "Rock Tunnel"
+    },
+    {
+      "id": "POWER_PLANT",
+      "index": 92,
+      "name": "Power Plant"
+    },
+    {
+      "id": "DIM_CAVE",
+      "index": 93,
+      "name": "Dim Cave"
+    },
+    {
+      "id": "LAVENDER_TOWN",
+      "index": 94,
+      "name": "Lavender Town"
+    },
+    {
+      "id": "LAV_RADIO_TOWER",
+      "index": 95,
+      "name": "Lav.Radio Tower"
+    },
+    {
+      "id": "SOUL_HOUSE",
+      "index": 96,
+      "name": "House of Souls"
+    },
+    {
+      "id": "CELADON_CITY",
+      "index": 97,
+      "name": "Celadon City"
+    },
+    {
+      "id": "CELADON_UNIVERSITY",
+      "index": 98,
+      "name": "Celadon University"
+    },
+    {
+      "id": "SAFFRON_CITY",
+      "index": 99,
+      "name": "Saffron City"
+    },
+    {
+      "id": "ROUTE_11",
+      "index": 100,
+      "name": "Route 11"
+    },
+    {
+      "id": "ROUTE_12",
+      "index": 101,
+      "name": "Route 12"
+    },
+    {
+      "id": "ROUTE_13",
+      "index": 102,
+      "name": "Route 13"
+    },
+    {
+      "id": "ROUTE_14",
+      "index": 103,
+      "name": "Route 14"
+    },
+    {
+      "id": "ROUTE_15",
+      "index": 104,
+      "name": "Route 15"
+    },
+    {
+      "id": "LUCKY_ISLAND",
+      "index": 105,
+      "name": "Lucky Island"
+    },
+    {
+      "id": "ROUTE_16",
+      "index": 106,
+      "name": "Route 16"
+    },
+    {
+      "id": "ROUTE_17",
+      "index": 107,
+      "name": "Route 17"
+    },
+    {
+      "id": "ROUTE_18",
+      "index": 108,
+      "name": "Route 18"
+    },
+    {
+      "id": "FUCHSIA_CITY",
+      "index": 109,
+      "name": "Fuchsia City"
+    },
+    {
+      "id": "SAFARI_ZONE",
+      "index": 110,
+      "name": "Safari Zone"
+    },
+    {
+      "id": "URAGA_CHANNEL",
+      "index": 111,
+      "name": "Uraga Channel"
+    },
+    {
+      "id": "SCARY_CAVE",
+      "index": 112,
+      "name": "Scary Cave"
+    },
+    {
+      "id": "ROUTE_19",
+      "index": 113,
+      "name": "Route 19"
+    },
+    {
+      "id": "ROUTE_20",
+      "index": 114,
+      "name": "Route 20"
+    },
+    {
+      "id": "SEAFOAM_ISLANDS",
+      "index": 115,
+      "name": "Seafoam Islands"
+    },
+    {
+      "id": "CINNABAR_ISLAND",
+      "index": 116,
+      "name": "Cinnabar Island"
+    },
+    {
+      "id": "POKEMON_MANSION",
+      "index": 117,
+      "name": "Pokémon Mansion"
+    },
+    {
+      "id": "CINNABAR_VOLCANO",
+      "index": 118,
+      "name": "Cinnabar Volcano"
+    },
+    {
+      "id": "ROUTE_21",
+      "index": 119,
+      "name": "Route 21"
+    },
+    {
+      "id": "ROUTE_22",
+      "index": 120,
+      "name": "Route 22"
+    },
+    {
+      "id": "ROUTE_27",
+      "index": 121,
+      "name": "Route 27"
+    },
+    {
+      "id": "TOHJO_FALLS",
+      "index": 122,
+      "name": "Tohjo Falls"
+    },
+    {
+      "id": "ROUTE_26",
+      "index": 123,
+      "name": "Route 26"
+    },
+    {
+      "id": "POKEMON_LEAGUE",
+      "index": 124,
+      "name": "Pokémon League Gate"
+    },
+    {
+      "id": "ROUTE_23",
+      "index": 125,
+      "name": "Route 23"
+    },
+    {
+      "id": "VICTORY_ROAD",
+      "index": 126,
+      "name": "Victory Road"
+    },
+    {
+      "id": "INDIGO_PLATEAU",
+      "index": 127,
+      "name": "Indigo Plateau"
+    },
+    {
+      "id": "ROUTE_28",
+      "index": 128,
+      "name": "Route 28"
+    },
+    {
+      "id": "CINNABAR_LAB",
+      "index": 129,
+      "name": "Pokémon Lab"
+    },
+    {
+      "id": "SHAMOUTI_ISLAND",
+      "index": 130,
+      "name": "Shamouti Island"
+    },
+    {
+      "id": "BEAUTIFUL_BEACH",
+      "index": 131,
+      "name": "Beautiful Beach"
+    },
+    {
+      "id": "ROCKY_BEACH",
+      "index": 132,
+      "name": "Rocky Beach"
+    },
+    {
+      "id": "NOISY_FOREST",
+      "index": 133,
+      "name": "Noisy Forest"
+    },
+    {
+      "id": "SHRINE_RUINS",
+      "index": 134,
+      "name": "Shrine Ruins"
+    },
+    {
+      "id": "SHAMOUTI_TUNNEL",
+      "index": 135,
+      "name": "Shamouti Tunnel"
+    },
+    {
+      "id": "WARM_BEACH",
+      "index": 136,
+      "name": "Warm Beach"
+    },
+    {
+      "id": "SHAMOUTI_COAST",
+      "index": 137,
+      "name": "Shamouti Coast"
+    },
+    {
+      "id": "FIRE_ISLAND",
+      "index": 138,
+      "name": "Fire Island"
+    },
+    {
+      "id": "ICE_ISLAND",
+      "index": 139,
+      "name": "Ice Island"
+    },
+    {
+      "id": "LIGHTNING_ISLAND",
+      "index": 140,
+      "name": "Lightning Island"
+    },
+    {
+      "id": "ROUTE_49",
+      "index": 141,
+      "name": "Route 49"
+    },
+    {
+      "id": "VALENCIA_ISLAND",
+      "index": 142,
+      "name": "Valencia Island"
+    },
+    {
+      "id": "NAVEL_ROCK",
+      "index": 143,
+      "name": "Navel Rock"
+    },
+    {
+      "id": "FARAWAY_ISLAND",
+      "index": 144,
+      "name": "Faraway Island"
+    }
+  ]
+}

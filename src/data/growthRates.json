@@ -1,0 +1,94 @@
+{
+  "polished": [
+    {
+      "id": "GROWTH_MEDIUM_FAST",
+      "index": 0,
+      "coefficients": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "GROWTH_MEDIUM_SLOW",
+      "index": 1,
+      "coefficients": [
+        6,
+        5,
+        -15,
+        100,
+        140
+      ]
+    },
+    {
+      "id": "GROWTH_FAST",
+      "index": 2,
+      "coefficients": [
+        4,
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "GROWTH_SLOW",
+      "index": 3,
+      "coefficients": [
+        5,
+        4,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "faithful": [
+    {
+      "id": "GROWTH_MEDIUM_FAST",
+      "index": 0,
+      "coefficients": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "GROWTH_MEDIUM_SLOW",
+      "index": 1,
+      "coefficients": [
+        6,
+        5,
+        -15,
+        100,
+        140
+      ]
+    },
+    {
+      "id": "GROWTH_FAST",
+      "index": 2,
+      "coefficients": [
+        4,
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "GROWTH_SLOW",
+      "index": 3,
+      "coefficients": [
+        5,
+        4,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}
