@@ -1,6 +1,7 @@
 import type { Mon, PartyMon, Player } from './types';
 import addresses from '$data/addresses.json';
 import charmap from '$data/charmap.json';
+import keyboard from '$data/keyboard.json';
 import versions from '$data/versions.json';
 
 export const buf2hex = async (buf: File): Promise<string[]> =>
@@ -125,8 +126,8 @@ export const readString = (
   address: number,
   length: number,
   hasChecksum: boolean
-): string => {
-  let name = '';
+): string[] => {
+  let name = [];
   for (let i = 0; i < length; i++) {
     //Strings including checksums in their MSBs will always have their MSBs set for decoding.
     if (hasChecksum) {
@@ -136,28 +137,32 @@ export const readString = (
     if (fileHex[address + i] === '53' || fileHex[address + i] === 'FB') break;
     //Space (0x7F if there's no checksum, 0xFA if there is)
     if (fileHex[address + i] === '7F' || fileHex[address + i] === 'FA') {
-      name += ' ';
+      name.push(' ');
       continue;
     }
     //Zero (0x00 if there's no checksum, 0xFC if there is)
     if (fileHex[address + i] === '00' || fileHex[address + i] === 'FC') {
-      name += '0';
+      name.push('0')
       continue;
     }
-    name += charmap[fileHex[address + i] as keyof typeof charmap];
+    name.push(charmap[fileHex[address + i] as keyof typeof charmap]);
+  }
+  //Special Handing for pre-corrupted apostrophes:
+  for (let i = 0; i < name.length; i++) {
+    if (name[i] === "'") {
+      name = name.slice(0, i).concat([name[i] + name[i + 1]], name.slice(i + 2))
+      i--;
+    }
   }
   return name;
 };
-
 export const writeString = (
   fileHex: string[],
   address: number,
   length: number,
-  name: string,
+  name: string[],
   hasChecksum: boolean
 ) => {
-  //TODO: TempFix: Do not edit if string length is longer than max length.
-  if (name.length > length) return fileHex;
   for (let i = 0; i < name.length; i++) {
     //Space (0x7F if there's no checksum, 0xFA if there is)
     if (name[i] === ' ') {
@@ -169,8 +174,8 @@ export const writeString = (
       fileHex[address + i] = hasChecksum ? 'FC' : '00';
       continue;
     }
-    fileHex[address + i] = Object.keys(charmap).find(
-      (c) => charmap[c as keyof typeof charmap] === name[i]
+    fileHex[address + i] = Object.keys(keyboard).find(
+      (c) => keyboard[c as keyof typeof keyboard] === name[i]
     )!;
     continue;
   }
@@ -253,7 +258,7 @@ export const getEmptyPartyMon = (player: Player): PartyMon => {
     caughtLevel: 1,
     caughtLocation: 'New Bark Town',
     hyperTraining: [false, false, false, false, false, false],
-    nickname: 'Bulbasaur',
+    nickname: ['B', 'u', 'l', 'b', 'a', 's', 'a', 'u', 'r'],
     OTNickname: player.name,
     currentHP: 12,
     stats: [12, 6, 6, 6, 6, 6],
@@ -288,7 +293,7 @@ export const getEmptyBoxMon = (player: Player): Mon => {
     caughtLevel: 1,
     caughtLocation: 'New Bark Town',
     hyperTraining: [false, false, false, false, false, false],
-    nickname: 'Bulbasaur',
+    nickname: ['B', 'u', 'l', 'b', 'a', 's', 'a', 'u', 'r'],
     OTNickname: player.name
   };
 };

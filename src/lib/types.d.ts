@@ -24,8 +24,8 @@ export interface Mon {
   caughtLevel: number;
   caughtLocation: string;
   hyperTraining: boolean[];
-  nickname: string;
-  OTNickname: string;
+  nickname: string[];
+  OTNickname: string[];
 }
 
 export interface PartyMon extends Mon {
@@ -39,7 +39,7 @@ export interface PartyMon extends Mon {
 }
 
 export interface Box {
-  name: string;
+  name: string[];
   theme: string;
   mons: (Mon | null)[];
 }
@@ -56,8 +56,8 @@ export interface BagSlot {
 
 export interface Player {
   id: number;
-  name: string;
-  rivalName: string;
+  name: string[];
+  rivalName: string[];
   money: number;
   gender: string;
 }

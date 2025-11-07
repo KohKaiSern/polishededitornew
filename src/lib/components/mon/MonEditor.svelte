@@ -23,7 +23,7 @@
 	} = $props();
 </script>
 
-<Heading tag="h3" class="p-2">Edit {mon.nickname}</Heading>
+<Heading tag="h3" class="p-2">Edit {mon.nickname.join('')}</Heading>
 <Accordion class="mt-4">
 	<AccordionItem open>
 		{#snippet header()}Basics{/snippet}

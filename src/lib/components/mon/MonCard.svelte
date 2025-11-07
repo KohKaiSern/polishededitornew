@@ -74,7 +74,7 @@
 			<img {src} alt={`GIF of the front sprite of ${mon.species}`} />
 		</div>
 		<div class="flex flex-col justify-between pt-1 pb-1">
-			<Heading tag="h5">{mon.nickname}</Heading>
+			<Heading tag="h5">{mon.nickname.join('')}</Heading>
 			<div class="flex gap-3">
 				<div
 					class="size-[30px] flex bg-white rounded-lg justify-center items-center border border-gray-300 dark:border-none"
