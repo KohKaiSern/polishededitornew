@@ -11,7 +11,7 @@
 	const validChars = Object.values(keyboard);
 </script>
 
-<Button class={className} color="light" onclick={() => (showKeyboard = true)}>
+<Button class={`${className} !ring-purple-300`} color="light" onclick={() => (showKeyboard = true)}>
 	{value.join('')}
 </Button>
 
