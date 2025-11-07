@@ -63,39 +63,41 @@
 			</DropdownItem>
 		{/each}
 	</Dropdown>
-	<Button
-		class="flex-grow justify-between !border-r-1 !rounded-r-lg px-4 py-2.5"
-		onclick={() => {
-			itemOpen = !itemOpen;
-		}}
-	>
-		{#if move === 'None'}
-			None
-		{:else}
-			<div class="flex flex-nowrap items-center text-black dark:text-white">
-				{#if getType(move) === 'UNKNOWN_T'}
-					<div
-						class="flex size-[30px] items-center justify-center rounded-[50%] mr-3 bg-gray-400 text-lg"
-					>
-						?
-					</div>
-				{:else}
-					<div
-						class="flex size-[30px] items-center justify-center rounded-[50%] mr-3"
-						style:background-color={getTypeColour(getType(move).toLowerCase())}
-					>
-						<img
-							class="size-[60%] object-contain"
-							src={`https://raw.githubusercontent.com/duiker101/pokemon-type-svg-icons/5781623f147f1bf850f426cfe1874ba56a9b75ee/icons/${getType(move).toLowerCase()}.svg`}
-							alt={`${getType(move)} logo`}
-						/>
-					</div>
-				{/if}
-				{move}
-			</div>
-		{/if}
-		<ChevronDownOutline class="ms-2 h-6 w-6 text-black dark:text-white" /></Button
-	>
+	<div>
+		<Button
+			class="flex-grow justify-between rounded-l-none rounded-r-lg px-4 py-2.5"
+			onclick={() => {
+				itemOpen = !itemOpen;
+			}}
+		>
+			{#if move === 'None'}
+				None
+			{:else}
+				<div class="flex flex-nowrap items-center text-black dark:text-white">
+					{#if getType(move) === 'UNKNOWN_T'}
+						<div
+							class="flex size-[30px] items-center justify-center rounded-[50%] mr-3 bg-gray-400 text-lg"
+						>
+							?
+						</div>
+					{:else}
+						<div
+							class="flex size-[30px] items-center justify-center rounded-[50%] mr-3"
+							style:background-color={getTypeColour(getType(move).toLowerCase())}
+						>
+							<img
+								class="size-[60%] object-contain"
+								src={`https://raw.githubusercontent.com/duiker101/pokemon-type-svg-icons/5781623f147f1bf850f426cfe1874ba56a9b75ee/icons/${getType(move).toLowerCase()}.svg`}
+								alt={`${getType(move)} logo`}
+							/>
+						</div>
+					{/if}
+					{move}
+				</div>
+			{/if}
+			<ChevronDownOutline class="ms-2 h-6 w-6 text-black dark:text-white" /></Button
+		>
+	</div>
 	<Dropdown class="w-70 h-70 overflow-y-auto py-1" bind:isOpen={itemOpen}>
 		<div class="p-3">
 			<Search size="md" bind:value={searchTerm} />
