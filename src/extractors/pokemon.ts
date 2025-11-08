@@ -105,6 +105,25 @@ function extractEggMoves(mons: MonList, EGG_PTRS: string[], EGG_MOVES: string[],
   return mons
 }
 
+function extractEvoMoves(mons: MonList, EVO_MOVES: string[], moves: Move[]): MonList {
+  let index = 1;
+  for (let lineNo = 0; lineNo < EVO_MOVES.length; lineNo++) {
+    if (index === mons.constants.num_species + 1) {
+      index += mons.constants.num_cosmetics
+    }
+    if (!EVO_MOVES[lineNo].startsWith('db')) continue;
+    const move = EVO_MOVES[lineNo].slice(3)
+    if (move != 'NO_MOVE') {
+      const mon = mons.contents.find(m => m.index === index)!
+      mon.learnsets.evo.push({
+        name: moves.find(m => m.id === move)!.name
+      })
+    }
+    index++;
+  }
+  return mons
+}
+
 function extractForms(forms: Record<string, Base[]>, IDS: string[], FORMS: string[]): Record<string, Base[]> {
   const formNums: Record<string, number> = {}
   let num_magikarp = -1;
@@ -171,6 +190,7 @@ const LVL_PTRS = splitRead('data/pokemon/evos_attacks_pointers.asm')
 const LVL_MOVES = splitRead('data/pokemon/evos_attacks.asm')
 const EGG_PTRS = splitRead('data/pokemon/egg_move_pointers.asm')
 const EGG_MOVES = splitRead('data/pokemon/egg_moves.asm')
+const EVO_MOVES = splitRead('data/pokemon/evolution_moves.asm')
 const FORMS = splitRead('data/pokemon/variant_forms.asm')
 
 const mons: {
@@ -212,6 +232,7 @@ for (const PF of ['polished', 'faithful'] as const) {
   mons[PF] = extractBases(mons[PF], BASE_PTRS[PF], BASES[PF], abilities[PF], moves[PF], growthRates[PF])
   mons[PF] = extractLvlMoves(mons[PF], LVL_PTRS[PF], LVL_MOVES[PF], moves[PF])
   mons[PF] = extractEggMoves(mons[PF], EGG_PTRS[PF], EGG_MOVES[PF], moves[PF])
+  mons[PF] = extractEvoMoves(mons[PF], EVO_MOVES[PF], moves[PF])
   forms[PF] = extractForms(forms[PF], IDS[PF], FORMS[PF])
 }
 

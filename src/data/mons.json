@@ -552,7 +552,11 @@
               "name": "Power Whip"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Petal Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -1284,7 +1288,11 @@
               "name": "Outrage"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Wing Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -2046,7 +2054,11 @@
               "name": "Aqua Jet"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Flash Cannon"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -2299,7 +2311,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Defense Curl"
+            }
+          ],
           "tmhm": []
         }
       },
@@ -2404,7 +2420,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Gust"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -2611,7 +2631,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Defense Curl"
+            }
+          ],
           "tmhm": []
         }
       },
@@ -2708,7 +2732,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "U-turn"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -3748,7 +3776,11 @@
               "name": "Counter"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Scary Face"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -4574,7 +4606,11 @@
               "name": "Scary Face"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Crunch"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -5003,7 +5039,11 @@
               "name": "Reversal"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Thunderbolt"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -5522,7 +5562,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Slash"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -8027,7 +8071,11 @@
               "name": "Roar"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Nasty Plot"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -10040,7 +10088,11 @@
               "name": "Shadow Claw"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shadow Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -10476,7 +10528,11 @@
               "name": "Toxic Spikes"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Gust"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -10923,7 +10979,11 @@
               "name": "Screech"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Tri Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -11393,7 +11453,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Swift"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -12494,7 +12558,11 @@
               "name": "Close Combat"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Rage"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -12975,7 +13043,11 @@
               "name": "Close Combat"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "ExtremeSpeed"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -13602,7 +13674,11 @@
               "name": "Water Pulse"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Close Combat"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -14039,7 +14115,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Foresight"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -14288,7 +14368,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Foresight"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -15055,7 +15139,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Strength"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -16127,7 +16215,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Power Whip"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -17256,7 +17348,11 @@
               "name": "Play Rough"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Play Rough"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -17743,7 +17839,11 @@
               "name": "Zen Headbutt"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Defense Curl"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -18240,7 +18340,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Tri Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -18895,7 +18999,11 @@
               "name": "Brave Bird"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Tri Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -19335,7 +19443,11 @@
               "name": "Icicle Spear"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Icicle Spear"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -20211,7 +20323,11 @@
               "name": "Rock Blast"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Spikes"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -20668,7 +20784,11 @@
               "name": "Feint Attack"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shadow Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -20918,7 +21038,11 @@
               "name": "Feint Attack"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shadow Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -22945,7 +23069,11 @@
               "name": "Reflect"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Stomp"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -23441,7 +23569,11 @@
               "name": "Iron Head"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Swords Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -23703,7 +23835,11 @@
               "name": "Rapid Spin"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Double Kick"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -23933,7 +24069,11 @@
               "name": "Rapid Spin"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Dizzy Punch"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -25103,7 +25243,11 @@
               "name": "Counter"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Outrage"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -29182,7 +29326,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Bite"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -29927,7 +30075,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Water Gun"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -30154,7 +30306,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "ThunderShock"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -30378,7 +30534,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Ember"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -31045,7 +31205,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Icicle Spear"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -31525,7 +31689,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Slash"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -33431,7 +33599,11 @@
               "name": "Aqua Jet"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Wing Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -34945,7 +35117,11 @@
               "name": "Heal Bell"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Petal Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -35640,7 +35816,11 @@
               "name": "Quick Attack"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Fire Punch"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -36441,7 +36621,11 @@
               "name": "Aqua Jet"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Night Slash"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -36975,7 +37159,11 @@
               "name": "Trick"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Agility"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -37956,7 +38144,11 @@
               "name": "Drain Punch"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Swords Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -38457,7 +38649,11 @@
               "name": "Toxic Spikes"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Bug Bite"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -38697,7 +38893,11 @@
               "name": "Brave Bird"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "X-Scissor"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -40231,7 +40431,11 @@
               "name": "Peck"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Disarm Voice"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -40742,7 +40946,11 @@
               "name": "Roost"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Air Slash"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -41456,7 +41664,11 @@
               "name": "Safeguard"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "ThunderPunch"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -41671,7 +41883,11 @@
               "name": "Swords Dance"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Petal Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -42378,7 +42594,11 @@
               "name": "Explosion"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Stone Edge"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -42577,7 +42797,11 @@
               "name": "Water Pulse"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Giga Drain"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -43933,7 +44157,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Ember"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -44579,7 +44807,11 @@
               "name": "Safeguard"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "AncientPower"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -44830,7 +45062,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Confusion"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -45054,7 +45290,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Pursuit"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -46032,7 +46272,11 @@
               "name": "Encore"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Recover"
+            }
+          ],
           "tmhm": [
             {
               "name": "Safeguard"
@@ -46647,7 +46891,11 @@
               "name": "Toxic Spikes"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Flash Cannon"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -47474,7 +47722,11 @@
               "name": "Rock Blast"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Iron Tail"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -48500,7 +48752,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Metal Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -50230,7 +50486,11 @@
               "name": "Curse"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shell Smash"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -50703,7 +50963,11 @@
               "name": "Icicle Spear"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Fury Strikes"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -51462,7 +51726,11 @@
               "name": "Water Pulse"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Octazooka"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -52838,7 +53106,11 @@
               "name": "Water Pulse"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "DragonBreath"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -53272,7 +53544,11 @@
               "name": "Encore"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Fury Strikes"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -54185,7 +54461,11 @@
               "name": "Rapid Spin"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Low Kick"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -56517,7 +56797,11 @@
               "name": "Iron Head"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Defense Curl"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -56747,7 +57031,11 @@
               "name": "Iron Head"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Stomp"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -58387,7 +58675,11 @@
               "name": "Screech"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "DazzlinGleam"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -60199,7 +60491,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Tri Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -60717,7 +61013,11 @@
               "name": "Counter"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Outrage"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -61252,7 +61552,11 @@
               "name": "Bulk Up"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Close Combat"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -61521,7 +61825,11 @@
               "name": "Screech"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Flash Cannon"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -61726,7 +62034,11 @@
               "name": "Peck"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Disarm Voice"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -61998,7 +62310,11 @@
               "name": "Reversal"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "DragonBreath"
+            }
+          ],
           "tmhm": [
             {
               "name": "Dragon Claw"
@@ -62201,7 +62517,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Razor Leaf"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -62425,7 +62745,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Icy Wind"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -63167,7 +63491,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Nasty Plot"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -63385,7 +63713,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Disarm Voice"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -63599,7 +63931,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Iron Head"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -64125,7 +64461,11 @@
               "name": "Roost"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Counter"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -64626,7 +64966,11 @@
               "name": "Rage"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Extrasensory"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -64889,7 +65233,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Rock Throw"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -65148,7 +65496,11 @@
               "name": "Close Combat"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Bulldoze"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -66496,7 +66848,11 @@
               "name": "Safeguard"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Megahorn"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -66783,7 +67139,11 @@
               "name": "Close Combat"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shadow Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -67939,7 +68299,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Bite"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -69045,7 +69409,11 @@
               "name": "Counter"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Scary Face"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -69249,7 +69617,11 @@
               "name": "Reversal"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Psychic"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -69771,7 +70143,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Icicle Spear"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -70259,7 +70635,11 @@
               "name": "Roar"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "DazzlinGleam"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -70723,7 +71103,11 @@
               "name": "Screech"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Tri Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -71207,7 +71591,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Swift"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -72606,7 +72994,11 @@
               "name": "Reflect"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Dragon Pulse"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -72863,7 +73255,11 @@
               "name": "Iron Head"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Swords Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -73594,7 +73990,11 @@
               "name": "Play Rough"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Play Rough"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -74071,7 +74471,11 @@
               "name": "Zen Headbutt"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Gunk Shot"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -74565,7 +74969,11 @@
               "name": "Pain Split"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Safeguard"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -75688,7 +76096,11 @@
               "name": "Zen Headbutt"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Hex"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -76478,7 +76890,11 @@
               "name": "Close Combat"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "ExtremeSpeed"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -77166,7 +77582,11 @@
               "name": "Quick Attack"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shadow Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -79446,7 +79866,11 @@
               "name": "Power Whip"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Petal Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -80178,7 +80602,11 @@
               "name": "Outrage"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Wing Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -80935,7 +81363,11 @@
               "name": "Aqua Jet"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Flash Cannon"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -81188,7 +81620,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Defense Curl"
+            }
+          ],
           "tmhm": []
         }
       },
@@ -81293,7 +81729,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Gust"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -81500,7 +81940,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Defense Curl"
+            }
+          ],
           "tmhm": []
         }
       },
@@ -81597,7 +82041,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "U-turn"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -82637,7 +83085,11 @@
               "name": "Counter"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Scary Face"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -83463,7 +83915,11 @@
               "name": "Scary Face"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Crunch"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -83892,7 +84348,11 @@
               "name": "Reversal"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Thunderbolt"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -84411,7 +84871,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Slash"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -86915,7 +87379,11 @@
               "name": "Roar"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Nasty Plot"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -88928,7 +89396,11 @@
               "name": "Shadow Claw"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shadow Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -89364,7 +89836,11 @@
               "name": "Toxic Spikes"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Gust"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -89811,7 +90287,11 @@
               "name": "Screech"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Tri Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -90281,7 +90761,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Swift"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -91381,7 +91865,11 @@
               "name": "Close Combat"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Rage"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -91862,7 +92350,11 @@
               "name": "Close Combat"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "ExtremeSpeed"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -92489,7 +92981,11 @@
               "name": "Water Pulse"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Close Combat"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -92926,7 +93422,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Foresight"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -93175,7 +93675,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Foresight"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -93942,7 +94446,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Strength"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -95014,7 +95522,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Power Whip"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -96142,7 +96654,11 @@
               "name": "Play Rough"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Play Rough"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -96629,7 +97145,11 @@
               "name": "Zen Headbutt"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Defense Curl"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -97126,7 +97646,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Tri Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -97781,7 +98305,11 @@
               "name": "Brave Bird"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Tri Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -98221,7 +98749,11 @@
               "name": "Icicle Spear"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Icicle Spear"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -99097,7 +99629,11 @@
               "name": "Rock Blast"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Spikes"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -99554,7 +100090,11 @@
               "name": "Feint Attack"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shadow Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -99804,7 +100344,11 @@
               "name": "Feint Attack"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shadow Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -101831,7 +102375,11 @@
               "name": "Reflect"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Stomp"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -102327,7 +102875,11 @@
               "name": "Iron Head"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Swords Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -102589,7 +103141,11 @@
               "name": "Rapid Spin"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Double Kick"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -102819,7 +103375,11 @@
               "name": "Rapid Spin"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Dizzy Punch"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -103989,7 +104549,11 @@
               "name": "Counter"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Outrage"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -108068,7 +108632,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Bite"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -108813,7 +109381,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Water Gun"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -109040,7 +109612,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "ThunderShock"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -109264,7 +109840,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Ember"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -109931,7 +110511,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Icicle Spear"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -110411,7 +110995,11 @@
               "name": "Knock Off"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Slash"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -112317,7 +112905,11 @@
               "name": "Aqua Jet"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Wing Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -113830,7 +114422,11 @@
               "name": "Heal Bell"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Petal Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -114524,7 +115120,11 @@
               "name": "Quick Attack"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Fire Punch"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -115324,7 +115924,11 @@
               "name": "Aqua Jet"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Night Slash"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -115858,7 +116462,11 @@
               "name": "Trick"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Agility"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -116839,7 +117447,11 @@
               "name": "Drain Punch"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Swords Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -117340,7 +117952,11 @@
               "name": "Toxic Spikes"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Bug Bite"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -117580,7 +118196,11 @@
               "name": "Brave Bird"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "X-Scissor"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -119114,7 +119734,11 @@
               "name": "Peck"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Disarm Voice"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -119625,7 +120249,11 @@
               "name": "Roost"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Air Slash"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -120338,7 +120966,11 @@
               "name": "Safeguard"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "ThunderPunch"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -120552,7 +121184,11 @@
               "name": "Swords Dance"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Petal Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -121259,7 +121895,11 @@
               "name": "Explosion"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Stone Edge"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -121457,7 +122097,11 @@
               "name": "Water Pulse"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Giga Drain"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -123450,7 +124094,11 @@
               "name": "Safeguard"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "AncientPower"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -123701,7 +124349,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Confusion"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -123925,7 +124577,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Pursuit"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -124903,7 +125559,11 @@
               "name": "Encore"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Recover"
+            }
+          ],
           "tmhm": [
             {
               "name": "Safeguard"
@@ -125514,7 +126174,11 @@
               "name": "Toxic Spikes"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Flash Cannon"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -126340,7 +127004,11 @@
               "name": "Rock Blast"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Iron Tail"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -127366,7 +128034,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Metal Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -129096,7 +129768,11 @@
               "name": "Curse"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shell Smash"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -129569,7 +130245,11 @@
               "name": "Icicle Spear"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Fury Strikes"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -130323,7 +131003,11 @@
               "name": "Water Pulse"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Octazooka"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -131699,7 +132383,11 @@
               "name": "Water Pulse"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "DragonBreath"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -132133,7 +132821,11 @@
               "name": "Encore"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Fury Strikes"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -133045,7 +133737,11 @@
               "name": "Rapid Spin"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Low Kick"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -135377,7 +136073,11 @@
               "name": "Iron Head"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Defense Curl"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -135607,7 +136307,11 @@
               "name": "Iron Head"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Stomp"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -137246,7 +137950,11 @@
               "name": "Screech"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "DazzlinGleam"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -139058,7 +139766,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Tri Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -139576,7 +140288,11 @@
               "name": "Counter"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Outrage"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -140110,7 +140826,11 @@
               "name": "Bulk Up"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Close Combat"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -140378,7 +141098,11 @@
               "name": "Screech"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Flash Cannon"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -140583,7 +141307,11 @@
               "name": "Peck"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Disarm Voice"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -140855,7 +141583,11 @@
               "name": "Reversal"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "DragonBreath"
+            }
+          ],
           "tmhm": [
             {
               "name": "Dragon Claw"
@@ -141058,7 +141790,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Razor Leaf"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -141282,7 +142018,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Icy Wind"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -142024,7 +142764,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Nasty Plot"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -142242,7 +142986,11 @@
               "name": "Charm"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Disarm Voice"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -142456,7 +143204,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Iron Head"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -142981,7 +143733,11 @@
               "name": "Roost"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Counter"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -143482,7 +144238,11 @@
               "name": "Rage"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Extrasensory"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -143745,7 +144505,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Rock Throw"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -144004,7 +144768,11 @@
               "name": "Close Combat"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Bulldoze"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -145347,7 +146115,11 @@
               "name": "Safeguard"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Megahorn"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -145634,7 +146406,11 @@
               "name": "Close Combat"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shadow Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -146790,7 +147566,11 @@
             }
           ],
           "egg": [],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Bite"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -147894,7 +148674,11 @@
               "name": "Counter"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Scary Face"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -148098,7 +148882,11 @@
               "name": "Reversal"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Psychic"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -148620,7 +149408,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Icicle Spear"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -149108,7 +149900,11 @@
               "name": "Roar"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "DazzlinGleam"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -149572,7 +150368,11 @@
               "name": "Screech"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Tri Attack"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -150056,7 +150856,11 @@
               "name": "Night Slash"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Swift"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -151455,7 +152259,11 @@
               "name": "Reflect"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Dragon Pulse"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -151712,7 +152520,11 @@
               "name": "Iron Head"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Swords Dance"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -152443,7 +153255,11 @@
               "name": "Play Rough"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Play Rough"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -152920,7 +153736,11 @@
               "name": "Zen Headbutt"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Gunk Shot"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -153414,7 +154234,11 @@
               "name": "Pain Split"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Safeguard"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -154537,7 +155361,11 @@
               "name": "Zen Headbutt"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Hex"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
@@ -155326,7 +156154,11 @@
               "name": "Close Combat"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "ExtremeSpeed"
+            }
+          ],
           "tmhm": [
             {
               "name": "Curse"
@@ -156014,7 +156846,11 @@
               "name": "Quick Attack"
             }
           ],
-          "evo": [],
+          "evo": [
+            {
+              "name": "Shadow Claw"
+            }
+          ],
           "tmhm": [
             {
               "name": "DynamicPunch"
