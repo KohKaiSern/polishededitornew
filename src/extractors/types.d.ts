@@ -66,9 +66,6 @@ export interface Mon extends Base {
 }
 
 export interface MonList {
-  constants: {
-    num_species: number;
-    num_cosmetics: number;
-  },
+  constants: Record<string, number>
   contents: Mon[];
 }
