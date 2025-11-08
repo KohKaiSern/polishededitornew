@@ -63,6 +63,26 @@ export interface GrowthRate extends Base {
 
 export interface Mon extends Base {
   name: string;
+  bsts: number[];
+  types: string[];
+  hasGender: boolean;
+  abilities: string[];
+  growthCFs: number[];
+  learnsets: {
+    level: {
+      name: string;
+      level: number;
+    }[],
+    egg: {
+      name: string;
+    }[],
+    evo: {
+      name: string;
+    }[];
+    tmhm: {
+      name: string;
+    }[]
+  }
 }
 
 export interface MonList {

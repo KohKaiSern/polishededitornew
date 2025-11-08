@@ -49,7 +49,7 @@ export function splitRead(path: string): { polished: string[]; faithful: string[
 }
 
 export function writeJSON(name: string, obj: object): void {
-  writeFileSync(import.meta.dirname + '/../data/' + name + '.json', JSON.stringify(obj, null, 2));
+  writeFileSync(import.meta.dirname + `/../data/${name}.json`, JSON.stringify(obj, null, 2))
 }
 
 //Applies a palette to a 2-bit-per-pixel PNG.
