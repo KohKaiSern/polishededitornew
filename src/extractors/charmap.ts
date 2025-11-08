@@ -5,7 +5,6 @@ function extractCharmap(CHARMAP: string[]): Record<string, string> {
   let lineNo = 0;
   while (!CHARMAP[lineNo].includes('FIRST_REGULAR_TEXT_CHAR')) lineNo++;
   for (; lineNo < CHARMAP.length; lineNo++) {
-    if (CHARMAP[lineNo].includes('grams')) break;
     if (!CHARMAP[lineNo].includes('"')) continue;
     charmap[CHARMAP[lineNo].split('$').at(1)!.slice(0, 2).toUpperCase()] = CHARMAP[lineNo]
       .split('"')
