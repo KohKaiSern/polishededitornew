@@ -82,6 +82,29 @@ function extractLvlMoves(mons: MonList, LVL_PTRS: string[], LVL_MOVES: string[],
   return mons
 }
 
+function extractEggMoves(mons: MonList, EGG_PTRS: string[], EGG_MOVES: string[], moves: Move[]): MonList {
+  let index = 1;
+  for (let lineNo = 0; lineNo < EGG_PTRS.length; lineNo++) {
+    if (index === mons.constants.num_species + 1) {
+      index += mons.constants.num_cosmetics
+    }
+    if (!EGG_PTRS[lineNo].startsWith('dw')) continue;
+    const pointer = EGG_PTRS[lineNo].slice(3) + ':'
+    let learnsetIndex = EGG_MOVES.findIndex(line => line === pointer)!
+    const mon = mons.contents.find(m => m.index === index)!
+    while (!EGG_MOVES[learnsetIndex].startsWith('db')) learnsetIndex++;
+    while (EGG_MOVES[learnsetIndex].startsWith('db')) {
+      if (EGG_MOVES[learnsetIndex].includes('$ff')) break;
+      mon.learnsets.egg.push({
+        name: moves.find(m => m.id === EGG_MOVES[learnsetIndex].slice(3))!.name
+      })
+      learnsetIndex++;
+    }
+    index++;
+  }
+  return mons
+}
+
 function extractForms(forms: Record<string, Base[]>, IDS: string[], FORMS: string[]): Record<string, Base[]> {
   const formNums: Record<string, number> = {}
   let num_magikarp = -1;
@@ -146,6 +169,8 @@ for (const filename of readdirSync(import.meta.dirname + '/../../polishedcrystal
 }
 const LVL_PTRS = splitRead('data/pokemon/evos_attacks_pointers.asm')
 const LVL_MOVES = splitRead('data/pokemon/evos_attacks.asm')
+const EGG_PTRS = splitRead('data/pokemon/egg_move_pointers.asm')
+const EGG_MOVES = splitRead('data/pokemon/egg_moves.asm')
 const FORMS = splitRead('data/pokemon/variant_forms.asm')
 
 const mons: {
@@ -186,6 +211,7 @@ for (const PF of ['polished', 'faithful'] as const) {
   mons[PF].contents = extractNames(mons[PF].contents, NAMES[PF], 0)
   mons[PF] = extractBases(mons[PF], BASE_PTRS[PF], BASES[PF], abilities[PF], moves[PF], growthRates[PF])
   mons[PF] = extractLvlMoves(mons[PF], LVL_PTRS[PF], LVL_MOVES[PF], moves[PF])
+  mons[PF] = extractEggMoves(mons[PF], EGG_PTRS[PF], EGG_MOVES[PF], moves[PF])
   forms[PF] = extractForms(forms[PF], IDS[PF], FORMS[PF])
 }
 
