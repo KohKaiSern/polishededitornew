@@ -1,5 +1,5 @@
 import { applyPalette, splitRead, createGIF } from './utils';
-import type { MonList, Mon, Ability, Move, GrowthRate, Base, Species, Form, FormMap } from './types';
+import type { MonList, Mon, Ability, Move, GrowthRate, Species, FormMap } from './types';
 import { extractNames } from './common';
 import { readFileSync, readdirSync, mkdirSync } from 'fs';
 import abilities from './abilities';
