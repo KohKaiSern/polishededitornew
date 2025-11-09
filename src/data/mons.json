@@ -219,7 +219,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/bulbasaur/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/bulbasaur/",
           "anim": ""
         }
       },
@@ -437,7 +437,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ivysaur/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ivysaur/",
           "anim": ""
         }
       },
@@ -689,7 +689,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/venusaur/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/venusaur/",
           "anim": ""
         }
       },
@@ -928,7 +928,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/charmander/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/charmander/",
           "anim": ""
         }
       },
@@ -1167,7 +1167,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/charmeleon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/charmeleon/",
           "anim": ""
         }
       },
@@ -1476,7 +1476,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/charizard/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/charizard/",
           "anim": ""
         }
       },
@@ -1717,7 +1717,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/squirtle/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/squirtle/",
           "anim": ""
         }
       },
@@ -1958,7 +1958,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wartortle/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wartortle/",
           "anim": ""
         }
       },
@@ -2260,7 +2260,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/blastoise/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/blastoise/",
           "anim": ""
         }
       },
@@ -2313,7 +2313,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/caterpie/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/caterpie/",
           "anim": ""
         }
       },
@@ -2370,7 +2370,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/metapod/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/metapod/",
           "anim": ""
         }
       },
@@ -2593,7 +2593,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/butterfree/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/butterfree/",
           "anim": ""
         }
       },
@@ -2647,7 +2647,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/weedle/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/weedle/",
           "anim": ""
         }
       },
@@ -2705,7 +2705,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kakuna/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kakuna/",
           "anim": ""
         }
       },
@@ -2926,7 +2926,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/beedrill/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/beedrill/",
           "anim": ""
         }
       },
@@ -3128,7 +3128,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pidgey/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pidgey/",
           "anim": ""
         }
       },
@@ -3330,7 +3330,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pidgeotto/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pidgeotto/",
           "anim": ""
         }
       },
@@ -3538,7 +3538,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pidgeot/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pidgeot/",
           "anim": ""
         }
       },
@@ -3759,7 +3759,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rattata_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rattata_plain/",
           "anim": ""
         }
       },
@@ -4007,7 +4007,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/raticate_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/raticate_plain/",
           "anim": ""
         }
       },
@@ -4192,7 +4192,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/spearow/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/spearow/",
           "anim": ""
         }
       },
@@ -4391,7 +4391,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/fearow/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/fearow/",
           "anim": ""
         }
       },
@@ -4608,7 +4608,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ekans/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ekans/",
           "anim": ""
         }
       },
@@ -4839,7 +4839,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/arbok_johto/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/arbok/",
           "anim": ""
         }
       },
@@ -5095,7 +5095,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pikachu_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pikachu/",
           "anim": ""
         }
       },
@@ -5315,7 +5315,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/raichu_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/raichu_plain/",
           "anim": ""
         }
       },
@@ -5573,7 +5573,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sandshrew_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sandshrew_plain/",
           "anim": ""
         }
       },
@@ -5851,7 +5851,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sandslash_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sandslash_plain/",
           "anim": ""
         }
       },
@@ -6081,7 +6081,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidoran_f/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidoran_f/",
           "anim": ""
         }
       },
@@ -6311,7 +6311,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidorina/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidorina/",
           "anim": ""
         }
       },
@@ -6598,7 +6598,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidoqueen/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidoqueen/",
           "anim": ""
         }
       },
@@ -6825,7 +6825,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidoran_m/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidoran_m/",
           "anim": ""
         }
       },
@@ -7052,7 +7052,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidorino/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidorino/",
           "anim": ""
         }
       },
@@ -7336,7 +7336,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidoking/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidoking/",
           "anim": ""
         }
       },
@@ -7649,7 +7649,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/clefairy/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/clefairy/",
           "anim": ""
         }
       },
@@ -7915,7 +7915,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/clefable/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/clefable/",
           "anim": ""
         }
       },
@@ -8171,7 +8171,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/vulpix_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/vulpix_plain/",
           "anim": ""
         }
       },
@@ -8383,7 +8383,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ninetales_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ninetales_plain/",
           "anim": ""
         }
       },
@@ -8669,7 +8669,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/jigglypuff/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/jigglypuff/",
           "anim": ""
         }
       },
@@ -8928,7 +8928,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wigglytuff/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wigglytuff/",
           "anim": ""
         }
       },
@@ -9152,7 +9152,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/zubat/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/zubat/",
           "anim": ""
         }
       },
@@ -9390,7 +9390,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/golbat/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/golbat/",
           "anim": ""
         }
       },
@@ -9591,7 +9591,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/oddish/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/oddish/",
           "anim": ""
         }
       },
@@ -9791,7 +9791,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gloom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gloom/",
           "anim": ""
         }
       },
@@ -9978,7 +9978,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/vileplume/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/vileplume/",
           "anim": ""
         }
       },
@@ -10203,7 +10203,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/paras/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/paras/",
           "anim": ""
         }
       },
@@ -10448,7 +10448,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/parasect/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/parasect/",
           "anim": ""
         }
       },
@@ -10647,7 +10647,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/venonat/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/venonat/",
           "anim": ""
         }
       },
@@ -10886,7 +10886,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/venomoth/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/venomoth/",
           "anim": ""
         }
       },
@@ -11106,7 +11106,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/diglett_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/diglett_plain/",
           "anim": ""
         }
       },
@@ -11347,7 +11347,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dugtrio_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dugtrio_plain/",
           "anim": ""
         }
       },
@@ -11593,7 +11593,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/meowth_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/meowth_plain/",
           "anim": ""
         }
       },
@@ -11864,7 +11864,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/persian_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/persian_plain/",
           "anim": ""
         }
       },
@@ -12136,7 +12136,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/psyduck/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/psyduck/",
           "anim": ""
         }
       },
@@ -12425,7 +12425,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/golduck/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/golduck/",
           "anim": ""
         }
       },
@@ -12698,7 +12698,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mankey/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mankey/",
           "anim": ""
         }
       },
@@ -12992,7 +12992,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/primeape/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/primeape/",
           "anim": ""
         }
       },
@@ -13241,7 +13241,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/growlithe_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/growlithe_plain/",
           "anim": ""
         }
       },
@@ -13463,7 +13463,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/arcanine_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/arcanine_plain/",
           "anim": ""
         }
       },
@@ -13670,7 +13670,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/poliwag/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/poliwag/",
           "anim": ""
         }
       },
@@ -13898,7 +13898,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/poliwhirl/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/poliwhirl/",
           "anim": ""
         }
       },
@@ -14130,7 +14130,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/poliwrath/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/poliwrath/",
           "anim": ""
         }
       },
@@ -14321,7 +14321,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/abra/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/abra/",
           "anim": ""
         }
       },
@@ -14575,7 +14575,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kadabra/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kadabra/",
           "anim": ""
         }
       },
@@ -14842,7 +14842,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/alakazam/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/alakazam/",
           "anim": ""
         }
       },
@@ -15091,7 +15091,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/machop/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/machop/",
           "anim": ""
         }
       },
@@ -15340,7 +15340,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/machoke/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/machoke/",
           "anim": ""
         }
       },
@@ -15610,7 +15610,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/machamp/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/machamp/",
           "anim": ""
         }
       },
@@ -15818,7 +15818,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/bellsprout/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/bellsprout/",
           "anim": ""
         }
       },
@@ -16026,7 +16026,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/weepinbell/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/weepinbell/",
           "anim": ""
         }
       },
@@ -16214,7 +16214,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/victreebel/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/victreebel/",
           "anim": ""
         }
       },
@@ -16448,7 +16448,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tentacool/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tentacool/",
           "anim": ""
         }
       },
@@ -16696,7 +16696,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tentacruel/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tentacruel/",
           "anim": ""
         }
       },
@@ -16921,7 +16921,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/geodude_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/geodude_plain/",
           "anim": ""
         }
       },
@@ -17146,7 +17146,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/graveler_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/graveler_plain/",
           "anim": ""
         }
       },
@@ -17390,7 +17390,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/golem_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/golem_plain/",
           "anim": ""
         }
       },
@@ -17603,7 +17603,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ponyta_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ponyta_plain/",
           "anim": ""
         }
       },
@@ -17848,7 +17848,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rapidash_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rapidash_plain/",
           "anim": ""
         }
       },
@@ -18117,7 +18117,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowpoke_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowpoke_plain/",
           "anim": ""
         }
       },
@@ -18427,7 +18427,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowbro_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowbro_plain/",
           "anim": ""
         }
       },
@@ -18632,7 +18632,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magnemite/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magnemite/",
           "anim": ""
         }
       },
@@ -18851,7 +18851,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magneton/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magneton/",
           "anim": ""
         }
       },
@@ -19097,7 +19097,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/farfetch_d_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/farfetch_d_plain/",
           "anim": ""
         }
       },
@@ -19298,7 +19298,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/doduo/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/doduo/",
           "anim": ""
         }
       },
@@ -19516,7 +19516,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dodrio/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dodrio/",
           "anim": ""
         }
       },
@@ -19738,7 +19738,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/seel/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/seel/",
           "anim": ""
         }
       },
@@ -19982,7 +19982,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dewgong/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dewgong/",
           "anim": ""
         }
       },
@@ -20205,7 +20205,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/grimer_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/grimer_plain/",
           "anim": ""
         }
       },
@@ -20447,7 +20447,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/muk_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/muk_plain/",
           "anim": ""
         }
       },
@@ -20659,7 +20659,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/shellder/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/shellder/",
           "anim": ""
         }
       },
@@ -20876,7 +20876,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/cloyster/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/cloyster/",
           "anim": ""
         }
       },
@@ -21121,7 +21121,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gastly/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gastly/",
           "anim": ""
         }
       },
@@ -21380,7 +21380,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/haunter/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/haunter/",
           "anim": ""
         }
       },
@@ -21675,7 +21675,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gengar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gengar/",
           "anim": ""
         }
       },
@@ -21913,7 +21913,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/onix/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/onix/",
           "anim": ""
         }
       },
@@ -22159,7 +22159,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/drowzee/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/drowzee/",
           "anim": ""
         }
       },
@@ -22417,7 +22417,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hypno/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hypno/",
           "anim": ""
         }
       },
@@ -22645,7 +22645,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/krabby/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/krabby/",
           "anim": ""
         }
       },
@@ -22879,7 +22879,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kingler/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kingler/",
           "anim": ""
         }
       },
@@ -23079,7 +23079,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/voltorb_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/voltorb_plain/",
           "anim": ""
         }
       },
@@ -23285,7 +23285,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/electrode_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/electrode_plain/",
           "anim": ""
         }
       },
@@ -23497,7 +23497,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/exeggcute/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/exeggcute/",
           "anim": ""
         }
       },
@@ -23697,7 +23697,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/exeggutor_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/exeggutor_plain/",
           "anim": ""
         }
       },
@@ -23960,7 +23960,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/cubone/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/cubone/",
           "anim": ""
         }
       },
@@ -24240,7 +24240,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/marowak_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/marowak_plain/",
           "anim": ""
         }
       },
@@ -24475,7 +24475,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hitmonlee/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hitmonlee/",
           "anim": ""
         }
       },
@@ -24723,7 +24723,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hitmonchan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hitmonchan/",
           "anim": ""
         }
       },
@@ -24994,7 +24994,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/lickitung/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/lickitung/",
           "anim": ""
         }
       },
@@ -25195,7 +25195,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/koffing/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/koffing/",
           "anim": ""
         }
       },
@@ -25402,7 +25402,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/weezing_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/weezing_plain/",
           "anim": ""
         }
       },
@@ -25667,7 +25667,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rhyhorn/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rhyhorn/",
           "anim": ""
         }
       },
@@ -25982,7 +25982,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rhydon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rhydon/",
           "anim": ""
         }
       },
@@ -26279,7 +26279,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/chansey/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/chansey/",
           "anim": ""
         }
       },
@@ -26505,7 +26505,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tangela/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tangela/",
           "anim": ""
         }
       },
@@ -26800,7 +26800,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kangaskhan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kangaskhan/",
           "anim": ""
         }
       },
@@ -27002,7 +27002,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/horsea/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/horsea/",
           "anim": ""
         }
       },
@@ -27210,7 +27210,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/seadra/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/seadra/",
           "anim": ""
         }
       },
@@ -27417,7 +27417,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/goldeen/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/goldeen/",
           "anim": ""
         }
       },
@@ -27634,7 +27634,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/seaking/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/seaking/",
           "anim": ""
         }
       },
@@ -27859,7 +27859,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/staryu/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/staryu/",
           "anim": ""
         }
       },
@@ -28089,7 +28089,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/starmie/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/starmie/",
           "anim": ""
         }
       },
@@ -28379,7 +28379,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mr__mime_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mr__mime_plain/",
           "anim": ""
         }
       },
@@ -28619,7 +28619,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/scyther/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/scyther/",
           "anim": ""
         }
       },
@@ -28886,7 +28886,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/jynx/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/jynx/",
           "anim": ""
         }
       },
@@ -29120,7 +29120,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/electabuzz/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/electabuzz/",
           "anim": ""
         }
       },
@@ -29345,7 +29345,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magmar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magmar/",
           "anim": ""
         }
       },
@@ -29571,7 +29571,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pinsir/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pinsir/",
           "anim": ""
         }
       },
@@ -29809,7 +29809,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tauros_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tauros_plain/",
           "anim": ""
         }
       },
@@ -29862,7 +29862,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magikarp_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magikarp/",
           "anim": ""
         }
       },
@@ -30125,7 +30125,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gyarados_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gyarados_plain/",
           "anim": ""
         }
       },
@@ -30398,7 +30398,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/lapras/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/lapras/",
           "anim": ""
         }
       },
@@ -30443,7 +30443,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ditto/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ditto/",
           "anim": ""
         }
       },
@@ -30640,7 +30640,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/eevee/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/eevee/",
           "anim": ""
         }
       },
@@ -30876,7 +30876,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/vaporeon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/vaporeon/",
           "anim": ""
         }
       },
@@ -31109,7 +31109,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/jolteon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/jolteon/",
           "anim": ""
         }
       },
@@ -31330,7 +31330,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/flareon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/flareon/",
           "anim": ""
         }
       },
@@ -31539,7 +31539,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/porygon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/porygon/",
           "anim": ""
         }
       },
@@ -31769,7 +31769,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/omanyte/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/omanyte/",
           "anim": ""
         }
       },
@@ -32019,7 +32019,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/omastar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/omastar/",
           "anim": ""
         }
       },
@@ -32260,7 +32260,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kabuto/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kabuto/",
           "anim": ""
         }
       },
@@ -32540,7 +32540,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kabutops/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kabutops/",
           "anim": ""
         }
       },
@@ -32793,7 +32793,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/aerodactyl/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/aerodactyl/",
           "anim": ""
         }
       },
@@ -33085,7 +33085,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/snorlax/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/snorlax/",
           "anim": ""
         }
       },
@@ -33298,7 +33298,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/articuno_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/articuno_plain/",
           "anim": ""
         }
       },
@@ -33517,7 +33517,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/zapdos_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/zapdos_plain/",
           "anim": ""
         }
       },
@@ -33727,7 +33727,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/moltres_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/moltres_plain/",
           "anim": ""
         }
       },
@@ -33961,7 +33961,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dratini/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dratini/",
           "anim": ""
         }
       },
@@ -34198,7 +34198,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dragonair/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dragonair/",
           "anim": ""
         }
       },
@@ -34535,7 +34535,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dragonite/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dragonite/",
           "anim": ""
         }
       },
@@ -34851,7 +34851,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mewtwo_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mewtwo_plain/",
           "anim": ""
         }
       },
@@ -35289,7 +35289,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mew/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mew/",
           "anim": ""
         }
       },
@@ -35515,7 +35515,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/chikorita/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/chikorita/",
           "anim": ""
         }
       },
@@ -35747,7 +35747,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/bayleef/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/bayleef/",
           "anim": ""
         }
       },
@@ -36006,7 +36006,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/meganium/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/meganium/",
           "anim": ""
         }
       },
@@ -36230,7 +36230,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/cyndaquil/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/cyndaquil/",
           "anim": ""
         }
       },
@@ -36463,7 +36463,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/quilava/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/quilava/",
           "anim": ""
         }
       },
@@ -36747,7 +36747,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/typhlosion_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/typhlosion_plain/",
           "anim": ""
         }
       },
@@ -37008,7 +37008,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/totodile/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/totodile/",
           "anim": ""
         }
       },
@@ -37275,7 +37275,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/croconaw/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/croconaw/",
           "anim": ""
         }
       },
@@ -37579,7 +37579,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/feraligatr/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/feraligatr/",
           "anim": ""
         }
       },
@@ -37846,7 +37846,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sentret/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sentret/",
           "anim": ""
         }
       },
@@ -38142,7 +38142,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/furret/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/furret/",
           "anim": ""
         }
       },
@@ -38372,7 +38372,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hoothoot/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hoothoot/",
           "anim": ""
         }
       },
@@ -38612,7 +38612,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/noctowl/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/noctowl/",
           "anim": ""
         }
       },
@@ -38850,7 +38850,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ledyba/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ledyba/",
           "anim": ""
         }
       },
@@ -39108,7 +39108,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ledian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ledian/",
           "anim": ""
         }
       },
@@ -39343,7 +39343,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/spinarak/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/spinarak/",
           "anim": ""
         }
       },
@@ -39599,7 +39599,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ariados/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ariados/",
           "anim": ""
         }
       },
@@ -39851,7 +39851,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/crobat/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/crobat/",
           "anim": ""
         }
       },
@@ -40079,7 +40079,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/chinchou/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/chinchou/",
           "anim": ""
         }
       },
@@ -40319,7 +40319,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/lanturn/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/lanturn/",
           "anim": ""
         }
       },
@@ -40515,7 +40515,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pichu_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pichu/",
           "anim": ""
         }
       },
@@ -40731,7 +40731,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/cleffa/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/cleffa/",
           "anim": ""
         }
       },
@@ -40936,7 +40936,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/igglybuff/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/igglybuff/",
           "anim": ""
         }
       },
@@ -41186,7 +41186,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/togepi/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/togepi/",
           "anim": ""
         }
       },
@@ -41466,7 +41466,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/togetic/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/togetic/",
           "anim": ""
         }
       },
@@ -41708,7 +41708,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/natu/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/natu/",
           "anim": ""
         }
       },
@@ -41967,7 +41967,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/xatu/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/xatu/",
           "anim": ""
         }
       },
@@ -42181,7 +42181,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mareep/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mareep/",
           "anim": ""
         }
       },
@@ -42422,7 +42422,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/flaaffy/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/flaaffy/",
           "anim": ""
         }
       },
@@ -42706,7 +42706,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ampharos/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ampharos/",
           "anim": ""
         }
       },
@@ -42897,7 +42897,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/bellossom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/bellossom/",
           "anim": ""
         }
       },
@@ -43148,7 +43148,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/marill/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/marill/",
           "anim": ""
         }
       },
@@ -43411,7 +43411,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/azumarill/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/azumarill/",
           "anim": ""
         }
       },
@@ -43641,7 +43641,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sudowoodo/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sudowoodo/",
           "anim": ""
         }
       },
@@ -43870,7 +43870,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/politoed/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/politoed/",
           "anim": ""
         }
       },
@@ -44096,7 +44096,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hoppip/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hoppip/",
           "anim": ""
         }
       },
@@ -44322,7 +44322,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/skiploom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/skiploom/",
           "anim": ""
         }
       },
@@ -44557,7 +44557,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/jumpluff/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/jumpluff/",
           "anim": ""
         }
       },
@@ -44809,7 +44809,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/aipom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/aipom/",
           "anim": ""
         }
       },
@@ -44999,7 +44999,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sunkern/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sunkern/",
           "anim": ""
         }
       },
@@ -45218,7 +45218,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sunflora/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sunflora/",
           "anim": ""
         }
       },
@@ -45430,7 +45430,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/yanma/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/yanma/",
           "anim": ""
         }
       },
@@ -45666,7 +45666,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wooper_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wooper_plain/",
           "anim": ""
         }
       },
@@ -45937,7 +45937,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/quagsire/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/quagsire/",
           "anim": ""
         }
       },
@@ -46170,7 +46170,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/espeon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/espeon/",
           "anim": ""
         }
       },
@@ -46388,7 +46388,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/umbreon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/umbreon/",
           "anim": ""
         }
       },
@@ -46606,7 +46606,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/murkrow/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/murkrow/",
           "anim": ""
         }
       },
@@ -46913,7 +46913,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowking_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowking_plain/",
           "anim": ""
         }
       },
@@ -47149,7 +47149,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/misdreavus/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/misdreavus/",
           "anim": ""
         }
       },
@@ -47198,7 +47198,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/unown_a/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/unown/",
           "anim": ""
         }
       },
@@ -47296,7 +47296,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wobbuffet/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wobbuffet/",
           "anim": ""
         }
       },
@@ -47569,7 +47569,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/girafarig/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/girafarig/",
           "anim": ""
         }
       },
@@ -47785,7 +47785,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pineco/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pineco/",
           "anim": ""
         }
       },
@@ -48044,7 +48044,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/forretress/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/forretress/",
           "anim": ""
         }
       },
@@ -48354,7 +48354,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dunsparce/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dunsparce/",
           "anim": ""
         }
       },
@@ -48623,7 +48623,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gligar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gligar/",
           "anim": ""
         }
       },
@@ -48887,7 +48887,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/steelix/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/steelix/",
           "anim": ""
         }
       },
@@ -49146,7 +49146,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/snubbull/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/snubbull/",
           "anim": ""
         }
       },
@@ -49427,7 +49427,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/granbull/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/granbull/",
           "anim": ""
         }
       },
@@ -49676,7 +49676,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/qwilfish_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/qwilfish_plain/",
           "anim": ""
         }
       },
@@ -49955,7 +49955,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/scizor/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/scizor/",
           "anim": ""
         }
       },
@@ -50184,7 +50184,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/shuckle/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/shuckle/",
           "anim": ""
         }
       },
@@ -50418,7 +50418,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/heracross/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/heracross/",
           "anim": ""
         }
       },
@@ -50694,7 +50694,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sneasel_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sneasel_plain/",
           "anim": ""
         }
       },
@@ -50975,7 +50975,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/teddiursa/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/teddiursa/",
           "anim": ""
         }
       },
@@ -51275,7 +51275,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ursaring/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ursaring/",
           "anim": ""
         }
       },
@@ -51468,7 +51468,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slugma/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slugma/",
           "anim": ""
         }
       },
@@ -51700,7 +51700,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magcargo/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magcargo/",
           "anim": ""
         }
       },
@@ -51933,7 +51933,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/swinub/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/swinub/",
           "anim": ""
         }
       },
@@ -52190,7 +52190,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/piloswine/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/piloswine/",
           "anim": ""
         }
       },
@@ -52471,7 +52471,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/corsola_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/corsola_plain/",
           "anim": ""
         }
       },
@@ -52700,7 +52700,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/remoraid/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/remoraid/",
           "anim": ""
         }
       },
@@ -52965,7 +52965,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/octillery/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/octillery/",
           "anim": ""
         }
       },
@@ -53195,7 +53195,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/delibird/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/delibird/",
           "anim": ""
         }
       },
@@ -53438,7 +53438,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mantine/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mantine/",
           "anim": ""
         }
       },
@@ -53660,7 +53660,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/skarmory/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/skarmory/",
           "anim": ""
         }
       },
@@ -53894,7 +53894,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/houndour/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/houndour/",
           "anim": ""
         }
       },
@@ -54137,7 +54137,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/houndoom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/houndoom/",
           "anim": ""
         }
       },
@@ -54360,7 +54360,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kingdra/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kingdra/",
           "anim": ""
         }
       },
@@ -54578,7 +54578,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/phanpy/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/phanpy/",
           "anim": ""
         }
       },
@@ -54823,7 +54823,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/donphan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/donphan/",
           "anim": ""
         }
       },
@@ -55039,7 +55039,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/porygon2/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/porygon2/",
           "anim": ""
         }
       },
@@ -55294,7 +55294,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/stantler/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/stantler/",
           "anim": ""
         }
       },
@@ -55375,7 +55375,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/smeargle/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/smeargle/",
           "anim": ""
         }
       },
@@ -55529,7 +55529,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tyrogue/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tyrogue/",
           "anim": ""
         }
       },
@@ -55762,7 +55762,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hitmontop/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hitmontop/",
           "anim": ""
         }
       },
@@ -55985,7 +55985,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/smoochum/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/smoochum/",
           "anim": ""
         }
       },
@@ -56204,7 +56204,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/elekid/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/elekid/",
           "anim": ""
         }
       },
@@ -56417,7 +56417,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magby/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magby/",
           "anim": ""
         }
       },
@@ -56677,7 +56677,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/miltank/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/miltank/",
           "anim": ""
         }
       },
@@ -56980,7 +56980,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/blissey/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/blissey/",
           "anim": ""
         }
       },
@@ -57209,7 +57209,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/raikou/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/raikou/",
           "anim": ""
         }
       },
@@ -57438,7 +57438,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/entei/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/entei/",
           "anim": ""
         }
       },
@@ -57673,7 +57673,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/suicune/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/suicune/",
           "anim": ""
         }
       },
@@ -57896,7 +57896,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/larvitar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/larvitar/",
           "anim": ""
         }
       },
@@ -58127,7 +58127,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pupitar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pupitar/",
           "anim": ""
         }
       },
@@ -58450,7 +58450,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tyranitar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tyranitar/",
           "anim": ""
         }
       },
@@ -58736,7 +58736,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/lugia/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/lugia/",
           "anim": ""
         }
       },
@@ -58989,7 +58989,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ho_oh/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ho_oh/",
           "anim": ""
         }
       },
@@ -59230,7 +59230,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/celebi/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/celebi/",
           "anim": ""
         }
       },
@@ -59440,7 +59440,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/azurill/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/azurill/",
           "anim": ""
         }
       },
@@ -59530,7 +59530,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wynaut/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wynaut/",
           "anim": ""
         }
       },
@@ -59792,7 +59792,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ambipom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ambipom/",
           "anim": ""
         }
       },
@@ -59832,7 +59832,7 @@
         },
         "paths": {
           "sprite": "EggPic",
-          "palette": "",
+          "palette": "gfx/pokemon/egg/",
           "anim": ""
         }
       },
@@ -59872,7 +59872,7 @@
         },
         "paths": {
           "sprite": "EggPic",
-          "palette": "",
+          "palette": "gfx/pokemon/egg/",
           "anim": ""
         }
       },
@@ -60091,7 +60091,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mismagius/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mismagius/",
           "anim": ""
         }
       },
@@ -60299,7 +60299,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/honchkrow/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/honchkrow/",
           "anim": ""
         }
       },
@@ -60484,7 +60484,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/bonsly/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/bonsly/",
           "anim": ""
         }
       },
@@ -60730,7 +60730,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mime_jr_/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mime_jr_/",
           "anim": ""
         }
       },
@@ -60916,7 +60916,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/happiny/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/happiny/",
           "anim": ""
         }
       },
@@ -61189,7 +61189,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/munchlax/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/munchlax/",
           "anim": ""
         }
       },
@@ -61408,7 +61408,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mantyke/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mantyke/",
           "anim": ""
         }
       },
@@ -61690,7 +61690,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/weavile/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/weavile/",
           "anim": ""
         }
       },
@@ -61920,7 +61920,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magnezone/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magnezone/",
           "anim": ""
         }
       },
@@ -62204,7 +62204,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/lickilicky/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/lickilicky/",
           "anim": ""
         }
       },
@@ -62533,7 +62533,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rhyperior/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rhyperior/",
           "anim": ""
         }
       },
@@ -62774,7 +62774,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tangrowth/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tangrowth/",
           "anim": ""
         }
       },
@@ -63040,7 +63040,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/electivire/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/electivire/",
           "anim": ""
         }
       },
@@ -63300,7 +63300,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magmortar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magmortar/",
           "anim": ""
         }
       },
@@ -63538,7 +63538,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/togekiss/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/togekiss/",
           "anim": ""
         }
       },
@@ -63777,7 +63777,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/yanmega/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/yanmega/",
           "anim": ""
         }
       },
@@ -64010,7 +64010,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/leafeon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/leafeon/",
           "anim": ""
         }
       },
@@ -64234,7 +64234,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/glaceon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/glaceon/",
           "anim": ""
         }
       },
@@ -64512,7 +64512,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gliscor/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gliscor/",
           "anim": ""
         }
       },
@@ -64771,7 +64771,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mamoswine/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mamoswine/",
           "anim": ""
         }
       },
@@ -64998,7 +64998,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/porygon_z/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/porygon_z/",
           "anim": ""
         }
       },
@@ -65201,7 +65201,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sylveon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sylveon/",
           "anim": ""
         }
       },
@@ -65457,7 +65457,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/perrserker/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/perrserker/",
           "anim": ""
         }
       },
@@ -65731,7 +65731,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/cursola/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/cursola/",
           "anim": ""
         }
       },
@@ -65946,7 +65946,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sirfetch_d/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sirfetch_d/",
           "anim": ""
         }
       },
@@ -66258,7 +66258,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mr__rime/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mr__rime/",
           "anim": ""
         }
       },
@@ -66521,7 +66521,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wyrdeer/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wyrdeer/",
           "anim": ""
         }
       },
@@ -66766,7 +66766,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kleavor/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kleavor/",
           "anim": ""
         }
       },
@@ -67085,7 +67085,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ursaluna_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ursaluna_plain/",
           "anim": ""
         }
       },
@@ -67346,7 +67346,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sneasler/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sneasler/",
           "anim": ""
         }
       },
@@ -67582,7 +67582,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/overqwil/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/overqwil/",
           "anim": ""
         }
       },
@@ -67909,7 +67909,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dudunsparce_two_segment/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dudunsparce/",
           "anim": ""
         }
       },
@@ -68182,7 +68182,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/farigiraf/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/farigiraf/",
           "anim": ""
         }
       },
@@ -68444,7 +68444,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/clodsire/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/clodsire/",
           "anim": ""
         }
       },
@@ -68749,7 +68749,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/annihilape/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/annihilape/",
           "anim": ""
         }
       },
@@ -70188,7 +70188,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gyarados_red/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gyarados_red/",
           "anim": ""
         }
       },
@@ -70505,7 +70505,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mewtwo_armored/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mewtwo_armored/",
           "anim": ""
         }
       },
@@ -70832,7 +70832,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dudunsparce_three_segment/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dudunsparce/",
           "anim": ""
         }
       },
@@ -71051,7 +71051,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rattata_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rattata_alolan/",
           "anim": ""
         }
       },
@@ -71303,7 +71303,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/raticate_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/raticate_alolan/",
           "anim": ""
         }
       },
@@ -71534,7 +71534,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/raichu_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/raichu_alolan/",
           "anim": ""
         }
       },
@@ -71814,7 +71814,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sandshrew_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sandshrew_alolan/",
           "anim": ""
         }
       },
@@ -72082,7 +72082,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sandslash_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sandslash_alolan/",
           "anim": ""
         }
       },
@@ -72329,7 +72329,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/vulpix_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/vulpix_alolan/",
           "anim": ""
         }
       },
@@ -72542,7 +72542,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ninetales_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ninetales_alolan/",
           "anim": ""
         }
       },
@@ -72769,7 +72769,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/diglett_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/diglett_alolan/",
           "anim": ""
         }
       },
@@ -73017,7 +73017,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dugtrio_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dugtrio_alolan/",
           "anim": ""
         }
       },
@@ -73267,7 +73267,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/meowth_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/meowth_alolan/",
           "anim": ""
         }
       },
@@ -73542,7 +73542,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/persian_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/persian_alolan/",
           "anim": ""
         }
       },
@@ -73782,7 +73782,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/geodude_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/geodude_alolan/",
           "anim": ""
         }
       },
@@ -74022,7 +74022,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/graveler_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/graveler_alolan/",
           "anim": ""
         }
       },
@@ -74281,7 +74281,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/golem_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/golem_alolan/",
           "anim": ""
         }
       },
@@ -74502,7 +74502,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/grimer_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/grimer_alolan/",
           "anim": ""
         }
       },
@@ -74742,7 +74742,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/muk_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/muk_alolan/",
           "anim": ""
         }
       },
@@ -74960,7 +74960,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/exeggutor_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/exeggutor_alolan/",
           "anim": ""
         }
       },
@@ -75271,7 +75271,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/marowak_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/marowak_alolan/",
           "anim": ""
         }
       },
@@ -75498,7 +75498,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/meowth_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/meowth_galarian/",
           "anim": ""
         }
       },
@@ -75708,7 +75708,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ponyta_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ponyta_galarian/",
           "anim": ""
         }
       },
@@ -75946,7 +75946,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rapidash_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rapidash_galarian/",
           "anim": ""
         }
       },
@@ -76214,7 +76214,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowpoke_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowpoke_galarian/",
           "anim": ""
         }
       },
@@ -76533,7 +76533,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowbro_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowbro_galarian/",
           "anim": ""
         }
       },
@@ -76729,7 +76729,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/farfetch_d_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/farfetch_d_galarian/",
           "anim": ""
         }
       },
@@ -76945,7 +76945,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/weezing_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/weezing_galarian/",
           "anim": ""
         }
       },
@@ -77257,7 +77257,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mr__mime_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mr__mime_galarian/",
           "anim": ""
         }
       },
@@ -77467,7 +77467,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/articuno_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/articuno_galarian/",
           "anim": ""
         }
       },
@@ -77671,7 +77671,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/zapdos_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/zapdos_galarian/",
           "anim": ""
         }
       },
@@ -77866,7 +77866,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/moltres_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/moltres_galarian/",
           "anim": ""
         }
       },
@@ -78190,7 +78190,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowking_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowking_galarian/",
           "anim": ""
         }
       },
@@ -78451,7 +78451,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/corsola_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/corsola_galarian/",
           "anim": ""
         }
       },
@@ -78707,7 +78707,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/growlithe_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/growlithe_hisuian/",
           "anim": ""
         }
       },
@@ -78936,7 +78936,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/arcanine_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/arcanine_hisuian/",
           "anim": ""
         }
       },
@@ -79150,7 +79150,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/voltorb_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/voltorb_hisuian/",
           "anim": ""
         }
       },
@@ -79370,7 +79370,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/electrode_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/electrode_hisuian/",
           "anim": ""
         }
       },
@@ -79649,7 +79649,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/typhlosion_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/typhlosion_hisuian/",
           "anim": ""
         }
       },
@@ -79885,7 +79885,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/qwilfish_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/qwilfish_hisuian/",
           "anim": ""
         }
       },
@@ -80137,7 +80137,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sneasel_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sneasel_hisuian/",
           "anim": ""
         }
       },
@@ -80364,7 +80364,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wooper_paldean/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wooper_paldean/",
           "anim": ""
         }
       },
@@ -80551,7 +80551,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tauros_paldean/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tauros_paldean/",
           "anim": ""
         }
       },
@@ -80754,7 +80754,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tauros_paldean_fire/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tauros_paldean_fire/",
           "anim": ""
         }
       },
@@ -80963,7 +80963,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tauros_paldean_water/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tauros_paldean_water/",
           "anim": ""
         }
       },
@@ -81272,7 +81272,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ursaluna_bloodmoon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ursaluna_bloodmoon/",
           "anim": ""
         }
       }
@@ -81498,7 +81498,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/bulbasaur/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/bulbasaur/",
           "anim": ""
         }
       },
@@ -81716,7 +81716,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ivysaur/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ivysaur/",
           "anim": ""
         }
       },
@@ -81968,7 +81968,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/venusaur/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/venusaur/",
           "anim": ""
         }
       },
@@ -82207,7 +82207,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/charmander/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/charmander/",
           "anim": ""
         }
       },
@@ -82446,7 +82446,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/charmeleon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/charmeleon/",
           "anim": ""
         }
       },
@@ -82755,7 +82755,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/charizard/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/charizard/",
           "anim": ""
         }
       },
@@ -82996,7 +82996,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/squirtle/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/squirtle/",
           "anim": ""
         }
       },
@@ -83237,7 +83237,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wartortle/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wartortle/",
           "anim": ""
         }
       },
@@ -83534,7 +83534,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/blastoise/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/blastoise/",
           "anim": ""
         }
       },
@@ -83587,7 +83587,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/caterpie/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/caterpie/",
           "anim": ""
         }
       },
@@ -83644,7 +83644,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/metapod/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/metapod/",
           "anim": ""
         }
       },
@@ -83867,7 +83867,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/butterfree/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/butterfree/",
           "anim": ""
         }
       },
@@ -83921,7 +83921,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/weedle/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/weedle/",
           "anim": ""
         }
       },
@@ -83979,7 +83979,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kakuna/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kakuna/",
           "anim": ""
         }
       },
@@ -84200,7 +84200,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/beedrill/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/beedrill/",
           "anim": ""
         }
       },
@@ -84402,7 +84402,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pidgey/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pidgey/",
           "anim": ""
         }
       },
@@ -84604,7 +84604,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pidgeotto/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pidgeotto/",
           "anim": ""
         }
       },
@@ -84812,7 +84812,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pidgeot/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pidgeot/",
           "anim": ""
         }
       },
@@ -85033,7 +85033,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rattata_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rattata_plain/",
           "anim": ""
         }
       },
@@ -85281,7 +85281,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/raticate_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/raticate_plain/",
           "anim": ""
         }
       },
@@ -85466,7 +85466,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/spearow/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/spearow/",
           "anim": ""
         }
       },
@@ -85665,7 +85665,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/fearow/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/fearow/",
           "anim": ""
         }
       },
@@ -85882,7 +85882,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ekans/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ekans/",
           "anim": ""
         }
       },
@@ -86113,7 +86113,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/arbok_johto/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/arbok/",
           "anim": ""
         }
       },
@@ -86369,7 +86369,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pikachu_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pikachu/",
           "anim": ""
         }
       },
@@ -86589,7 +86589,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/raichu_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/raichu_plain/",
           "anim": ""
         }
       },
@@ -86847,7 +86847,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sandshrew_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sandshrew_plain/",
           "anim": ""
         }
       },
@@ -87125,7 +87125,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sandslash_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sandslash_plain/",
           "anim": ""
         }
       },
@@ -87355,7 +87355,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidoran_f/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidoran_f/",
           "anim": ""
         }
       },
@@ -87585,7 +87585,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidorina/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidorina/",
           "anim": ""
         }
       },
@@ -87872,7 +87872,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidoqueen/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidoqueen/",
           "anim": ""
         }
       },
@@ -88099,7 +88099,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidoran_m/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidoran_m/",
           "anim": ""
         }
       },
@@ -88326,7 +88326,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidorino/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidorino/",
           "anim": ""
         }
       },
@@ -88610,7 +88610,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/nidoking/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/nidoking/",
           "anim": ""
         }
       },
@@ -88923,7 +88923,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/clefairy/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/clefairy/",
           "anim": ""
         }
       },
@@ -89189,7 +89189,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/clefable/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/clefable/",
           "anim": ""
         }
       },
@@ -89445,7 +89445,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/vulpix_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/vulpix_plain/",
           "anim": ""
         }
       },
@@ -89656,7 +89656,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ninetales_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ninetales_plain/",
           "anim": ""
         }
       },
@@ -89942,7 +89942,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/jigglypuff/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/jigglypuff/",
           "anim": ""
         }
       },
@@ -90201,7 +90201,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wigglytuff/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wigglytuff/",
           "anim": ""
         }
       },
@@ -90425,7 +90425,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/zubat/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/zubat/",
           "anim": ""
         }
       },
@@ -90663,7 +90663,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/golbat/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/golbat/",
           "anim": ""
         }
       },
@@ -90864,7 +90864,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/oddish/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/oddish/",
           "anim": ""
         }
       },
@@ -91064,7 +91064,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gloom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gloom/",
           "anim": ""
         }
       },
@@ -91251,7 +91251,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/vileplume/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/vileplume/",
           "anim": ""
         }
       },
@@ -91476,7 +91476,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/paras/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/paras/",
           "anim": ""
         }
       },
@@ -91721,7 +91721,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/parasect/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/parasect/",
           "anim": ""
         }
       },
@@ -91920,7 +91920,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/venonat/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/venonat/",
           "anim": ""
         }
       },
@@ -92159,7 +92159,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/venomoth/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/venomoth/",
           "anim": ""
         }
       },
@@ -92379,7 +92379,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/diglett_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/diglett_plain/",
           "anim": ""
         }
       },
@@ -92620,7 +92620,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dugtrio_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dugtrio_plain/",
           "anim": ""
         }
       },
@@ -92866,7 +92866,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/meowth_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/meowth_plain/",
           "anim": ""
         }
       },
@@ -93137,7 +93137,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/persian_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/persian_plain/",
           "anim": ""
         }
       },
@@ -93409,7 +93409,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/psyduck/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/psyduck/",
           "anim": ""
         }
       },
@@ -93697,7 +93697,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/golduck/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/golduck/",
           "anim": ""
         }
       },
@@ -93970,7 +93970,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mankey/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mankey/",
           "anim": ""
         }
       },
@@ -94264,7 +94264,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/primeape/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/primeape/",
           "anim": ""
         }
       },
@@ -94513,7 +94513,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/growlithe_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/growlithe_plain/",
           "anim": ""
         }
       },
@@ -94735,7 +94735,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/arcanine_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/arcanine_plain/",
           "anim": ""
         }
       },
@@ -94942,7 +94942,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/poliwag/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/poliwag/",
           "anim": ""
         }
       },
@@ -95170,7 +95170,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/poliwhirl/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/poliwhirl/",
           "anim": ""
         }
       },
@@ -95402,7 +95402,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/poliwrath/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/poliwrath/",
           "anim": ""
         }
       },
@@ -95593,7 +95593,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/abra/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/abra/",
           "anim": ""
         }
       },
@@ -95847,7 +95847,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kadabra/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kadabra/",
           "anim": ""
         }
       },
@@ -96114,7 +96114,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/alakazam/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/alakazam/",
           "anim": ""
         }
       },
@@ -96363,7 +96363,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/machop/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/machop/",
           "anim": ""
         }
       },
@@ -96612,7 +96612,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/machoke/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/machoke/",
           "anim": ""
         }
       },
@@ -96882,7 +96882,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/machamp/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/machamp/",
           "anim": ""
         }
       },
@@ -97090,7 +97090,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/bellsprout/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/bellsprout/",
           "anim": ""
         }
       },
@@ -97298,7 +97298,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/weepinbell/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/weepinbell/",
           "anim": ""
         }
       },
@@ -97486,7 +97486,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/victreebel/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/victreebel/",
           "anim": ""
         }
       },
@@ -97720,7 +97720,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tentacool/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tentacool/",
           "anim": ""
         }
       },
@@ -97968,7 +97968,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tentacruel/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tentacruel/",
           "anim": ""
         }
       },
@@ -98193,7 +98193,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/geodude_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/geodude_plain/",
           "anim": ""
         }
       },
@@ -98418,7 +98418,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/graveler_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/graveler_plain/",
           "anim": ""
         }
       },
@@ -98662,7 +98662,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/golem_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/golem_plain/",
           "anim": ""
         }
       },
@@ -98875,7 +98875,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ponyta_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ponyta_plain/",
           "anim": ""
         }
       },
@@ -99119,7 +99119,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rapidash_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rapidash_plain/",
           "anim": ""
         }
       },
@@ -99388,7 +99388,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowpoke_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowpoke_plain/",
           "anim": ""
         }
       },
@@ -99698,7 +99698,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowbro_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowbro_plain/",
           "anim": ""
         }
       },
@@ -99903,7 +99903,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magnemite/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magnemite/",
           "anim": ""
         }
       },
@@ -100122,7 +100122,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magneton/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magneton/",
           "anim": ""
         }
       },
@@ -100368,7 +100368,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/farfetch_d_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/farfetch_d_plain/",
           "anim": ""
         }
       },
@@ -100569,7 +100569,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/doduo/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/doduo/",
           "anim": ""
         }
       },
@@ -100787,7 +100787,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dodrio/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dodrio/",
           "anim": ""
         }
       },
@@ -101009,7 +101009,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/seel/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/seel/",
           "anim": ""
         }
       },
@@ -101253,7 +101253,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dewgong/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dewgong/",
           "anim": ""
         }
       },
@@ -101476,7 +101476,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/grimer_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/grimer_plain/",
           "anim": ""
         }
       },
@@ -101718,7 +101718,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/muk_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/muk_plain/",
           "anim": ""
         }
       },
@@ -101930,7 +101930,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/shellder/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/shellder/",
           "anim": ""
         }
       },
@@ -102147,7 +102147,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/cloyster/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/cloyster/",
           "anim": ""
         }
       },
@@ -102392,7 +102392,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gastly/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gastly/",
           "anim": ""
         }
       },
@@ -102651,7 +102651,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/haunter/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/haunter/",
           "anim": ""
         }
       },
@@ -102946,7 +102946,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gengar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gengar/",
           "anim": ""
         }
       },
@@ -103184,7 +103184,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/onix/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/onix/",
           "anim": ""
         }
       },
@@ -103430,7 +103430,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/drowzee/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/drowzee/",
           "anim": ""
         }
       },
@@ -103688,7 +103688,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hypno/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hypno/",
           "anim": ""
         }
       },
@@ -103916,7 +103916,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/krabby/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/krabby/",
           "anim": ""
         }
       },
@@ -104150,7 +104150,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kingler/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kingler/",
           "anim": ""
         }
       },
@@ -104350,7 +104350,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/voltorb_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/voltorb_plain/",
           "anim": ""
         }
       },
@@ -104556,7 +104556,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/electrode_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/electrode_plain/",
           "anim": ""
         }
       },
@@ -104768,7 +104768,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/exeggcute/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/exeggcute/",
           "anim": ""
         }
       },
@@ -104968,7 +104968,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/exeggutor_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/exeggutor_plain/",
           "anim": ""
         }
       },
@@ -105231,7 +105231,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/cubone/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/cubone/",
           "anim": ""
         }
       },
@@ -105511,7 +105511,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/marowak_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/marowak_plain/",
           "anim": ""
         }
       },
@@ -105746,7 +105746,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hitmonlee/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hitmonlee/",
           "anim": ""
         }
       },
@@ -105994,7 +105994,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hitmonchan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hitmonchan/",
           "anim": ""
         }
       },
@@ -106265,7 +106265,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/lickitung/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/lickitung/",
           "anim": ""
         }
       },
@@ -106466,7 +106466,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/koffing/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/koffing/",
           "anim": ""
         }
       },
@@ -106673,7 +106673,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/weezing_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/weezing_plain/",
           "anim": ""
         }
       },
@@ -106938,7 +106938,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rhyhorn/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rhyhorn/",
           "anim": ""
         }
       },
@@ -107253,7 +107253,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rhydon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rhydon/",
           "anim": ""
         }
       },
@@ -107550,7 +107550,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/chansey/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/chansey/",
           "anim": ""
         }
       },
@@ -107776,7 +107776,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tangela/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tangela/",
           "anim": ""
         }
       },
@@ -108071,7 +108071,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kangaskhan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kangaskhan/",
           "anim": ""
         }
       },
@@ -108273,7 +108273,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/horsea/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/horsea/",
           "anim": ""
         }
       },
@@ -108481,7 +108481,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/seadra/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/seadra/",
           "anim": ""
         }
       },
@@ -108688,7 +108688,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/goldeen/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/goldeen/",
           "anim": ""
         }
       },
@@ -108905,7 +108905,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/seaking/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/seaking/",
           "anim": ""
         }
       },
@@ -109130,7 +109130,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/staryu/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/staryu/",
           "anim": ""
         }
       },
@@ -109360,7 +109360,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/starmie/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/starmie/",
           "anim": ""
         }
       },
@@ -109650,7 +109650,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mr__mime_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mr__mime_plain/",
           "anim": ""
         }
       },
@@ -109890,7 +109890,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/scyther/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/scyther/",
           "anim": ""
         }
       },
@@ -110157,7 +110157,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/jynx/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/jynx/",
           "anim": ""
         }
       },
@@ -110391,7 +110391,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/electabuzz/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/electabuzz/",
           "anim": ""
         }
       },
@@ -110616,7 +110616,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magmar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magmar/",
           "anim": ""
         }
       },
@@ -110842,7 +110842,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pinsir/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pinsir/",
           "anim": ""
         }
       },
@@ -111080,7 +111080,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tauros_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tauros_plain/",
           "anim": ""
         }
       },
@@ -111133,7 +111133,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magikarp_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magikarp/",
           "anim": ""
         }
       },
@@ -111396,7 +111396,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gyarados_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gyarados_plain/",
           "anim": ""
         }
       },
@@ -111669,7 +111669,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/lapras/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/lapras/",
           "anim": ""
         }
       },
@@ -111714,7 +111714,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ditto/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ditto/",
           "anim": ""
         }
       },
@@ -111911,7 +111911,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/eevee/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/eevee/",
           "anim": ""
         }
       },
@@ -112147,7 +112147,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/vaporeon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/vaporeon/",
           "anim": ""
         }
       },
@@ -112380,7 +112380,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/jolteon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/jolteon/",
           "anim": ""
         }
       },
@@ -112601,7 +112601,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/flareon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/flareon/",
           "anim": ""
         }
       },
@@ -112810,7 +112810,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/porygon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/porygon/",
           "anim": ""
         }
       },
@@ -113040,7 +113040,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/omanyte/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/omanyte/",
           "anim": ""
         }
       },
@@ -113290,7 +113290,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/omastar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/omastar/",
           "anim": ""
         }
       },
@@ -113531,7 +113531,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kabuto/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kabuto/",
           "anim": ""
         }
       },
@@ -113811,7 +113811,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kabutops/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kabutops/",
           "anim": ""
         }
       },
@@ -114064,7 +114064,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/aerodactyl/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/aerodactyl/",
           "anim": ""
         }
       },
@@ -114356,7 +114356,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/snorlax/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/snorlax/",
           "anim": ""
         }
       },
@@ -114569,7 +114569,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/articuno_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/articuno_plain/",
           "anim": ""
         }
       },
@@ -114788,7 +114788,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/zapdos_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/zapdos_plain/",
           "anim": ""
         }
       },
@@ -114998,7 +114998,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/moltres_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/moltres_plain/",
           "anim": ""
         }
       },
@@ -115232,7 +115232,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dratini/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dratini/",
           "anim": ""
         }
       },
@@ -115469,7 +115469,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dragonair/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dragonair/",
           "anim": ""
         }
       },
@@ -115806,7 +115806,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dragonite/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dragonite/",
           "anim": ""
         }
       },
@@ -116122,7 +116122,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mewtwo_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mewtwo_plain/",
           "anim": ""
         }
       },
@@ -116560,7 +116560,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mew/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mew/",
           "anim": ""
         }
       },
@@ -116786,7 +116786,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/chikorita/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/chikorita/",
           "anim": ""
         }
       },
@@ -117018,7 +117018,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/bayleef/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/bayleef/",
           "anim": ""
         }
       },
@@ -117276,7 +117276,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/meganium/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/meganium/",
           "anim": ""
         }
       },
@@ -117500,7 +117500,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/cyndaquil/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/cyndaquil/",
           "anim": ""
         }
       },
@@ -117733,7 +117733,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/quilava/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/quilava/",
           "anim": ""
         }
       },
@@ -118016,7 +118016,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/typhlosion_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/typhlosion_plain/",
           "anim": ""
         }
       },
@@ -118277,7 +118277,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/totodile/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/totodile/",
           "anim": ""
         }
       },
@@ -118544,7 +118544,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/croconaw/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/croconaw/",
           "anim": ""
         }
       },
@@ -118847,7 +118847,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/feraligatr/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/feraligatr/",
           "anim": ""
         }
       },
@@ -119114,7 +119114,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sentret/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sentret/",
           "anim": ""
         }
       },
@@ -119410,7 +119410,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/furret/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/furret/",
           "anim": ""
         }
       },
@@ -119640,7 +119640,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hoothoot/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hoothoot/",
           "anim": ""
         }
       },
@@ -119880,7 +119880,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/noctowl/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/noctowl/",
           "anim": ""
         }
       },
@@ -120118,7 +120118,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ledyba/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ledyba/",
           "anim": ""
         }
       },
@@ -120376,7 +120376,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ledian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ledian/",
           "anim": ""
         }
       },
@@ -120611,7 +120611,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/spinarak/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/spinarak/",
           "anim": ""
         }
       },
@@ -120867,7 +120867,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ariados/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ariados/",
           "anim": ""
         }
       },
@@ -121119,7 +121119,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/crobat/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/crobat/",
           "anim": ""
         }
       },
@@ -121347,7 +121347,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/chinchou/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/chinchou/",
           "anim": ""
         }
       },
@@ -121587,7 +121587,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/lanturn/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/lanturn/",
           "anim": ""
         }
       },
@@ -121783,7 +121783,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pichu_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pichu/",
           "anim": ""
         }
       },
@@ -121999,7 +121999,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/cleffa/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/cleffa/",
           "anim": ""
         }
       },
@@ -122204,7 +122204,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/igglybuff/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/igglybuff/",
           "anim": ""
         }
       },
@@ -122454,7 +122454,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/togepi/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/togepi/",
           "anim": ""
         }
       },
@@ -122734,7 +122734,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/togetic/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/togetic/",
           "anim": ""
         }
       },
@@ -122976,7 +122976,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/natu/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/natu/",
           "anim": ""
         }
       },
@@ -123235,7 +123235,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/xatu/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/xatu/",
           "anim": ""
         }
       },
@@ -123449,7 +123449,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mareep/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mareep/",
           "anim": ""
         }
       },
@@ -123690,7 +123690,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/flaaffy/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/flaaffy/",
           "anim": ""
         }
       },
@@ -123973,7 +123973,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ampharos/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ampharos/",
           "anim": ""
         }
       },
@@ -124163,7 +124163,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/bellossom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/bellossom/",
           "anim": ""
         }
       },
@@ -124414,7 +124414,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/marill/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/marill/",
           "anim": ""
         }
       },
@@ -124677,7 +124677,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/azumarill/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/azumarill/",
           "anim": ""
         }
       },
@@ -124907,7 +124907,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sudowoodo/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sudowoodo/",
           "anim": ""
         }
       },
@@ -125135,7 +125135,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/politoed/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/politoed/",
           "anim": ""
         }
       },
@@ -125361,7 +125361,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hoppip/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hoppip/",
           "anim": ""
         }
       },
@@ -125587,7 +125587,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/skiploom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/skiploom/",
           "anim": ""
         }
       },
@@ -125822,7 +125822,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/jumpluff/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/jumpluff/",
           "anim": ""
         }
       },
@@ -126074,7 +126074,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/aipom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/aipom/",
           "anim": ""
         }
       },
@@ -126264,7 +126264,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sunkern/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sunkern/",
           "anim": ""
         }
       },
@@ -126470,7 +126470,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sunflora/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sunflora/",
           "anim": ""
         }
       },
@@ -126682,7 +126682,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/yanma/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/yanma/",
           "anim": ""
         }
       },
@@ -126918,7 +126918,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wooper_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wooper_plain/",
           "anim": ""
         }
       },
@@ -127189,7 +127189,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/quagsire/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/quagsire/",
           "anim": ""
         }
       },
@@ -127422,7 +127422,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/espeon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/espeon/",
           "anim": ""
         }
       },
@@ -127640,7 +127640,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/umbreon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/umbreon/",
           "anim": ""
         }
       },
@@ -127858,7 +127858,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/murkrow/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/murkrow/",
           "anim": ""
         }
       },
@@ -128165,7 +128165,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowking_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowking_plain/",
           "anim": ""
         }
       },
@@ -128401,7 +128401,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/misdreavus/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/misdreavus/",
           "anim": ""
         }
       },
@@ -128450,7 +128450,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/unown_a/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/unown/",
           "anim": ""
         }
       },
@@ -128548,7 +128548,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wobbuffet/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wobbuffet/",
           "anim": ""
         }
       },
@@ -128817,7 +128817,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/girafarig/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/girafarig/",
           "anim": ""
         }
       },
@@ -129033,7 +129033,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pineco/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pineco/",
           "anim": ""
         }
       },
@@ -129292,7 +129292,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/forretress/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/forretress/",
           "anim": ""
         }
       },
@@ -129601,7 +129601,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dunsparce/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dunsparce/",
           "anim": ""
         }
       },
@@ -129870,7 +129870,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gligar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gligar/",
           "anim": ""
         }
       },
@@ -130134,7 +130134,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/steelix/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/steelix/",
           "anim": ""
         }
       },
@@ -130393,7 +130393,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/snubbull/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/snubbull/",
           "anim": ""
         }
       },
@@ -130674,7 +130674,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/granbull/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/granbull/",
           "anim": ""
         }
       },
@@ -130923,7 +130923,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/qwilfish_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/qwilfish_plain/",
           "anim": ""
         }
       },
@@ -131202,7 +131202,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/scizor/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/scizor/",
           "anim": ""
         }
       },
@@ -131431,7 +131431,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/shuckle/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/shuckle/",
           "anim": ""
         }
       },
@@ -131665,7 +131665,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/heracross/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/heracross/",
           "anim": ""
         }
       },
@@ -131941,7 +131941,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sneasel_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sneasel_plain/",
           "anim": ""
         }
       },
@@ -132222,7 +132222,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/teddiursa/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/teddiursa/",
           "anim": ""
         }
       },
@@ -132522,7 +132522,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ursaring/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ursaring/",
           "anim": ""
         }
       },
@@ -132715,7 +132715,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slugma/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slugma/",
           "anim": ""
         }
       },
@@ -132947,7 +132947,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magcargo/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magcargo/",
           "anim": ""
         }
       },
@@ -133180,7 +133180,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/swinub/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/swinub/",
           "anim": ""
         }
       },
@@ -133437,7 +133437,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/piloswine/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/piloswine/",
           "anim": ""
         }
       },
@@ -133718,7 +133718,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/corsola_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/corsola_plain/",
           "anim": ""
         }
       },
@@ -133947,7 +133947,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/remoraid/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/remoraid/",
           "anim": ""
         }
       },
@@ -134207,7 +134207,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/octillery/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/octillery/",
           "anim": ""
         }
       },
@@ -134437,7 +134437,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/delibird/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/delibird/",
           "anim": ""
         }
       },
@@ -134680,7 +134680,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mantine/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mantine/",
           "anim": ""
         }
       },
@@ -134902,7 +134902,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/skarmory/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/skarmory/",
           "anim": ""
         }
       },
@@ -135136,7 +135136,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/houndour/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/houndour/",
           "anim": ""
         }
       },
@@ -135379,7 +135379,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/houndoom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/houndoom/",
           "anim": ""
         }
       },
@@ -135602,7 +135602,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kingdra/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kingdra/",
           "anim": ""
         }
       },
@@ -135820,7 +135820,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/phanpy/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/phanpy/",
           "anim": ""
         }
       },
@@ -136065,7 +136065,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/donphan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/donphan/",
           "anim": ""
         }
       },
@@ -136281,7 +136281,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/porygon2/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/porygon2/",
           "anim": ""
         }
       },
@@ -136535,7 +136535,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/stantler/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/stantler/",
           "anim": ""
         }
       },
@@ -136616,7 +136616,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/smeargle/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/smeargle/",
           "anim": ""
         }
       },
@@ -136770,7 +136770,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tyrogue/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tyrogue/",
           "anim": ""
         }
       },
@@ -137003,7 +137003,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/hitmontop/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/hitmontop/",
           "anim": ""
         }
       },
@@ -137226,7 +137226,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/smoochum/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/smoochum/",
           "anim": ""
         }
       },
@@ -137445,7 +137445,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/elekid/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/elekid/",
           "anim": ""
         }
       },
@@ -137658,7 +137658,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magby/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magby/",
           "anim": ""
         }
       },
@@ -137918,7 +137918,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/miltank/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/miltank/",
           "anim": ""
         }
       },
@@ -138221,7 +138221,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/blissey/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/blissey/",
           "anim": ""
         }
       },
@@ -138450,7 +138450,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/raikou/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/raikou/",
           "anim": ""
         }
       },
@@ -138679,7 +138679,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/entei/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/entei/",
           "anim": ""
         }
       },
@@ -138914,7 +138914,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/suicune/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/suicune/",
           "anim": ""
         }
       },
@@ -139137,7 +139137,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/larvitar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/larvitar/",
           "anim": ""
         }
       },
@@ -139368,7 +139368,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/pupitar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/pupitar/",
           "anim": ""
         }
       },
@@ -139691,7 +139691,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tyranitar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tyranitar/",
           "anim": ""
         }
       },
@@ -139977,7 +139977,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/lugia/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/lugia/",
           "anim": ""
         }
       },
@@ -140230,7 +140230,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ho_oh/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ho_oh/",
           "anim": ""
         }
       },
@@ -140471,7 +140471,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/celebi/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/celebi/",
           "anim": ""
         }
       },
@@ -140681,7 +140681,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/azurill/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/azurill/",
           "anim": ""
         }
       },
@@ -140771,7 +140771,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wynaut/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wynaut/",
           "anim": ""
         }
       },
@@ -141033,7 +141033,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ambipom/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ambipom/",
           "anim": ""
         }
       },
@@ -141073,7 +141073,7 @@
         },
         "paths": {
           "sprite": "EggPic",
-          "palette": "",
+          "palette": "gfx/pokemon/egg/",
           "anim": ""
         }
       },
@@ -141113,7 +141113,7 @@
         },
         "paths": {
           "sprite": "EggPic",
-          "palette": "",
+          "palette": "gfx/pokemon/egg/",
           "anim": ""
         }
       },
@@ -141331,7 +141331,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mismagius/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mismagius/",
           "anim": ""
         }
       },
@@ -141539,7 +141539,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/honchkrow/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/honchkrow/",
           "anim": ""
         }
       },
@@ -141724,7 +141724,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/bonsly/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/bonsly/",
           "anim": ""
         }
       },
@@ -141970,7 +141970,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mime_jr_/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mime_jr_/",
           "anim": ""
         }
       },
@@ -142156,7 +142156,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/happiny/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/happiny/",
           "anim": ""
         }
       },
@@ -142429,7 +142429,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/munchlax/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/munchlax/",
           "anim": ""
         }
       },
@@ -142648,7 +142648,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mantyke/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mantyke/",
           "anim": ""
         }
       },
@@ -142930,7 +142930,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/weavile/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/weavile/",
           "anim": ""
         }
       },
@@ -143160,7 +143160,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magnezone/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magnezone/",
           "anim": ""
         }
       },
@@ -143444,7 +143444,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/lickilicky/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/lickilicky/",
           "anim": ""
         }
       },
@@ -143773,7 +143773,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rhyperior/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rhyperior/",
           "anim": ""
         }
       },
@@ -144014,7 +144014,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tangrowth/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tangrowth/",
           "anim": ""
         }
       },
@@ -144279,7 +144279,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/electivire/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/electivire/",
           "anim": ""
         }
       },
@@ -144538,7 +144538,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/magmortar/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/magmortar/",
           "anim": ""
         }
       },
@@ -144776,7 +144776,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/togekiss/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/togekiss/",
           "anim": ""
         }
       },
@@ -145015,7 +145015,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/yanmega/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/yanmega/",
           "anim": ""
         }
       },
@@ -145248,7 +145248,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/leafeon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/leafeon/",
           "anim": ""
         }
       },
@@ -145472,7 +145472,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/glaceon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/glaceon/",
           "anim": ""
         }
       },
@@ -145750,7 +145750,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gliscor/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gliscor/",
           "anim": ""
         }
       },
@@ -146009,7 +146009,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mamoswine/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mamoswine/",
           "anim": ""
         }
       },
@@ -146236,7 +146236,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/porygon_z/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/porygon_z/",
           "anim": ""
         }
       },
@@ -146439,7 +146439,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sylveon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sylveon/",
           "anim": ""
         }
       },
@@ -146695,7 +146695,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/perrserker/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/perrserker/",
           "anim": ""
         }
       },
@@ -146968,7 +146968,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/cursola/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/cursola/",
           "anim": ""
         }
       },
@@ -147183,7 +147183,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sirfetch_d/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sirfetch_d/",
           "anim": ""
         }
       },
@@ -147495,7 +147495,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mr__rime/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mr__rime/",
           "anim": ""
         }
       },
@@ -147758,7 +147758,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wyrdeer/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wyrdeer/",
           "anim": ""
         }
       },
@@ -148003,7 +148003,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/kleavor/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/kleavor/",
           "anim": ""
         }
       },
@@ -148322,7 +148322,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ursaluna_plain/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ursaluna_plain/",
           "anim": ""
         }
       },
@@ -148583,7 +148583,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sneasler/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sneasler/",
           "anim": ""
         }
       },
@@ -148819,7 +148819,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/overqwil/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/overqwil/",
           "anim": ""
         }
       },
@@ -149145,7 +149145,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dudunsparce_two_segment/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dudunsparce/",
           "anim": ""
         }
       },
@@ -149414,7 +149414,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/farigiraf/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/farigiraf/",
           "anim": ""
         }
       },
@@ -149676,7 +149676,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/clodsire/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/clodsire/",
           "anim": ""
         }
       },
@@ -149981,7 +149981,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/annihilape/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/annihilape/",
           "anim": ""
         }
       },
@@ -151420,7 +151420,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/gyarados_red/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/gyarados_red/",
           "anim": ""
         }
       },
@@ -151736,7 +151736,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mewtwo_armored/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mewtwo_armored/",
           "anim": ""
         }
       },
@@ -152062,7 +152062,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dudunsparce_three_segment/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dudunsparce/",
           "anim": ""
         }
       },
@@ -152281,7 +152281,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rattata_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rattata_alolan/",
           "anim": ""
         }
       },
@@ -152533,7 +152533,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/raticate_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/raticate_alolan/",
           "anim": ""
         }
       },
@@ -152764,7 +152764,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/raichu_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/raichu_alolan/",
           "anim": ""
         }
       },
@@ -153044,7 +153044,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sandshrew_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sandshrew_alolan/",
           "anim": ""
         }
       },
@@ -153312,7 +153312,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sandslash_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sandslash_alolan/",
           "anim": ""
         }
       },
@@ -153559,7 +153559,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/vulpix_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/vulpix_alolan/",
           "anim": ""
         }
       },
@@ -153772,7 +153772,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ninetales_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ninetales_alolan/",
           "anim": ""
         }
       },
@@ -153999,7 +153999,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/diglett_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/diglett_alolan/",
           "anim": ""
         }
       },
@@ -154247,7 +154247,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/dugtrio_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/dugtrio_alolan/",
           "anim": ""
         }
       },
@@ -154497,7 +154497,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/meowth_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/meowth_alolan/",
           "anim": ""
         }
       },
@@ -154772,7 +154772,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/persian_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/persian_alolan/",
           "anim": ""
         }
       },
@@ -155012,7 +155012,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/geodude_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/geodude_alolan/",
           "anim": ""
         }
       },
@@ -155252,7 +155252,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/graveler_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/graveler_alolan/",
           "anim": ""
         }
       },
@@ -155511,7 +155511,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/golem_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/golem_alolan/",
           "anim": ""
         }
       },
@@ -155732,7 +155732,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/grimer_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/grimer_alolan/",
           "anim": ""
         }
       },
@@ -155972,7 +155972,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/muk_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/muk_alolan/",
           "anim": ""
         }
       },
@@ -156190,7 +156190,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/exeggutor_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/exeggutor_alolan/",
           "anim": ""
         }
       },
@@ -156501,7 +156501,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/marowak_alolan/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/marowak_alolan/",
           "anim": ""
         }
       },
@@ -156728,7 +156728,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/meowth_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/meowth_galarian/",
           "anim": ""
         }
       },
@@ -156938,7 +156938,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ponyta_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ponyta_galarian/",
           "anim": ""
         }
       },
@@ -157176,7 +157176,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/rapidash_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/rapidash_galarian/",
           "anim": ""
         }
       },
@@ -157444,7 +157444,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowpoke_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowpoke_galarian/",
           "anim": ""
         }
       },
@@ -157763,7 +157763,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowbro_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowbro_galarian/",
           "anim": ""
         }
       },
@@ -157959,7 +157959,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/farfetch_d_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/farfetch_d_galarian/",
           "anim": ""
         }
       },
@@ -158175,7 +158175,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/weezing_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/weezing_galarian/",
           "anim": ""
         }
       },
@@ -158487,7 +158487,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/mr__mime_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/mr__mime_galarian/",
           "anim": ""
         }
       },
@@ -158697,7 +158697,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/articuno_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/articuno_galarian/",
           "anim": ""
         }
       },
@@ -158901,7 +158901,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/zapdos_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/zapdos_galarian/",
           "anim": ""
         }
       },
@@ -159096,7 +159096,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/moltres_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/moltres_galarian/",
           "anim": ""
         }
       },
@@ -159420,7 +159420,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/slowking_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/slowking_galarian/",
           "anim": ""
         }
       },
@@ -159680,7 +159680,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/corsola_galarian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/corsola_galarian/",
           "anim": ""
         }
       },
@@ -159936,7 +159936,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/growlithe_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/growlithe_hisuian/",
           "anim": ""
         }
       },
@@ -160165,7 +160165,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/arcanine_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/arcanine_hisuian/",
           "anim": ""
         }
       },
@@ -160379,7 +160379,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/voltorb_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/voltorb_hisuian/",
           "anim": ""
         }
       },
@@ -160599,7 +160599,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/electrode_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/electrode_hisuian/",
           "anim": ""
         }
       },
@@ -160878,7 +160878,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/typhlosion_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/typhlosion_hisuian/",
           "anim": ""
         }
       },
@@ -161114,7 +161114,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/qwilfish_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/qwilfish_hisuian/",
           "anim": ""
         }
       },
@@ -161366,7 +161366,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/sneasel_hisuian/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/sneasel_hisuian/",
           "anim": ""
         }
       },
@@ -161593,7 +161593,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/wooper_paldean/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/wooper_paldean/",
           "anim": ""
         }
       },
@@ -161780,7 +161780,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tauros_paldean/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tauros_paldean/",
           "anim": ""
         }
       },
@@ -161983,7 +161983,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tauros_paldean_fire/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tauros_paldean_fire/",
           "anim": ""
         }
       },
@@ -162192,7 +162192,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/tauros_paldean_water/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/tauros_paldean_water/",
           "anim": ""
         }
       },
@@ -162501,7 +162501,7 @@
         },
         "paths": {
           "sprite": "gfx/pokemon/ursaluna_bloodmoon/front.png",
-          "palette": "",
+          "palette": "gfx/pokemon/ursaluna_bloodmoon/",
           "anim": ""
         }
       }

@@ -140,6 +140,21 @@ function extractSpritePaths(mons: MonList, PNG_PTRS: string[], PNG_PATHS: string
   return mons
 }
 
+function extractPalPaths(mons: MonList, PAL_PATHS: string[]): MonList {
+  let index = 1;
+  for (let lineNo = 0; lineNo < PAL_PATHS.length; lineNo++) {
+    if (index === mons.constants.num_species + 1) {
+      index += mons.constants.num_cosmetics
+    }
+    if (!PAL_PATHS[lineNo].startsWith('INCLUDE')) continue;
+    const mon = mons.contents.find(m => m.index === index)!
+    mon.paths.palette = PAL_PATHS[lineNo].split('"').at(1)!.replace('normal.pal', '')
+    lineNo++;
+    index++;
+  }
+  return mons
+}
+
 function extractForms(forms: Record<string, Base[]>, IDS: string[], FORMS: string[]): Record<string, Base[]> {
   const formNums: Record<string, number> = {}
   let num_magikarp = -1;
@@ -209,6 +224,7 @@ const EGG_MOVES = splitRead('data/pokemon/egg_moves.asm')
 const EVO_MOVES = splitRead('data/pokemon/evolution_moves.asm')
 const PNG_PTRS = splitRead('data/pokemon/pic_pointers.asm')
 const PNG_PATHS = splitRead('gfx/pokemon.asm')
+const PAL_PATHS = splitRead('data/pokemon/palettes.asm')
 const FORMS = splitRead('data/pokemon/variant_forms.asm')
 
 const mons: {
@@ -257,6 +273,7 @@ for (const PF of ['polished', 'faithful'] as const) {
   mons[PF] = extractEggMoves(mons[PF], EGG_PTRS[PF], EGG_MOVES[PF], moves[PF])
   mons[PF] = extractEvoMoves(mons[PF], EVO_MOVES[PF], moves[PF])
   mons[PF] = extractSpritePaths(mons[PF], PNG_PTRS[PF], PNG_PATHS[PF])
+  mons[PF] = extractPalPaths(mons[PF], PAL_PATHS[PF])
   forms[PF] = extractForms(forms[PF], IDS[PF], FORMS[PF])
 }
 
