@@ -94,3 +94,40 @@ export interface MonList {
   constants: Record<string, number>
   contents: Mon[];
 }
+
+export interface FormMap extends Base {
+  formNo: number;
+}
+
+export interface Form extends Base {
+  bsts: number[];
+  types: string[];
+  hasGender: boolean;
+  abilities: string[];
+  growthCFs: number[];
+  learnsets: {
+    level: {
+      name: string;
+      level: number;
+    }[],
+    egg: {
+      name: string;
+    }[],
+    evo: {
+      name: string;
+    }[];
+    tmhm: {
+      name: string;
+    }[]
+  },
+  paths: {
+    sprite: string;
+    palette: string;
+    anim: string;
+  }
+}
+
+export interface Species extends Base {
+  name: string;
+  forms: Form[];
+}

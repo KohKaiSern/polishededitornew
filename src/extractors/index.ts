@@ -10,7 +10,7 @@ import items from './items';
 import keyItems from './keyItems';
 import locations from './locations';
 import moves from './moves';
-import mons from './pokemon';
+import pokemon from './pokemon';
 import tmhms from './tmhms';
 import versions from './versions';
 import wings from './wings';
@@ -27,7 +27,7 @@ for (const [name, obj] of Object.entries({
   keyItems,
   locations,
   moves,
-  mons,
+  pokemon,
   tmhms,
   versions,
   wings

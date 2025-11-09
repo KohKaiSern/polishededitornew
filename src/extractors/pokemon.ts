@@ -1,5 +1,5 @@
 import { applyPalette, splitRead, createGIF } from './utils';
-import type { MonList, Mon, Ability, Move, GrowthRate, Base } from './types';
+import type { MonList, Mon, Ability, Move, GrowthRate, Base, Species, Form, FormMap } from './types';
 import { extractNames } from './common';
 import { readFileSync, readdirSync, mkdirSync } from 'fs';
 import abilities from './abilities';
@@ -169,7 +169,7 @@ function extractAnimPaths(mons: MonList, ANIM_PTRS: string[], ANIM_PATHS: string
   return mons
 }
 
-function extractForms(forms: Record<string, Base[]>, IDS: string[], FORMS: string[]): Record<string, Base[]> {
+function extractForms(mons: MonList, forms: Record<string, FormMap[]>, IDS: string[], FORMS: string[]): Record<string, FormMap[]> {
   const formNums: Record<string, number> = {}
   let num_magikarp = -1;
   let index = -1;
@@ -192,33 +192,38 @@ function extractForms(forms: Record<string, Base[]>, IDS: string[], FORMS: strin
       lineNo--;
     }
   }
+  index = mons.constants.num_species + 1;
   for (let lineNo = 0; lineNo < FORMS.length; lineNo++) {
     if (!FORMS[lineNo].startsWith('dp')) continue;
-    const match = FORMS[lineNo].match(/[A-Z_\d]+/g)!
+    const match = FORMS[lineNo].match(/[A-Z][A-Z_\d]+/g)!
+    const form = mons.contents.find(m => m.index === index)!
     forms[match.at(0)!] ??= [];
     forms[match.at(0)!].push({
       id: match.at(1)!,
-      index: formNums[match.at(1)!]
+      index: form.index,
+      formNo: formNums[match.at(1)!]
     })
+    index++
   }
   for (const [form, formNo] of Object.entries(formNums)) {
     if (formNo === 1 && form != 'PLAIN_FORM') {
       forms[form.split('_').at(0)!].push({
         id: form,
-        index: formNo
+        index: mons.contents.find(m => m.id === form.split('_').at(0)!)!.index,
+        formNo
       })
     }
   }
   return forms;
 }
 
-function extractPNGs(mons: MonList, forms: Record<string, Base[]>): void {
+function extractPNGs(mons: MonList, forms: Record<string, FormMap[]>): void {
   for (const mon of mons.contents) {
     try { mkdirSync(import.meta.dirname + `/../${mon.paths.sprite}`) }
     catch (error) { }
     if (mon.paths.palette === '') {
       //Cosmetic form: uses species palette
-      const species = Object.entries(forms).find(([s, f]) => f.find(form => form.id === mon.id)!)!.at(0)!
+      const species = Object.entries(forms).find(([_, f]) => f.find(form => form.id === mon.id)!)!.at(0)!
       mon.paths.palette = mons.contents.find(m => m.id === species)!.paths.palette;
     }
     const NORMAL_PAL = readFileSync(import.meta.dirname + `/../../polishedcrystal/${mon.paths.palette}/normal.pal`, 'utf-8')
@@ -240,6 +245,61 @@ function extractGIFs(mons: MonList): void {
     createGIF(mon.paths.sprite + 'normal.png', mon.paths.anim + 'anim.asm', mon.paths.sprite + 'normal.gif')
     createGIF(mon.paths.sprite + 'shiny.png', mon.paths.anim + 'anim.asm', mon.paths.sprite + 'shiny.gif')
   }
+}
+
+function extractPokemon(pokemon: Species[], mons: MonList, forms: Record<string, FormMap[]>): Species[] {
+  for (const mon of mons.contents) {
+    if (mon.index <= mons.constants.num_species) {
+      pokemon.push({
+        id: mon.id,
+        index: mon.index,
+        name: mon.name,
+        forms: []
+      })
+    }
+  }
+  for (const mon of pokemon) {
+    if (mon.id) if (mon.id in forms) {
+      for (const form of forms[mon.id]) {
+        const result = mons.contents.find(m => m.index === form.index)!;
+        result.id = form.id;
+        const capitalize = (str: string): string => {
+          str = str.at(0)! + str.slice(1).toLowerCase();
+          for (let i = 0; i < str.length; i++) {
+            if (str[i] === '-') {
+              str = str.slice(0, i + 1) + str.at(i + 1)!.toUpperCase() + str.slice(i + 2)
+            }
+          }
+          return str
+        }
+        result.name = capitalize(form.id!.replace('_FORM', '').replace(mon.id + '_', '').replace('_', '-'))
+        result.index = form.formNo
+        mon.forms.push(result)
+      }
+    }
+  }
+  for (const mon of pokemon) {
+    if (!mon.forms.find(form => form.index === 1)) {
+      const result = mons.contents.find(m => m.index === mon.index)!
+      result.name = 'Plain'
+      result.index = 1;
+      mon.forms.push(result);
+    }
+  }
+  for (const mon of pokemon) {
+    for (const form of mon.forms) {
+      if (form.bsts.length === 0) {
+        const defForm = mon.forms.find(f => f.index === 1)!
+        form.bsts = defForm.bsts
+        form.types = defForm.types
+        form.hasGender = defForm.hasGender
+        form.abilities = defForm.abilities
+        form.growthCFs = defForm.growthCFs
+        form.learnsets = defForm.learnsets
+      }
+    }
+  }
+  return pokemon;
 }
 
 const IDS = splitRead('constants/pokemon_constants.asm');
@@ -304,11 +364,19 @@ const NULL_MON: Mon = {
 };
 
 const forms: {
-  polished: Record<string, Base[]>,
-  faithful: Record<string, Base[]>
+  polished: Record<string, FormMap[]>,
+  faithful: Record<string, FormMap[]>
 } = {
   polished: {},
   faithful: {}
+}
+
+const pokemon: {
+  polished: Species[];
+  faithful: Species[];
+} = {
+  polished: [],
+  faithful: []
 }
 
 for (const PF of ['polished', 'faithful'] as const) {
@@ -321,9 +389,10 @@ for (const PF of ['polished', 'faithful'] as const) {
   mons[PF] = extractSpritePaths(mons[PF], PNG_PTRS[PF], PNG_PATHS[PF])
   mons[PF] = extractPalPaths(mons[PF], PAL_PATHS[PF])
   mons[PF] = extractAnimPaths(mons[PF], ANIM_PTRS[PF], ANIM_PATHS[PF])
-  forms[PF] = extractForms(forms[PF], IDS[PF], FORMS[PF])
+  forms[PF] = extractForms(mons[PF], forms[PF], IDS[PF], FORMS[PF])
   extractPNGs(mons[PF], forms[PF])
   extractGIFs(mons[PF])
+  pokemon[PF] = extractPokemon(pokemon[PF], mons[PF], forms[PF])
 }
 
-export default mons;
+export default pokemon;
