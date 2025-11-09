@@ -1,7 +1,7 @@
-import { splitRead } from './utils';
+import { applyPalette, splitRead } from './utils';
 import type { MonList, Mon, Ability, Move, GrowthRate, Base } from './types';
 import { extractNames } from './common';
-import { readdirSync } from 'fs';
+import { readFileSync, readdirSync, mkdirSync } from 'fs';
 import abilities from './abilities';
 import growthRates from './growthRates';
 import moves from './moves';
@@ -129,12 +129,12 @@ function extractSpritePaths(mons: MonList, PNG_PTRS: string[], PNG_PATHS: string
   for (let lineNo = 0; lineNo < PNG_PTRS.length; lineNo++) {
     let pointer = ''
     if (PNG_PTRS[lineNo].startsWith('pics')) {
-      pointer = PNG_PTRS[lineNo].slice(5) + 'Frontpic'
+      pointer = PNG_PTRS[lineNo].slice(5) + 'Frontpic:'
     } else if (PNG_PTRS[lineNo].startsWith('dbas')) {
-      pointer = PNG_PTRS[lineNo].split(',').at(0)!.slice(5)
+      pointer = PNG_PTRS[lineNo].split(',').at(0)!.slice(5) + ':'
     } else continue;
     const mon = mons.contents.find(m => m.index === index)!
-    mon.paths.sprite = PNG_PATHS.find(line => line.includes(pointer))!.split('"').at(1)!.replace('animated.2bpp.lz', 'png')
+    mon.paths.sprite = PNG_PATHS.find(line => line.includes(pointer))!.split('"').at(1)!.replace('front.animated.2bpp.lz', '')
     index++
   }
   return mons
@@ -151,6 +151,20 @@ function extractPalPaths(mons: MonList, PAL_PATHS: string[]): MonList {
     mon.paths.palette = PAL_PATHS[lineNo].split('"').at(1)!.replace('normal.pal', '')
     lineNo++;
     index++;
+  }
+  return mons
+}
+
+function extractAnimPaths(mons: MonList, ANIM_PTRS: string[], ANIM_PATHS: string[]): MonList {
+  let index = 1;
+  for (let lineNo = 0; lineNo < ANIM_PTRS.length; lineNo++) {
+    if (!ANIM_PTRS[lineNo].startsWith('dw')) continue;
+    const pointer = ANIM_PTRS[lineNo].slice(3);
+    const mon = mons.contents.find(m => m.index === index)!
+    let animIndex = ANIM_PATHS.findIndex(line => line.includes(pointer))!
+    while (!ANIM_PATHS[animIndex].includes('"')) animIndex++;
+    mon.paths.anim = ANIM_PATHS[animIndex].split('"').at(1)!.replace('anim.asm', '')
+    index++
   }
   return mons
 }
@@ -198,6 +212,29 @@ function extractForms(forms: Record<string, Base[]>, IDS: string[], FORMS: strin
   return forms;
 }
 
+function extractPNGs(mons: MonList, forms: Record<string, Base[]>): void {
+  for (const mon of mons.contents) {
+    try { mkdirSync(import.meta.dirname + `/../${mon.paths.sprite}`) }
+    catch (error) { }
+    if (mon.paths.palette === '') {
+      //Cosmetic form: uses species palette
+      const species = Object.entries(forms).find(([s, f]) => f.find(form => form.id === mon.id)!)!.at(0)!
+      mon.paths.palette = mons.contents.find(m => m.id === species)!.paths.palette;
+    }
+    const NORMAL_PAL = readFileSync(import.meta.dirname + `/../../polishedcrystal/${mon.paths.palette}/normal.pal`, 'utf-8')
+      .split('\n')
+      .filter(line => line.includes('RGB'))
+      .map(line => line.match(/\d+/g)!.map(Number));
+    const SHINY_PAL = readFileSync(import.meta.dirname + `/../../polishedcrystal/${mon.paths.palette}/shiny.pal`, 'utf-8')
+      .split('\n')
+      .filter(line => line.includes('RGB'))
+      .map(line => line.match(/\d+/g)!.map(Number));
+    applyPalette(`${mon.paths.sprite}front.png`, `${mon.paths.sprite}normal.png`, NORMAL_PAL[0], NORMAL_PAL[1])
+    applyPalette(`${mon.paths.sprite}front.png`, `${mon.paths.sprite}shiny.png`, SHINY_PAL[0], SHINY_PAL[1])
+  }
+  return;
+}
+
 const IDS = splitRead('constants/pokemon_constants.asm');
 const NAMES = splitRead('data/pokemon/names.asm');
 const BASE_PTRS = splitRead('data/pokemon/base_stats.asm')
@@ -225,6 +262,8 @@ const EVO_MOVES = splitRead('data/pokemon/evolution_moves.asm')
 const PNG_PTRS = splitRead('data/pokemon/pic_pointers.asm')
 const PNG_PATHS = splitRead('gfx/pokemon.asm')
 const PAL_PATHS = splitRead('data/pokemon/palettes.asm')
+const ANIM_PTRS = splitRead('gfx/pokemon/anim_pointers.asm')
+const ANIM_PATHS = splitRead('gfx/pokemon/anims.asm')
 const FORMS = splitRead('data/pokemon/variant_forms.asm')
 
 const mons: {
@@ -274,7 +313,9 @@ for (const PF of ['polished', 'faithful'] as const) {
   mons[PF] = extractEvoMoves(mons[PF], EVO_MOVES[PF], moves[PF])
   mons[PF] = extractSpritePaths(mons[PF], PNG_PTRS[PF], PNG_PATHS[PF])
   mons[PF] = extractPalPaths(mons[PF], PAL_PATHS[PF])
+  mons[PF] = extractAnimPaths(mons[PF], ANIM_PTRS[PF], ANIM_PATHS[PF])
   forms[PF] = extractForms(forms[PF], IDS[PF], FORMS[PF])
+  extractPNGs(mons[PF], forms[PF])
 }
 
 export default mons;
