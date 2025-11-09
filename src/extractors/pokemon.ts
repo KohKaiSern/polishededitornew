@@ -124,6 +124,22 @@ function extractEvoMoves(mons: MonList, EVO_MOVES: string[], moves: Move[]): Mon
   return mons
 }
 
+function extractSpritePaths(mons: MonList, PNG_PTRS: string[], PNG_PATHS: string[]): MonList {
+  let index = 1;
+  for (let lineNo = 0; lineNo < PNG_PTRS.length; lineNo++) {
+    let pointer = ''
+    if (PNG_PTRS[lineNo].startsWith('pics')) {
+      pointer = PNG_PTRS[lineNo].slice(5) + 'Frontpic'
+    } else if (PNG_PTRS[lineNo].startsWith('dbas')) {
+      pointer = PNG_PTRS[lineNo].split(',').at(0)!.slice(5)
+    } else continue;
+    const mon = mons.contents.find(m => m.index === index)!
+    mon.paths.sprite = PNG_PATHS.find(line => line.includes(pointer))!.split('"').at(1)!.replace('animated.2bpp.lz', 'png')
+    index++
+  }
+  return mons
+}
+
 function extractForms(forms: Record<string, Base[]>, IDS: string[], FORMS: string[]): Record<string, Base[]> {
   const formNums: Record<string, number> = {}
   let num_magikarp = -1;
@@ -191,6 +207,8 @@ const LVL_MOVES = splitRead('data/pokemon/evos_attacks.asm')
 const EGG_PTRS = splitRead('data/pokemon/egg_move_pointers.asm')
 const EGG_MOVES = splitRead('data/pokemon/egg_moves.asm')
 const EVO_MOVES = splitRead('data/pokemon/evolution_moves.asm')
+const PNG_PTRS = splitRead('data/pokemon/pic_pointers.asm')
+const PNG_PATHS = splitRead('gfx/pokemon.asm')
 const FORMS = splitRead('data/pokemon/variant_forms.asm')
 
 const mons: {
@@ -215,6 +233,11 @@ const NULL_MON: Mon = {
     egg: [],
     evo: [],
     tmhm: []
+  },
+  paths: {
+    sprite: '',
+    palette: '',
+    anim: ''
   }
 };
 
@@ -233,6 +256,7 @@ for (const PF of ['polished', 'faithful'] as const) {
   mons[PF] = extractLvlMoves(mons[PF], LVL_PTRS[PF], LVL_MOVES[PF], moves[PF])
   mons[PF] = extractEggMoves(mons[PF], EGG_PTRS[PF], EGG_MOVES[PF], moves[PF])
   mons[PF] = extractEvoMoves(mons[PF], EVO_MOVES[PF], moves[PF])
+  mons[PF] = extractSpritePaths(mons[PF], PNG_PTRS[PF], PNG_PATHS[PF])
   forms[PF] = extractForms(forms[PF], IDS[PF], FORMS[PF])
 }
 

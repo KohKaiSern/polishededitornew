@@ -82,6 +82,11 @@ export interface Mon extends Base {
     tmhm: {
       name: string;
     }[]
+  },
+  paths: {
+    sprite: string;
+    palette: string;
+    anim: string;
   }
 }
 
