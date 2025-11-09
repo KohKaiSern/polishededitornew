@@ -1,5 +1,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import sharp from 'sharp';
+import { GifEncoder } from '@skyra/gifenc';
+import { buffer } from 'stream/consumers';
 
 //Parses a file and splits it into two files - one containing the Polished data
 //and the other containing the Faithful data. It also performs some string replacements,
@@ -80,4 +82,62 @@ export async function applyPalette(
   })
     .png()
     .toFile(import.meta.dirname + '/../' + outputPath);
+}
+
+//Converts a PNG and an anim.asm file into a GIF.
+export async function createGIF(
+  spritePath: string,
+  animPath: string,
+  outputPath: string
+): Promise<void> {
+  const metadata = await sharp(import.meta.dirname + '/../' + spritePath).metadata();
+  const frameHeight = metadata.width!;
+  const animContent = readFileSync(import.meta.dirname + '/../../polishedcrystal/' + animPath, 'utf-8').split('\n').map(l => l.trim());
+
+  const encoder = new GifEncoder(frameHeight, frameHeight);
+  const stream = encoder.createReadStream();
+  encoder.setRepeat(0).setQuality(10);
+  encoder.start();
+
+  for (let lineNo = 0; lineNo < animContent.length; lineNo++) {
+    const line = animContent[lineNo];
+    if (line.startsWith('frame ')) {
+      const parts = line.split(/\s+|,/);
+      const frameIndex = parseInt(parts[1]);
+      const duration = parseInt(parts[2]);
+      const frameBuffer = await sharp(import.meta.dirname + '/../' + spritePath)
+        .extract({ left: 0, top: frameIndex * frameHeight, width: frameHeight, height: frameHeight })
+        .ensureAlpha()
+        .raw()
+        .toBuffer();
+      encoder.setDelay(duration * 17);
+      encoder.addFrame(new Uint8ClampedArray(frameBuffer));
+    } else if (line.startsWith('setrepeat ')) {
+      const repeatCount = parseInt(line.split(/\s+/)[1]);
+      const repeatStart = lineNo + 1;
+      let repeatEnd = repeatStart;
+      while (!animContent[repeatEnd].startsWith('dorepeat')) {
+        repeatEnd++;
+      }
+      for (let rep = 0; rep < repeatCount; rep++) {
+        for (let j = repeatStart; j < repeatEnd; j++) {
+          const frameLine = animContent[j];
+          const parts = frameLine.split(/\s+|,/);
+          const frameIndex = parseInt(parts[1]);
+          const duration = parseInt(parts[2]);
+          const frameBuffer = await sharp(import.meta.dirname + '/../' + spritePath)
+            .extract({ left: 0, top: frameIndex * frameHeight, width: frameHeight, height: frameHeight })
+            .ensureAlpha()
+            .raw()
+            .toBuffer();
+          encoder.setDelay(duration * 17);
+          encoder.addFrame(new Uint8ClampedArray(frameBuffer));
+        }
+      }
+      lineNo = repeatEnd;
+    }
+  }
+  encoder.finish();
+  const result = await buffer(stream);
+  writeFileSync(import.meta.dirname + '/../' + outputPath, result);
 }

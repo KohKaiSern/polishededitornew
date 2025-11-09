@@ -1,4 +1,4 @@
-import { applyPalette, splitRead } from './utils';
+import { applyPalette, splitRead, createGIF } from './utils';
 import type { MonList, Mon, Ability, Move, GrowthRate, Base } from './types';
 import { extractNames } from './common';
 import { readFileSync, readdirSync, mkdirSync } from 'fs';
@@ -235,6 +235,13 @@ function extractPNGs(mons: MonList, forms: Record<string, Base[]>): void {
   return;
 }
 
+function extractGIFs(mons: MonList): void {
+  for (const mon of mons.contents) {
+    createGIF(mon.paths.sprite + 'normal.png', mon.paths.anim + 'anim.asm', mon.paths.sprite + 'normal.gif')
+    createGIF(mon.paths.sprite + 'shiny.png', mon.paths.anim + 'anim.asm', mon.paths.sprite + 'shiny.gif')
+  }
+}
+
 const IDS = splitRead('constants/pokemon_constants.asm');
 const NAMES = splitRead('data/pokemon/names.asm');
 const BASE_PTRS = splitRead('data/pokemon/base_stats.asm')
@@ -316,6 +323,7 @@ for (const PF of ['polished', 'faithful'] as const) {
   mons[PF] = extractAnimPaths(mons[PF], ANIM_PTRS[PF], ANIM_PATHS[PF])
   forms[PF] = extractForms(forms[PF], IDS[PF], FORMS[PF])
   extractPNGs(mons[PF], forms[PF])
+  extractGIFs(mons[PF])
 }
 
 export default mons;
