@@ -16,21 +16,21 @@ import versions from './versions';
 import wings from './wings';
 
 for (const [name, obj] of Object.entries({
-  abilities,
-  addresses,
-  apricorns,
-  boxThemes,
-  charmap,
-  expCandy,
-  growthRates,
-  items,
-  keyItems,
-  locations,
-  moves,
-  pokemon,
-  tmhms,
-  versions,
-  wings
+	abilities,
+	addresses,
+	apricorns,
+	boxThemes,
+	charmap,
+	expCandy,
+	growthRates,
+	items,
+	keyItems,
+	locations,
+	moves,
+	pokemon,
+	tmhms,
+	versions,
+	wings
 })) {
-  writeJSON(name, obj);
+	writeJSON(name, obj);
 }

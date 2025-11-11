@@ -10,7 +10,9 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$data: 'src/data',
-			$parsers: 'src/parsers'
+			$parsers: 'src/parsers',
+			$components: 'src/lib/components',
+			$ui: 'src/lib/components/ui'
 		}
 	}
 };
