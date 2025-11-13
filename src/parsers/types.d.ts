@@ -1,0 +1,72 @@
+export interface Mon {
+  species: string;
+  form: string;
+  heldItem: string;
+  moves: string[];
+  OTID: number;
+  exp: number;
+  evs: number[];
+  dvs: number[];
+  shininess: 'Shiny' | 'Not Shiny';
+  ability: string;
+  nature: string;
+  isEgg: boolean;
+  gender: string;
+  PPUPs: number[];
+  happiness: number;
+  pokerus: {
+    strain: number | 'None' | 'Cured';
+    daysRemaining: number;
+  };
+  level: number;
+  caughtBall: string;
+  caughtTime: string;
+  caughtLevel: number;
+  caughtLocation: string;
+  hyperTraining: boolean[];
+  nickname: string[];
+  OTNickname: string[];
+}
+
+export interface PartyMon extends Mon {
+  currentHP: number;
+  stats: number[];
+  status: {
+    name: string;
+    turnsRemaining?: number;
+  };
+  powerPoints: number[];
+}
+
+export interface Box {
+  name: string[];
+  theme: string;
+  mons: (Mon | null)[];
+}
+
+export interface Item {
+  name: string;
+  qty: number;
+}
+
+export interface BagSlot {
+  count?: number;
+  contents: Item[];
+}
+
+export type Bag = Record<string, BagSlot>
+
+export interface Player {
+  id: number;
+  name: string[];
+  rivalName: string[];
+  money: number;
+  gender: string;
+}
+
+export interface Data {
+  party: PartyMon[];
+  boxes: Box[];
+  bag: Bag;
+  player: Player;
+}

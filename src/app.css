@@ -1,1 +1,33 @@
 @import 'tailwindcss';
+@plugin "daisyui";
+
+@layer base {
+  h1 {
+    @apply text-5xl tracking-tight font-extrabold;
+  }
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-primary: oklch(0.5646 0.258 289.1);
+  --color-primary-content: oklch(97.807% 0.029 289);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-primary: oklch(0.5646 0.258 289.1);
+  --color-primary-content: oklch(97.807% 0.029 289);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+}
+
