@@ -17,6 +17,7 @@
 		return {
 			species: 'Bulbasaur',
 			form: 'Plain',
+			dunsparceForm: 'Two-Segment',
 			heldItem: 'None',
 			moveset: ['Tackle', 'None', 'None', 'None'],
 			OTID: player.id,

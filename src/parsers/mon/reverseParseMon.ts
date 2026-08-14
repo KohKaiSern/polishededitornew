@@ -14,6 +14,9 @@ export function reverseParsePartyMon(
 ): Uint8Array {
 	file = species(file, address, mon.species, PF);
 	file = form(file, address, mon.species, mon.form, PF);
+	if (mon.species === 'Dunsparce') {
+		file = dunsparceForm(file, address + 21, mon.dunsparceForm);
+	}
 	file = heldItem(file, address + 1, mon.heldItem, PF);
 	file = moveset(file, address + 2, mon.moveset, PF);
 	file = OTID(file, address + 6, mon.OTID);
@@ -48,6 +51,9 @@ export function reverseParseBoxMon(
 ): Uint8Array {
 	file = species(file, address, mon.species, PF);
 	file = form(file, address, mon.species, mon.form, PF);
+	if (mon.species === 'Dunsparce') {
+		file = dunsparceForm(file, address + 21, mon.dunsparceForm);
+	}
 	file = heldItem(file, address + 1, mon.heldItem, PF);
 	file = moveset(file, address + 2, mon.moveset, PF);
 	file = OTID(file, address + 6, mon.OTID);
@@ -97,6 +103,15 @@ const form = (
 	file[address + 21] = (file[address + 21] & 0xe0) | index;
 	return file;
 };
+
+const dunsparceForm = (
+	file: Uint8Array,
+	address: number,
+	dunsparceForm: 'Two-Segment' | 'Three-Segment'
+): Uint8Array => (
+	(file[address] = (file[address] & 0xe0) | (dunsparceForm === 'Three-Segment' ? 2 : 1)),
+	file
+);
 
 const heldItem = (
 	file: Uint8Array,

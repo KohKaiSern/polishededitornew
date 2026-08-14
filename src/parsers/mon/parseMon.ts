@@ -14,6 +14,7 @@ export function parsePartyMon(
   return {
     species: species(file, address, PF),
     form: form(file, address, PF),
+    dunsparceForm: dunsparceForm(file, address + 21),
     heldItem: heldItem(file, address + 1, PF),
     moveset: moveset(file, address + 2, PF),
     OTID: OTID(file, address + 6),
@@ -51,6 +52,7 @@ export function parseBoxMon(
   return {
     species: species(file, address, PF),
     form: form(file, address, PF),
+    dunsparceForm: dunsparceForm(file, address + 21),
     heldItem: heldItem(file, address + 1, PF),
     moveset: moveset(file, address + 2, PF),
     OTID: OTID(file, address + 6),
@@ -137,6 +139,9 @@ const gender = (file: Uint8Array, address: number, PF: 'polished' | 'faithful'):
 };
 
 const isEgg = (file: Uint8Array, address: number): boolean => Boolean((file[address] >> 6) & 0x1);
+
+const dunsparceForm = (file: Uint8Array, address: number): 'Two-Segment' | 'Three-Segment' =>
+  (file[address] & 0x1f) === 2 ? 'Three-Segment' : 'Two-Segment';
 
 const powerPoints = (file: Uint8Array, address: number): number[] =>
   Array.from({ length: 4 }, (_, i) => file[address + i] & 0x3f);
