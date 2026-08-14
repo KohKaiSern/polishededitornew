@@ -1,6 +1,7 @@
 export interface BoxMon {
   species: string;
   form: string;
+  dunsparceForm: 'Two-Segment' | 'Three-Segment';
   heldItem: string;
   moveset: string[];
   OTID: number;

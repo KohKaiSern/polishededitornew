@@ -55,6 +55,17 @@
 	/>
 </div>
 
+{#if species.id === 'DUNSPARCE'}
+	<Heading tag="h5">Evolution Form</Heading>
+	<P class="my-5" italic>
+		Determines whether this Dunsparce becomes a Two-Segment or Three-Segment Dudunsparce when it
+		evolves.
+	</P>
+	<div class="flex gap-3 my-5">
+		<DropdownSelect options={['Two-Segment', 'Three-Segment']} bind:value={mon.dunsparceForm} />
+	</div>
+{/if}
+
 <Heading tag="h5" class="mb-5">Held Item</Heading>
 {#if 'currentHP' in mon}
 	<Combobox
